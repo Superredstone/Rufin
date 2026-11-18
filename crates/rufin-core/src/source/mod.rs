@@ -2651,6 +2651,21 @@ impl SourceOwner {
         self.shared.downloads.download(subject, media_uris);
     }
 
+    /// Marks the podcast episodes among `media_uris` played or unplayed.
+    pub fn set_episodes_played(&self, media_uris: Vec<String>, played: bool) {
+        let owner = self.clone();
+        self.shared.runtime.spawn(async move {
+            if let Err(error) = owner
+                .shared
+                .catalog
+                .set_episodes_played(&media_uris, played)
+                .await
+            {
+                owner.shared.warn_nonfatal(&error.to_string());
+            }
+        });
+    }
+
     pub fn set_favorite(&self, target: FavoriteTarget, favorite: bool) {
         let owner = self.clone();
         self.shared.runtime.spawn(async move {

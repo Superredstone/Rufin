@@ -2402,6 +2402,12 @@ msgstr ""
 msgid "March {year}"
 msgstr ""
 
+msgid "Mark as Played"
+msgstr ""
+
+msgid "Mark as Unplayed"
+msgstr ""
+
 msgid "Match"
 msgstr ""
 
@@ -3194,6 +3200,9 @@ msgid "Plex Account"
 msgstr ""
 
 msgid "Plex"
+msgstr ""
+
+msgid "Podcasts"
 msgstr ""
 
 msgid "Pop"

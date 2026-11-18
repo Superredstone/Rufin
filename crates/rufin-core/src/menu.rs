@@ -23,6 +23,8 @@ pub struct Menu {
     pub favorite: bool,
     /// The rating stars.
     pub rating: bool,
+    /// Mark as Played and Mark as Unplayed: the row is a podcast episode.
+    pub episode: bool,
     pub edit_metadata: bool,
     /// The row's pin, and whether it is pinned.
     pub pin: Option<SidebarPin>,
@@ -112,6 +114,8 @@ fn offered(
         Row::Track(track) | Row::AlbumTrack { track, .. } => {
             menu.edit_metadata =
                 !track.cue && (track.source_key.is_some() || track.media_uri.starts_with("file:"));
+            menu.episode = source
+                .is_some_and(|source| source.is(|kind| kind == library::SourceKind::Podcasts));
             (true, true)
         }
         Row::Album(_) | Row::AlbumHeading(_) | Row::Artist(_) => {
@@ -344,7 +348,8 @@ fn deletable(source: Option<&ConfiguredSource>, row: &Row) -> bool {
         Some(library::SourceKind::Navidrome | library::SourceKind::Subsonic) => {
             source.local_access.is_some()
         }
-        Some(library::SourceKind::Peer) | None => false,
+        // An episode is the feed's file, not one Rufin may delete.
+        Some(library::SourceKind::Peer | library::SourceKind::Podcasts) | None => false,
         Some(_) => true,
     })
 }

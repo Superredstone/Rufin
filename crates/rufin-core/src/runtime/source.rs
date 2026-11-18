@@ -451,6 +451,7 @@ pub fn source_kind_title(kind: &str) -> Option<&'static str> {
         SourceKind::Webdav => localization::msgid("WebDAV"),
         SourceKind::Smb => localization::msgid("SMB / Samba"),
         SourceKind::Peer => localization::msgid("Rufin Connect"),
+        SourceKind::Podcasts => localization::msgid("Podcasts"),
     })
 }
 
@@ -466,5 +467,7 @@ pub fn source_kind_icon_name(kind: &str) -> Option<&'static str> {
         SourceKind::Webdav => "io.github.screwys.Rufin.source.webdav",
         SourceKind::Smb => "io.github.screwys.Rufin.source.smb",
         SourceKind::Peer => "rufin-phonelink-symbolic",
+        // shortcut: borrows the radio icon until podcasts get their own.
+        SourceKind::Podcasts => "rufin-radio-station-symbolic",
     })
 }

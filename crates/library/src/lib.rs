@@ -35,6 +35,8 @@ pub use read::{
 };
 mod db;
 mod downloads;
+mod episodes;
+pub use episodes::{EpisodeProgress, episode_finished};
 mod favorites;
 mod fingerprint;
 mod home;

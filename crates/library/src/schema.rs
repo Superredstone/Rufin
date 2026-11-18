@@ -13,7 +13,7 @@ pub(crate) async fn pragma(
             .await?,
     )
 }
-pub(crate) const STORE_VERSION: i64 = 65;
+pub(crate) const STORE_VERSION: i64 = 66;
 
 /// Bits of the `flags` column of tracks, albums, artists, tags and folders, copied from the
 /// artwork binding and the details row so the Catalog load reads neither.
@@ -31,7 +31,7 @@ pub(crate) const LINK_GENRE: i64 = 2;
 pub(crate) const LINK_MOOD: i64 = 3;
 pub(crate) const LINK_FOLDER: i64 = 4;
 
-pub(crate) const STORE_SCHEMA: &str = r#"PRAGMA user_version = 65;
+pub(crate) const STORE_SCHEMA: &str = r#"PRAGMA user_version = 66;
 
 CREATE TABLE sources (
     source_key INTEGER PRIMARY KEY,
@@ -259,6 +259,14 @@ CREATE TABLE user_state (
     media_uri TEXT PRIMARY KEY CHECK (media_uri <> ''),
     favorite INTEGER CHECK (favorite IS NULL OR favorite IN (0,1)),
     rating INTEGER CHECK (rating IS NULL OR rating BETWEEN 0 AND 100),
+    changed_at INTEGER NOT NULL
+) STRICT;
+
+-- Where a podcast episode was left, and whether it was heard.
+CREATE TABLE episode_progress (
+    media_uri TEXT PRIMARY KEY CHECK (media_uri <> ''),
+    position_millis INTEGER NOT NULL CHECK (position_millis >= 0),
+    played INTEGER NOT NULL CHECK (played IN (0,1)),
     changed_at INTEGER NOT NULL
 ) STRICT;
 

@@ -73,9 +73,14 @@ impl<'a> Context<'a> {
             .map(|key| {
                 snapshot.source(*key).is_none_or(|source| {
                     source.kind.as_deref().is_none_or(|kind| {
-                        // File libraries and peers count Rufin's listens; servers report their own.
+                        // File libraries, peers and podcasts count Rufin's listens; servers report
+                        // their own.
                         crate::SourceKind::parse(kind).is_some_and(|kind| {
-                            kind.file_library() || kind == crate::SourceKind::Peer
+                            kind.file_library()
+                                || matches!(
+                                    kind,
+                                    crate::SourceKind::Peer | crate::SourceKind::Podcasts
+                                )
                         })
                     })
                 })

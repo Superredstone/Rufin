@@ -361,6 +361,23 @@ fn row_surface(
             move || shell.set_favorite(target.clone(), !favorite),
         );
     }
+    if menu.episode
+        && let Row::Track(track) | Row::AlbumTrack { track, .. } = row
+    {
+        for (label, played) in [
+            (msgid("Mark as Played"), true),
+            (msgid("Mark as Unplayed"), false),
+        ] {
+            let shell = Rc::clone(shell);
+            let media_uri = track.media_uri.clone();
+            surface.append_fixed_action(label, "rufin-circle-check-symbolic", move || {
+                shell
+                    .products
+                    .source
+                    .set_episodes_played(vec![media_uri.clone()], played);
+            });
+        }
+    }
     if menu.edit_metadata
         && let Some(item) = metadata_item(row)
     {

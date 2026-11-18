@@ -45,6 +45,9 @@ pub(crate) async fn upgrade(path: &Path) -> LibraryResult<Option<bool>> {
         if version < 65 {
             to_65(&mut *transaction).await?;
         }
+        if version < 66 {
+            to_66(&mut *transaction).await?;
+        }
         sqlx::query(sqlx::AssertSqlSafe(format!(
             "PRAGMA user_version={STORE_VERSION}"
         )))
@@ -228,6 +231,21 @@ async fn to_64(connection: &mut SqliteConnection) -> LibraryResult<()> {
 async fn to_65(connection: &mut SqliteConnection) -> LibraryResult<()> {
     sqlx::raw_sql(
         "CREATE INDEX lyrics_cache_picked_idx ON lyrics_cache(media_uri, authority, role, language, script) WHERE picked;",
+    )
+    .execute(connection)
+    .await?;
+    Ok(())
+}
+
+/// Podcast episodes keep where they were left and whether they were heard.
+async fn to_66(connection: &mut SqliteConnection) -> LibraryResult<()> {
+    sqlx::raw_sql(
+        "CREATE TABLE episode_progress (
+            media_uri TEXT PRIMARY KEY CHECK (media_uri <> ''),
+            position_millis INTEGER NOT NULL CHECK (position_millis >= 0),
+            played INTEGER NOT NULL CHECK (played IN (0,1)),
+            changed_at INTEGER NOT NULL
+        ) STRICT;",
     )
     .execute(connection)
     .await?;
