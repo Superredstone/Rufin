@@ -85,6 +85,10 @@ pub enum SourceSetup {
     Local {
         roots: Vec<PathBuf>,
     },
+    Podcasts {
+        name: String,
+        feeds: Vec<String>,
+    },
 }
 
 #[derive(Clone, Debug, Eq, PartialEq, serde::Serialize)]
@@ -147,6 +151,11 @@ pub enum SourceSettingsChange {
     },
     /// Another device's Local source takes only a name, kept on this device.
     Peer { source_id: SourceId, name: String },
+    Podcasts {
+        source_id: SourceId,
+        name: String,
+        feeds: Vec<String>,
+    },
 }
 
 impl SourceSettingsChange {
@@ -160,7 +169,8 @@ impl SourceSettingsChange {
             | Self::Files { source_id, .. }
             | Self::JellyfinEmby { source_id, .. }
             | Self::OpenSubsonic { source_id, .. }
-            | Self::Peer { source_id, .. } => source_id,
+            | Self::Peer { source_id, .. }
+            | Self::Podcasts { source_id, .. } => source_id,
         }
     }
 }
@@ -192,6 +202,11 @@ pub enum EditableSource {
     },
     /// Another device's Local source: only its name is edited here.
     Peer { source_id: SourceId },
+    Podcasts {
+        source_id: SourceId,
+        name: String,
+        feeds: Vec<String>,
+    },
 }
 
 impl SourceConfiguration {
@@ -416,6 +431,11 @@ impl SourceConfiguration {
                     document_roots: config.document_roots,
                 })
             }
+            crate::podcast::PODCAST_SOURCE_ID => Ok(EditableSource::Podcasts {
+                source_id: self.source_id.clone(),
+                name: self.name.clone(),
+                feeds: crate::podcast::PodcastSourceConfig::from_configuration(self)?.feeds,
+            }),
             "peer" => Ok(EditableSource::Peer {
                 source_id: self.source_id.clone(),
             }),

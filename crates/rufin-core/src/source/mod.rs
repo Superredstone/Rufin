@@ -3576,7 +3576,10 @@ fn editable_source(configured: &ConfiguredSource) -> Result<EditableSource, Stri
             editable.credentials.trust_invalid_cert = settings.trust_invalid_certificate;
             editable.file_settings = Some(settings);
         }
-        sources::EditableSource::Local { .. } | sources::EditableSource::Peer { .. } => {}
+        // Feed lists are not editable from the UI yet.
+        sources::EditableSource::Local { .. }
+        | sources::EditableSource::Peer { .. }
+        | sources::EditableSource::Podcasts { .. } => {}
     }
     Ok(editable)
 }
