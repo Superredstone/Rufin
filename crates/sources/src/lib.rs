@@ -21,6 +21,7 @@ mod detail_links;
 pub mod discovery;
 mod operations;
 mod plex;
+mod podcast;
 mod policy;
 mod source;
 

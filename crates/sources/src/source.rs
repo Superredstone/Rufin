@@ -779,6 +779,20 @@ impl ConnectedSource {
             credential,
         }
     }
+
+    pub(crate) fn podcasts(
+        configuration: SourceConfiguration,
+        source: crate::podcast::PodcastSource,
+    ) -> Self {
+        Self {
+            source: Source::new(
+                configuration.source_id.clone(),
+                Implementation::Podcasts(source),
+            ),
+            configuration,
+            credential: None,
+        }
+    }
 }
 
 pub enum SourceEditResult {
@@ -794,6 +808,7 @@ pub enum Implementation {
     JellyfinEmby(crate::jellyfin_emby::JellyfinEmbySource),
     OpenSubsonic(crate::subsonic::SubsonicSource),
     Peer(crate::peer::PeerSource),
+    Podcasts(crate::podcast::PodcastSource),
 }
 
 pub struct Source {
@@ -1052,6 +1067,9 @@ impl Source {
                 authentication,
                 credentials,
             } => crate::subsonic::connect(source_id, kind, authentication, credentials).await,
+            SourceSetup::Podcasts { name, feeds } => {
+                crate::podcast::connect(source_id, name, feeds)
+            }
         }
     }
 
@@ -1155,6 +1173,9 @@ impl Source {
                     })
                 })
             }
+            SourceSettingsChange::Podcasts { name, feeds, .. } => {
+                crate::podcast::edit(current, name, feeds)
+            }
         }
     }
 
@@ -1184,6 +1205,9 @@ impl Source {
                 Implementation::OpenSubsonic(crate::subsonic::open(&configuration, credential)?)
             }
             "peer" => Implementation::Peer(crate::peer::PeerSource::open(&configuration, peer)?),
+            crate::podcast::PODCAST_SOURCE_ID => {
+                Implementation::Podcasts(crate::podcast::open(&configuration)?)
+            }
             kind => {
                 return Err(SourceError::InvalidConfig(format!(
                     "unknown source kind {kind}"
@@ -1200,7 +1224,10 @@ impl Source {
             Implementation::JellyfinEmby(source) => source.select_address().await,
             Implementation::OpenSubsonic(source) => source.select_address().await,
             Implementation::Plex(source) => source.select_address().await,
-            Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => false,
+            Implementation::Local(_)
+            | Implementation::Files(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => false,
         };
         if moved {
             self.set_unreachable(None);
@@ -1235,7 +1262,9 @@ impl Source {
 
     pub fn needs_periodic_refresh(&self) -> bool {
         match &self.implementation {
-            Implementation::OpenSubsonic(_) | Implementation::Peer(_) => true,
+            Implementation::OpenSubsonic(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => true,
             Implementation::Files(files) => !files.has_notifications(),
             // The check walks the folders once they have gone an hour without a walk.
             Implementation::Local(_) => true,
@@ -1283,6 +1312,8 @@ impl Source {
                     (_, Some(_)) => !accepted,
                     (Implementation::OpenSubsonic(_), None) => daily,
                     (Implementation::Local(local), None) => local.rescan_due(),
+                    // Feeds have no change marker; every periodic check reads them.
+                    (Implementation::Podcasts(_), None) => true,
                     (implementation, None) => matches!(implementation, Implementation::Files(_)),
                 };
                 if !full {
@@ -1356,6 +1387,11 @@ impl Source {
                         .await?;
                     true
                 }
+                Implementation::Podcasts(source) => {
+                    source
+                        .acquire_catalog(changes, &report, &cancelled_fn)
+                        .await?
+                }
             };
             if cancelled_fn() || self.is_retired() {
                 return Err(SourceError::Cancelled);
@@ -1379,7 +1415,9 @@ impl Source {
     async fn freshness(&self) -> SourceResult<Option<Freshness>> {
         match &self.implementation {
             Implementation::Plex(_) => Ok(None),
-            Implementation::Local(_) | Implementation::JellyfinEmby(_) => Ok(None),
+            Implementation::Local(_)
+            | Implementation::JellyfinEmby(_)
+            | Implementation::Podcasts(_) => Ok(None),
             Implementation::Files(source) => source.freshness().await,
             Implementation::OpenSubsonic(source) => source.freshness().await,
             Implementation::Peer(source) => source.freshness().await,
@@ -1393,6 +1431,11 @@ impl Source {
         playable: &library::Playable,
         request: StreamRequest,
     ) -> SourceResult<ResolvedStream> {
+        // Episodes live on many unrelated hosts, so one failing host must not mark the
+        // whole podcast source unreachable.
+        if let Implementation::Podcasts(source) = &self.implementation {
+            return source.stream(playable);
+        }
         let encoding = playable.stream_encoding(request.quality);
         let session = request.session_identifier.as_deref();
         self.reach(async {
@@ -1428,6 +1471,7 @@ impl Source {
                         .await
                 }
                 Implementation::Peer(source) => source.audio_stream(playable, encoding).await,
+                Implementation::Podcasts(source) => source.stream(playable),
             }
         })
         .await
@@ -1488,10 +1532,16 @@ impl Source {
             Implementation::OpenSubsonic(source) => {
                 source.resolve_download(&self.track_object_id(&playable.media_uri)?, quality)
             }
+            Implementation::Podcasts(source) => source
+                .stream(playable)
+                .map(|stream| ResolvedDownload::encode(stream, quality)),
         }
     }
 
     pub async fn image(&self, request: SourceImageRequest) -> SourceResult<ImageBytes> {
+        if let Implementation::Podcasts(source) = &self.implementation {
+            return source.image(request).await;
+        }
         self.reach(async {
             match &self.implementation {
                 Implementation::Plex(source) => match request {
@@ -1520,6 +1570,7 @@ impl Source {
                     }
                     SourceImageRequest::Local(_) => Err(SourceError::NotFound),
                 },
+                Implementation::Podcasts(source) => source.image(request).await,
             }
         })
         .await
@@ -1538,7 +1589,10 @@ impl Source {
         self.reach(async {
             if matches!(
                 self.implementation,
-                Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_)
+                Implementation::Local(_)
+                    | Implementation::Files(_)
+                    | Implementation::Peer(_)
+                    | Implementation::Podcasts(_)
             ) {
                 return Err(SourceError::InvalidRequest("File Search is Catalog-owned"));
             }
@@ -1614,7 +1668,10 @@ impl Source {
     ) -> SourceResult<()> {
         match &self.implementation {
             Implementation::Plex(_) => Ok(()),
-            Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => Ok(()),
+            Implementation::Local(_)
+            | Implementation::Files(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => Ok(()),
             Implementation::JellyfinEmby(source) => source.set_favorite(object_id, favorite).await,
             Implementation::OpenSubsonic(source) => {
                 source.set_favorite(kind, object_id, favorite).await
@@ -1628,7 +1685,10 @@ impl Source {
         }
         match &self.implementation {
             Implementation::Plex(source) => source.set_rating(object_id, rating).await,
-            Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => Ok(()),
+            Implementation::Local(_)
+            | Implementation::Files(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => Ok(()),
             Implementation::JellyfinEmby(source) => source.set_rating(object_id, rating).await,
             Implementation::OpenSubsonic(source) => source.set_rating(object_id, rating).await,
         }
@@ -1713,7 +1773,10 @@ impl Source {
         match &self.implementation {
             Implementation::JellyfinEmby(_) | Implementation::Plex(_) => true,
             Implementation::OpenSubsonic(provider) => provider.has_navidrome_api(),
-            Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => false,
+            Implementation::Local(_)
+            | Implementation::Files(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => false,
         }
     }
 
@@ -1835,6 +1898,7 @@ impl Source {
             }
             // The owner's source lyrics arrive with its observations.
             Implementation::Peer(_) => Err(SourceError::NotFound),
+            Implementation::Podcasts(_) => Err(SourceError::NotFound),
         }
     }
 
@@ -1896,7 +1960,7 @@ impl Source {
                         .await
                 }
                 // A paired device's tracks carry no folders; its cached scope lists them.
-                Implementation::Peer(_) => Err(SourceError::NotFound),
+                Implementation::Peer(_) | Implementation::Podcasts(_) => Err(SourceError::NotFound),
             }
         })
         .await
@@ -1909,9 +1973,10 @@ impl Source {
     ) -> SourceResult<Vec<String>> {
         match &self.implementation {
             Implementation::Plex(source) => source.generated_track_object_ids(seed, limit).await,
-            Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => {
-                Ok(Vec::new())
-            }
+            Implementation::Local(_)
+            | Implementation::Files(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => Ok(Vec::new()),
             Implementation::JellyfinEmby(source) => {
                 source.generated_track_object_ids(seed, limit).await
             }
@@ -2385,7 +2450,8 @@ impl Source {
                     }
                     Implementation::Local(_)
                     | Implementation::Files(_)
-                    | Implementation::Peer(_) => {}
+                    | Implementation::Peer(_)
+                    | Implementation::Podcasts(_) => {}
                 }
                 Ok::<_, SourceError>(())
             })
@@ -2429,7 +2495,8 @@ impl Source {
             Implementation::Plex(_)
             | Implementation::Local(_)
             | Implementation::Files(_)
-            | Implementation::Peer(_) => Ok(Vec::new()),
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => Ok(Vec::new()),
             Implementation::JellyfinEmby(source) => source.home_section(section).await,
             Implementation::OpenSubsonic(source) => source.home_section(section).await,
         }
@@ -2557,7 +2624,8 @@ impl Source {
             Implementation::Local(_)
             | Implementation::Files(_)
             | Implementation::OpenSubsonic(_)
-            | Implementation::Peer(_) => {}
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => {}
         }
         feed
     }
@@ -2567,9 +2635,10 @@ impl Source {
             let object_id = self.track_object_id(&report.media_uri)?;
             match &self.implementation {
                 Implementation::Plex(source) => source.report_playback(&object_id, report).await,
-                Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => {
-                    Ok(())
-                }
+                Implementation::Local(_)
+                | Implementation::Files(_)
+                | Implementation::Peer(_)
+                | Implementation::Podcasts(_) => Ok(()),
                 Implementation::JellyfinEmby(source) => {
                     source.report_playback(&object_id, report).await
                 }

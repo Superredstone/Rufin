@@ -18,6 +18,7 @@ bindings = ["dep:uniffi", "library/bindings"]
 audio-processing.workspace = true
 uniffi = { workspace = true, optional = true }
 lyrics.workspace = true
+roxmltree.workspace = true
 async-channel.workspace = true
 base64.workspace = true
 blake3.workspace = true
