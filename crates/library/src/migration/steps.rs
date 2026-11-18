@@ -51,6 +51,9 @@ pub(crate) async fn upgrade(path: &Path) -> LibraryResult<Option<bool>> {
         if version < 67 {
             to_67(&mut *transaction).await?;
         }
+        if version < 68 {
+            to_68(&mut *transaction).await?;
+        }
         sqlx::query(sqlx::AssertSqlSafe(format!(
             "PRAGMA user_version={STORE_VERSION}"
         )))
@@ -286,6 +289,21 @@ async fn to_67(connection: &mut SqliteConnection) -> LibraryResult<()> {
                 AND file.path=coalesce(details.cue_path,details.source_path)
             WHERE details.track_key=tracks.track_key AND file.mtime_ns>0);
         UPDATE sources SET synced_at=NULL, freshness=NULL WHERE kind='navidrome';",
+    )
+    .execute(connection)
+    .await?;
+    Ok(())
+}
+
+/// Podcast episodes keep where they were left and whether they were heard.
+async fn to_68(connection: &mut SqliteConnection) -> LibraryResult<()> {
+    sqlx::raw_sql(
+        "CREATE TABLE episode_progress (
+            media_uri TEXT PRIMARY KEY CHECK (media_uri <> ''),
+            position_millis INTEGER NOT NULL CHECK (position_millis >= 0),
+            played INTEGER NOT NULL CHECK (played IN (0,1)),
+            changed_at INTEGER NOT NULL
+        ) STRICT;",
     )
     .execute(connection)
     .await?;

@@ -2125,6 +2125,43 @@ impl Player {
 
         self.send_backend(command);
         self.dirty = true;
+        if !desired_playing {
+            self.save_episode_progress(false);
+        }
+    }
+
+    /// Saves where the current run is, for a podcast episode to resume from later.
+    fn save_episode_progress(&self, completed: bool) {
+        if let Some(run) = self
+            .current_run
+            .as_ref()
+            .filter(|run| !run.live && run.started_at_unix_seconds.is_some())
+        {
+            self.owner().save_episode_progress(
+                &run.row.track,
+                self.sequence.progress_millis(),
+                run.duration_millis,
+                completed,
+            );
+        }
+    }
+
+    /// Starts the resolving `run` at the saved place of its podcast episode, when the queue
+    /// holds no place of its own.
+    pub(super) fn resume_episode(&mut self, run: RunId, position_millis: u64) {
+        // shortcut: only the run being started resumes; an episode that follows gaplessly
+        // starts from its beginning, until prepared next streams carry a start position.
+        if position_millis > 0
+            && self.sequence.progress_millis() == 0
+            && self
+                .current_run
+                .as_ref()
+                .is_some_and(|current| current.id == run)
+        {
+            self.sequence.set_progress_millis(position_millis);
+            self.sequence.persist_state();
+            self.dirty = true;
+        }
     }
 
     fn stop(&mut self, sample: &ClockSample, reset_position: bool) {
@@ -3085,6 +3122,7 @@ impl Player {
         current.advance_clock(sample.monotonic_millis);
         self.qualify_current();
         self.heard_song(sample);
+        self.save_episode_progress(reason == RunEndReason::Completed);
         let Some(current) = self.current_run.take() else {
             return;
         };

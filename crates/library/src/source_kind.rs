@@ -14,10 +14,12 @@ pub enum SourceKind {
     Navidrome,
     Subsonic,
     Peer,
+    /// Podcast RSS feeds Rufin reads itself.
+    Podcasts,
 }
 
 impl SourceKind {
-    const NAMES: [(Self, &'static str); 9] = [
+    const NAMES: [(Self, &'static str); 10] = [
         (Self::Local, "local"),
         (Self::Webdav, "webdav"),
         (Self::Smb, "smb"),
@@ -27,6 +29,7 @@ impl SourceKind {
         (Self::Navidrome, "navidrome"),
         (Self::Subsonic, "subsonic"),
         (Self::Peer, "peer"),
+        (Self::Podcasts, "podcasts"),
     ];
 
     pub fn parse(name: &str) -> Option<Self> {

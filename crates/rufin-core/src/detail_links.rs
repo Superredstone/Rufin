@@ -50,7 +50,7 @@ pub fn source_link(source: &sources::SourceConfiguration, media_uri: &str) -> Op
         SourceKind::Plex => msgid("Open on Plex"),
         SourceKind::Navidrome => msgid("Open on Navidrome"),
         SourceKind::Subsonic => msgid("Open on server"),
-        SourceKind::Peer => return None,
+        SourceKind::Peer | SourceKind::Podcasts => return None,
     };
     Some(DetailLink {
         title,

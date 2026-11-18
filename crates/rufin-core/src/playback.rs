@@ -97,6 +97,8 @@ pub struct PlaybackOwner {
 enum PlaybackStoreWork {
     /// A listen and the track it was of; a song a radio station announced has none.
     Activity(Option<library::TrackKey>, Box<ListenWrite>),
+    /// Where a podcast episode stopped: its track, position, length, and whether it ended.
+    EpisodeProgress(library::TrackKey, u64, u64, bool),
     Flush(std::sync::mpsc::SyncSender<()>),
     Output {
         volume: f64,
@@ -550,6 +552,15 @@ impl PlaybackOwner {
                 let _ = reply.send(result);
             }
             PlaybackStoreWork::Activity(key, activity) => self.store_activity(key, *activity).await,
+            PlaybackStoreWork::EpisodeProgress(track, position, duration, completed) => {
+                if let Err(error) = self
+                    .catalog
+                    .save_episode_progress(track, position, duration, completed)
+                    .await
+                {
+                    warn!(%error, "could not save the episode position");
+                }
+            }
             PlaybackStoreWork::Flush(reply) => {
                 if let Err(error) =
                     save_pending_queue(&self.catalog, &self.pending_queue, failed_queue_save).await
@@ -617,6 +628,38 @@ impl PlaybackOwner {
         if !answered {
             self.runtime
                 .spawn(async move { client.select_address().await });
+        }
+    }
+
+    /// Saves where `track` stopped when it is a podcast episode; other tracks keep nothing.
+    fn save_episode_progress(
+        &self,
+        track: &library::TrackView,
+        position_millis: u64,
+        duration_millis: u64,
+        completed: bool,
+    ) {
+        let podcast = track.source_id.as_deref().is_some_and(|source_id| {
+            self.settings
+                .load()
+                .sources
+                .configured
+                .iter()
+                .any(|configured| {
+                    configured.configuration.source_id.as_str() == source_id
+                        && configured.configuration.source_kind()
+                            == Some(library::SourceKind::Podcasts)
+                })
+        });
+        if podcast {
+            let _ = self
+                .store_sender
+                .try_send(PlaybackStoreWork::EpisodeProgress(
+                    track.track_key,
+                    position_millis,
+                    duration_millis,
+                    completed,
+                ));
         }
     }
 
@@ -733,6 +776,21 @@ impl PlaybackOwner {
                     return;
                 }
             };
+            // A podcast episode resumes where it was left, unless the queue holds a place.
+            let resume_millis =
+                if playable.source_kind.as_deref() == Some(library::SourceKind::Podcasts.name()) {
+                    match catalog.episode_progress(&playable.media_uri).await {
+                        Ok(progress) => {
+                            progress.map_or(0, |progress| progress.position_millis.max(0) as u64)
+                        }
+                        Err(error) => {
+                            warn!(%error, "could not read the episode position");
+                            0
+                        }
+                    }
+                } else {
+                    0
+                };
             let downloads = source_owner.downloads().clone();
             let result = prepare_stream(
                 &playable,
@@ -769,7 +827,10 @@ impl PlaybackOwner {
                 stream
             });
             playback.post(move |player, sample| match result {
-                Ok(stream) => player.stream_resolved(run, stream),
+                Ok(stream) => {
+                    player.resume_episode(run, resume_millis);
+                    player.stream_resolved(run, stream)
+                }
                 Err(error) => player.stream_failed(run, error, sample),
             });
         })
