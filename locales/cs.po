@@ -2005,6 +2005,16 @@ msgstr "Ekvalizér"
 msgid "Ever played"
 msgstr "Nikdy nepřehráno"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Skladby z vašich pěti nejnovějších alb"
+
+#, fuzzy
+#| msgid "No favorites yet"
+msgid "Every track of your favorite artists"
+msgstr "Zatím žádné oblíbené položky"
+
 msgid "Everything, including new tracks"
 msgstr "Vše, včetně nových skladeb"
 
@@ -2086,15 +2096,27 @@ msgid "Fall speed (%)"
 msgstr ""
 
 #, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Oblíbené"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Oblíbené"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Oblíbené skladby"
+
+#, fuzzy
 #| msgid "Favorite tracks"
 msgid "Favorite current track"
 msgstr "Oblíbené skladby"
 
 msgid "Favorite tracks"
 msgstr "Oblíbené skladby"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "Oblíbené skladby, plus skladby z oblíbených alb a interpretů"
 
 msgid "Favorite"
 msgstr "Oblíbené"
@@ -5522,6 +5544,9 @@ msgstr "Skladby z vašich pěti nejnovějších alb"
 msgid "Tracks per refill"
 msgstr "Rádio skladeb"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Skladby"
 
@@ -6159,6 +6184,9 @@ msgstr ""
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr ""
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "Oblíbené skladby, plus skladby z oblíbených alb a interpretů"
 
 #~ msgid "Play genre"
 #~ msgstr "Přehrát žánr"

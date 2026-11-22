@@ -1899,6 +1899,16 @@ msgstr "Taajuuskorjain"
 msgid "Ever played"
 msgstr "Ei koskaan toistettu"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Kappaleet viideltä uusimmalta albumilta"
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Ei suosikkiesittäjiä vielä"
+
 msgid "Everything, including new tracks"
 msgstr "Kaikki, mukaan lukien uudet kappaleet"
 
@@ -1970,15 +1980,27 @@ msgid "Fall speed (%)"
 msgstr ""
 
 #, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Suosikit"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Suosikit"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Suosikkikappaleet"
+
+#, fuzzy
 #| msgid "Favorite tracks"
 msgid "Favorite current track"
 msgstr "Suosikkikappaleet"
 
 msgid "Favorite tracks"
 msgstr "Suosikkikappaleet"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr ""
 
 msgid "Favorite"
 msgstr "Suosikki"
@@ -5250,6 +5272,9 @@ msgstr "Kappaleet viideltä uusimmalta albumilta"
 #| msgid "Tracks"
 msgid "Tracks per refill"
 msgstr "Kappaleet"
+
+msgid "Tracks you marked as favorite"
+msgstr ""
 
 msgid "Tracks"
 msgstr "Kappaleet"

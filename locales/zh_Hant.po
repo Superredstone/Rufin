@@ -1962,6 +1962,16 @@ msgstr "等化器"
 msgid "Ever played"
 msgstr "從未播放"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "五個最新專輯的曲目"
+
+#, fuzzy
+#| msgid "No favorites yet"
+msgid "Every track of your favorite artists"
+msgstr "暫無最愛"
+
 msgid "Everything, including new tracks"
 msgstr "所有內容，包含新曲目"
 
@@ -2041,15 +2051,27 @@ msgid "Fall speed (%)"
 msgstr ""
 
 #, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "最愛"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "最愛"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "最愛的曲目"
+
+#, fuzzy
 #| msgid "Favorite tracks"
 msgid "Favorite current track"
 msgstr "最愛的曲目"
 
 msgid "Favorite tracks"
 msgstr "最愛的曲目"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "最愛的曲目，包含最愛專輯與藝人的曲目"
 
 msgid "Favorite"
 msgstr "最愛"
@@ -5400,6 +5422,9 @@ msgstr "五個最新專輯的曲目"
 msgid "Tracks per refill"
 msgstr "曲目電台"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "曲目"
 
@@ -5987,6 +6012,9 @@ msgstr ""
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr ""
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "最愛的曲目，包含最愛專輯與藝人的曲目"
 
 #~ msgid "Play genre"
 #~ msgstr "播放曲風"

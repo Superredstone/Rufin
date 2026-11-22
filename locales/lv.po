@@ -1958,6 +1958,16 @@ msgstr "Ekvalaizers"
 msgid "Ever played"
 msgstr "Nekad neatskaņotie"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Pēdējo piecu albumu dziesmas"
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Vēl nav iecienītāko izpildītāju"
+
 msgid "Everything, including new tracks"
 msgstr "Viss, ieskaitot jaunās dziesmas"
 
@@ -2032,16 +2042,26 @@ msgstr "Samazināt skaņas skaļumu, kad atskaņošana tiek pauzēta vai atsākt
 msgid "Fall speed (%)"
 msgstr "Krišanas ātrums (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Izlase"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Izlase"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Iecienītākie celiņi"
+
 msgid "Favorite current track"
 msgstr "Pievienot pašreizējo dziesmu izlasei"
 
 msgid "Favorite tracks"
 msgstr "Iecienītākie celiņi"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr ""
-"Iecienītākie celiņi, kā arī celiņi no iecienītajiem albumiem un izpildītāju "
-"repertuāra"
 
 msgid "Favorite"
 msgstr "Izlase"
@@ -5345,6 +5365,9 @@ msgstr "Pēdējo piecu albumu dziesmas"
 msgid "Tracks per refill"
 msgstr "Dziesmas radio"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Dziesmas"
 
@@ -5993,6 +6016,11 @@ msgstr "Lietotnes {app_name} automātiskās atjaunināšanas opcija ir nederīga
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr "Laipni lūdzam Rufin instalācijas programmā"
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr ""
+#~ "Iecienītākie celiņi, kā arī celiņi no iecienītajiem albumiem un "
+#~ "izpildītāju repertuāra"
 
 #, fuzzy
 #~| msgid "Export Backup"

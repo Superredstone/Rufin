@@ -1770,6 +1770,14 @@ msgstr "Equalizer"
 msgid "Ever played"
 msgstr "Pernah diputar"
 
+msgid "Every track of your favorite albums"
+msgstr ""
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Belum ada artis favorit"
+
 msgid "Everything, including new tracks"
 msgstr "Semuanya, termasuk lagu baru"
 
@@ -1838,14 +1846,26 @@ msgstr "Fade audio saat pemutaran dijeda atau dilanjutkan"
 msgid "Fall speed (%)"
 msgstr "Kecepatan jatuh (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Favorit"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Favorit"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Lagu favorit"
+
 msgid "Favorite current track"
 msgstr "Tambahkan lagu saat ini ke Favorit"
 
 msgid "Favorite tracks"
 msgstr "Lagu favorit"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "Lagu favorit, ditambah lagu dari album dan artis favorit"
 
 msgid "Favorite"
 msgstr "Favorit"
@@ -4797,6 +4817,9 @@ msgstr ""
 msgid "Tracks per refill"
 msgstr ""
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr ""
 
@@ -5360,6 +5383,9 @@ msgstr ""
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr ""
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "Lagu favorit, ditambah lagu dari album dan artis favorit"
 
 #, fuzzy
 #~| msgid "Export Backup"

@@ -1745,6 +1745,16 @@ msgstr "Эквалайзер"
 msgid "Ever played"
 msgstr "Когда-либо воспроизводили"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Треки из ваших пяти последних альбомов"
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Пока нет избранных артистов"
+
 msgid "Everything, including new tracks"
 msgstr "Всё, включая новые треки"
 
@@ -1812,15 +1822,26 @@ msgstr ""
 msgid "Fall speed (%)"
 msgstr "Скорость затухания (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Избранные"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Избранные"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Любимые треки"
+
 msgid "Favorite current track"
 msgstr "Добавить текущий трек в избранное"
 
 msgid "Favorite tracks"
 msgstr "Любимые треки"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr ""
-"Любимые треки, а также треки из любимых альбомов и от любимых исполнителей"
 
 msgid "Favorite"
 msgstr "Избранное"
@@ -4808,6 +4829,9 @@ msgstr "Треки из ваших пяти последних альбомов"
 msgid "Tracks per refill"
 msgstr "Подробности трека"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Треки"
 
@@ -5407,6 +5431,10 @@ msgstr "Параметр автоматического обновления {ap
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr "Добро пожаловать в программу установки Rufin"
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr ""
+#~ "Любимые треки, а также треки из любимых альбомов и от любимых исполнителей"
 
 #, fuzzy
 #~| msgid "Export Backup"

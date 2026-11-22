@@ -1703,6 +1703,16 @@ msgstr "Ecualizador"
 msgid "Ever played"
 msgstr "Reproducidos alguna vez"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Pistas de tus últimos cinco álbumes"
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Aún no hay artistas favoritos"
+
 msgid "Everything, including new tracks"
 msgstr "Todo, incluyendo nuevas pistas"
 
@@ -1769,14 +1779,26 @@ msgstr "Desvanecer el audio cuando la reproducción se pausa o se reanuda"
 msgid "Fall speed (%)"
 msgstr "Velocidad de caída (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Favoritos"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Favoritos"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Pistas favoritas"
+
 msgid "Favorite current track"
 msgstr "Marcar como Favorita la pista actual"
 
 msgid "Favorite tracks"
 msgstr "Pistas favoritas"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "Pistas favoritas, mas pistas de álbumes y artistas favoritos"
 
 msgid "Favorite"
 msgstr "Favorito"
@@ -4691,6 +4713,9 @@ msgstr "Pistas de tus últimos cinco álbumes"
 msgid "Tracks per refill"
 msgstr "Detalles de la pista"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Pistas"
 
@@ -5276,6 +5301,9 @@ msgstr "La opción de actualización automática de {app_name} no es válida."
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr "Bienvenido al instalador de Rufin"
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "Pistas favoritas, mas pistas de álbumes y artistas favoritos"
 
 #, fuzzy
 #~| msgid "Export Backup"

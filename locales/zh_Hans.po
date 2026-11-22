@@ -1625,6 +1625,14 @@ msgstr "均衡器"
 msgid "Ever played"
 msgstr ""
 
+msgid "Every track of your favorite albums"
+msgstr ""
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "暂无收藏艺人"
+
 msgid "Everything, including new tracks"
 msgstr ""
 
@@ -1691,14 +1699,26 @@ msgstr "暂停或恢复时淡入淡出"
 msgid "Fall speed (%)"
 msgstr ""
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "收藏"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "收藏"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "收藏曲目"
+
 msgid "Favorite current track"
 msgstr ""
 
 msgid "Favorite tracks"
 msgstr "收藏曲目"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr ""
 
 msgid "Favorite"
 msgstr "收藏"
@@ -4487,6 +4507,9 @@ msgstr ""
 
 msgid "Tracks per refill"
 msgstr "单次补充量"
+
+msgid "Tracks you marked as favorite"
+msgstr ""
 
 msgid "Tracks"
 msgstr "曲目"

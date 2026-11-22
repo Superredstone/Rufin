@@ -1685,6 +1685,16 @@ msgstr "Ekvalaiser"
 msgid "Ever played"
 msgstr "Esitatud"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Lood sinu viimaselt viielt albumilt"
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Lemmikesitajaid veel pole"
+
 msgid "Everything, including new tracks"
 msgstr "Kõik, sealhulgas uued lood"
 
@@ -1751,14 +1761,26 @@ msgstr "Sujuv helivaljuse muutmine taasesituse peatamisel või jätkamisel"
 msgid "Fall speed (%)"
 msgstr "Allalangemise kiirus (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Lemmikud"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Lemmikud"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Lemmiklood"
+
 msgid "Favorite current track"
 msgstr "Märgi praegune lugu lemmikuks"
 
 msgid "Favorite tracks"
 msgstr "Lemmiklood"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "Lemmiklood ning lisaks lood lemmikalbumitelt ja -esitajatelt"
 
 msgid "Favorite"
 msgstr "Lemmik"
@@ -4727,6 +4749,9 @@ msgstr "Lood sinu viimaselt viielt albumilt"
 msgid "Tracks per refill"
 msgstr "Raja üksikasjad"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Lugusid"
 
@@ -5314,6 +5339,9 @@ msgstr "Rakenduse automaatse uuenduse seadistus on vigane: {app_name}."
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr "Tere tulemast, see on Rufini paigaldusprogramm"
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "Lemmiklood ning lisaks lood lemmikalbumitelt ja -esitajatelt"
 
 #~ msgid "Export a Backup"
 #~ msgstr "Ekspordi varukoopia"

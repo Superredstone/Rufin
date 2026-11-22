@@ -1749,6 +1749,16 @@ msgstr "Equalizador"
 msgid "Ever played"
 msgstr "Já reproduzido"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Faixas dos seus cinco álbuns mais recentes"
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Nenhum artista favorito ainda"
+
 msgid "Everything, including new tracks"
 msgstr "Tudo, incluindo novas faixas"
 
@@ -1815,14 +1825,26 @@ msgstr "Atenuar o áudio quando a reprodução for pausada ou retomada"
 msgid "Fall speed (%)"
 msgstr "Velocidade de queda (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Favoritos"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Favoritos"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Faixas favoritas"
+
 msgid "Favorite current track"
 msgstr "Favoritar faixa atual"
 
 msgid "Favorite tracks"
 msgstr "Faixas favoritas"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "Faixas favoritas, mais faixas de álbuns e artistas favoritos"
 
 msgid "Favorite"
 msgstr "Favorito"
@@ -4852,6 +4874,9 @@ msgstr "Faixas dos seus cinco álbuns mais recentes"
 msgid "Tracks per refill"
 msgstr "Detalhes da faixa"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Faixas"
 
@@ -5444,6 +5469,9 @@ msgstr "A opção de atualização automática do {app_name} é inválida."
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr "Bem-vindo à configuração do Rufin"
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "Faixas favoritas, mais faixas de álbuns e artistas favoritos"
 
 #, fuzzy
 #~| msgid "Export Backup"

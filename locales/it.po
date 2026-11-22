@@ -1891,6 +1891,12 @@ msgstr ""
 msgid "Ever played"
 msgstr ""
 
+msgid "Every track of your favorite albums"
+msgstr ""
+
+msgid "Every track of your favorite artists"
+msgstr ""
+
 msgid "Everything, including new tracks"
 msgstr ""
 
@@ -1959,13 +1965,25 @@ msgstr ""
 msgid "Fall speed (%)"
 msgstr ""
 
+#, fuzzy
+#| msgid "Add to Favorites"
+msgid "Favorite Albums"
+msgstr "Aggiungi ai Preferiti"
+
+#, fuzzy
+#| msgid "Artists"
+msgid "Favorite Artists"
+msgstr "Artisti"
+
+#, fuzzy
+#| msgid "Artist tracks"
+msgid "Favorite Tracks"
+msgstr "Tracce dell'artista"
+
 msgid "Favorite current track"
 msgstr ""
 
 msgid "Favorite tracks"
-msgstr ""
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
 msgstr ""
 
 msgid "Favorite"
@@ -4958,6 +4976,9 @@ msgid "Tracks from your five latest albums"
 msgstr ""
 
 msgid "Tracks per refill"
+msgstr ""
+
+msgid "Tracks you marked as favorite"
 msgstr ""
 
 msgid "Tracks"

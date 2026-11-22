@@ -1697,6 +1697,16 @@ msgstr "Ekolayzer"
 msgid "Ever played"
 msgstr "Hiç çalındı"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "En son beş albümünüzden parçalar"
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Henüz favori sanatçı yok"
+
 msgid "Everything, including new tracks"
 msgstr "Yeni parçalar dahil her şey"
 
@@ -1763,14 +1773,26 @@ msgstr "Oynatma duraklatıldığında veya devam ettiğinde sesi geçişle"
 msgid "Fall speed (%)"
 msgstr "Düşme hızı (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Favoriler"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Favoriler"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Favori parçalar"
+
 msgid "Favorite current track"
 msgstr "Mevcut parçayı favorile"
 
 msgid "Favorite tracks"
 msgstr "Favori parçalar"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "Favori parçalar ile favori albüm ve sanatçılardan parçalar"
 
 msgid "Favorite"
 msgstr "Favori"
@@ -4619,6 +4641,9 @@ msgstr "En son beş albümünüzden parçalar"
 msgid "Tracks per refill"
 msgstr "Yenileme başına parça sayısı"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Parçalar"
 
@@ -5178,6 +5203,9 @@ msgstr "{app_name} otomatik güncelleme seçeneği geçersiz."
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr "Rufin Kurulumuna Hoş Geldiniz"
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "Favori parçalar ile favori albüm ve sanatçılardan parçalar"
 
 #, fuzzy
 #~| msgid "Export Backup"
