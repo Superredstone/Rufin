@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-22 06:37+0000\n"
+"PO-Revision-Date: 2026-11-22 18:44+0000\n"
 "Last-Translator: Jiahao Li <thejiahao@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/rufin/app/zh_Hans/>\n"
@@ -125,7 +125,7 @@ msgstr "在另一台设备上打开 Rufin Connect，点击「加入」按钮或�
 msgid ""
 "Relative paths start at the music folder or source URL. Local paths can also "
 "be absolute."
-msgstr "相对路径基于音乐文件夹或数据源 URL，本地也可用绝对路径。"
+msgstr "相对路径基于音乐文件夹或数据源 URL，本地支持绝对路径。"
 
 msgid ""
 "Remove all Rufin data and settings except saved connections and credentials? "
@@ -565,12 +565,11 @@ msgstr ""
 msgid "Artist unavailable"
 msgstr ""
 
-#, fuzzy
 msgid "Artist"
-msgstr "歌手"
+msgstr "艺人"
 
 msgid "Artists"
-msgstr "歌手"
+msgstr "艺人"
 
 msgid "Artwork editing is no longer available"
 msgstr ""
@@ -618,7 +617,7 @@ msgid "August {year}"
 msgstr "{year} 年 8 月"
 
 msgid "Authentication"
-msgstr ""
+msgstr "认证"
 
 msgid "Auto DJ refill threshold"
 msgstr "自动 DJ 补充阈值"
@@ -705,13 +704,13 @@ msgid "Bearer token (WebDAV)"
 msgstr "Bearer 令牌 (WebDAV)"
 
 msgid "Bearer token"
-msgstr ""
+msgstr "Bearer 令牌"
 
 msgid "Bit depth"
 msgstr ""
 
 msgid "Bitrate"
-msgstr ""
+msgstr "码率"
 
 msgid "Bitstream"
 msgstr ""
@@ -808,10 +807,10 @@ msgid "Changes apply to {count} tracks"
 msgstr "应用变更到 {count} 个曲目"
 
 msgid "Changes take effect after restarting Rufin"
-msgstr "更改在重启 Rufin 后生效"
+msgstr "重启 Rufin 后生效"
 
 msgid "Channels"
-msgstr ""
+msgstr "声道"
 
 msgid "Check for updates"
 msgstr ""
@@ -988,7 +987,7 @@ msgid "Compilation"
 msgstr ""
 
 msgid "Complete sign-in in your browser"
-msgstr ""
+msgstr "请用浏览器完成登录"
 
 msgid "Completed downloads will stay on this device."
 msgstr ""
@@ -1039,7 +1038,7 @@ msgid "Connecting devices"
 msgstr ""
 
 msgid "Connecting to music server..."
-msgstr ""
+msgstr "正在连接音乐服务器…"
 
 msgid "Connecting to {device}..."
 msgstr ""
@@ -1425,7 +1424,7 @@ msgid "Download Automatically"
 msgstr ""
 
 msgid "Download Folder"
-msgstr ""
+msgstr "下载文件夹"
 
 msgid "Download Lazily"
 msgstr ""
@@ -1637,7 +1636,7 @@ msgid "Everything, including new tracks"
 msgstr ""
 
 msgid "Excluded folders"
-msgstr "已排除文件夹"
+msgstr "排除的文件夹"
 
 msgid "Expand lyrics and visualizer"
 msgstr ""
@@ -2145,7 +2144,7 @@ msgid "Keep Rufin running after closing the window"
 msgstr "关闭窗口后使应用在后台运行"
 
 msgid "Keep music available offline. Folder changes only affect new downloads"
-msgstr ""
+msgstr "供离线收听。更改文件夹仅对后续下载生效"
 
 msgid "Keyboard Shortcuts"
 msgstr "键盘快捷键"
@@ -2208,7 +2207,7 @@ msgid "Left sidebar"
 msgstr "左侧栏"
 
 msgid "Legacy authorization"
-msgstr ""
+msgstr "旧版授权"
 
 msgid "Legacy password (Subsonic)"
 msgstr ""
@@ -2810,7 +2809,7 @@ msgid "Not connected"
 msgstr "未连接"
 
 msgid "Not needed for most servers"
-msgstr ""
+msgstr "通常不需要"
 
 msgid "Not played recently"
 msgstr "最近未播"
@@ -2882,10 +2881,10 @@ msgid "One Name: Value header per line"
 msgstr "每行一个 “名称: 值” 标头"
 
 msgid "One address per line, pointing to the same collection"
-msgstr "每行一个地址，指向同一集合"
+msgstr "每行一个地址，指向同一合集"
 
 msgid "One folder path per line; leave empty to include the whole collection"
-msgstr ""
+msgstr "每行一个文件夹路径，留空则包含整个合集"
 
 msgid "One path per line"
 msgstr "每行一个路径"
@@ -3221,7 +3220,7 @@ msgid "Presence and links"
 msgstr "状态与链接"
 
 msgid "Preserve channels"
-msgstr ""
+msgstr "保留原声道"
 
 msgid "Preserve pitch"
 msgstr "保持音高"
@@ -3356,7 +3355,7 @@ msgid "Recently released"
 msgstr "最近发行"
 
 msgid "Recommended when your server provides one"
-msgstr ""
+msgstr "服务器支持时推荐启用"
 
 msgid "Reconnect"
 msgstr "重新连接"
@@ -3891,7 +3890,7 @@ msgid "Select {title}"
 msgstr ""
 
 msgid "Selected folders"
-msgstr ""
+msgstr "包含的文件夹"
 
 msgid "Selected items: {count}"
 msgstr ""
@@ -4000,7 +3999,7 @@ msgid "Show current lyrics line"
 msgstr ""
 
 msgid "Show downloaded badge"
-msgstr ""
+msgstr "显示已下载角标"
 
 msgid "Show external site links"
 msgstr "显示外部链接"
@@ -4081,10 +4080,10 @@ msgid "Sidebar"
 msgstr ""
 
 msgid "Sign In in Browser"
-msgstr ""
+msgstr "用浏览器登录"
 
 msgid "Sign In with Password"
-msgstr ""
+msgstr "用密码登录"
 
 msgid "Sign in again"
 msgstr ""
@@ -4156,7 +4155,7 @@ msgid "Smart playlist tracks"
 msgstr ""
 
 msgid "Smart playlists"
-msgstr "最近播放"
+msgstr "智能播放列表"
 
 msgid "Soft spectrum"
 msgstr ""
@@ -4269,10 +4268,10 @@ msgid "Status"
 msgstr "状态"
 
 msgid "Stereo for lossy formats"
-msgstr ""
+msgstr "有损格式转为立体声"
 
 msgid "Stereo"
-msgstr ""
+msgstr "立体声"
 
 msgid "Stop"
 msgstr ""
@@ -4611,7 +4610,7 @@ msgid "Upload artwork"
 msgstr ""
 
 msgid "Use API key"
-msgstr ""
+msgstr "使用 API 密钥"
 
 msgid "Use Rufin data folder"
 msgstr ""
@@ -4686,7 +4685,7 @@ msgid "Uses available karaoke lyrics or fetches them from the internet"
 msgstr ""
 
 msgid "Verification Code"
-msgstr ""
+msgstr "验证码"
 
 msgid "Verify server certificate"
 msgstr "验证服务器证书"
