@@ -2420,9 +2420,6 @@ msgstr "Importations et accès locaux"
 msgid "Local library"
 msgstr "Bibliothèque locale"
 
-msgid "Local music folder is unavailable"
-msgstr "Le dossier musique local n'est pas disponible"
-
 msgid "Local music folder"
 msgstr "Dossier de musique local"
 
@@ -2664,6 +2661,11 @@ msgstr "Dossier de musique"
 
 msgid "Music access permission was denied"
 msgstr "L’autorisation d’accès à la musique a été refusée"
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Le dossier musique local n'est pas disponible"
 
 msgid "Music folder"
 msgstr "Dossier musique"

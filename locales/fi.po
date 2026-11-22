@@ -2698,9 +2698,6 @@ msgstr ""
 msgid "Local library"
 msgstr "Paikallinen kirjasto"
 
-msgid "Local music folder is unavailable"
-msgstr "Paikallinen musiikkikansio ei ole saatavilla"
-
 msgid "Local music folder"
 msgstr "Paikallinen musiikkikansio"
 
@@ -2964,6 +2961,11 @@ msgstr "Musiikkikansio"
 
 msgid "Music access permission was denied"
 msgstr ""
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Paikallinen musiikkikansio ei ole saatavilla"
 
 #, fuzzy
 #| msgid "Music Folder"

@@ -2844,9 +2844,6 @@ msgstr "Přístup k místním souborům"
 msgid "Local library"
 msgstr "Místní knihovna"
 
-msgid "Local music folder is unavailable"
-msgstr "Místní hudební složka je nedostupná"
-
 msgid "Local music folder"
 msgstr "Místní hudební složka"
 
@@ -3122,6 +3119,11 @@ msgstr "Hudební složka"
 
 msgid "Music access permission was denied"
 msgstr ""
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Místní hudební složka je nedostupná"
 
 #, fuzzy
 #| msgid "Music Folder"

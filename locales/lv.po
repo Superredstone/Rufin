@@ -2780,9 +2780,6 @@ msgstr "Lokālie importi un piekļuve"
 msgid "Local library"
 msgstr "Lokālā mūzikas bibliotēka"
 
-msgid "Local music folder is unavailable"
-msgstr "Lokālā mūzikas mape nav pieejama"
-
 msgid "Local music folder"
 msgstr "Lokālā mūzikas mape"
 
@@ -3050,6 +3047,11 @@ msgstr "Mūzikas mape"
 
 msgid "Music access permission was denied"
 msgstr ""
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Lokālā mūzikas mape nav pieejama"
 
 #, fuzzy
 #| msgid "Music Folder"

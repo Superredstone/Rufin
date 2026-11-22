@@ -2644,9 +2644,6 @@ msgstr ""
 msgid "Local library"
 msgstr ""
 
-msgid "Local music folder is unavailable"
-msgstr ""
-
 msgid "Local music folder"
 msgstr ""
 
@@ -2891,6 +2888,9 @@ msgid "Music Folder"
 msgstr ""
 
 msgid "Music access permission was denied"
+msgstr ""
+
+msgid "Music folder is unavailable: {folder}"
 msgstr ""
 
 #, fuzzy

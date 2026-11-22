@@ -2521,9 +2521,6 @@ msgstr "Impor dan akses lokal"
 msgid "Local library"
 msgstr "Pustaka lokal"
 
-msgid "Local music folder is unavailable"
-msgstr "Folder musik lokal tidak tersedia"
-
 msgid "Local music folder"
 msgstr "Folder musik lokal"
 
@@ -2772,6 +2769,11 @@ msgstr "Folder Musik"
 
 msgid "Music access permission was denied"
 msgstr "Izin akses musik ditolak"
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Folder musik lokal tidak tersedia"
 
 msgid "Music folder"
 msgstr "Folder music"

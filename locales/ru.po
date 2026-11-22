@@ -2493,9 +2493,6 @@ msgstr "Локальные источники и доступ к ним"
 msgid "Local library"
 msgstr "Локальная библиотека"
 
-msgid "Local music folder is unavailable"
-msgstr "Локальная папка с музыкой недоступна"
-
 msgid "Local music folder"
 msgstr "Локальная папка с музыкой"
 
@@ -2748,6 +2745,11 @@ msgstr "Папка с музыкой"
 
 msgid "Music access permission was denied"
 msgstr "Разрешение на доступ к музыке было отклонено"
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Локальная папка с музыкой недоступна"
 
 msgid "Music folder"
 msgstr "Папка с музыкой"

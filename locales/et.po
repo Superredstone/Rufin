@@ -2409,9 +2409,6 @@ msgstr "Kohalik importimine ja ligipääs"
 msgid "Local library"
 msgstr "Kohalik meediumikogu"
 
-msgid "Local music folder is unavailable"
-msgstr "Kohalik muusikakaust pole saadaval"
-
 msgid "Local music folder"
 msgstr "Kohalik muusikakaust"
 
@@ -2658,6 +2655,11 @@ msgstr "Muusikafailide kaust"
 
 msgid "Music access permission was denied"
 msgstr "Ligipääs muusikale on keelatud"
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Kohalik muusikakaust pole saadaval"
 
 #, fuzzy
 #| msgid "Music Folder"

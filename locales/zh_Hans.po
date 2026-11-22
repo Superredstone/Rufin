@@ -2316,9 +2316,6 @@ msgstr ""
 msgid "Local library"
 msgstr "本地媒体库"
 
-msgid "Local music folder is unavailable"
-msgstr ""
-
 msgid "Local music folder"
 msgstr ""
 
@@ -2551,6 +2548,9 @@ msgid "Music Folder"
 msgstr "音乐文件夹"
 
 msgid "Music access permission was denied"
+msgstr ""
+
+msgid "Music folder is unavailable: {folder}"
 msgstr ""
 
 msgid "Music folder"

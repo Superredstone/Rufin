@@ -2411,9 +2411,6 @@ msgstr "Yerel içe aktarmalar ve erişim"
 msgid "Local library"
 msgstr "Yerel kitaplık"
 
-msgid "Local music folder is unavailable"
-msgstr "Yerel müzik klasörü kullanılamıyor"
-
 msgid "Local music folder"
 msgstr "Yerel müzik klasörü"
 
@@ -2655,6 +2652,11 @@ msgstr "Müzik Klasörü"
 
 msgid "Music access permission was denied"
 msgstr "Müzik erişim izni reddedildi"
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Yerel müzik klasörü kullanılamıyor"
 
 msgid "Music folder"
 msgstr "Müzik klasörü"

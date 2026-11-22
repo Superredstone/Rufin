@@ -2499,9 +2499,6 @@ msgstr "Importações e acesso locais"
 msgid "Local library"
 msgstr "Biblioteca local"
 
-msgid "Local music folder is unavailable"
-msgstr "A pasta de música local está indisponível"
-
 msgid "Local music folder"
 msgstr "Pasta de música local"
 
@@ -2757,6 +2754,11 @@ msgstr "Pasta de música"
 
 msgid "Music access permission was denied"
 msgstr "A permissão de acesso à música foi negada"
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "A pasta de música local está indisponível"
 
 #, fuzzy
 #| msgid "Music Folder"
