@@ -60,6 +60,11 @@ msgid ""
 msgstr "從這個伺服器所下載的內容將被移除，且自動化規則會被關閉"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1437,6 +1442,10 @@ msgstr "智慧播放清單"
 msgid "Create"
 msgstr "建立"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 msgid "Crossfade duration"
 msgstr "交叉淡入淡出時間"
 
@@ -1953,6 +1962,16 @@ msgstr "等化器"
 msgid "Ever played"
 msgstr "從未播放"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "五個最新專輯的曲目"
+
+#, fuzzy
+#| msgid "No favorites yet"
+msgid "Every track of your favorite artists"
+msgstr "暫無最愛"
+
 msgid "Everything, including new tracks"
 msgstr "所有內容，包含新曲目"
 
@@ -2032,15 +2051,27 @@ msgid "Fall speed (%)"
 msgstr ""
 
 #, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "最愛"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "最愛"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "最愛的曲目"
+
+#, fuzzy
 #| msgid "Favorite tracks"
 msgid "Favorite current track"
 msgstr "最愛的曲目"
 
 msgid "Favorite tracks"
 msgstr "最愛的曲目"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "最愛的曲目，包含最愛專輯與藝人的曲目"
 
 msgid "Favorite"
 msgstr "最愛"
@@ -2341,6 +2372,11 @@ msgstr "網格"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "網格"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "本地音樂資料夾"
 
 msgid "Grouping"
 msgstr ""
@@ -2737,9 +2773,6 @@ msgstr ""
 msgid "Local library"
 msgstr "本地媒體庫"
 
-msgid "Local music folder is unavailable"
-msgstr ""
-
 msgid "Local music folder"
 msgstr "本地音樂資料夾"
 
@@ -3014,6 +3047,9 @@ msgid "Music Folder"
 msgstr "音樂資料夾"
 
 msgid "Music access permission was denied"
+msgstr ""
+
+msgid "Music folder is unavailable: {folder}"
 msgstr ""
 
 #, fuzzy
@@ -4069,6 +4105,11 @@ msgid "Release"
 msgstr ""
 
 #, fuzzy
+#| msgid "Release date"
+msgid "Released {year}"
+msgstr "發行日期"
+
+#, fuzzy
 #| msgid "Removed from favorites"
 msgid "Reload from file"
 msgstr "從最愛中移除"
@@ -4634,6 +4675,11 @@ msgid "Select {title}"
 msgstr "全選"
 
 #, fuzzy
+#| msgid "Artist name"
+msgid "Selected audio output is unavailable"
+msgstr "藝人名稱"
+
+#, fuzzy
 #| msgid "Select Music Folder"
 msgid "Selected folders"
 msgstr "選擇音樂資料夾"
@@ -5037,6 +5083,11 @@ msgid "Spectrum"
 msgstr ""
 
 #, fuzzy
+#| msgid "Play artist"
+msgid "Split featured artists"
+msgstr "播放藝人"
+
+#, fuzzy
 #| msgid "ListenBrainz"
 msgid "Start Listening"
 msgstr "ListenBrainz"
@@ -5376,6 +5427,9 @@ msgstr "五個最新專輯的曲目"
 msgid "Tracks per refill"
 msgstr "曲目電台"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "曲目"
 
@@ -5431,6 +5485,11 @@ msgstr ""
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Album title"
+msgid "Unavailable output"
+msgstr "專輯標題"
 
 #, fuzzy
 #| msgid "Album title"
@@ -5963,6 +6022,9 @@ msgstr ""
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr ""
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "最愛的曲目，包含最愛專輯與藝人的曲目"
 
 #~ msgid "Play genre"
 #~ msgstr "播放曲風"

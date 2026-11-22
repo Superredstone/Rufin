@@ -63,6 +63,11 @@ msgstr ""
 "disattivate"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1394,6 +1399,10 @@ msgstr "Cancella Playlist"
 msgid "Create"
 msgstr "Crea"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 msgid "Crossfade duration"
 msgstr "Durata dell'effetto di dissolvenza incrociata"
 
@@ -1882,6 +1891,12 @@ msgstr ""
 msgid "Ever played"
 msgstr ""
 
+msgid "Every track of your favorite albums"
+msgstr ""
+
+msgid "Every track of your favorite artists"
+msgstr ""
+
 msgid "Everything, including new tracks"
 msgstr ""
 
@@ -1950,13 +1965,25 @@ msgstr ""
 msgid "Fall speed (%)"
 msgstr ""
 
+#, fuzzy
+#| msgid "Add to Favorites"
+msgid "Favorite Albums"
+msgstr "Aggiungi ai Preferiti"
+
+#, fuzzy
+#| msgid "Artists"
+msgid "Favorite Artists"
+msgstr "Artisti"
+
+#, fuzzy
+#| msgid "Artist tracks"
+msgid "Favorite Tracks"
+msgstr "Tracce dell'artista"
+
 msgid "Favorite current track"
 msgstr ""
 
 msgid "Favorite tracks"
-msgstr ""
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
 msgstr ""
 
 msgid "Favorite"
@@ -2229,6 +2256,9 @@ msgid "Grid"
 msgstr ""
 
 msgid "Grids"
+msgstr ""
+
+msgid "Group albums by folder"
 msgstr ""
 
 msgid "Grouping"
@@ -2614,9 +2644,6 @@ msgstr ""
 msgid "Local library"
 msgstr ""
 
-msgid "Local music folder is unavailable"
-msgstr ""
-
 msgid "Local music folder"
 msgstr ""
 
@@ -2861,6 +2888,9 @@ msgid "Music Folder"
 msgstr ""
 
 msgid "Music access permission was denied"
+msgstr ""
+
+msgid "Music folder is unavailable: {folder}"
 msgstr ""
 
 #, fuzzy
@@ -3770,6 +3800,9 @@ msgstr ""
 msgid "Release"
 msgstr ""
 
+msgid "Released {year}"
+msgstr ""
+
 msgid "Reload from file"
 msgstr ""
 
@@ -4268,6 +4301,11 @@ msgstr ""
 msgid "Select {title}"
 msgstr ""
 
+#, fuzzy
+#| msgid "Artist unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Artista non disponibile"
+
 msgid "Selected folders"
 msgstr ""
 
@@ -4631,6 +4669,11 @@ msgid "Spectrum"
 msgstr ""
 
 #, fuzzy
+#| msgid "Clear artist"
+msgid "Split featured artists"
+msgstr "Rimuovi artista"
+
+#, fuzzy
 #| msgid "Connecting to {device}..."
 msgid "Start Listening"
 msgstr "Connettendo a {device}..."
@@ -4940,6 +4983,9 @@ msgstr ""
 msgid "Tracks per refill"
 msgstr ""
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr ""
 
@@ -4993,6 +5039,11 @@ msgstr ""
 
 msgid "UPnP"
 msgstr ""
+
+#, fuzzy
+#| msgid "Album unavailable"
+msgid "Unavailable output"
+msgstr "Album non disponibile"
 
 #, fuzzy
 #| msgid "Album unavailable"

@@ -71,6 +71,11 @@ msgstr ""
 "lülitatakse välja"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1244,6 +1249,10 @@ msgstr "Koosta esitusloend"
 msgid "Create"
 msgstr "Loo"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 msgid "Crossfade duration"
 msgstr "Risthajumise kestus"
 
@@ -1676,6 +1685,16 @@ msgstr "Ekvalaiser"
 msgid "Ever played"
 msgstr "Esitatud"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Lood sinu viimaselt viielt albumilt"
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Lemmikesitajaid veel pole"
+
 msgid "Everything, including new tracks"
 msgstr "Kõik, sealhulgas uued lood"
 
@@ -1742,14 +1761,26 @@ msgstr "Sujuv helivaljuse muutmine taasesituse peatamisel või jätkamisel"
 msgid "Fall speed (%)"
 msgstr "Allalangemise kiirus (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Lemmikud"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Lemmikud"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Lemmiklood"
+
 msgid "Favorite current track"
 msgstr "Märgi praegune lugu lemmikuks"
 
 msgid "Favorite tracks"
 msgstr "Lemmiklood"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "Lemmiklood ning lisaks lood lemmikalbumitelt ja -esitajatelt"
 
 msgid "Favorite"
 msgstr "Lemmik"
@@ -2006,6 +2037,11 @@ msgstr "Ruudustik"
 
 msgid "Grids"
 msgstr "Ruudustik"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Kohalik muusikakaust"
 
 msgid "Grouping"
 msgstr "Rühmitamine"
@@ -2373,9 +2409,6 @@ msgstr "Kohalik importimine ja ligipääs"
 msgid "Local library"
 msgstr "Kohalik meediumikogu"
 
-msgid "Local music folder is unavailable"
-msgstr "Kohalik muusikakaust pole saadaval"
-
 msgid "Local music folder"
 msgstr "Kohalik muusikakaust"
 
@@ -2622,6 +2655,11 @@ msgstr "Muusikafailide kaust"
 
 msgid "Music access permission was denied"
 msgstr "Ligipääs muusikale on keelatud"
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Kohalik muusikakaust pole saadaval"
 
 #, fuzzy
 #| msgid "Music Folder"
@@ -3540,6 +3578,11 @@ msgstr "Versiooni tüüp"
 msgid "Release"
 msgstr "Väljalase"
 
+#, fuzzy
+#| msgid "Release type"
+msgid "Released {year}"
+msgstr "Versiooni tüüp"
+
 msgid "Reload from file"
 msgstr "Laadi failist uuesti"
 
@@ -4030,6 +4073,11 @@ msgstr ""
 msgid "Select {title}"
 msgstr "Vali {title}"
 
+#, fuzzy
+#| msgid "Source setup is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Allika seadistus pole saadaval"
+
 msgid "Selected folders"
 msgstr "Valitud muusikakaustad"
 
@@ -4400,6 +4448,11 @@ msgid "Spectrum"
 msgstr "Spekter"
 
 #, fuzzy
+#| msgid "Similar artists"
+msgid "Split featured artists"
+msgstr "Sarnased esitajad"
+
+#, fuzzy
 #| msgid "Listening"
 msgid "Start Listening"
 msgstr "Kuulan"
@@ -4703,6 +4756,9 @@ msgstr "Lood sinu viimaselt viielt albumilt"
 msgid "Tracks per refill"
 msgstr "Raja üksikasjad"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Lugusid"
 
@@ -4758,6 +4814,11 @@ msgstr "Trükikunst"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Unavailable"
+msgid "Unavailable output"
+msgstr "Pole saadaval"
 
 msgid "Unavailable"
 msgstr "Pole saadaval"
@@ -5290,6 +5351,9 @@ msgstr "Rakenduse automaatse uuenduse seadistus on vigane: {app_name}."
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr "Tere tulemast, see on Rufini paigaldusprogramm"
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "Lemmiklood ning lisaks lood lemmikalbumitelt ja -esitajatelt"
 
 #~ msgid "Export a Backup"
 #~ msgstr "Ekspordi varukoopia"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-21 09:54+0000\n"
+"PO-Revision-Date: 2026-11-22 20:22+0000\n"
 "Last-Translator: Arnaud Constantin <ahc@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/rufin/app/fr/>\n"
 "Language: fr\n"
@@ -69,6 +69,13 @@ msgid ""
 msgstr ""
 "Les téléchargements de cette source seront supprimés, et les règles "
 "automatiques seront désactivées"
+
+msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+"Les fichiers sans balise d’artiste d’album forment un album par dossier "
+"plutôt qu’un par artiste"
 
 msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
@@ -1259,6 +1266,12 @@ msgstr "Créer une playlist"
 msgid "Create"
 msgstr "Créer"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+"Créditer comme artistes distincts les artistes cités après « feat. » ou "
+"« ft. »"
+
 msgid "Crossfade duration"
 msgstr "Durée du fondu enchaîné"
 
@@ -1693,6 +1706,12 @@ msgstr "Égaliseur"
 msgid "Ever played"
 msgstr "Déjà écouté"
 
+msgid "Every track of your favorite albums"
+msgstr "Tous les titres de vos albums préférés"
+
+msgid "Every track of your favorite artists"
+msgstr "Tous les morceaux de vos artistes préférés"
+
 msgid "Everything, including new tracks"
 msgstr "Tout, y compris les nouveaux morceaux"
 
@@ -1759,14 +1778,20 @@ msgstr "Fondu audio lorsque la lecture est interrompue ou reprise"
 msgid "Fall speed (%)"
 msgstr "Vitesse de chute (%)"
 
+msgid "Favorite Albums"
+msgstr "Albums favoris"
+
+msgid "Favorite Artists"
+msgstr "Artistes favoris"
+
+msgid "Favorite Tracks"
+msgstr "Morceaux favoris"
+
 msgid "Favorite current track"
 msgstr "Ajouter le morceau en cours aux favoris"
 
 msgid "Favorite tracks"
 msgstr "Morceaux favoris"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "Morceaux favoris, plus les morceaux des albums et artistes favoris"
 
 msgid "Favorite"
 msgstr "Favori"
@@ -2025,6 +2050,9 @@ msgstr "Grille"
 
 msgid "Grids"
 msgstr "Grilles"
+
+msgid "Group albums by folder"
+msgstr "Grouper les albums par dossier"
 
 msgid "Grouping"
 msgstr "Regroupement"
@@ -2380,9 +2408,6 @@ msgstr "Importations et accès locaux"
 msgid "Local library"
 msgstr "Bibliothèque locale"
 
-msgid "Local music folder is unavailable"
-msgstr "Le dossier musique local n'est pas disponible"
-
 msgid "Local music folder"
 msgstr "Dossier de musique local"
 
@@ -2624,6 +2649,9 @@ msgstr "Dossier de musique"
 
 msgid "Music access permission was denied"
 msgstr "L’autorisation d’accès à la musique a été refusée"
+
+msgid "Music folder is unavailable: {folder}"
+msgstr "Le dossier Musique n'est pas disponible : {folder}"
 
 msgid "Music folder"
 msgstr "Dossier musique"
@@ -3502,6 +3530,9 @@ msgstr "Type de sortie"
 msgid "Release"
 msgstr "Parution"
 
+msgid "Released {year}"
+msgstr "Sortie en {year}"
+
 msgid "Reload from file"
 msgstr "Recharger depuis le fichier"
 
@@ -3970,6 +4001,11 @@ msgstr "Sélectionnez une entrée pour l’afficher ou la masquer."
 msgid "Select {title}"
 msgstr "Sélectionnez {title}"
 
+#, fuzzy
+#| msgid "Source setup is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "La configuration de source n'est pas disponible"
+
 msgid "Selected folders"
 msgstr "Dossiers sélectionnés"
 
@@ -4310,6 +4346,9 @@ msgstr "Ligne du spectre"
 msgid "Spectrum"
 msgstr "Spectre"
 
+msgid "Split featured artists"
+msgstr "Séparer les artistes invités"
+
 msgid "Start Listening"
 msgstr "Commencez l'écoute"
 
@@ -4594,6 +4633,9 @@ msgstr "Morceaux de vos cinq derniers albums"
 msgid "Tracks per refill"
 msgstr "Morceaux par recharge"
 
+msgid "Tracks you marked as favorite"
+msgstr "Morceaux que vous avez ajoutés à vos favoris"
+
 msgid "Tracks"
 msgstr "Morceaux"
 
@@ -4649,6 +4691,11 @@ msgstr "Typographie"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Unavailable"
+msgid "Unavailable output"
+msgstr "Indisponible"
 
 msgid "Unavailable"
 msgstr "Indisponible"
@@ -5159,6 +5206,9 @@ msgstr "L'option de mise à jour automatique de {app_name} est invalide."
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr "Bienvenue dans l’installation de Rufin"
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "Morceaux favoris, plus les morceaux des albums et artistes favoris"
 
 #~ msgid "Export a Backup"
 #~ msgstr "Exporter une sauvegarde"

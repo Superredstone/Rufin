@@ -73,6 +73,11 @@ msgstr ""
 "отключены"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1288,6 +1293,12 @@ msgstr "Создать плейлист"
 msgid "Create"
 msgstr "Создать"
 
+#, fuzzy
+#| msgid "Sort artists and albums by their sort tags instead of their names"
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr "Сортировать исполнителей и альбомы по тегам сортировки, а не по именам"
+
 msgid "Crossfade duration"
 msgstr "Длительность кроссфейда"
 
@@ -1734,6 +1745,16 @@ msgstr "Эквалайзер"
 msgid "Ever played"
 msgstr "Когда-либо воспроизводили"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Треки из ваших пяти последних альбомов"
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Пока нет избранных артистов"
+
 msgid "Everything, including new tracks"
 msgstr "Всё, включая новые треки"
 
@@ -1801,15 +1822,26 @@ msgstr ""
 msgid "Fall speed (%)"
 msgstr "Скорость затухания (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Избранные"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Избранные"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Любимые треки"
+
 msgid "Favorite current track"
 msgstr "Добавить текущий трек в избранное"
 
 msgid "Favorite tracks"
 msgstr "Любимые треки"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr ""
-"Любимые треки, а также треки из любимых альбомов и от любимых исполнителей"
 
 msgid "Favorite"
 msgstr "Избранное"
@@ -2074,6 +2106,11 @@ msgstr "Сетка"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "Сетка"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Локальная папка с музыкой"
 
 msgid "Grouping"
 msgstr "Группировка"
@@ -2456,9 +2493,6 @@ msgstr "Локальные источники и доступ к ним"
 msgid "Local library"
 msgstr "Локальная библиотека"
 
-msgid "Local music folder is unavailable"
-msgstr "Локальная папка с музыкой недоступна"
-
 msgid "Local music folder"
 msgstr "Локальная папка с музыкой"
 
@@ -2711,6 +2745,11 @@ msgstr "Папка с музыкой"
 
 msgid "Music access permission was denied"
 msgstr "Разрешение на доступ к музыке было отклонено"
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Локальная папка с музыкой недоступна"
 
 msgid "Music folder"
 msgstr "Папка с музыкой"
@@ -3625,6 +3664,11 @@ msgstr "Тип выпуска"
 msgid "Release"
 msgstr "Выпуск"
 
+#, fuzzy
+#| msgid "Release type"
+msgid "Released {year}"
+msgstr "Тип выпуска"
+
 msgid "Reload from file"
 msgstr "Перезагрузить из файла"
 
@@ -4114,6 +4158,11 @@ msgstr ""
 msgid "Select {title}"
 msgstr "Выбрать {title}"
 
+#, fuzzy
+#| msgid "Source setup is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Настройка источника недоступна"
+
 msgid "Selected folders"
 msgstr "Выбранные папки"
 
@@ -4486,6 +4535,11 @@ msgstr "Линия спектра"
 msgid "Spectrum"
 msgstr "Спектр"
 
+#, fuzzy
+#| msgid "Similar artists"
+msgid "Split featured artists"
+msgstr "Похожие исполнители"
+
 msgid "Start Listening"
 msgstr "Начать воспроизведение"
 
@@ -4782,6 +4836,9 @@ msgstr "Треки из ваших пяти последних альбомов"
 msgid "Tracks per refill"
 msgstr "Подробности трека"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Треки"
 
@@ -4837,6 +4894,11 @@ msgstr "Оформление"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Unavailable"
+msgid "Unavailable output"
+msgstr "Недоступно"
 
 msgid "Unavailable"
 msgstr "Недоступно"
@@ -5381,6 +5443,10 @@ msgstr "Параметр автоматического обновления {ap
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr "Добро пожаловать в программу установки Rufin"
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr ""
+#~ "Любимые треки, а также треки из любимых альбомов и от любимых исполнителей"
 
 #, fuzzy
 #~| msgid "Export Backup"

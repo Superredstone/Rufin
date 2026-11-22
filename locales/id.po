@@ -72,6 +72,11 @@ msgstr ""
 "Unduhan dari sumber ini akan dihapus, dan aturan otomatis akan dimatikan"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1300,6 +1305,10 @@ msgstr "Buat playlist"
 msgid "Create"
 msgstr "Buat"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 #, fuzzy
 msgid "Crossfade duration"
 msgstr "Durasi Crossfade"
@@ -1761,6 +1770,14 @@ msgstr "Equalizer"
 msgid "Ever played"
 msgstr "Pernah diputar"
 
+msgid "Every track of your favorite albums"
+msgstr ""
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Belum ada artis favorit"
+
 msgid "Everything, including new tracks"
 msgstr "Semuanya, termasuk lagu baru"
 
@@ -1829,14 +1846,26 @@ msgstr "Fade audio saat pemutaran dijeda atau dilanjutkan"
 msgid "Fall speed (%)"
 msgstr "Kecepatan jatuh (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Favorit"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Favorit"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Lagu favorit"
+
 msgid "Favorite current track"
 msgstr "Tambahkan lagu saat ini ke Favorit"
 
 msgid "Favorite tracks"
 msgstr "Lagu favorit"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "Lagu favorit, ditambah lagu dari album dan artis favorit"
 
 msgid "Favorite"
 msgstr "Favorit"
@@ -2110,6 +2139,11 @@ msgstr "Kisi"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "Kisi"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Folder musik lokal"
 
 msgid "Grouping"
 msgstr "Pengelompokan"
@@ -2487,9 +2521,6 @@ msgstr "Impor dan akses lokal"
 msgid "Local library"
 msgstr "Pustaka lokal"
 
-msgid "Local music folder is unavailable"
-msgstr "Folder musik lokal tidak tersedia"
-
 msgid "Local music folder"
 msgstr "Folder musik lokal"
 
@@ -2738,6 +2769,11 @@ msgstr "Folder Musik"
 
 msgid "Music access permission was denied"
 msgstr "Izin akses musik ditolak"
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Folder musik lokal tidak tersedia"
 
 msgid "Music folder"
 msgstr "Folder music"
@@ -3644,6 +3680,11 @@ msgstr "Jenis rilis"
 msgid "Release"
 msgstr "Rilis"
 
+#, fuzzy
+#| msgid "Release type"
+msgid "Released {year}"
+msgstr "Jenis rilis"
+
 msgid "Reload from file"
 msgstr "Muat ulang dari file"
 
@@ -4130,6 +4171,11 @@ msgstr "Pilih entri untuk ditampilkan atau sembunyikan."
 msgid "Select {title}"
 msgstr "Pilih {title}"
 
+#, fuzzy
+#| msgid "Search is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Pencarian tidak tersedia"
+
 msgid "Selected folders"
 msgstr "Folder terpilih"
 
@@ -4489,6 +4535,11 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+#, fuzzy
+#| msgid "Clear artist"
+msgid "Split featured artists"
+msgstr "Hapus artis"
+
 msgid "Start Listening"
 msgstr ""
 
@@ -4773,6 +4824,9 @@ msgstr ""
 msgid "Tracks per refill"
 msgstr ""
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr ""
 
@@ -4825,6 +4879,9 @@ msgid "Typography"
 msgstr ""
 
 msgid "UPnP"
+msgstr ""
+
+msgid "Unavailable output"
 msgstr ""
 
 msgid "Unavailable"
@@ -5336,6 +5393,9 @@ msgstr ""
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr ""
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "Lagu favorit, ditambah lagu dari album dan artis favorit"
 
 #, fuzzy
 #~| msgid "Export Backup"

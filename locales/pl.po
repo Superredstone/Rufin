@@ -72,6 +72,11 @@ msgstr ""
 "wyłączone."
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1177,6 +1182,10 @@ msgstr ""
 msgid "Create"
 msgstr ""
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 msgid "Crossfade duration"
 msgstr ""
 
@@ -1605,6 +1614,12 @@ msgstr ""
 msgid "Ever played"
 msgstr ""
 
+msgid "Every track of your favorite albums"
+msgstr ""
+
+msgid "Every track of your favorite artists"
+msgstr ""
+
 msgid "Everything, including new tracks"
 msgstr ""
 
@@ -1671,13 +1686,19 @@ msgstr ""
 msgid "Fall speed (%)"
 msgstr ""
 
+msgid "Favorite Albums"
+msgstr ""
+
+msgid "Favorite Artists"
+msgstr ""
+
+msgid "Favorite Tracks"
+msgstr ""
+
 msgid "Favorite current track"
 msgstr ""
 
 msgid "Favorite tracks"
-msgstr ""
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
 msgstr ""
 
 msgid "Favorite"
@@ -1930,6 +1951,9 @@ msgid "Grid"
 msgstr ""
 
 msgid "Grids"
+msgstr ""
+
+msgid "Group albums by folder"
 msgstr ""
 
 msgid "Grouping"
@@ -2276,9 +2300,6 @@ msgstr ""
 msgid "Local library"
 msgstr ""
 
-msgid "Local music folder is unavailable"
-msgstr ""
-
 msgid "Local music folder"
 msgstr ""
 
@@ -2511,6 +2532,9 @@ msgid "Music Folder"
 msgstr ""
 
 msgid "Music access permission was denied"
+msgstr ""
+
+msgid "Music folder is unavailable: {folder}"
 msgstr ""
 
 msgid "Music folder"
@@ -3380,6 +3404,9 @@ msgstr ""
 msgid "Release"
 msgstr ""
 
+msgid "Released {year}"
+msgstr ""
+
 msgid "Reload from file"
 msgstr ""
 
@@ -3844,6 +3871,9 @@ msgstr ""
 msgid "Select {title}"
 msgstr ""
 
+msgid "Selected audio output is unavailable"
+msgstr ""
+
 msgid "Selected folders"
 msgstr ""
 
@@ -4183,6 +4213,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+msgid "Split featured artists"
+msgstr ""
+
 msgid "Start Listening"
 msgstr ""
 
@@ -4459,6 +4492,9 @@ msgstr ""
 msgid "Tracks per refill"
 msgstr ""
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr ""
 
@@ -4511,6 +4547,9 @@ msgid "Typography"
 msgstr ""
 
 msgid "UPnP"
+msgstr ""
+
+msgid "Unavailable output"
 msgstr ""
 
 msgid "Unavailable"

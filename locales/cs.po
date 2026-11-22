@@ -62,6 +62,11 @@ msgstr ""
 "budou vypnuta"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1468,6 +1473,10 @@ msgstr "Chytré playlisty"
 msgid "Create"
 msgstr "Vytvořit"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 msgid "Crossfade duration"
 msgstr "Doba trvání přechodu"
 
@@ -1996,6 +2005,16 @@ msgstr "Ekvalizér"
 msgid "Ever played"
 msgstr "Nikdy nepřehráno"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Skladby z vašich pěti nejnovějších alb"
+
+#, fuzzy
+#| msgid "No favorites yet"
+msgid "Every track of your favorite artists"
+msgstr "Zatím žádné oblíbené položky"
+
 msgid "Everything, including new tracks"
 msgstr "Vše, včetně nových skladeb"
 
@@ -2077,15 +2096,27 @@ msgid "Fall speed (%)"
 msgstr ""
 
 #, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Oblíbené"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Oblíbené"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Oblíbené skladby"
+
+#, fuzzy
 #| msgid "Favorite tracks"
 msgid "Favorite current track"
 msgstr "Oblíbené skladby"
 
 msgid "Favorite tracks"
 msgstr "Oblíbené skladby"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "Oblíbené skladby, plus skladby z oblíbených alb a interpretů"
 
 msgid "Favorite"
 msgstr "Oblíbené"
@@ -2390,6 +2421,11 @@ msgstr "Mřížka"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "Mřížka"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Místní hudební složka"
 
 msgid "Grouping"
 msgstr ""
@@ -2808,9 +2844,6 @@ msgstr "Přístup k místním souborům"
 msgid "Local library"
 msgstr "Místní knihovna"
 
-msgid "Local music folder is unavailable"
-msgstr "Místní hudební složka je nedostupná"
-
 msgid "Local music folder"
 msgstr "Místní hudební složka"
 
@@ -3086,6 +3119,11 @@ msgstr "Hudební složka"
 
 msgid "Music access permission was denied"
 msgstr ""
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Místní hudební složka je nedostupná"
 
 #, fuzzy
 #| msgid "Music Folder"
@@ -4165,6 +4203,11 @@ msgid "Release"
 msgstr "Vydání"
 
 #, fuzzy
+#| msgid "Release date"
+msgid "Released {year}"
+msgstr "Datum vydání"
+
+#, fuzzy
 #| msgid "Removed from favorites"
 msgid "Reload from file"
 msgstr "Odebrat z oblíbených"
@@ -4744,6 +4787,11 @@ msgid "Select {title}"
 msgstr "Vybrat vše"
 
 #, fuzzy
+#| msgid "This isn't available"
+msgid "Selected audio output is unavailable"
+msgstr "Toto není dostupné"
+
+#, fuzzy
 #| msgid "Select Music Folder"
 msgid "Selected folders"
 msgstr "Vybrat složku s hudbou"
@@ -5157,6 +5205,11 @@ msgid "Spectrum"
 msgstr ""
 
 #, fuzzy
+#| msgid "Play artist"
+msgid "Split featured artists"
+msgstr "Přehrát interpreta"
+
+#, fuzzy
 #| msgid "ListenBrainz"
 msgid "Start Listening"
 msgstr "ListenBrainz"
@@ -5498,6 +5551,9 @@ msgstr "Skladby z vašich pěti nejnovějších alb"
 msgid "Tracks per refill"
 msgstr "Rádio skladeb"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Skladby"
 
@@ -5561,6 +5617,11 @@ msgstr "Diskografie"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Album title"
+msgid "Unavailable output"
+msgstr "Název alba"
 
 #, fuzzy
 #| msgid "Album title"
@@ -6135,6 +6196,9 @@ msgstr ""
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr ""
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "Oblíbené skladby, plus skladby z oblíbených alb a interpretů"
 
 #~ msgid "Play genre"
 #~ msgstr "Přehrát žánr"

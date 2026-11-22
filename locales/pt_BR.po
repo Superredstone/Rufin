@@ -72,6 +72,11 @@ msgstr ""
 "desativadas"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1290,6 +1295,12 @@ msgstr "Criar playlist"
 msgid "Create"
 msgstr "Criar"
 
+#, fuzzy
+#| msgid "Sort artists and albums by their sort tags instead of their names"
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr "Ordenar artistas e álbuns por suas tags de ordenação em vez dos nomes"
+
 msgid "Crossfade duration"
 msgstr "Duração do crossfade"
 
@@ -1738,6 +1749,16 @@ msgstr "Equalizador"
 msgid "Ever played"
 msgstr "Já reproduzido"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Faixas dos seus cinco álbuns mais recentes"
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Nenhum artista favorito ainda"
+
 msgid "Everything, including new tracks"
 msgstr "Tudo, incluindo novas faixas"
 
@@ -1804,14 +1825,26 @@ msgstr "Atenuar o áudio quando a reprodução for pausada ou retomada"
 msgid "Fall speed (%)"
 msgstr "Velocidade de queda (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Favoritos"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Favoritos"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Faixas favoritas"
+
 msgid "Favorite current track"
 msgstr "Favoritar faixa atual"
 
 msgid "Favorite tracks"
 msgstr "Faixas favoritas"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr "Faixas favoritas, mais faixas de álbuns e artistas favoritos"
 
 msgid "Favorite"
 msgstr "Favorito"
@@ -2076,6 +2109,11 @@ msgstr "Grade"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "Grade"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Pasta de música local"
 
 msgid "Grouping"
 msgstr "Agrupamento"
@@ -2461,9 +2499,6 @@ msgstr "Importações e acesso locais"
 msgid "Local library"
 msgstr "Biblioteca local"
 
-msgid "Local music folder is unavailable"
-msgstr "A pasta de música local está indisponível"
-
 msgid "Local music folder"
 msgstr "Pasta de música local"
 
@@ -2719,6 +2754,11 @@ msgstr "Pasta de música"
 
 msgid "Music access permission was denied"
 msgstr "A permissão de acesso à música foi negada"
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "A pasta de música local está indisponível"
 
 #, fuzzy
 #| msgid "Music Folder"
@@ -3647,6 +3687,11 @@ msgstr "Tipo de lançamento"
 msgid "Release"
 msgstr "Lançamento"
 
+#, fuzzy
+#| msgid "Release type"
+msgid "Released {year}"
+msgstr "Tipo de lançamento"
+
 msgid "Reload from file"
 msgstr "Recarregar do arquivo"
 
@@ -4144,6 +4189,11 @@ msgstr ""
 msgid "Select {title}"
 msgstr "Selecionar {title}"
 
+#, fuzzy
+#| msgid "Source setup is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "A configuração da fonte está indisponível"
+
 msgid "Selected folders"
 msgstr "Pastas selecionadas"
 
@@ -4523,6 +4573,11 @@ msgid "Spectrum"
 msgstr "Espectro"
 
 #, fuzzy
+#| msgid "Similar artists"
+msgid "Split featured artists"
+msgstr "Artistas similares"
+
+#, fuzzy
 #| msgid "Listening"
 msgid "Start Listening"
 msgstr "Ouvindo"
@@ -4826,6 +4881,9 @@ msgstr "Faixas dos seus cinco álbuns mais recentes"
 msgid "Tracks per refill"
 msgstr "Detalhes da faixa"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Faixas"
 
@@ -4883,6 +4941,11 @@ msgstr "Tipografia"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Unavailable"
+msgid "Unavailable output"
+msgstr "Indisponível"
 
 msgid "Unavailable"
 msgstr "Indisponível"
@@ -5418,6 +5481,9 @@ msgstr "A opção de atualização automática do {app_name} é inválida."
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr "Bem-vindo à configuração do Rufin"
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr "Faixas favoritas, mais faixas de álbuns e artistas favoritos"
 
 #, fuzzy
 #~| msgid "Export Backup"

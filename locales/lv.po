@@ -66,6 +66,11 @@ msgstr ""
 "atslēgtas"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1435,6 +1440,10 @@ msgstr "Eksportēt atskaņošanas sarakstu"
 msgid "Create"
 msgstr "Izveidot"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 msgid "Crossfade duration"
 msgstr "Sajaukšanas ilgums"
 
@@ -1949,6 +1958,16 @@ msgstr "Ekvalaizers"
 msgid "Ever played"
 msgstr "Nekad neatskaņotie"
 
+#, fuzzy
+#| msgid "Tracks from your five latest albums"
+msgid "Every track of your favorite albums"
+msgstr "Pēdējo piecu albumu dziesmas"
+
+#, fuzzy
+#| msgid "No favorite artists yet"
+msgid "Every track of your favorite artists"
+msgstr "Vēl nav iecienītāko izpildītāju"
+
 msgid "Everything, including new tracks"
 msgstr "Viss, ieskaitot jaunās dziesmas"
 
@@ -2023,16 +2042,26 @@ msgstr "Samazināt skaņas skaļumu, kad atskaņošana tiek pauzēta vai atsākt
 msgid "Fall speed (%)"
 msgstr "Krišanas ātrums (%)"
 
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Albums"
+msgstr "Izlase"
+
+#, fuzzy
+#| msgid "Favorites"
+msgid "Favorite Artists"
+msgstr "Izlase"
+
+#, fuzzy
+#| msgid "Favorite tracks"
+msgid "Favorite Tracks"
+msgstr "Iecienītākie celiņi"
+
 msgid "Favorite current track"
 msgstr "Pievienot pašreizējo dziesmu izlasei"
 
 msgid "Favorite tracks"
 msgstr "Iecienītākie celiņi"
-
-msgid "Favorite tracks, plus tracks from favorite albums and artists"
-msgstr ""
-"Iecienītākie celiņi, kā arī celiņi no iecienītajiem albumiem un izpildītāju "
-"repertuāra"
 
 msgid "Favorite"
 msgstr "Izlase"
@@ -2332,6 +2361,11 @@ msgstr "Režģis"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "Režģis"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Lokālā mūzikas mape"
 
 msgid "Grouping"
 msgstr ""
@@ -2746,9 +2780,6 @@ msgstr "Lokālie importi un piekļuve"
 msgid "Local library"
 msgstr "Lokālā mūzikas bibliotēka"
 
-msgid "Local music folder is unavailable"
-msgstr "Lokālā mūzikas mape nav pieejama"
-
 msgid "Local music folder"
 msgstr "Lokālā mūzikas mape"
 
@@ -3016,6 +3047,11 @@ msgstr "Mūzikas mape"
 
 msgid "Music access permission was denied"
 msgstr ""
+
+#, fuzzy
+#| msgid "Local music folder is unavailable"
+msgid "Music folder is unavailable: {folder}"
+msgstr "Lokālā mūzikas mape nav pieejama"
 
 #, fuzzy
 #| msgid "Music Folder"
@@ -4024,6 +4060,11 @@ msgstr "Izdošanas datums"
 msgid "Release"
 msgstr "Izdevums"
 
+#, fuzzy
+#| msgid "Release date"
+msgid "Released {year}"
+msgstr "Izdošanas datums"
+
 msgid "Reload from file"
 msgstr "Ielādēt no faila vēlreiz"
 
@@ -4567,6 +4608,11 @@ msgstr ""
 msgid "Select {title}"
 msgstr "Atlasiet {title}"
 
+#, fuzzy
+#| msgid "Search is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Meklēšana nav pieejama"
+
 msgid "Selected folders"
 msgstr "Atlasītās mapes"
 
@@ -4975,6 +5021,11 @@ msgid "Spectrum"
 msgstr "Spektra līnija"
 
 #, fuzzy
+#| msgid "Clear artist"
+msgid "Split featured artists"
+msgstr "Dzēst izpildītāju"
+
+#, fuzzy
 #| msgid "ListenBrainz"
 msgid "Start Listening"
 msgstr "ListenBrainz"
@@ -5321,6 +5372,9 @@ msgstr "Pēdējo piecu albumu dziesmas"
 msgid "Tracks per refill"
 msgstr "Dziesmas radio"
 
+msgid "Tracks you marked as favorite"
+msgstr ""
+
 msgid "Tracks"
 msgstr "Dziesmas"
 
@@ -5380,6 +5434,11 @@ msgstr "Tipogrāfija"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Album unavailable"
+msgid "Unavailable output"
+msgstr "Albums nav pieejams"
 
 #, fuzzy
 #| msgid "Album unavailable"
@@ -5969,6 +6028,11 @@ msgstr "Lietotnes {app_name} automātiskās atjaunināšanas opcija ir nederīga
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
 msgstr "Laipni lūdzam Rufin instalācijas programmā"
+
+#~ msgid "Favorite tracks, plus tracks from favorite albums and artists"
+#~ msgstr ""
+#~ "Iecienītākie celiņi, kā arī celiņi no iecienītajiem albumiem un "
+#~ "izpildītāju repertuāra"
 
 #, fuzzy
 #~| msgid "Export Backup"
