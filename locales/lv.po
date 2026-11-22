@@ -265,6 +265,11 @@ msgstr ""
 "lejupielādei."
 
 msgid ""
+"This will write the stored ratings to your files, and also modify them every "
+"time you change a rating."
+msgstr ""
+
+msgid ""
 "Track evens out every song, while Album preserves the intended differences "
 "within each album"
 msgstr ""
@@ -1820,6 +1825,9 @@ msgid "ERB"
 msgstr ""
 
 msgid "Each plays whole"
+msgstr ""
+
+msgid "Each rating you change is also written to its file's tags"
 msgstr ""
 
 msgid "Edit Lyrics"
@@ -5686,6 +5694,21 @@ msgstr "Logs"
 msgid "Write EBU R128 tags to files"
 msgstr "Ierakstīt EBU R128 tagus failos"
 
+#, fuzzy
+#| msgid "Write EBU R128 tags to files"
+msgid "Write Ratings to Files?"
+msgstr "Ierakstīt EBU R128 tagus failos"
+
+#, fuzzy
+#| msgid "Write EBU R128 tags to files"
+msgid "Write ratings to files"
+msgstr "Ierakstīt EBU R128 tagus failos"
+
+#, fuzzy
+#| msgid "Write EBU R128 tags to files"
+msgid "Write to Files"
+msgstr "Ierakstīt EBU R128 tagus failos"
+
 msgid "Year"
 msgstr "Gads"
 
@@ -5886,6 +5909,12 @@ msgid_plural "{count} plays"
 msgstr[0] "pirms {count} dienām"
 msgstr[1] "{count} albums"
 msgstr[2] "pirms {count} dienām"
+
+msgid "{count} rating is waiting to be written"
+msgid_plural "{count} ratings are waiting to be written"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 msgid "{count} result"
 msgid_plural "{count} results"

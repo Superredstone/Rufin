@@ -289,6 +289,11 @@ msgstr ""
 "daha iyi bir deneyim olabilir."
 
 msgid ""
+"This will write the stored ratings to your files, and also modify them every "
+"time you change a rating."
+msgstr ""
+
+msgid ""
 "Track evens out every song, while Album preserves the intended differences "
 "within each album"
 msgstr ""
@@ -1581,6 +1586,9 @@ msgstr "ERB"
 
 msgid "Each plays whole"
 msgstr "Her biri tamamını oynatır"
+
+msgid "Each rating you change is also written to its file's tags"
+msgstr ""
 
 msgid "Edit Lyrics"
 msgstr "Şarkı Sözlerini Düzenle"
@@ -4927,6 +4935,21 @@ msgstr "Pencere"
 msgid "Write EBU R128 tags to files"
 msgstr "EBU R128 etiketlerini dosyalara yaz"
 
+#, fuzzy
+#| msgid "Write EBU R128 tags to files"
+msgid "Write Ratings to Files?"
+msgstr "EBU R128 etiketlerini dosyalara yaz"
+
+#, fuzzy
+#| msgid "Write EBU R128 tags to files"
+msgid "Write ratings to files"
+msgstr "EBU R128 etiketlerini dosyalara yaz"
+
+#, fuzzy
+#| msgid "Write EBU R128 tags to files"
+msgid "Write to Files"
+msgstr "EBU R128 etiketlerini dosyalara yaz"
+
 msgid "Year"
 msgstr "Yıl"
 
@@ -5090,6 +5113,11 @@ msgid "{count} play"
 msgid_plural "{count} plays"
 msgstr[0] "{count} çalma"
 msgstr[1] "{count} çalmalar"
+
+msgid "{count} rating is waiting to be written"
+msgid_plural "{count} ratings are waiting to be written"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "{count} result"
 msgid_plural "{count} results"
