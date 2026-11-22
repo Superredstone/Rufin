@@ -61,6 +61,11 @@ msgstr ""
 "käytöstä"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1384,6 +1389,10 @@ msgstr "Luo soittolista"
 msgid "Create"
 msgstr "Luo"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 msgid "Crossfade duration"
 msgstr "Ristihäivytyksen kesto"
 
@@ -2262,6 +2271,11 @@ msgstr "Ruudukko"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "Ruudukko"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Paikallinen musiikkikansio"
 
 msgid "Grouping"
 msgstr ""
@@ -3954,6 +3968,11 @@ msgid "Release"
 msgstr "Julkaisu"
 
 #, fuzzy
+#| msgid "Release date"
+msgid "Released {year}"
+msgstr "Julkaisupäivä"
+
+#, fuzzy
 #| msgid "Removed from favorites"
 msgid "Reload from file"
 msgstr "Poistettu suosikeista"
@@ -4898,6 +4917,11 @@ msgstr ""
 
 msgid "Spectrum"
 msgstr ""
+
+#, fuzzy
+#| msgid "Play artist"
+msgid "Split featured artists"
+msgstr "Toista esittäjä"
 
 #, fuzzy
 #| msgid "ListenBrainz"

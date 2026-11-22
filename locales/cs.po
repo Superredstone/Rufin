@@ -62,6 +62,11 @@ msgstr ""
 "budou vypnuta"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1468,6 +1473,10 @@ msgstr "Chytré playlisty"
 msgid "Create"
 msgstr "Vytvořit"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 msgid "Crossfade duration"
 msgstr "Doba trvání přechodu"
 
@@ -2390,6 +2399,11 @@ msgstr "Mřížka"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "Mřížka"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Místní hudební složka"
 
 msgid "Grouping"
 msgstr ""
@@ -4165,6 +4179,11 @@ msgid "Release"
 msgstr "Vydání"
 
 #, fuzzy
+#| msgid "Release date"
+msgid "Released {year}"
+msgstr "Datum vydání"
+
+#, fuzzy
 #| msgid "Removed from favorites"
 msgid "Reload from file"
 msgstr "Odebrat z oblíbených"
@@ -5155,6 +5174,11 @@ msgstr ""
 
 msgid "Spectrum"
 msgstr ""
+
+#, fuzzy
+#| msgid "Play artist"
+msgid "Split featured artists"
+msgstr "Přehrát interpreta"
 
 #, fuzzy
 #| msgid "ListenBrainz"

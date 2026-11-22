@@ -71,6 +71,11 @@ msgstr ""
 "automatiques seront désactivées"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1259,6 +1264,14 @@ msgstr "Créer une playlist"
 msgid "Create"
 msgstr "Créer"
 
+#, fuzzy
+#| msgid "Sort artists and albums by their sort tags instead of their names"
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+"Trier les artistes et les albums selon leurs balises de tri plutôt que leurs "
+"noms"
+
 msgid "Crossfade duration"
 msgstr "Durée du fondu enchaîné"
 
@@ -2025,6 +2038,11 @@ msgstr "Grille"
 
 msgid "Grids"
 msgstr "Grilles"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Dossier de musique local"
 
 msgid "Grouping"
 msgstr "Regroupement"
@@ -3502,6 +3520,11 @@ msgstr "Type de sortie"
 msgid "Release"
 msgstr "Parution"
 
+#, fuzzy
+#| msgid "Release type"
+msgid "Released {year}"
+msgstr "Type de sortie"
+
 msgid "Reload from file"
 msgstr "Recharger depuis le fichier"
 
@@ -4309,6 +4332,11 @@ msgstr "Ligne du spectre"
 
 msgid "Spectrum"
 msgstr "Spectre"
+
+#, fuzzy
+#| msgid "Similar artists"
+msgid "Split featured artists"
+msgstr "Artistes similaires"
 
 msgid "Start Listening"
 msgstr "Commencez l'écoute"

@@ -66,6 +66,11 @@ msgstr ""
 "atslēgtas"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1435,6 +1440,10 @@ msgstr "Eksportēt atskaņošanas sarakstu"
 msgid "Create"
 msgstr "Izveidot"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 msgid "Crossfade duration"
 msgstr "Sajaukšanas ilgums"
 
@@ -2332,6 +2341,11 @@ msgstr "Režģis"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "Režģis"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Lokālā mūzikas mape"
 
 msgid "Grouping"
 msgstr ""
@@ -4024,6 +4038,11 @@ msgstr "Izdošanas datums"
 msgid "Release"
 msgstr "Izdevums"
 
+#, fuzzy
+#| msgid "Release date"
+msgid "Released {year}"
+msgstr "Izdošanas datums"
+
 msgid "Reload from file"
 msgstr "Ielādēt no faila vēlreiz"
 
@@ -4973,6 +4992,11 @@ msgstr "Spektra līnija"
 #| msgid "Spectrum line"
 msgid "Spectrum"
 msgstr "Spektra līnija"
+
+#, fuzzy
+#| msgid "Clear artist"
+msgid "Split featured artists"
+msgstr "Dzēst izpildītāju"
 
 #, fuzzy
 #| msgid "ListenBrainz"

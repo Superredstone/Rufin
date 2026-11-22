@@ -34,7 +34,8 @@ msgstr "备份文件可能包含敏感信息。你想设置密码吗？"
 msgid ""
 "Backup restored with {entries} skipped playlist entries and {listens} "
 "skipped listens."
-msgstr "备份已恢复，其中跳过了 {entries} 个播放列表条目和 {listens} 条收听记录。"
+msgstr ""
+"备份已恢复，其中跳过了 {entries} 个播放列表条目和 {listens} 条收听记录。"
 
 msgid ""
 "Connecting an existing profile will remove all data in this device, do you "
@@ -54,6 +55,11 @@ msgid ""
 "Downloads from this source will be removed, and automatic rules will be "
 "turned off"
 msgstr "从该来源下载的内容将被移除，自动规则将被关闭"
+
+msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
 
 msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
@@ -88,7 +94,8 @@ msgstr "没有结果 ¯\\_(°╭╮°)_/¯"
 msgid ""
 "No secret service found. Rufin will use a file to store its credentials. "
 "Cancelling will not save credentials at all."
-msgstr "没有可用的密钥服务，Rufin 将把凭据保存在文件中，取消则不会保存任何凭据。"
+msgstr ""
+"没有可用的密钥服务，Rufin 将把凭据保存在文件中，取消则不会保存任何凭据。"
 
 #, python-brace-format
 msgid ""
@@ -216,7 +223,8 @@ msgstr "此项目由 Rufin 创建，可包含所有已配置来源的条目，�
 msgid ""
 "This will log you out and clear your secrets including API ones. Your app "
 "cache is not touched."
-msgstr "此操作会使你退出登录并清除包括 API 凭据在内的敏感信息，但不会清除应用缓存。"
+msgstr ""
+"此操作会使你退出登录并清除包括 API 凭据在内的敏感信息，但不会清除应用缓存。"
 
 msgid ""
 "This will overwrite your lyrics file with what Rufin fetched, it may be a "
@@ -1183,6 +1191,12 @@ msgstr "创建播放列表"
 msgid "Create"
 msgstr ""
 
+#, fuzzy
+#| msgid "Sort artists and albums by their sort tags instead of their names"
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr "按排序标签而非名称排序艺人和专辑"
+
 msgid "Crossfade duration"
 msgstr "淡入淡出时长"
 
@@ -1936,6 +1950,9 @@ msgid "Grid"
 msgstr "网格"
 
 msgid "Grids"
+msgstr ""
+
+msgid "Group albums by folder"
 msgstr ""
 
 msgid "Grouping"
@@ -3384,6 +3401,11 @@ msgstr ""
 msgid "Release"
 msgstr ""
 
+#, fuzzy
+#| msgid "December {year}"
+msgid "Released {year}"
+msgstr "{year} 年 12 月"
+
 msgid "Reload from file"
 msgstr ""
 
@@ -4184,6 +4206,11 @@ msgstr ""
 
 msgid "Spectrum"
 msgstr "频谱"
+
+#, fuzzy
+#| msgid "Similar artists"
+msgid "Split featured artists"
+msgstr "相似艺人"
 
 msgid "Start Listening"
 msgstr ""

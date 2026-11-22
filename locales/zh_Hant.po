@@ -60,6 +60,11 @@ msgid ""
 msgstr "從這個伺服器所下載的內容將被移除，且自動化規則會被關閉"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1437,6 +1442,10 @@ msgstr "智慧播放清單"
 msgid "Create"
 msgstr "建立"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 msgid "Crossfade duration"
 msgstr "交叉淡入淡出時間"
 
@@ -2341,6 +2350,11 @@ msgstr "網格"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "網格"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "本地音樂資料夾"
 
 msgid "Grouping"
 msgstr ""
@@ -4069,6 +4083,11 @@ msgid "Release"
 msgstr ""
 
 #, fuzzy
+#| msgid "Release date"
+msgid "Released {year}"
+msgstr "發行日期"
+
+#, fuzzy
 #| msgid "Removed from favorites"
 msgid "Reload from file"
 msgstr "從最愛中移除"
@@ -5035,6 +5054,11 @@ msgstr ""
 
 msgid "Spectrum"
 msgstr ""
+
+#, fuzzy
+#| msgid "Play artist"
+msgid "Split featured artists"
+msgstr "播放藝人"
 
 #, fuzzy
 #| msgid "ListenBrainz"

@@ -72,6 +72,11 @@ msgstr ""
 "Unduhan dari sumber ini akan dihapus, dan aturan otomatis akan dimatikan"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1300,6 +1305,10 @@ msgstr "Buat playlist"
 msgid "Create"
 msgstr "Buat"
 
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+
 #, fuzzy
 msgid "Crossfade duration"
 msgstr "Durasi Crossfade"
@@ -2110,6 +2119,11 @@ msgstr "Kisi"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "Kisi"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Folder musik lokal"
 
 msgid "Grouping"
 msgstr "Pengelompokan"
@@ -3644,6 +3658,11 @@ msgstr "Jenis rilis"
 msgid "Release"
 msgstr "Rilis"
 
+#, fuzzy
+#| msgid "Release type"
+msgid "Released {year}"
+msgstr "Jenis rilis"
+
 msgid "Reload from file"
 msgstr "Muat ulang dari file"
 
@@ -4488,6 +4507,11 @@ msgstr ""
 
 msgid "Spectrum"
 msgstr ""
+
+#, fuzzy
+#| msgid "Clear artist"
+msgid "Split featured artists"
+msgstr "Hapus artis"
 
 msgid "Start Listening"
 msgstr ""

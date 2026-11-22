@@ -69,6 +69,11 @@ msgstr ""
 "Bu kaynaktan yapılan indirmeler kaldırılacak ve otomatik kurallar kapatılacak"
 
 msgid ""
+"Files without an album artist tag form one album per folder instead of one "
+"per artist"
+msgstr ""
+
+msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
@@ -1255,6 +1260,13 @@ msgstr "Çalma listesi oluştur"
 msgid "Create"
 msgstr "Oluştur"
 
+#, fuzzy
+#| msgid "Sort artists and albums by their sort tags instead of their names"
+msgid ""
+"Credit the artists a tag names after feat. or ft. as artists of their own"
+msgstr ""
+"Sanatçıları ve albümleri adları yerine sıralama etiketlerine göre sırala"
+
 msgid "Crossfade duration"
 msgstr "Çapraz geçiş süresi"
 
@@ -2020,6 +2032,11 @@ msgstr "Izgara"
 #| msgid "Grid"
 msgid "Grids"
 msgstr "Izgara"
+
+#, fuzzy
+#| msgid "Local music folder"
+msgid "Group albums by folder"
+msgstr "Yerel müzik klasörü"
 
 msgid "Grouping"
 msgstr "Gruplama"
@@ -3500,6 +3517,11 @@ msgstr "Sürüm türü"
 msgid "Release"
 msgstr "Sürüm"
 
+#, fuzzy
+#| msgid "Release type"
+msgid "Released {year}"
+msgstr "Sürüm türü"
+
 msgid "Reload from file"
 msgstr "Dosyadan yeniden yükle"
 
@@ -4308,6 +4330,11 @@ msgstr "Spektrum çizgisi"
 
 msgid "Spectrum"
 msgstr "Spektrum"
+
+#, fuzzy
+#| msgid "Similar artists"
+msgid "Split featured artists"
+msgstr "Benzer sanatçılar"
 
 msgid "Start Listening"
 msgstr "Dinlemeye Başla"
