@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-22 18:44+0000\n"
+"PO-Revision-Date: 2026-11-22 20:22+0000\n"
 "Last-Translator: Jiahao Li <thejiahao@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/rufin/app/zh_Hans/>\n"
@@ -54,7 +54,7 @@ msgstr "你想自动缓存所有歌词吗？你也可以从偏好设置 -> 存�
 msgid ""
 "Downloads from this source will be removed, and automatic rules will be "
 "turned off"
-msgstr "从该来源下载的内容将被移除，自动规则将被关闭"
+msgstr "移除该数据源的下载内容，并禁用自动规则"
 
 msgid ""
 "Files without an album artist tag form one album per folder instead of one "
@@ -242,11 +242,11 @@ msgstr "曲目均衡单曲，专辑保留原有差异"
 msgid ""
 "You have set Rufin to automatically download your entire library. This can "
 "use a lot of data. Do you confirm?"
-msgstr "你已设置 Rufin 自动下载整个媒体库，这可能消耗大量流量，确定要继续吗？"
+msgstr "Rufin 已设为自动下载整个媒体库，这会消耗大量流量。是否确认？"
 
 msgid ""
 "You will need to reconnect through the clients you use with the new API key."
-msgstr "你需要使用新 API key 重新连接客户端。"
+msgstr "需要使用新 API 密钥在各客户端重新连接。"
 
 msgid "(hold to shuffle)"
 msgstr "（长按随机播放）"
@@ -288,7 +288,7 @@ msgid "31 bands"
 msgstr "31 段"
 
 msgid "5 Latest Albums"
-msgstr "最新的 5 张专辑"
+msgstr "最新 5 张专辑"
 
 msgid "6 hours"
 msgstr "6 小时"
@@ -303,7 +303,7 @@ msgid "API key (Subsonic)"
 msgstr "API 密钥 (Subsonic)"
 
 msgid "API key"
-msgstr "API key"
+msgstr "API 密钥"
 
 msgid "About Rufin"
 msgstr "关于 Rufin"
@@ -471,7 +471,7 @@ msgid "All Music"
 msgstr ""
 
 msgid "All Playlists"
-msgstr ""
+msgstr "全部播放列表"
 
 msgid "All time"
 msgstr ""
@@ -486,7 +486,7 @@ msgid "Allow permanently deleting tracks"
 msgstr "允许永久删除曲目"
 
 msgid "Allow remote connections"
-msgstr ""
+msgstr "允许远程连接"
 
 msgid "Also album types and tag suggestions"
 msgstr "同时获取专辑类型和标签建议"
@@ -758,7 +758,7 @@ msgid "Calculating fingerprint..."
 msgstr ""
 
 msgid "Cancel download and clear downloaded items"
-msgstr ""
+msgstr "取消下载并清除已下载内容"
 
 msgid "Cancel download"
 msgstr "取消下载"
@@ -1008,7 +1008,7 @@ msgid "Configured items: {count}"
 msgstr "已配置条目: {count}"
 
 msgid "Confirm"
-msgstr ""
+msgstr "确认"
 
 msgid "Connect a device"
 msgstr ""
@@ -1080,19 +1080,19 @@ msgid "Control notifications"
 msgstr "操作反馈"
 
 msgid "Controller status"
-msgstr ""
+msgstr "控制台地址"
 
 msgid "Controller"
-msgstr ""
+msgstr "控制台"
 
 msgid "Copy access token"
-msgstr ""
+msgstr "复制访问令牌"
 
 msgid "Copy invitation"
 msgstr ""
 
 msgid "Copy link"
-msgstr ""
+msgstr "复制链接"
 
 msgid "Copy of {name}"
 msgstr ""
@@ -1430,7 +1430,7 @@ msgid "Download Lazily"
 msgstr ""
 
 msgid "Download Queue"
-msgstr ""
+msgstr "下载队列"
 
 msgid "Download on Mobile Data"
 msgstr ""
@@ -1466,13 +1466,13 @@ msgid "Downloading"
 msgstr "正在下载"
 
 msgid "Downloads"
-msgstr "下载"
+msgstr "下载内容"
 
 msgid "Drag to a folder"
 msgstr ""
 
 msgid "Drag to reorder"
-msgstr ""
+msgstr "拖动排序"
 
 msgid "Duplicate preset"
 msgstr "复制预设"
@@ -1613,7 +1613,7 @@ msgid "Enter your username and password."
 msgstr "输入你的用户名和密码。"
 
 msgid "Entire Library"
-msgstr ""
+msgstr "整个媒体库"
 
 msgid "Equalizer is controlled by the receiver"
 msgstr ""
@@ -1633,7 +1633,7 @@ msgid "Every track of your favorite artists"
 msgstr "暂无收藏艺人"
 
 msgid "Everything, including new tracks"
-msgstr ""
+msgstr "所有内容，包括新增曲目"
 
 msgid "Excluded folders"
 msgstr "排除的文件夹"
@@ -1708,8 +1708,6 @@ msgstr "收藏"
 msgid "Favorite Artists"
 msgstr "收藏"
 
-#, fuzzy
-#| msgid "Favorite tracks"
 msgid "Favorite Tracks"
 msgstr "收藏曲目"
 
@@ -2536,10 +2534,10 @@ msgid "Motion"
 msgstr ""
 
 msgid "Move down"
-msgstr ""
+msgstr "下移"
 
 msgid "Move up"
-msgstr ""
+msgstr "上移"
 
 msgid "Multi-selection"
 msgstr "多选"
@@ -2632,7 +2630,7 @@ msgid "Nearby discovery"
 msgstr ""
 
 msgid "Needs attention"
-msgstr ""
+msgstr "需要处理"
 
 msgid "Needs review"
 msgstr ""
@@ -2659,7 +2657,7 @@ msgid "New and unplayed"
 msgstr "待听新曲"
 
 msgid "New download rule"
-msgstr ""
+msgstr "新建下载规则"
 
 msgid "New file"
 msgstr ""
@@ -2710,7 +2708,7 @@ msgid "No cached server path yet"
 msgstr ""
 
 msgid "No downloads queued"
-msgstr ""
+msgstr "下载队列为空"
 
 msgid "No favorite albums yet"
 msgstr "暂无收藏专辑"
@@ -2833,7 +2831,7 @@ msgid "Nothing playing"
 msgstr ""
 
 msgid "Nothing queued"
-msgstr ""
+msgstr "队列为空"
 
 msgid "Nothing to play here"
 msgstr ""
@@ -2902,7 +2900,7 @@ msgid "Opacity (%)"
 msgstr ""
 
 msgid "Open Controller"
-msgstr ""
+msgstr "打开控制台"
 
 msgid "Open Folder"
 msgstr "打开文件夹"
@@ -3196,7 +3194,7 @@ msgid "Pop"
 msgstr "流行"
 
 msgid "Port"
-msgstr ""
+msgstr "端口"
 
 msgid "Preamp"
 msgstr "前级"
@@ -3307,7 +3305,7 @@ msgid "Queue"
 msgstr "队列"
 
 msgid "Queued"
-msgstr ""
+msgstr "已排队"
 
 msgid "Quick Connect"
 msgstr "快速连接"
@@ -3385,10 +3383,10 @@ msgid "Refresh"
 msgstr ""
 
 msgid "Regenerate access token"
-msgstr ""
+msgstr "重新生成访问令牌"
 
 msgid "Regenerate access token?"
-msgstr ""
+msgstr "重新生成访问令牌？"
 
 msgid "Regenerate"
 msgstr ""
@@ -3459,7 +3457,7 @@ msgid "Remote lyrics"
 msgstr "远程歌词"
 
 msgid "Remove All Downloads"
-msgstr "移除所有下载内容"
+msgstr "删除全部已下载内容"
 
 msgid "Remove Download"
 msgstr "移除下载内容"
@@ -3477,7 +3475,7 @@ msgid "Remove Rule, Keep Downloads"
 msgstr "移除规则，保留下载内容"
 
 msgid "Remove all downloads"
-msgstr "移除所有下载内容"
+msgstr "删除全部已下载内容"
 
 msgid "Remove and Delete"
 msgstr "移除并删除"
@@ -3663,7 +3661,7 @@ msgid "Rufin needs local access to {path}"
 msgstr ""
 
 msgid "Rule actions"
-msgstr ""
+msgstr "规则操作"
 
 msgid "SMB / Samba"
 msgstr "SMB / Samba"
@@ -4499,10 +4497,10 @@ msgid "Track"
 msgstr "曲目"
 
 msgid "Tracks from every playlist"
-msgstr ""
+msgstr "所有播放列表中的曲目"
 
 msgid "Tracks from your five latest albums"
-msgstr ""
+msgstr "最新 5 张专辑中的曲目"
 
 msgid "Tracks per refill"
 msgstr "单次补充量"
