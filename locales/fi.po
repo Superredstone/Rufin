@@ -4540,6 +4540,11 @@ msgstr ""
 msgid "Select {title}"
 msgstr "Valitse {title}"
 
+#, fuzzy
+#| msgid "Search is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Haku ei ole saatavilla"
+
 msgid "Selected folders"
 msgstr "Valitut kansiot"
 
@@ -5337,6 +5342,11 @@ msgstr ""
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Search is unavailable"
+msgid "Unavailable output"
+msgstr "Haku ei ole saatavilla"
 
 #, fuzzy
 #| msgid "Search is unavailable"

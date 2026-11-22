@@ -4675,6 +4675,11 @@ msgid "Select {title}"
 msgstr "全選"
 
 #, fuzzy
+#| msgid "Artist name"
+msgid "Selected audio output is unavailable"
+msgstr "藝人名稱"
+
+#, fuzzy
 #| msgid "Select Music Folder"
 msgid "Selected folders"
 msgstr "選擇音樂資料夾"
@@ -5480,6 +5485,11 @@ msgstr ""
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Album title"
+msgid "Unavailable output"
+msgstr "專輯標題"
 
 #, fuzzy
 #| msgid "Album title"

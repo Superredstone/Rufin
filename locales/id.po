@@ -4171,6 +4171,11 @@ msgstr "Pilih entri untuk ditampilkan atau sembunyikan."
 msgid "Select {title}"
 msgstr "Pilih {title}"
 
+#, fuzzy
+#| msgid "Search is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Pencarian tidak tersedia"
+
 msgid "Selected folders"
 msgstr "Folder terpilih"
 
@@ -4874,6 +4879,9 @@ msgid "Typography"
 msgstr ""
 
 msgid "UPnP"
+msgstr ""
+
+msgid "Unavailable output"
 msgstr ""
 
 msgid "Unavailable"

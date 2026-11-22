@@ -4012,6 +4012,11 @@ msgstr "Göstermek veya gizlemek için bir giriş seçin."
 msgid "Select {title}"
 msgstr "{title} seç"
 
+#, fuzzy
+#| msgid "Source setup is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Kaynak kurulumu kullanılamıyor"
+
 msgid "Selected folders"
 msgstr "Seçili klasörler"
 
@@ -4701,6 +4706,11 @@ msgstr "Tipografi"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Unavailable"
+msgid "Unavailable output"
+msgstr "Kullanılamıyor"
 
 msgid "Unavailable"
 msgstr "Kullanılamıyor"

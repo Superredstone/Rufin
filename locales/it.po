@@ -4301,6 +4301,11 @@ msgstr ""
 msgid "Select {title}"
 msgstr ""
 
+#, fuzzy
+#| msgid "Artist unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Artista non disponibile"
+
 msgid "Selected folders"
 msgstr ""
 
@@ -5034,6 +5039,11 @@ msgstr ""
 
 msgid "UPnP"
 msgstr ""
+
+#, fuzzy
+#| msgid "Album unavailable"
+msgid "Unavailable output"
+msgstr "Album non disponibile"
 
 #, fuzzy
 #| msgid "Album unavailable"

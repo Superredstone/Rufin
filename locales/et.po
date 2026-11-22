@@ -4073,6 +4073,11 @@ msgstr ""
 msgid "Select {title}"
 msgstr "Vali {title}"
 
+#, fuzzy
+#| msgid "Source setup is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Allika seadistus pole saadaval"
+
 msgid "Selected folders"
 msgstr "Valitud muusikakaustad"
 
@@ -4809,6 +4814,11 @@ msgstr "Trükikunst"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Unavailable"
+msgid "Unavailable output"
+msgstr "Pole saadaval"
 
 msgid "Unavailable"
 msgstr "Pole saadaval"

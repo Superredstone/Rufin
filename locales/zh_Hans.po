@@ -3887,6 +3887,11 @@ msgstr "选择条目以显示或隐藏。"
 msgid "Select {title}"
 msgstr ""
 
+#, fuzzy
+#| msgid "Search is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "搜索不可用"
+
 msgid "Selected folders"
 msgstr "包含的文件夹"
 
@@ -4560,6 +4565,9 @@ msgid "Typography"
 msgstr ""
 
 msgid "UPnP"
+msgstr ""
+
+msgid "Unavailable output"
 msgstr ""
 
 msgid "Unavailable"

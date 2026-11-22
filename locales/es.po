@@ -4059,6 +4059,11 @@ msgstr ""
 msgid "Select {title}"
 msgstr "Seleccionar {title}"
 
+#, fuzzy
+#| msgid "Source setup is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "La configuración de la fuente no está disponible"
+
 msgid "Selected folders"
 msgstr "Carpetas seleccionadas"
 
@@ -4773,6 +4778,11 @@ msgstr "Tipografía"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Unavailable"
+msgid "Unavailable output"
+msgstr "No disponible"
 
 msgid "Unavailable"
 msgstr "No disponible"

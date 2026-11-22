@@ -4158,6 +4158,11 @@ msgstr ""
 msgid "Select {title}"
 msgstr "Выбрать {title}"
 
+#, fuzzy
+#| msgid "Source setup is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Настройка источника недоступна"
+
 msgid "Selected folders"
 msgstr "Выбранные папки"
 
@@ -4889,6 +4894,11 @@ msgstr "Оформление"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Unavailable"
+msgid "Unavailable output"
+msgstr "Недоступно"
 
 msgid "Unavailable"
 msgstr "Недоступно"

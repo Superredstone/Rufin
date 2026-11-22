@@ -1269,8 +1269,8 @@ msgstr "Créer"
 msgid ""
 "Credit the artists a tag names after feat. or ft. as artists of their own"
 msgstr ""
-"Créditer comme artistes distincts les artistes cités après « feat. » ou « "
-"ft. »"
+"Créditer comme artistes distincts les artistes cités après « feat. » ou "
+"« ft. »"
 
 msgid "Crossfade duration"
 msgstr "Durée du fondu enchaîné"
@@ -4001,6 +4001,11 @@ msgstr "Sélectionnez une entrée pour l’afficher ou la masquer."
 msgid "Select {title}"
 msgstr "Sélectionnez {title}"
 
+#, fuzzy
+#| msgid "Source setup is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "La configuration de source n'est pas disponible"
+
 msgid "Selected folders"
 msgstr "Dossiers sélectionnés"
 
@@ -4686,6 +4691,11 @@ msgstr "Typographie"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Unavailable"
+msgid "Unavailable output"
+msgstr "Indisponible"
 
 msgid "Unavailable"
 msgstr "Indisponible"

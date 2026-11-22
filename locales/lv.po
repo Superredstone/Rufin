@@ -4608,6 +4608,11 @@ msgstr ""
 msgid "Select {title}"
 msgstr "Atlasiet {title}"
 
+#, fuzzy
+#| msgid "Search is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Meklēšana nav pieejama"
+
 msgid "Selected folders"
 msgstr "Atlasītās mapes"
 
@@ -5429,6 +5434,11 @@ msgstr "Tipogrāfija"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Album unavailable"
+msgid "Unavailable output"
+msgstr "Albums nav pieejams"
 
 #, fuzzy
 #| msgid "Album unavailable"

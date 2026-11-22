@@ -4787,6 +4787,11 @@ msgid "Select {title}"
 msgstr "Vybrat vše"
 
 #, fuzzy
+#| msgid "This isn't available"
+msgid "Selected audio output is unavailable"
+msgstr "Toto není dostupné"
+
+#, fuzzy
 #| msgid "Select Music Folder"
 msgid "Selected folders"
 msgstr "Vybrat složku s hudbou"
@@ -5612,6 +5617,11 @@ msgstr "Diskografie"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Album title"
+msgid "Unavailable output"
+msgstr "Název alba"
 
 #, fuzzy
 #| msgid "Album title"

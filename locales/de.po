@@ -4029,6 +4029,11 @@ msgstr "Wähle einen Eintrag aus, um ihn ein- oder auszublenden."
 msgid "Select {title}"
 msgstr "{title} auswählen"
 
+#, fuzzy
+#| msgid "Source setup is unavailable"
+msgid "Selected audio output is unavailable"
+msgstr "Quelleneinrichtung ist nicht verfügbar"
+
 msgid "Selected folders"
 msgstr "Ausgewählte Ordner"
 
@@ -4718,6 +4723,11 @@ msgstr "Typografie"
 
 msgid "UPnP"
 msgstr "UPnP"
+
+#, fuzzy
+#| msgid "Unavailable"
+msgid "Unavailable output"
+msgstr "Nicht verfügbar"
 
 msgid "Unavailable"
 msgstr "Nicht verfügbar"
