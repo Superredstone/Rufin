@@ -297,6 +297,11 @@ msgstr ""
 "oder Plugin zum Abrufen von Liedtexten zu verwenden."
 
 msgid ""
+"This will write the stored ratings to your files, and also modify them every "
+"time you change a rating."
+msgstr ""
+
+msgid ""
 "Track evens out every song, while Album preserves the intended differences "
 "within each album"
 msgstr ""
@@ -1588,6 +1593,9 @@ msgstr "ERB"
 
 msgid "Each plays whole"
 msgstr "Jeder Titel wird vollständig wiedergegeben"
+
+msgid "Each rating you change is also written to its file's tags"
+msgstr ""
 
 msgid "Edit Lyrics"
 msgstr "Liedtexte bearbeiten"
@@ -4945,6 +4953,21 @@ msgstr "Fenster"
 msgid "Write EBU R128 tags to files"
 msgstr "EBU-R128-Tags in Dateien schreiben"
 
+#, fuzzy
+#| msgid "Write EBU R128 tags to files"
+msgid "Write Ratings to Files?"
+msgstr "EBU-R128-Tags in Dateien schreiben"
+
+#, fuzzy
+#| msgid "Write EBU R128 tags to files"
+msgid "Write ratings to files"
+msgstr "EBU-R128-Tags in Dateien schreiben"
+
+#, fuzzy
+#| msgid "Write EBU R128 tags to files"
+msgid "Write to Files"
+msgstr "EBU-R128-Tags in Dateien schreiben"
+
 msgid "Year"
 msgstr "Jahr"
 
@@ -5109,6 +5132,11 @@ msgid "{count} play"
 msgid_plural "{count} plays"
 msgstr[0] "{count} Wiedergabe"
 msgstr[1] "{count} Wiedergaben"
+
+msgid "{count} rating is waiting to be written"
+msgid_plural "{count} ratings are waiting to be written"
+msgstr[0] ""
+msgstr[1] ""
 
 msgid "{count} result"
 msgid_plural "{count} results"

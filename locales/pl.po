@@ -228,6 +228,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"This will write the stored ratings to your files, and also modify them every "
+"time you change a rating."
+msgstr ""
+
+msgid ""
 "Track evens out every song, while Album preserves the intended differences "
 "within each album"
 msgstr ""
@@ -1498,6 +1503,9 @@ msgid "ERB"
 msgstr ""
 
 msgid "Each plays whole"
+msgstr ""
+
+msgid "Each rating you change is also written to its file's tags"
 msgstr ""
 
 msgid "Edit Lyrics"
@@ -4765,6 +4773,15 @@ msgstr ""
 msgid "Write EBU R128 tags to files"
 msgstr ""
 
+msgid "Write Ratings to Files?"
+msgstr ""
+
+msgid "Write ratings to files"
+msgstr ""
+
+msgid "Write to Files"
+msgstr ""
+
 msgid "Year"
 msgstr ""
 
@@ -4932,6 +4949,12 @@ msgid "{count} play"
 msgid_plural "{count} plays"
 msgstr[0] ""
 msgstr[1] ""
+
+msgid "{count} rating is waiting to be written"
+msgid_plural "{count} ratings are waiting to be written"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 
 msgid "{count} result"
 msgid_plural "{count} results"
