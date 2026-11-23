@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-22 20:22+0000\n"
+"PO-Revision-Date: 2026-11-23 10:37+0000\n"
 "Last-Translator: Jiahao Li <thejiahao@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/rufin/app/zh_Hans/>\n"
@@ -120,7 +120,7 @@ msgstr "仅以播放列表形式导入曲目，不会自动同步文件夹中的
 msgid ""
 "Open Rufin Connect on another device, connect via Join button or by copying "
 "invitation code"
-msgstr "在另一台设备上打开 Rufin Connect，点击「加入」按钮或复制邀请码即可连接"
+msgstr "在另一台设备上打开 Rufin Connect，点击 “加入” 或复制邀请码即可连接"
 
 msgid ""
 "Relative paths start at the music folder or source URL. Local paths can also "
@@ -130,16 +130,12 @@ msgstr "相对路径基于音乐文件夹或数据源 URL，本地支持绝对�
 msgid ""
 "Remove all Rufin data and settings except saved connections and credentials? "
 "Rufin will restart after clearing the data."
-msgstr ""
-"是否删除除已保存的连接和凭据之外的所有 Rufin 数据和设置？清除数据后，Rufin 将"
-"重新启动。"
+msgstr "清除全部 Rufin 数据和设置，但保留连接和凭据。完成后将重启。"
 
 msgid ""
 "Remove all Rufin data, settings and saved logins? Rufin will restart after "
 "clearing the data."
-msgstr ""
-"是否删除所有 Rufin 数据、设置和已保存的登录信息？清除数据后，Rufin 将重新启"
-"动。"
+msgstr "清除全部 Rufin 数据、设置及已保存的登录凭据。完成后将重启。"
 
 msgid ""
 "Remove everything Rufin keeps about Local, including its favorites, ratings "
@@ -532,7 +528,7 @@ msgid "Applies to sidebar and fullscreen separately"
 msgstr ""
 
 msgid "Apply"
-msgstr ""
+msgstr "应用"
 
 msgid "Approve sign-in in your browser"
 msgstr ""
@@ -586,7 +582,7 @@ msgid "Artwork storage"
 msgstr "封面存储"
 
 msgid "Artwork"
-msgstr ""
+msgstr "封面"
 
 msgid "Ascending"
 msgstr ""
@@ -601,7 +597,7 @@ msgid "Audio fade on play/pause"
 msgstr "播放/暂停时淡入淡出"
 
 msgid "Audio fingerprints"
-msgstr ""
+msgstr "音频指纹"
 
 msgid "Audio output failed"
 msgstr ""
@@ -745,10 +741,10 @@ msgid "CUE file"
 msgstr ""
 
 msgid "Cache"
-msgstr ""
+msgstr "缓存"
 
 msgid "Cached data"
-msgstr ""
+msgstr "已缓存数据"
 
 msgid "Cached"
 msgstr "已缓存"
@@ -760,7 +756,7 @@ msgid "Caching local library..."
 msgstr ""
 
 msgid "Calculating fingerprint..."
-msgstr ""
+msgstr "正在计算指纹…"
 
 msgid "Cancel download and clear downloaded items"
 msgstr "取消下载并清除已下载内容"
@@ -824,7 +820,7 @@ msgid "Checking the user token..."
 msgstr "正在检查用户令牌…"
 
 msgid "Choose Folder"
-msgstr ""
+msgstr "选择文件夹"
 
 msgid "Choose Server"
 msgstr "选择服务器"
@@ -842,7 +838,7 @@ msgid "Choose connection"
 msgstr ""
 
 msgid "Choose folder"
-msgstr ""
+msgstr "Choose Folder"
 
 msgid "Choose one or more folders to scan and play directly from this computer"
 msgstr ""
@@ -872,10 +868,10 @@ msgid "Classical"
 msgstr "古典"
 
 msgid "Clear EBU R128 cache"
-msgstr ""
+msgstr "清除 EBU R128 缓存"
 
 msgid "Clear Japanese dictionary"
-msgstr ""
+msgstr "清除日语词典缓存"
 
 msgid "Clear Mapping"
 msgstr ""
@@ -884,34 +880,34 @@ msgid "Clear album"
 msgstr ""
 
 msgid "Clear all cache"
-msgstr ""
+msgstr "清除全部缓存"
 
 msgid "Clear all cache?"
-msgstr ""
+msgstr "清除全部缓存？"
 
 msgid "Clear all data"
-msgstr ""
+msgstr "清除全部数据"
 
 msgid "Clear all data?"
-msgstr ""
+msgstr "清除全部数据？"
 
 msgid "Clear artist"
 msgstr ""
 
 msgid "Clear artwork cache"
-msgstr "清空封面缓存"
+msgstr "清除封面缓存"
 
 msgid "Clear fetched lyrics for this track"
 msgstr "清空此曲目已抓取的歌词"
 
 msgid "Clear fingerprint cache"
-msgstr ""
+msgstr "清除指纹缓存"
 
 msgid "Clear lookup cache"
-msgstr ""
+msgstr "清除元数据缓存"
 
 msgid "Clear lyrics cache"
-msgstr "清空歌词缓存"
+msgstr "清除歌词缓存"
 
 msgid "Clear queue"
 msgstr "清空播放队列"
@@ -923,10 +919,10 @@ msgid "Clear title"
 msgstr ""
 
 msgid "Clear waveform cache"
-msgstr ""
+msgstr "清除波形图缓存"
 
 msgid "Clear"
-msgstr ""
+msgstr "清除"
 
 msgid "Clearing queue also clears the current song"
 msgstr "清空队列时移除当前曲目"
@@ -1016,7 +1012,7 @@ msgid "Confirm"
 msgstr "确认"
 
 msgid "Connect a device"
-msgstr ""
+msgstr "连接设备"
 
 msgid "Connect is not enabled"
 msgstr ""
@@ -1094,7 +1090,7 @@ msgid "Copy access token"
 msgstr "复制访问令牌"
 
 msgid "Copy invitation"
-msgstr ""
+msgstr "复制邀请码"
 
 msgid "Copy link"
 msgstr "复制链接"
@@ -1346,7 +1342,7 @@ msgid "Device invitation"
 msgstr ""
 
 msgid "Device name"
-msgstr ""
+msgstr "设备名称"
 
 msgid "Device"
 msgstr ""
@@ -1426,13 +1422,13 @@ msgid "Done"
 msgstr ""
 
 msgid "Download Automatically"
-msgstr ""
+msgstr "自动下载"
 
 msgid "Download Folder"
 msgstr "下载文件夹"
 
 msgid "Download Lazily"
-msgstr ""
+msgstr "按需下载"
 
 msgid "Download Queue"
 msgstr "下载队列"
@@ -1495,7 +1491,7 @@ msgid "Dynamic"
 msgstr ""
 
 msgid "EBU R128 analysis"
-msgstr ""
+msgstr "EBU R128 分析"
 
 msgid "EBU R128 reference level"
 msgstr ""
@@ -1692,7 +1688,7 @@ msgid "External lyrics lookup"
 msgstr "外部歌词查询"
 
 msgid "External metadata lookup"
-msgstr "外部元数据查找"
+msgstr "外部元数据查询"
 
 msgid "FFT size"
 msgstr ""
@@ -2117,7 +2113,7 @@ msgid "January {year}"
 msgstr "{year} 年 1 月"
 
 msgid "Japanese dictionary"
-msgstr ""
+msgstr "日语词典"
 
 msgid "Jellyfin"
 msgstr "Jellyfin"
@@ -2129,7 +2125,7 @@ msgid "Join to copy its sources and sign-ins"
 msgstr ""
 
 msgid "Join"
-msgstr ""
+msgstr "加入"
 
 msgid "July {year}"
 msgstr "{year} 年 7 月"
@@ -2449,7 +2445,7 @@ msgid "Metadata editing requires Local access"
 msgstr ""
 
 msgid "Metadata lookups"
-msgstr ""
+msgstr "元数据"
 
 msgid "Metadata saved"
 msgstr ""
@@ -2632,10 +2628,10 @@ msgid "Navigation"
 msgstr ""
 
 msgid "Nearby devices"
-msgstr ""
+msgstr "附近设备"
 
 msgid "Nearby discovery"
-msgstr ""
+msgstr "自动发现"
 
 msgid "Needs attention"
 msgstr "需要处理"
@@ -2770,7 +2766,7 @@ msgid "No network address available"
 msgstr ""
 
 msgid "No network devices found"
-msgstr ""
+msgstr "未发现网络设备"
 
 msgid "No playable entries were found"
 msgstr ""
@@ -3388,7 +3384,7 @@ msgid "Refresh automatically"
 msgstr ""
 
 msgid "Refresh"
-msgstr ""
+msgstr "刷新"
 
 msgid "Regenerate access token"
 msgstr "重新生成访问令牌"
@@ -3406,10 +3402,10 @@ msgid "Relative"
 msgstr ""
 
 msgid "Relay address"
-msgstr ""
+msgstr "中继地址"
 
 msgid "Relay"
-msgstr ""
+msgstr "中继"
 
 msgid "Release date"
 msgstr "发行日期"
@@ -3913,10 +3909,10 @@ msgid "Selection"
 msgstr ""
 
 msgid "Self-host an Iroh Relay"
-msgstr ""
+msgstr "自建 Iroh 中继"
 
 msgid "Self-hosted scrobbling"
-msgstr "自托管播放记录"
+msgstr "自建播放记录"
 
 msgid "September {year}"
 msgstr "{year} 年 9 月"
@@ -4345,7 +4341,7 @@ msgid "Symbolic"
 msgstr "黑白"
 
 msgid "Sync folder"
-msgstr ""
+msgstr "同步文件夹"
 
 msgid "Synced and plain lyrics"
 msgstr "滚动与纯文本歌词"
@@ -4423,7 +4419,7 @@ msgid "This device was removed from the profile"
 msgstr ""
 
 msgid "This device"
-msgstr ""
+msgstr "本设备"
 
 msgid "This is owned by {source} and synced to it."
 msgstr ""
@@ -4639,7 +4635,7 @@ msgid "Use a number above zero"
 msgstr ""
 
 msgid "Use a public relay"
-msgstr ""
+msgstr "使用公共中继"
 
 msgid "Use accent color"
 msgstr ""
@@ -4747,7 +4743,7 @@ msgid "Waveform seekbar"
 msgstr "波形进度条"
 
 msgid "Waveforms"
-msgstr ""
+msgstr "波形图"
 
 msgid "WebDAV / Nextcloud"
 msgstr "WebDAV / Nextcloud"
@@ -4929,8 +4925,7 @@ msgstr[0] ""
 
 msgid "{count} entry"
 msgid_plural "{count} entries"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{count} 项"
 
 msgid "{count} folder selected"
 msgid_plural "{count} folders selected"
