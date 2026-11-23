@@ -809,6 +809,9 @@ msgstr "取得登入授權"
 msgid "Bearer token"
 msgstr "取得登入授權"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr ""
 
@@ -2205,6 +2208,9 @@ msgid "Finishes the track playing at {time}"
 msgstr ""
 
 msgid "Fit to height"
+msgstr ""
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
 msgstr ""
 
 msgid "Fixed position"
@@ -4881,6 +4887,11 @@ msgstr "在右側邊欄顯示視覺效果"
 
 msgid "Show visualizer"
 msgstr "顯示視覺效果"
+
+#, fuzzy
+#| msgid "Show sidebar"
+msgid "Show whole covers"
+msgstr "顯示側邊欄"
 
 #, fuzzy
 #| msgid "Showcase"

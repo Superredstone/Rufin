@@ -833,6 +833,9 @@ msgstr "Pārvadātāja žetons (WebDAV)"
 msgid "Bearer token"
 msgstr "Nesēja žetons"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr ""
 
@@ -2193,6 +2196,9 @@ msgid "Finishes the track playing at {time}"
 msgstr ""
 
 msgid "Fit to height"
+msgstr ""
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
 msgstr ""
 
 msgid "Fixed position"
@@ -4817,6 +4823,11 @@ msgstr "Rādīt vizualizāciju labajā panelī"
 
 msgid "Show visualizer"
 msgstr "Rādīt vizualizāciju"
+
+#, fuzzy
+#| msgid "Show sidebar"
+msgid "Show whole covers"
+msgstr "Rādīt sānu paneli"
 
 msgid "Show"
 msgstr "Rādīt"

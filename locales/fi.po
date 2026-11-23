@@ -795,6 +795,9 @@ msgstr "Bearer-poletti (WebDAV)"
 msgid "Bearer token"
 msgstr "Bearer-poletti"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr ""
 
@@ -2132,6 +2135,9 @@ msgid "Finishes the track playing at {time}"
 msgstr ""
 
 msgid "Fit to height"
+msgstr ""
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
 msgstr ""
 
 msgid "Fixed position"
@@ -4748,6 +4754,11 @@ msgstr "Näytä visualisointi oikeassa paneelissa"
 
 msgid "Show visualizer"
 msgstr "Näytä visualisointi"
+
+#, fuzzy
+#| msgid "Show sidebar"
+msgid "Show whole covers"
+msgstr "Näytä sivupalkki"
 
 #, fuzzy
 #| msgid "Showcase"

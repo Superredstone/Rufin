@@ -828,6 +828,9 @@ msgstr "Uživatelský token"
 msgid "Bearer token"
 msgstr "Uživatelský token"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr ""
 
@@ -2252,6 +2255,9 @@ msgid "Finishes the track playing at {time}"
 msgstr ""
 
 msgid "Fit to height"
+msgstr ""
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
 msgstr ""
 
 msgid "Fixed position"
@@ -5003,6 +5009,11 @@ msgstr "Zobrazit vizualizátor v pravém panelu"
 
 msgid "Show visualizer"
 msgstr "Zobrazit vizualizátor"
+
+#, fuzzy
+#| msgid "Show sidebar"
+msgid "Show whole covers"
+msgstr "Zobrazit postranní panel"
 
 #, fuzzy
 #| msgid "Showcase"

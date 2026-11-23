@@ -765,6 +765,9 @@ msgstr "Esitaja tunnusluba (Bearer token - WebDAV)"
 msgid "Bearer token"
 msgstr "Esitaja tunnusluba (Bearer token)"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr "Bitisügavus"
 
@@ -1889,6 +1892,9 @@ msgstr ""
 
 msgid "Fit to height"
 msgstr "Sobita kõrgusele"
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
+msgstr ""
 
 msgid "Fixed position"
 msgstr "Fikseeritud asukoht"
@@ -4266,6 +4272,11 @@ msgstr "Näita visualiseerijat paremal külgribal"
 
 msgid "Show visualizer"
 msgstr "Näita visualiseerijat"
+
+#, fuzzy
+#| msgid "Show header"
+msgid "Show whole covers"
+msgstr "Näita päist"
 
 msgid "Show"
 msgstr "Näita"

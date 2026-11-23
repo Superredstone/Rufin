@@ -776,6 +776,9 @@ msgstr "Token de un solo uso (WebDAV)"
 msgid "Bearer token"
 msgstr "Token de un solo uso"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr "Profundidad de bits"
 
@@ -1907,6 +1910,9 @@ msgstr "Termina de reproducir la pista en {time}"
 
 msgid "Fit to height"
 msgstr "Ajustar a la altura"
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
+msgstr ""
 
 msgid "Fixed position"
 msgstr "Posición fija"
@@ -4241,6 +4247,11 @@ msgstr "Mostrar el visualizador en el panel derecho"
 
 msgid "Show visualizer"
 msgstr "Mostrar visualizador"
+
+#, fuzzy
+#| msgid "Show header"
+msgid "Show whole covers"
+msgstr "Mostrar encabezado"
 
 msgid "Show"
 msgstr "Mostrar"

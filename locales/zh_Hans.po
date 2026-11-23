@@ -707,6 +707,9 @@ msgstr "Bearer 令牌 (WebDAV)"
 msgid "Bearer token"
 msgstr "Bearer 令牌"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr ""
 
@@ -1817,6 +1820,9 @@ msgid "Finishes the track playing at {time}"
 msgstr ""
 
 msgid "Fit to height"
+msgstr ""
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
 msgstr ""
 
 msgid "Fixed position"
@@ -4059,6 +4065,9 @@ msgstr "在右侧栏中显示频谱"
 
 msgid "Show visualizer"
 msgstr "显示频谱"
+
+msgid "Show whole covers"
+msgstr ""
 
 msgid "Show"
 msgstr ""

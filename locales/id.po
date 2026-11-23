@@ -809,6 +809,9 @@ msgstr "Bearer token (WebDAV)"
 msgid "Bearer token"
 msgstr "Bearer token"
 
+msgid "Behavior"
+msgstr ""
+
 #, fuzzy
 msgid "Bit depth"
 msgstr "Bit depth"
@@ -1978,6 +1981,9 @@ msgstr "Menyelesaikan lagu yang sedang diputar pada {time}"
 
 msgid "Fit to height"
 msgstr "Sesuaikan dengan tinggi"
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
+msgstr ""
 
 msgid "Fixed position"
 msgstr "Posisi tetap"
@@ -4359,6 +4365,9 @@ msgstr "Tampilkan visualisasi di panel kanan"
 
 msgid "Show visualizer"
 msgstr "Tampilkan visualisasi"
+
+msgid "Show whole covers"
+msgstr ""
 
 msgid "Show"
 msgstr ""

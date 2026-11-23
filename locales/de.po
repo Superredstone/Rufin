@@ -778,6 +778,9 @@ msgstr "Bearer-Token (WebDAV)"
 msgid "Bearer token"
 msgstr "Bearer-Token"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr "Bittiefe"
 
@@ -1912,6 +1915,9 @@ msgstr "Beendet den um {time} laufenden Titel"
 
 msgid "Fit to height"
 msgstr "An Höhe anpassen"
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
+msgstr ""
 
 msgid "Fixed position"
 msgstr "Feste Position"
@@ -4208,6 +4214,11 @@ msgstr "Visualizer im rechten Bereich anzeigen"
 
 msgid "Show visualizer"
 msgstr "Visualizer anzeigen"
+
+#, fuzzy
+#| msgid "Show header"
+msgid "Show whole covers"
+msgstr "Kopfzeile anzeigen"
 
 msgid "Show"
 msgstr "Anzeigen"
