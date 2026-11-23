@@ -362,6 +362,9 @@ msgstr "6 часов"
 msgid "A new update is available, restart to apply"
 msgstr "Доступно новое обновление, перезагрузите, чтобы применить"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr "А"
 
@@ -798,6 +801,9 @@ msgstr "Токен аутентификации (WebDAV)"
 msgid "Bearer token"
 msgstr "Токен-носитель"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr "Битовая глубина"
 
@@ -830,6 +836,11 @@ msgstr "C"
 
 msgid "CUE file"
 msgstr "CUE-файл"
+
+#, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Загрузка похожих треков..."
 
 msgid "Cache"
 msgstr "Кэш"
@@ -1011,6 +1022,11 @@ msgstr "Очистить кэш текстов"
 msgid "Clear queue"
 msgstr "Очистить очередь"
 
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Очистить весь кэш"
+
 msgid "Clear this cache?"
 msgstr "Очистить этот кэш?"
 
@@ -1076,6 +1092,11 @@ msgstr "Текст комментария"
 
 msgid "Comment"
 msgstr "Комментарий"
+
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Компактный"
 
 msgid "Compact"
 msgstr "Компактный"
@@ -1871,6 +1892,9 @@ msgstr "Рекомендованные жанры"
 msgid "February {year}"
 msgstr "Февраль {year}"
 
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
+
 msgid "Fetching Home"
 msgstr "Получение данных для Главной"
 
@@ -1949,6 +1973,9 @@ msgstr "Завершает воспроизведение трека в {time}"
 
 msgid "Fit to height"
 msgstr "Подогнать по высоте"
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
+msgstr ""
 
 msgid "Fixed position"
 msgstr "Фиксированное расположение"
@@ -3598,6 +3625,11 @@ msgstr "Недавние поиски"
 msgid "Recently added"
 msgstr "Недавно прослушанные"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Недавно выпущенные"
+
 msgid "Recently played"
 msgstr "Недавно прослушанные"
 
@@ -4341,6 +4373,11 @@ msgstr "Показать визуализатор в правой панели"
 msgid "Show visualizer"
 msgstr "Показать визуализатор"
 
+#, fuzzy
+#| msgid "Show header"
+msgid "Show whole covers"
+msgstr "Показать заголовок"
+
 msgid "Show"
 msgstr "Показать"
 
@@ -4426,6 +4463,9 @@ msgstr "Сингл"
 msgid "Singles"
 msgstr "Синглы"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr "Размер"
 
@@ -4436,6 +4476,11 @@ msgstr "Количество пропусков"
 #| msgid "Skip unplayable tracks"
 msgid "Skip low-rated tracks"
 msgstr "Пропускать неиграемые треки"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Локальная сеть"
 
 msgid "Skip same-album crossfade"
 msgstr "Пропускать плавный переход между треками одного альбома"
@@ -4543,6 +4588,9 @@ msgstr "Линия спектра"
 msgid "Spectrum"
 msgstr "Спектр"
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Similar artists"
 msgid "Split featured artists"
@@ -4613,6 +4661,11 @@ msgid "Stream address"
 msgstr "Адрес ретранслятора"
 
 #, fuzzy
+#| msgid "Relay address"
+msgid "Stream cache"
+msgstr "Адрес ретранслятора"
+
+#, fuzzy
 #| msgid "Stream quality"
 msgid "Stream quality on mobile data"
 msgstr "Качество потока"
@@ -4631,6 +4684,11 @@ msgstr "Студии"
 
 msgid "Style"
 msgstr "Стиль"
+
+#, fuzzy
+#| msgid "Search Again"
+msgid "Suggested stations"
+msgstr "Повторить поиск"
 
 msgid "Suggested"
 msgstr "Предложенные"
@@ -4832,6 +4890,11 @@ msgstr "Трек недоступен"
 
 msgid "Track"
 msgstr "Трек"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "Качество потока"
 
 msgid "Tracks from every playlist"
 msgstr "Треки из каждого плейлиста"
@@ -5124,6 +5187,9 @@ msgstr "Ширина"
 msgid "Window"
 msgstr "Окно"
 
+msgid "Without genres and descriptions"
+msgstr ""
+
 msgid "Write EBU R128 tags to files"
 msgstr "Записывать теги EBU R128 в файлы"
 
@@ -5158,6 +5224,11 @@ msgstr "Жёлтый"
 
 msgid "Yes"
 msgstr "Да"
+
+#, fuzzy
+#| msgid "Configure local folder access"
+msgid "You need to configure a local address"
+msgstr "Настроить доступ к локальным папкам"
 
 msgid "Your library is ready"
 msgstr "Ваша библиотека готова"
@@ -6243,9 +6314,6 @@ msgstr "Добро пожаловать в программу установки
 
 #~ msgid "Comfortable"
 #~ msgstr "Удобный"
-
-#~ msgid "Configure local folder access"
-#~ msgstr "Настроить доступ к локальным папкам"
 
 #~ msgid "Configure saved music servers and local playback mappings"
 #~ msgstr ""

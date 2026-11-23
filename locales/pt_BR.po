@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-12 09:02+0000\n"
+"PO-Revision-Date: 2026-11-23 13:16+0000\n"
 "Last-Translator: Daniel Arafat <arafat90@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "rufin/app/pt_BR/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.11.2.dev0\n"
+"X-Generator: Weblate 2026.12.dev0\n"
 
 msgid ""
 "A Japanese dictionary is downloaded for furigana and romaji readings. This "
@@ -75,11 +75,15 @@ msgid ""
 "Files without an album artist tag form one album per folder instead of one "
 "per artist"
 msgstr ""
+"Arquivos sem a tag de artista do álbum são agrupados em um único álbum por "
+"pasta, em vez de um por artista"
 
 msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
+"GNU FM, Maloja e outros servidores no estilo Last.fm. No Maloja, a senha é "
+"uma chave de API."
 
 msgid ""
 "If Discord is not installed as a flatpak, you need to give socket access to "
@@ -100,6 +104,8 @@ msgid ""
 "Listens from Rufin, ListenBrainz or Last.fm, or play counts from other "
 "players"
 msgstr ""
+"Reproduções do Rufin, ListenBrainz ou Last.fm, ou contagens de reprodução de "
+"outros reprodutores"
 
 msgid ""
 "Logs have secrets and absolute folder paths redacted, but you may still want "
@@ -291,6 +297,8 @@ msgid ""
 "This will write the stored ratings to your files, and also modify them every "
 "time you change a rating."
 msgstr ""
+"Isso salvará as avaliações armazenadas nos seus arquivos e também os "
+"modificará sempre que você alterar uma avaliação."
 
 msgid ""
 "Track evens out every song, while Album preserves the intended differences "
@@ -360,6 +368,9 @@ msgstr "6 horas"
 msgid "A new update is available, restart to apply"
 msgstr "Uma nova atualização está disponível, reinicie para aplicar"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr "A"
 
@@ -387,18 +398,14 @@ msgstr "Token de acesso"
 msgid "Accessibility"
 msgstr "Acessibilidade"
 
-#, fuzzy
-#| msgid "Plex Account"
 msgid "Account"
-msgstr "Conta do Plex"
+msgstr "Conta"
 
 msgid "Actions"
 msgstr "Ações"
 
-#, fuzzy
-#| msgid "Activity"
 msgid "Active"
-msgstr "Atividade"
+msgstr "Ativo"
 
 msgid "Activity"
 msgstr "Atividade"
@@ -406,23 +413,17 @@ msgstr "Atividade"
 msgid "Add Manually"
 msgstr "Adicionar manualmente"
 
-#, fuzzy
-#| msgid "Add folder"
 msgid "Add SMB folder"
-msgstr "Adicionar pasta"
+msgstr "Adicionar pasta SMB"
 
 msgid "Add Source"
 msgstr "Adicionar fonte"
 
-#, fuzzy
-#| msgid "Add a title"
 msgid "Add Station"
-msgstr "Adicionar um título"
+msgstr "Adicionar estação"
 
-#, fuzzy
-#| msgid "Add folder"
 msgid "Add WebDAV folder"
-msgstr "Adicionar pasta"
+msgstr "Adicionar pasta WebDAV"
 
 msgid "Add a matching server prefix"
 msgstr "Adicionar um prefixo de servidor correspondente"
@@ -451,10 +452,8 @@ msgstr "Adicionar atual"
 msgid "Add folder"
 msgstr "Adicionar pasta"
 
-#, fuzzy
-#| msgid "Add Source"
 msgid "Add group"
-msgstr "Adicionar fonte"
+msgstr "Adicionar grupo"
 
 msgid "Add image"
 msgstr "Adicionar imagem"
@@ -462,15 +461,11 @@ msgstr "Adicionar imagem"
 msgid "Add music"
 msgstr "Adicionar música"
 
-#, fuzzy
-#| msgid "Add Rule"
 msgid "Add rule"
 msgstr "Adicionar regra"
 
-#, fuzzy
-#| msgid "Add Rule"
 msgid "Add server"
-msgstr "Adicionar regra"
+msgstr "Adicionar servidor"
 
 msgid "Add to Favorites"
 msgstr "Adicionar aos favoritos"
@@ -479,7 +474,7 @@ msgid "Add to Playlist"
 msgstr "Adicionar à playlist"
 
 msgid "Add to Saved"
-msgstr "Salvar"
+msgstr "Adicionar aos salvos"
 
 msgid "Add to folder"
 msgstr "Adicionar à pasta"
@@ -487,10 +482,8 @@ msgstr "Adicionar à pasta"
 msgid "Add to library"
 msgstr "Adicionar à biblioteca"
 
-#, fuzzy
-#| msgid "Add to Saved"
 msgid "Add to {saved_on}"
-msgstr "Salvar"
+msgstr "Adicionar a {saved_on}"
 
 msgid "Add tracks when fewer than this many remain"
 msgstr "Adicionar faixas quando restarem menos do que esta quantidade"
@@ -501,10 +494,8 @@ msgstr "Adicionar"
 msgid "Added to"
 msgstr "Adicionado a"
 
-#, fuzzy
-#| msgid "Added to"
 msgid "Added"
-msgstr "Adicionado a"
+msgstr "Adicionado"
 
 msgid "Album Artists"
 msgstr "Artistas do álbum"
@@ -518,10 +509,8 @@ msgstr "Artista do álbum"
 msgid "Album artists"
 msgstr "Artistas do álbuns"
 
-#, fuzzy
-#| msgid "Album sort"
 msgid "Album covers"
-msgstr "Ordenação do álbum"
+msgstr "Capas de álbum"
 
 msgid "Album details"
 msgstr "Detalhes do álbum"
@@ -569,13 +558,13 @@ msgid "Allow downloading"
 msgstr "Permitir downloads"
 
 msgid "Allow permanently deleting tracks"
-msgstr ""
+msgstr "Permitir excluir músicas permanentemente"
 
 msgid "Allow remote connections"
 msgstr "Permitir conexões remotas"
 
 msgid "Also album types and tag suggestions"
-msgstr ""
+msgstr "Também tipos de álbum e sugestões de tags"
 
 msgid "Alternate addresses"
 msgstr "Endereços alternativos"
@@ -628,10 +617,8 @@ msgstr "Álbuns do artista"
 msgid "Artist details"
 msgstr "Detalhes do artista"
 
-#, fuzzy
-#| msgid "Artist name"
 msgid "Artist images"
-msgstr "Nome do artista"
+msgstr "Imagens de artistas"
 
 msgid "Artist name"
 msgstr "Nome do artista"
@@ -669,15 +656,11 @@ msgstr "Armazenamento de capas"
 msgid "Artwork"
 msgstr "Capa de Álbum"
 
-#, fuzzy
-#| msgid "Descending"
 msgid "Ascending"
-msgstr "Decrescente"
+msgstr "Crescente"
 
-#, fuzzy
-#| msgid "Nothing in this folder"
 msgid "Asked in this order."
-msgstr "Nada nesta pasta"
+msgstr "Na ordem pedida."
 
 msgid "Audio effects"
 msgstr "Efeitos de áudio"
@@ -701,7 +684,7 @@ msgid "Audio"
 msgstr "Áudio"
 
 msgid "Audioscrobbler API"
-msgstr ""
+msgstr "API do Audioscrobbler"
 
 msgid "August {year}"
 msgstr "Agosto de {year}"
@@ -796,6 +779,9 @@ msgstr "Token Bearer (WebDAV)"
 msgid "Bearer token"
 msgstr "Token Bearer"
 
+msgid "Behavior"
+msgstr "Comportamento"
+
 msgid "Bit depth"
 msgstr "Profundidade de bits"
 
@@ -806,13 +792,13 @@ msgid "Bitstream"
 msgstr "Bitstream"
 
 msgid "Blocks"
-msgstr ""
+msgstr "Blocos"
 
 msgid "Blue"
 msgstr "Azul"
 
 msgid "Bottom bar"
-msgstr ""
+msgstr "Barra inferior"
 
 msgid "Brightness (%)"
 msgstr "Brilho (%)"
@@ -828,6 +814,11 @@ msgstr "C"
 
 msgid "CUE file"
 msgstr "Arquivo CUE"
+
+#, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Carregando faixas relacionadas..."
 
 msgid "Cache"
 msgstr "Cache"
@@ -891,14 +882,11 @@ msgstr "Alterar"
 
 msgid "Changes apply to {count} track"
 msgid_plural "Changes apply to {count} tracks"
-msgstr[0] "As alterações se aplicam à faixa {count}"
+msgstr[0] "A alteração se aplica à faixa {count}"
 msgstr[1] "As alterações se aplicam às faixas {count}"
 
-#, fuzzy
-#| msgid "Changes apply to {count} track"
-#| msgid_plural "Changes apply to {count} tracks"
 msgid "Changes apply to {count} tracks"
-msgstr "As alterações se aplicam à faixa {count}"
+msgstr "As alterações se aplicam a {count} faixas"
 
 msgid "Changes take effect after restarting Rufin"
 msgstr "As alterações entram em vigor após reiniciar o Rufin"
@@ -909,10 +897,8 @@ msgstr "Canais"
 msgid "Check for updates"
 msgstr "Verificar atualizações"
 
-#, fuzzy
-#| msgid "Connecting to music server..."
 msgid "Checking the user token..."
-msgstr "Conectando ao servidor de música..."
+msgstr "Verificando o token do usuário..."
 
 msgid "Choose Folder"
 msgstr "Escolher pasta"
@@ -1013,6 +999,11 @@ msgstr "Limpar cache de letras"
 msgid "Clear queue"
 msgstr "Limpar fila"
 
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Limpar todo o cache"
+
 msgid "Clear this cache?"
 msgstr "Limpar este cache?"
 
@@ -1078,6 +1069,9 @@ msgstr "Texto de comentário"
 
 msgid "Comment"
 msgstr "Comentário"
+
+msgid "Compact cards"
+msgstr "Cartões compactos"
 
 msgid "Compact"
 msgstr "Compacto"
@@ -1250,10 +1244,8 @@ msgstr "Não foi possível atualizar os favoritos"
 msgid "Couldn't connect to the server"
 msgstr "Não foi possível conectar ao servidor"
 
-#, fuzzy
-#| msgid "Couldn't connect to {service}"
 msgid "Couldn't connect"
-msgstr "Não foi possível conectar a {service}"
+msgstr "Não foi possível conectar"
 
 msgid "Couldn't decode this track"
 msgstr "Não foi possível decodificar esta faixa"
@@ -1261,10 +1253,8 @@ msgstr "Não foi possível decodificar esta faixa"
 msgid "Couldn't load this folder"
 msgstr "Não foi possível carregar esta pasta"
 
-#, fuzzy
-#| msgid "Could not open file: {error}"
 msgid "Couldn't open the sign-in page: {error}"
-msgstr "Não foi possível abrir o arquivo: {error}"
+msgstr "Não foi possível abrir a página de login: {error}"
 
 msgid "Couldn't search for lyrics"
 msgstr "Não foi possível buscar letras"
@@ -1276,23 +1266,19 @@ msgid "Country"
 msgstr "País"
 
 msgid "Covers and artist images your library doesn't have"
-msgstr ""
+msgstr "Capas e imagens de artistas que sua biblioteca não tem"
 
 msgid "Covers, artist images, tags"
-msgstr ""
+msgstr "Capas, imagens de artistas, tags"
 
-#, fuzzy
-#| msgid "API keys"
 msgid "Create API keys"
-msgstr "Chaves de API"
+msgstr "Criar chaves de API"
 
 msgid "Create a playlist from queue"
 msgstr "Criar uma playlist a partir da fila"
 
-#, fuzzy
-#| msgid "Create playlist"
 msgid "Create a playlist"
-msgstr "Criar playlist"
+msgstr "Criar uma playlist"
 
 msgid "Create playlist"
 msgstr "Criar playlist"
@@ -1300,11 +1286,11 @@ msgstr "Criar playlist"
 msgid "Create"
 msgstr "Criar"
 
-#, fuzzy
-#| msgid "Sort artists and albums by their sort tags instead of their names"
 msgid ""
 "Credit the artists a tag names after feat. or ft. as artists of their own"
-msgstr "Ordenar artistas e álbuns por suas tags de ordenação em vez dos nomes"
+msgstr ""
+"Considerar como artistas independentes os artistas indicados nas tags após "
+"“feat.” ou “ft.”"
 
 msgid "Crossfade duration"
 msgstr "Duração do crossfade"
@@ -1383,26 +1369,20 @@ msgstr "Dezembro de {year}"
 msgid "Decrease"
 msgstr "Diminuir"
 
-#, fuzzy
-#| msgid "Default"
 msgid "Default channel"
-msgstr "Padrão"
+msgstr "Canal padrão"
 
 msgid "Default"
 msgstr "Padrão"
 
-#, fuzzy
-#| msgid "Delete preset"
 msgid "Delete Permanently?"
-msgstr "Excluir predefinição"
+msgstr "Excluir permanentemente?"
 
 msgid "Delete Playlist"
 msgstr "Excluir playlist"
 
-#, fuzzy
-#| msgid "Device invitation"
 msgid "Delete Station"
-msgstr "Convite do dispositivo"
+msgstr "Excluir estação"
 
 #, python-brace-format
 msgid "Delete \"{name}\"?"
@@ -1411,10 +1391,8 @@ msgstr "Excluir \"{name}\"?"
 msgid "Delete folder"
 msgstr "Excluir pasta"
 
-#, fuzzy
-#| msgid "Delete preset"
 msgid "Delete permanently"
-msgstr "Excluir predefinição"
+msgstr "Excluir permanentemente"
 
 msgid "Delete playlist file"
 msgstr "Excluir arquivo de playlist"
@@ -1423,7 +1401,7 @@ msgid "Delete preset"
 msgstr "Excluir predefinição"
 
 msgid "Delete this station?"
-msgstr ""
+msgstr "Excluir esta estação?"
 
 msgid "Delete {count} playlist?"
 msgid_plural "Delete {count} playlists?"
@@ -1437,10 +1415,10 @@ msgid "Delivery"
 msgstr "Entrega"
 
 msgid "Demo"
-msgstr ""
+msgstr "Demo"
 
 msgid "Demos"
-msgstr ""
+msgstr "Demos"
 
 msgid "Descending"
 msgstr "Decrescente"
@@ -1484,10 +1462,8 @@ msgstr "Desativado"
 msgid "Disc number"
 msgstr "Número do disco"
 
-#, fuzzy
-#| msgid "Disc number"
 msgid "Disc subtitle"
-msgstr "Número do disco"
+msgstr "Subtítulo do disco"
 
 msgid "Disc {number}"
 msgstr "Disco {number}"
@@ -1527,7 +1503,7 @@ msgstr "Não criptografar"
 
 msgid "Do you want to apply metadata changes to {count} track?"
 msgid_plural "Do you want to apply metadata changes to {count} tracks?"
-msgstr[0] "Deseja aplicar as alterações de metadados à faixa {count}?"
+msgstr[0] "Deseja aplicar a alteração de metadado à faixa {count}?"
 msgstr[1] "Deseja aplicar as alterações de metadados às faixas {count}?"
 
 msgid "Do you want to use the existing configuration?"
@@ -1590,10 +1566,8 @@ msgstr "Baixando"
 msgid "Downloads"
 msgstr "Downloads"
 
-#, fuzzy
-#| msgid "Drag to reorder"
 msgid "Drag to a folder"
-msgstr "Arraste para reordenar"
+msgstr "Arraste para uma pasta"
 
 msgid "Drag to reorder"
 msgstr "Arraste para reordenar"
@@ -1632,10 +1606,10 @@ msgid "ERB"
 msgstr "ERB"
 
 msgid "Each plays whole"
-msgstr ""
+msgstr "Cada reprodução inteira"
 
 msgid "Each rating you change is also written to its file's tags"
-msgstr ""
+msgstr "Cada avaliação alterada também é gravada nas tags do arquivo"
 
 msgid "Edit Lyrics"
 msgstr "Editar letras"
@@ -1649,10 +1623,8 @@ msgstr "Editar playlist inteligente"
 msgid "Edit Source"
 msgstr "Editar fonte"
 
-#, fuzzy
-#| msgid "Edit metadata"
 msgid "Edit Station"
-msgstr "Editar metadados"
+msgstr "Editar estação"
 
 msgid "Edit lyrics"
 msgstr "Editar letras"
@@ -1697,7 +1669,7 @@ msgid "Enable partial star ratings"
 msgstr "Ativar classificações de estrelas parciais"
 
 msgid "Enable private mode"
-msgstr "Ativar modo privado"
+msgstr "Habilitar modo privado"
 
 msgid "Enable"
 msgstr "Ativar"
@@ -1717,16 +1689,14 @@ msgstr "Criptografar backups"
 msgid "End of this track"
 msgstr "Fim desta faixa"
 
-#, fuzzy
-#| msgid "Enable background image"
 msgid "Ends around {time}"
-msgstr "Ativar imagem de fundo"
+msgstr "Termina por volta de {time}"
 
 msgid "Enter a name and URL."
-msgstr ""
+msgstr "Digite um nome e uma URL."
 
 msgid "Enter a name and the server's URL."
-msgstr ""
+msgstr "Digite um nome e a URL do servidor."
 
 msgid "Enter a server address and API key"
 msgstr "Insira um endereço de servidor e chave de API"
@@ -1738,12 +1708,10 @@ msgid "Enter your Nextcloud server address to sign in through your browser"
 msgstr "Insira o endereço do seu servidor Nextcloud para entrar pelo navegador"
 
 msgid "Enter your user token first"
-msgstr ""
+msgstr "Digite seu token de usuário primeiro"
 
-#, fuzzy
-#| msgid "Username and password"
 msgid "Enter your username and password."
-msgstr "Nome de usuário e senha"
+msgstr "Digite seu nome de usuário e senha."
 
 msgid "Entire Library"
 msgstr "Biblioteca inteira"
@@ -1757,15 +1725,11 @@ msgstr "Equalizador"
 msgid "Ever played"
 msgstr "Já reproduzido"
 
-#, fuzzy
-#| msgid "Tracks from your five latest albums"
 msgid "Every track of your favorite albums"
-msgstr "Faixas dos seus cinco álbuns mais recentes"
+msgstr "Todas as faixas dos seus álbuns favoritos"
 
-#, fuzzy
-#| msgid "No favorite artists yet"
 msgid "Every track of your favorite artists"
-msgstr "Nenhum artista favorito ainda"
+msgstr "Todas as faixas dos seus artistas favoritos"
 
 msgid "Everything, including new tracks"
 msgstr "Tudo, incluindo novas faixas"
@@ -1833,18 +1797,12 @@ msgstr "Atenuar o áudio quando a reprodução for pausada ou retomada"
 msgid "Fall speed (%)"
 msgstr "Velocidade de queda (%)"
 
-#, fuzzy
-#| msgid "Favorites"
 msgid "Favorite Albums"
-msgstr "Favoritos"
+msgstr "Álbuns favoritos"
 
-#, fuzzy
-#| msgid "Favorites"
 msgid "Favorite Artists"
-msgstr "Favoritos"
+msgstr "Artistas favoritos"
 
-#, fuzzy
-#| msgid "Favorite tracks"
 msgid "Favorite Tracks"
 msgstr "Faixas favoritas"
 
@@ -1860,10 +1818,8 @@ msgstr "Favorito"
 msgid "Favorites and ratings"
 msgstr "Favoritos e classificações"
 
-#, fuzzy
-#| msgid "Favorites"
 msgid "Favorites only"
-msgstr "Favoritos"
+msgstr "Somente favoritos"
 
 msgid "Favorites"
 msgstr "Favoritos"
@@ -1873,6 +1829,9 @@ msgstr "Gêneros em destaque"
 
 msgid "February {year}"
 msgstr "Fevereiro de {year}"
+
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
 
 msgid "Fetching Home"
 msgstr "Buscando Início"
@@ -1899,7 +1858,7 @@ msgid "Fetching playlists"
 msgstr "Buscando playlists"
 
 msgid "Few"
-msgstr ""
+msgstr "Poucos"
 
 msgid "Field"
 msgstr "Campo"
@@ -1936,10 +1895,8 @@ msgstr "Buscar em {name}"
 msgid "Find shares"
 msgstr "Encontrar compartilhamentos"
 
-#, fuzzy
-#| msgid "Find your ListenBrainz user token"
 msgid "Find your token"
-msgstr "Encontre seu token de usuário do ListenBrainz"
+msgstr "Encontre seu token"
 
 msgid "Finding lyrics..."
 msgstr "Encontrando letras..."
@@ -1952,6 +1909,10 @@ msgstr "Termine o que está tocando às {time}"
 
 msgid "Fit to height"
 msgstr "Ajustar à altura"
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
+msgstr ""
+"Ajustar as capas largas e altas dentro de suas molduras em vez de cortá-las"
 
 msgid "Fixed position"
 msgstr "Posição fixa"
@@ -1988,10 +1949,8 @@ msgstr ""
 msgid "Forget Source"
 msgstr "Esquecer fonte"
 
-#, fuzzy
-#| msgid "Could not update favorites"
 msgid "Forgotten favorites"
-msgstr "Não foi possível atualizar os favoritos"
+msgstr "Favoritos esquecidos"
 
 msgid "Format not supported"
 msgstr "Formato não suportado"
@@ -2048,7 +2007,7 @@ msgid "Furigana"
 msgstr "Furigana"
 
 msgid "Gain · dB"
-msgstr "Ganho 302267 dB"
+msgstr "Ganho · dB"
 
 msgid "Gain"
 msgstr "Ganho"
@@ -2078,7 +2037,7 @@ msgid "Genres"
 msgstr "Gêneros"
 
 msgid "Get a personal key"
-msgstr ""
+msgstr "Pegar uma chave pessoal"
 
 msgid "Go to Album"
 msgstr "Ir para o álbum"
@@ -2113,15 +2072,11 @@ msgstr "Espaçamento de grade"
 msgid "Grid"
 msgstr "Grade"
 
-#, fuzzy
-#| msgid "Grid"
 msgid "Grids"
-msgstr "Grade"
+msgstr "Grades"
 
-#, fuzzy
-#| msgid "Local music folder"
 msgid "Group albums by folder"
-msgstr "Pasta de música local"
+msgstr "Agrupar álbuns por pasta"
 
 msgid "Grouping"
 msgstr "Agrupamento"
@@ -2133,7 +2088,7 @@ msgid "Halo"
 msgstr "Halo"
 
 msgid "Heard"
-msgstr ""
+msgstr "Ouvidas"
 
 msgid "Height (%)"
 msgstr "Altura (%)"
@@ -2159,10 +2114,8 @@ msgstr "Histórico"
 msgid "Hold and drag to resize"
 msgstr "Segure e arraste para redimensionar"
 
-#, fuzzy
-#| msgid "Drag to reorder"
 msgid "Hold to reorder"
-msgstr "Arraste para reordenar"
+msgstr "Mantenha pressionado para reordenar"
 
 msgid "Home Profile"
 msgstr "Perfil da tela inicial"
@@ -2170,10 +2123,8 @@ msgstr "Perfil da tela inicial"
 msgid "Home"
 msgstr "Início"
 
-#, fuzzy
-#| msgid "Home"
 msgid "Homepage"
-msgstr "Início"
+msgstr "Página inicial"
 
 msgid "Hour"
 msgstr "Hora"
@@ -2196,10 +2147,8 @@ msgstr "Arquivos de imagem"
 msgid "Image"
 msgstr "Imagem"
 
-#, fuzzy
-#| msgid "Export Activity"
 msgid "Import Activity"
-msgstr "Exportar atividade"
+msgstr "Importar atividade"
 
 msgid "Import Backup"
 msgstr "Importar backup"
@@ -2216,23 +2165,18 @@ msgstr "Importar tema"
 msgid "Import"
 msgstr "Importar"
 
-#, fuzzy
-#| msgid "Delete {count} playlist?"
-#| msgid_plural "Delete {count} playlists?"
 msgid "Imported {count} listen."
 msgid_plural "Imported {count} listens."
-msgstr[0] "Excluir playlist {count}?"
-msgstr[1] "Excluir playlists {count}?"
+msgstr[0] "{count} reprodução importada."
+msgstr[1] "{count} reproduções importadas."
 
 msgid "Imports files into the library, and watches added folders for changes."
 msgstr ""
 "Importa arquivos para a biblioteca e monitora pastas adicionadas em busca de "
 "alterações."
 
-#, fuzzy
-#| msgid "New playlist"
 msgid "In playlist"
-msgstr "Nova playlist"
+msgstr "Na playlist"
 
 msgid "Inactive at this sample rate"
 msgstr "Inativo nesta taxa de amostragem"
@@ -2264,15 +2208,11 @@ msgstr "ID do item"
 msgid "Item is no longer available"
 msgstr "O item não está mais disponível"
 
-#, fuzzy
-#| msgid "Context Menus"
 msgid "Item menus"
-msgstr "Menus de contexto"
+msgstr "Menus dos itens"
 
-#, fuzzy
-#| msgid "Item ID"
 msgid "Items"
-msgstr "ID do item"
+msgstr "Itens"
 
 msgid "January {year}"
 msgstr "Janeiro de {year}"
@@ -2318,16 +2258,14 @@ msgstr ""
 msgid "Keyboard Shortcuts"
 msgstr "Atalhos de teclado"
 
-#, fuzzy
-#| msgid "Find your ListenBrainz user token"
 msgid "Koito, Maloja and other ListenBrainz servers."
-msgstr "Encontre seu token de usuário do ListenBrainz"
+msgstr "Koito, Maloja e outros servidores compatíveis com ListenBrainz."
 
 msgid "LED spectrum"
 msgstr "Espectro LED"
 
 msgid "LIVE"
-msgstr ""
+msgstr "AO VIVO"
 
 msgid "LRCLIB"
 msgstr "LRCLIB"
@@ -2369,15 +2307,13 @@ msgid "Leave empty for an unencrypted archive."
 msgstr "Deixe em branco para um arquivo não criptografado."
 
 msgid "Leave out tracks rated two stars or lower"
-msgstr ""
+msgstr "Excluir faixas com avaliação de duas estrelas ou menos"
 
 msgid "Leave the password empty to keep the saved credential"
 msgstr "Deixe a senha em branco para manter a credencial salva"
 
-#, fuzzy
-#| msgid "Hide sidebar"
 msgid "Left sidebar"
-msgstr "Ocultar barra lateral"
+msgstr "Barra lateral esquerda"
 
 msgid "Legacy authorization"
 msgstr "Autorização legada"
@@ -2394,10 +2330,8 @@ msgstr "Legado"
 msgid "Less"
 msgstr "Menos"
 
-#, fuzzy
-#| msgid "Sidebar Items"
 msgid "Library items"
-msgstr "Itens da barra lateral"
+msgstr "Itens da biblioteca"
 
 msgid "Library"
 msgstr "Biblioteca"
@@ -2411,10 +2345,8 @@ msgstr "Limite"
 msgid "Linear"
 msgstr "Linear"
 
-#, fuzzy
-#| msgid "Linked file"
 msgid "Link copied"
-msgstr "Arquivo vinculado"
+msgstr "Link copiado"
 
 msgid "Link exported file"
 msgstr "Vincular arquivo exportado"
@@ -2428,20 +2360,14 @@ msgstr "Link"
 msgid "Linked file"
 msgstr "Arquivo vinculado"
 
-#, fuzzy
-#| msgid "Link"
 msgid "Links"
-msgstr "Link"
+msgstr "Links"
 
-#, fuzzy
-#| msgid "ListenBrainz"
 msgid "ListenBrainz API"
-msgstr "ListenBrainz"
+msgstr "API do ListenBrainz"
 
-#, fuzzy
-#| msgid "ListenBrainz scrobbling"
 msgid "ListenBrainz or Audioscrobbler API"
-msgstr "Scrobbling do ListenBrainz"
+msgstr "API do ListenBrainz ou Audioscrobbler"
 
 msgid "Listening overview"
 msgstr "Visão geral de audição"
@@ -2450,7 +2376,7 @@ msgid "Listening"
 msgstr "Ouvindo"
 
 msgid "Live"
-msgstr ""
+msgstr "Ao vivo"
 
 msgid "Load file contents"
 msgstr "Carregar conteúdo do arquivo"
@@ -2464,10 +2390,8 @@ msgstr "Carregando faixas relacionadas..."
 msgid "Loading..."
 msgstr "Carregando..."
 
-#, fuzzy
-#| msgid "Server Address Override (optional)"
 msgid "Local Address"
-msgstr "Substituição de endereço do servidor (opcional)"
+msgstr "Endereço local"
 
 msgid "Local File Access"
 msgstr "Acesso a arquivos locais"
@@ -2492,8 +2416,8 @@ msgstr ""
 msgid "Local file mapping: {matched} of {total} server path matches"
 msgid_plural "Local file mapping: {matched} of {total} server paths match"
 msgstr[0] ""
-"Mapeamento de arquivos locais: {matched} de {total} correspondências de "
-"caminho de servidor"
+"Mapeamento de arquivo local: {matched} de {total} correspondência de caminho "
+"de servidor"
 msgstr[1] ""
 "Mapeamento de arquivos locais: {matched} de {total} correspondência de "
 "caminho de servidor"
@@ -2542,14 +2466,13 @@ msgstr "Os registros foram copiados"
 
 msgid "Look up the artists that listeners play alongside the current one"
 msgstr ""
+"Pesquisar os artistas que os ouvintes escutam junto com o artista atual"
 
 msgid "Lookup"
 msgstr "Busca"
 
-#, fuzzy
-#| msgid "Lookup"
 msgid "Lookups"
-msgstr "Busca"
+msgstr "Pesquisas"
 
 msgid "Loudness normalization"
 msgstr "Normalização de loudness"
@@ -2577,10 +2500,8 @@ msgstr "Armazenamento de letras"
 msgid "Lyrics will appear here."
 msgstr "As letras aparecerão aqui."
 
-#, fuzzy
-#| msgid "While your library loads"
 msgid "Lyrics your library doesn't have"
-msgstr "Carregando biblioteca"
+msgstr "Letras que não estão na sua biblioteca"
 
 msgid "Lyrics"
 msgstr "Letras"
@@ -2592,7 +2513,7 @@ msgid "Manage"
 msgstr "Gerenciar"
 
 msgid "Many"
-msgstr ""
+msgstr "Muitas"
 
 msgid "Mapped Local Path"
 msgstr "Caminho local mapeado"
@@ -2600,18 +2521,14 @@ msgstr "Caminho local mapeado"
 msgid "March {year}"
 msgstr "Março de {year}"
 
-#, fuzzy
-#| msgid "Matched"
 msgid "Match"
-msgstr "Correspondido"
+msgstr "Correspondência"
 
 msgid "Matched"
 msgstr "Correspondido"
 
-#, fuzzy
-#| msgid "No matching tracks"
 msgid "Matching tracks..."
-msgstr "Nenhuma faixa correspondente"
+msgstr "Correspondendo faixas..."
 
 msgid "Maximum frequency (Hz)"
 msgstr "Frequência máxima (Hz)"
@@ -2631,10 +2548,8 @@ msgstr "Maio de {year}"
 msgid "Menu"
 msgstr "Menu"
 
-#, fuzzy
-#| msgid "Menu"
 msgid "Menus"
-msgstr "Menu"
+msgstr "Menus"
 
 msgid "Metadata changed before it was saved. Reload it before trying again."
 msgstr ""
@@ -2650,10 +2565,8 @@ msgstr "A edição de metadados requer acesso local"
 msgid "Metadata lookups"
 msgstr "Buscas de metadados"
 
-#, fuzzy
-#| msgid "Metadata source"
 msgid "Metadata saved"
-msgstr "Fonte de metadados"
+msgstr "Metadados salvos"
 
 msgid "Metadata was saved, but refreshing the source failed."
 msgstr "Os metadados foram salvos, mas a atualização da fonte falhou."
@@ -2685,21 +2598,17 @@ msgstr "Barras espelhadas"
 msgid "Mirrored"
 msgstr "Espelhado"
 
-#, fuzzy
-#| msgid "Play random (play later)"
 msgid "Mix (play later)"
-msgstr "Reproduzir aleatório (reproduzir depois)"
+msgstr "Mixagem (reproduzir depois)"
 
-#, fuzzy
-#| msgid "Play random (play next)"
 msgid "Mix (play next)"
-msgstr "Reproduzir aleatório (reproduzir em seguida)"
+msgstr "Mixagem (reproduzir em seguida)"
 
 msgid "Mix"
-msgstr ""
+msgstr "Mixagem"
 
 msgid "Mixes"
-msgstr ""
+msgstr "Mixagens"
 
 msgid "Mode"
 msgstr "Modo"
@@ -2740,10 +2649,8 @@ msgstr "Mais ignoradas"
 msgid "Most played"
 msgstr "Mais reproduzidas"
 
-#, fuzzy
-#| msgid "Most Skipped"
 msgid "Most skipped"
-msgstr "Mais ignoradas"
+msgstr "Mais puladas"
 
 msgid "Motion"
 msgstr "Movimento"
@@ -2763,23 +2670,17 @@ msgstr "Pasta de música"
 msgid "Music access permission was denied"
 msgstr "A permissão de acesso à música foi negada"
 
-#, fuzzy
-#| msgid "Local music folder is unavailable"
 msgid "Music folder is unavailable: {folder}"
-msgstr "A pasta de música local está indisponível"
+msgstr "A pasta de música não está disponível: {folder}"
 
-#, fuzzy
-#| msgid "Music Folder"
 msgid "Music folder"
 msgstr "Pasta de música"
 
 msgid "Music folders on the Rufin machine"
 msgstr "Pastas de música na máquina do Rufin"
 
-#, fuzzy
-#| msgid "Music folders on the Rufin machine"
 msgid "Music on this phone"
-msgstr "Pastas de música na máquina do Rufin"
+msgstr "Músicas neste telefone"
 
 msgid "Music"
 msgstr "Música"
@@ -2790,10 +2691,8 @@ msgstr "ID de artista do álbum no MusicBrainz"
 msgid "MusicBrainz artist ID"
 msgstr "ID de artista no MusicBrainz"
 
-#, fuzzy
-#| msgid "MusicBrainz + Last.fm"
 msgid "MusicBrainz or Last.fm"
-msgstr "MusicBrainz + Last.fm"
+msgstr "MusicBrainz ou Last.fm"
 
 msgid "MusicBrainz recording ID"
 msgstr "ID de gravação no MusicBrainz"
@@ -2822,10 +2721,8 @@ msgstr "Mutado"
 msgid "My music"
 msgstr "Minha música"
 
-#, fuzzy
-#| msgid "Choose an address"
 msgid "Name or stream address"
-msgstr "Escolher um endereço"
+msgstr "Nome ou endereço do fluxo"
 
 msgid "Name"
 msgstr "Nome"
@@ -2834,7 +2731,7 @@ msgid "Narrow layout threshold"
 msgstr "Limite de layout estreito"
 
 msgid "Narrow window"
-msgstr ""
+msgstr "Janela estreita"
 
 msgid "Navidrome"
 msgstr "Navidrome"
@@ -2871,8 +2768,6 @@ msgstr ""
 msgid "Never Played"
 msgstr "Nunca reproduzidas"
 
-#, fuzzy
-#| msgid "Never Played"
 msgid "Never played"
 msgstr "Nunca reproduzidas"
 
@@ -2882,10 +2777,8 @@ msgstr "Nova playlist"
 msgid "New Smart Playlist"
 msgstr "Nova playlist inteligente"
 
-#, fuzzy
-#| msgid "Never Played"
 msgid "New and unplayed"
-msgstr "Nunca reproduzidas"
+msgstr "Novas e não reproduzidas"
 
 msgid "New download rule"
 msgstr "Nova regra de download"
@@ -2908,10 +2801,8 @@ msgstr "Adicionadas recentemente"
 msgid "Next Track"
 msgstr "Próxima faixa"
 
-#, fuzzy
-#| msgid "Clear album"
 msgid "Next album"
-msgstr "Limpar álbum"
+msgstr "Próximo álbum"
 
 msgid "Next audio device"
 msgstr "Próximo dispositivo de áudio"
@@ -3007,7 +2898,7 @@ msgid "No related tracks found"
 msgstr "Nenhuma faixa relacionada encontrada"
 
 msgid "No results for \"{query}\""
-msgstr "Nenhum resultado para"
+msgstr "Nenhum resultado para \"{query}\""
 
 msgid "No results"
 msgstr "Nenhum resultado"
@@ -3042,15 +2933,11 @@ msgstr "Não conectado"
 msgid "Not needed for most servers"
 msgstr "Desnecessário para a maioria dos servidores"
 
-#, fuzzy
-#| msgid "Nothing played yet"
 msgid "Not played recently"
-msgstr "Nada reproduzido ainda"
+msgstr "Não reproduzidas recentemente"
 
-#, fuzzy
-#| msgid "Not connected"
 msgid "Not set"
-msgstr "Não conectado"
+msgstr "Não definido"
 
 msgid "Not valid"
 msgstr "Inválido"
@@ -3070,10 +2957,8 @@ msgstr "Nada reproduzindo"
 msgid "Nothing queued"
 msgstr "Nada na fila"
 
-#, fuzzy
-#| msgid "Nothing played yet"
 msgid "Nothing to play here"
-msgstr "Nada reproduzido ainda"
+msgstr "Nada para reproduzir aqui"
 
 msgid "Notifications"
 msgstr "Notificações"
@@ -3081,10 +2966,8 @@ msgstr "Notificações"
 msgid "November {year}"
 msgstr "Novembro de {year}"
 
-#, fuzzy
-#| msgid "New Playlist"
 msgid "Now Playing"
-msgstr "Nova playlist"
+msgstr "Tocando agora"
 
 msgid "Now playing notifications"
 msgstr "Notificações de reprodução atual"
@@ -3110,10 +2993,8 @@ msgstr "Desligado"
 msgid "Offline"
 msgstr "Offline"
 
-#, fuzzy
-#| msgid "Repeat"
 msgid "On repeat"
-msgstr "Repetir"
+msgstr "Em repetição"
 
 msgid "On"
 msgstr "Ligado"
@@ -3131,15 +3012,11 @@ msgstr ""
 msgid "One path per line"
 msgstr "Um caminho por linha"
 
-#, fuzzy
-#| msgid "Show external service icons on album and artist pages"
 msgid "One row shows albums and artists as cards"
-msgstr "Mostrar ícones de serviços externos nas páginas de álbuns e artistas"
+msgstr "Uma linha exibe álbuns e artistas em cartões"
 
-#, fuzzy
-#| msgid "Lookup"
 msgid "Online Lookups"
-msgstr "Busca"
+msgstr "Pesquisas online"
 
 msgid "Only fill missing information"
 msgstr "Apenas preencher informações ausentes"
@@ -3168,10 +3045,8 @@ msgstr "Abrir pasta de temas personalizados"
 msgid "Open fullscreen player"
 msgstr "Abrir player em tela cheia"
 
-#, fuzzy
-#| msgid "Open approval page"
 msgid "Open homepage"
-msgstr "Abrir página de aprovação"
+msgstr "Abrir página inicial"
 
 msgid "Open on Emby"
 msgstr "Abrir no Emby"
@@ -3213,10 +3088,10 @@ msgid "Opening Libre.fm authorization..."
 msgstr "Abrindo autorização do Libre.fm..."
 
 msgid "Optional. New images show up sooner with your own key."
-msgstr ""
+msgstr "Opcional. Novas imagens aparecem mais rápido com sua própria chave."
 
 msgid "Optional. Rufin has its own."
-msgstr ""
+msgstr "Opcional. O Rufin já tem uma."
 
 msgid "Options"
 msgstr "Opções"
@@ -3225,7 +3100,7 @@ msgid "Orange"
 msgstr "Laranja"
 
 msgid "Order"
-msgstr ""
+msgstr "Ordem"
 
 msgid "Original audio"
 msgstr "Áudio original"
@@ -3251,16 +3126,14 @@ msgstr "Barras de contorno"
 msgid "Output gain"
 msgstr "Ganho de saída"
 
-#, fuzzy
-#| msgid "Use Instant Mix for recommendations"
 msgid "Override server recommendations"
-msgstr "Usar Instant Mix para recomendações"
+msgstr "Substituir recomendações do servidor"
 
 msgid "Overview"
 msgstr "Visão geral"
 
 msgid "Page links"
-msgstr ""
+msgstr "Links da página"
 
 msgid "Parametric"
 msgstr "Paramétrico"
@@ -3286,10 +3159,8 @@ msgstr "Caminho"
 msgid "Pause"
 msgstr "Pausar"
 
-#, fuzzy
-#| msgid "Seek to {time}"
 msgid "Pauses at {time}"
-msgstr "Ir para {time}"
+msgstr "Pausa em {time}"
 
 msgid "Pauses when that track ends"
 msgstr "Pausar ao terminar a faixa"
@@ -3317,10 +3188,8 @@ msgstr "Perceptivo"
 msgid "Performer"
 msgstr "Intérprete"
 
-#, fuzzy
-#| msgid "Use API key"
 msgid "Personal API key"
-msgstr "Usar chave de API"
+msgstr "Chave de API pessoal"
 
 msgid "Pink"
 msgstr "Rosa"
@@ -3344,7 +3213,7 @@ msgid "Play Next"
 msgstr "Reproduzir em seguida"
 
 msgid "Play Rufin's picks instead of the server's own"
-msgstr ""
+msgstr "Reproduzir as escolhas do Rufin em vez das do próprio servidor"
 
 msgid "Play album"
 msgstr "Reproduzir álbum"
@@ -3385,15 +3254,11 @@ msgstr "Velocidade de reprodução"
 msgid "Playback"
 msgstr "Reprodução"
 
-#, fuzzy
-#| msgid "Play"
 msgid "Played"
-msgstr "Reproduzir"
+msgstr "Reproduzida"
 
-#, fuzzy
-#| msgid "Play"
 msgid "Player"
-msgstr "Reproduzir"
+msgstr "Reprodutor"
 
 msgid "Playing from {}"
 msgstr "Reproduzindo de {}"
@@ -3410,10 +3275,8 @@ msgstr "Reproduzindo em {device}"
 msgid "Playing stream"
 msgstr "Transmitindo fluxo"
 
-#, fuzzy
-#| msgid "New Playlist"
 msgid "Playing"
-msgstr "Nova playlist"
+msgstr "Reproduzindo"
 
 msgid "Playlist File"
 msgstr "Arquivo de playlist"
@@ -3442,10 +3305,8 @@ msgstr "Playlist"
 msgid "Playlists"
 msgstr "Playlists"
 
-#, fuzzy
-#| msgid "Playing from"
 msgid "Plays from"
-msgstr "Reproduzindo de"
+msgstr "Reproduções de"
 
 msgid "Plays"
 msgstr "Reproduções"
@@ -3480,10 +3341,8 @@ msgstr "Preferências"
 msgid "Preparing library..."
 msgstr "Preparando biblioteca..."
 
-#, fuzzy
-#| msgid "Preserve channels"
 msgid "Presence and links"
-msgstr "Preservar canais"
+msgstr "Presença e links"
 
 msgid "Preserve channels"
 msgstr "Preservar canais"
@@ -3510,10 +3369,8 @@ msgstr ""
 msgid "Previous Track"
 msgstr "Faixa anterior"
 
-#, fuzzy
-#| msgid "Previous page"
 msgid "Previous album"
-msgstr "Página anterior"
+msgstr "Álbum anterior"
 
 msgid "Previous audio device"
 msgstr "Dispositivo de áudio anterior"
@@ -3549,12 +3406,10 @@ msgid "Pronunciation"
 msgstr "Pronúncia"
 
 msgid "Protocol"
-msgstr ""
+msgstr "Protocolo"
 
-#, fuzzy
-#| msgid "Folders"
 msgid "Providers"
-msgstr "Pastas"
+msgstr "Provedores"
 
 msgid "Proxy casting through Rufin"
 msgstr "Fazer proxy da transmissão através do Rufin"
@@ -3581,10 +3436,10 @@ msgid "Queued"
 msgstr "Na fila"
 
 msgid "Quick Connect"
-msgstr "Quick Connect"
+msgstr "Conexão rápida"
 
 msgid "Quick Mix"
-msgstr ""
+msgstr "Mixagem rápida"
 
 msgid "Quit Rufin"
 msgstr "Sair do Rufin"
@@ -3596,7 +3451,7 @@ msgid "Radio"
 msgstr "Rádio"
 
 msgid "Random"
-msgstr ""
+msgstr "Aleatório"
 
 msgid "Range selection"
 msgstr "Seleção de intervalo"
@@ -3616,10 +3471,11 @@ msgstr "Recebendo perfil"
 msgid "Recent searches"
 msgstr "Pesquisas recentes"
 
-#, fuzzy
-#| msgid "Recently played"
 msgid "Recently added"
-msgstr "Reproduzidos recentemente"
+msgstr "Adicionadas recentemente"
+
+msgid "Recently heard songs"
+msgstr "Músicas ouvidas recentemente"
 
 msgid "Recently played"
 msgstr "Reproduzidos recentemente"
@@ -3642,10 +3498,8 @@ msgstr "Gravação"
 msgid "Red"
 msgstr "Vermelho"
 
-#, fuzzy
-#| msgid "Nearby discovery"
 msgid "Rediscover"
-msgstr "Descoberta próxima"
+msgstr "Redescobrir"
 
 msgid "Redo"
 msgstr "Refazer"
@@ -3695,10 +3549,8 @@ msgstr "Tipo de lançamento"
 msgid "Release"
 msgstr "Lançamento"
 
-#, fuzzy
-#| msgid "Release type"
 msgid "Released {year}"
-msgstr "Tipo de lançamento"
+msgstr "Lançado em {year}"
 
 msgid "Reload from file"
 msgstr "Recarregar do arquivo"
@@ -3716,23 +3568,19 @@ msgid "Reload"
 msgstr "Recarregar"
 
 msgid "Remix"
-msgstr ""
+msgstr "Remix"
 
 msgid "Remixes"
-msgstr ""
+msgstr "Remixes"
 
 msgid "Remote folders on a Windows share or NAS"
-msgstr ""
+msgstr "Pastas remotas em um compartilhamento do Windows ou NAS"
 
-#, fuzzy
-#| msgid "Remove folder"
 msgid "Remote folders over WebDAV"
-msgstr "Remover pasta"
+msgstr "Pastas remotas via WebDAV"
 
-#, fuzzy
-#| msgid "Remove folder"
 msgid "Remote folders"
-msgstr "Remover pasta"
+msgstr "Pastas remotas"
 
 msgid "Remote lyrics"
 msgstr "Letras remotas"
@@ -3779,23 +3627,17 @@ msgstr "Remover da playlist"
 msgid "Remove from Queue"
 msgstr "Remover da fila"
 
-#, fuzzy
-#| msgid "Remove from Favorites"
 msgid "Remove from Saved"
-msgstr "Remover dos favoritos"
+msgstr "Remover dos salvos"
 
 msgid "Remove from folder"
 msgstr "Remover da pasta"
 
-#, fuzzy
-#| msgid "Remove rule"
 msgid "Remove group"
-msgstr "Remover regra"
+msgstr "Remover grupo"
 
-#, fuzzy
-#| msgid "Remove device"
 msgid "Remove image"
-msgstr "Remover dispositivo"
+msgstr "Remover imagem"
 
 msgid "Remove rule"
 msgstr "Remover regra"
@@ -3803,10 +3645,8 @@ msgstr "Remover regra"
 msgid "Remove search"
 msgstr "Remover pesquisa"
 
-#, fuzzy
-#| msgid "Remove search"
 msgid "Remove server"
-msgstr "Remover pesquisa"
+msgstr "Remover servidor"
 
 msgid "Remove unavailable tracks"
 msgstr "Remover faixas indisponíveis"
@@ -3887,7 +3727,7 @@ msgid "Restore"
 msgstr "Restaurar"
 
 msgid "Results from radio-browser.info."
-msgstr ""
+msgstr "Resultados de radio-browser.info."
 
 msgid "Results per section"
 msgstr "Resultados por seção"
@@ -3901,23 +3741,17 @@ msgstr "Ressincronizar biblioteca"
 msgid "Retry"
 msgstr "Tentar novamente"
 
-#, fuzzy
-#| msgid "Reorder"
 msgid "Reverse order"
-msgstr "Reordenar"
+msgstr "Inverter ordem"
 
 msgid "Ribbon"
 msgstr "Fita"
 
-#, fuzzy
-#| msgid "Discord Rich Presence"
 msgid "Rich Presence on"
-msgstr "Discord Rich Presence"
+msgstr "Rich Presence ativado"
 
-#, fuzzy
-#| msgid "Narrow right sidebar"
 msgid "Right sidebar"
-msgstr "Barra lateral direita estreita"
+msgstr "Barra lateral direita"
 
 msgid "Rise speed (%)"
 msgstr "Velocidade de subida (%)"
@@ -3953,7 +3787,7 @@ msgid "Rufin host"
 msgstr "Host do Rufin"
 
 msgid "Rufin needs local access to {path}"
-msgstr ""
+msgstr "O Rufin precisa de acesso local a {path}"
 
 msgid "Rule actions"
 msgstr "Ações de regra"
@@ -3964,10 +3798,8 @@ msgstr "SMB / Samba"
 msgid "SMB Domain"
 msgstr "Domínio SMB"
 
-#, fuzzy
-#| msgid "Play artist"
 msgid "Same artist"
-msgstr "Reproduzir artista"
+msgstr "Mesmo artista"
 
 msgid "Sample peak"
 msgstr "Pico da amostra"
@@ -4016,11 +3848,8 @@ msgstr "Logins salvos"
 
 msgid "Saved mapping. {matched} of {total} server path matches"
 msgid_plural "Saved mapping. {matched} of {total} server paths match"
-msgstr[0] ""
-"Mapeamento salvo. {matched} de {total} correspondências de caminho de "
-"servidor"
-msgstr[1] ""
-"Mapeamento salvo. {matched} de {total} correspondência de caminho de servidor"
+msgstr[0] "Mapeamento salvo. {matched} de {total} correspondência do servidor"
+msgstr[1] "Mapeamento salvo. {matched} de {total} correspondências do servidor"
 
 msgid "Saved preset"
 msgstr "Predefinição salva"
@@ -4056,12 +3885,10 @@ msgid "Scheduled backup password saved"
 msgstr "Senha de backup agendado salva"
 
 msgid "Scrobble plays"
-msgstr ""
+msgstr "Enviar reproduções para o scrobbling"
 
-#, fuzzy
-#| msgid "Last.fm scrobbling"
 msgid "Scrobbling"
-msgstr "Scrobbling do Last.fm"
+msgstr "Scrobbling"
 
 msgid "Search Again"
 msgstr "Pesquisar novamente"
@@ -4102,15 +3929,11 @@ msgstr "Preferências de pesquisa"
 msgid "Search queue"
 msgstr "Pesquisar na fila"
 
-#, fuzzy
-#| msgid "Search Again"
 msgid "Search stations"
-msgstr "Pesquisar novamente"
+msgstr "Pesquisar estações"
 
-#, fuzzy
-#| msgid "Search artwork"
 msgid "Search this network"
-msgstr "Pesquisar capas"
+msgstr "Pesquisar nesta rede"
 
 msgid "Search unavailable"
 msgstr "Pesquisa indisponível"
@@ -4142,10 +3965,8 @@ msgstr "A pesquisa começará automaticamente"
 msgid "Searching..."
 msgstr "Pesquisando..."
 
-#, fuzzy
-#| msgid "Open release notes"
 msgid "Secondary release types"
-msgstr "Abrir notas de lançamento"
+msgstr "Tipos secundários de lançamento"
 
 msgid "Secret storage"
 msgstr "Armazenamento secreto"
@@ -4162,10 +3983,8 @@ msgstr "Buscar na reprodução"
 msgid "Seek to {time}"
 msgstr "Ir para {time}"
 
-#, fuzzy
-#| msgid "Seek Forward"
 msgid "Seekbar"
-msgstr "Avançar"
+msgstr "Barra de busca"
 
 msgid "Segment end"
 msgstr "Fim do segmento"
@@ -4192,15 +4011,13 @@ msgid "Select all"
 msgstr "Selecionar tudo"
 
 msgid "Select an entry to show or hide it."
-msgstr ""
+msgstr "Selecione uma opção para exibi-la ou ocultá-la."
 
 msgid "Select {title}"
 msgstr "Selecionar {title}"
 
-#, fuzzy
-#| msgid "Source setup is unavailable"
 msgid "Selected audio output is unavailable"
-msgstr "A configuração da fonte está indisponível"
+msgstr "A saída de áudio selecionada não está disponível"
 
 msgid "Selected folders"
 msgstr "Pastas selecionadas"
@@ -4208,10 +4025,8 @@ msgstr "Pastas selecionadas"
 msgid "Selected items: {count}"
 msgstr "Itens selecionados: {count}"
 
-#, fuzzy
-#| msgid "Selection"
 msgid "Selected"
-msgstr "Seleção"
+msgstr "Selecionado"
 
 msgid "Selection"
 msgstr "Seleção"
@@ -4219,10 +4034,8 @@ msgstr "Seleção"
 msgid "Self-host an Iroh Relay"
 msgstr "Auto-hospedar um Relay Iroh"
 
-#, fuzzy
-#| msgid "Last.fm scrobbling"
 msgid "Self-hosted scrobbling"
-msgstr "Scrobbling do Last.fm"
+msgstr "Scrobbling auto-hospedado"
 
 msgid "September {year}"
 msgstr "Setembro de {year}"
@@ -4230,10 +4043,8 @@ msgstr "Setembro de {year}"
 msgid "Server Actions"
 msgstr "Ações do servidor"
 
-#, fuzzy
-#| msgid "Server Address Override (optional)"
 msgid "Server Address Override"
-msgstr "Substituição de endereço do servidor (opcional)"
+msgstr "Substituição do endereço do servidor"
 
 msgid "Server Address"
 msgstr "Endereço do servidor"
@@ -4250,15 +4061,11 @@ msgstr "Amostra do servidor"
 msgid "Server Settings"
 msgstr "Configurações do servidor"
 
-#, fuzzy
-#| msgid "Server"
 msgid "Server URL"
-msgstr "Servidor"
+msgstr "URL do servidor"
 
-#, fuzzy
-#| msgid "System default"
 msgid "Server default"
-msgstr "Padrão do sistema"
+msgstr "Padrão do servidor"
 
 msgid "Server discovery failed: {error}"
 msgstr "A descoberta do servidor falhou: {error}"
@@ -4272,26 +4079,19 @@ msgstr "O prefixo do servidor não corresponde"
 msgid "Server"
 msgstr "Servidor"
 
-#, fuzzy
-#| msgid "Show external service icons on album and artist pages"
 msgid "Service icons on album and artist pages"
-msgstr "Mostrar ícones de serviços externos nas páginas de álbuns e artistas"
+msgstr "Ícones de serviços nas páginas de álbuns e artistas"
 
-#, fuzzy
-#| msgid "Servers"
 msgid "Services"
-msgstr "Servidores"
+msgstr "Serviços"
 
 msgid "Set the Discord activity type to Listening"
 msgstr "Definir o tipo de atividade do Discord como Ouvindo"
 
-#, fuzzy
-#| msgid "{count} play"
-#| msgid_plural "{count} plays"
 msgid "Set {count} play count."
 msgid_plural "Set {count} play counts."
-msgstr[0] "{count} reprodução"
-msgstr[1] "{count} reproduções"
+msgstr[0] "Definir {count} contagem de reprodução."
+msgstr[1] "Definir {count} contagens de reprodução."
 
 msgid "Settings and sources"
 msgstr "Configurações e fontes"
@@ -4318,7 +4118,7 @@ msgid "Show Rufin"
 msgstr "Mostrar Rufin"
 
 msgid "Show a badge for favorited items"
-msgstr ""
+msgstr "Exibir um selo nos itens favoritos"
 
 msgid "Show artwork"
 msgstr "Mostrar capas"
@@ -4359,10 +4159,8 @@ msgstr "Mostrar avaliações na barra inferior"
 msgid "Show sidebar"
 msgstr "Mostrar barra lateral"
 
-#, fuzzy
-#| msgid "Show tray icon"
 msgid "Show star ratings"
-msgstr "Mostrar ícone na bandeja"
+msgstr "Exibir avaliações em estrelas"
 
 msgid "Show tray icon"
 msgstr "Mostrar ícone na bandeja"
@@ -4375,6 +4173,9 @@ msgstr "Mostrar visualizador no painel direito"
 
 msgid "Show visualizer"
 msgstr "Mostrar visualizador"
+
+msgid "Show whole covers"
+msgstr "Exibir capas inteiras"
 
 msgid "Show"
 msgstr "Mostrar"
@@ -4391,13 +4192,11 @@ msgstr "Vitrine"
 msgid "Shows what you are playing on your Discord profile"
 msgstr "Mostra o que você está ouvindo no seu perfil do Discord"
 
-#, fuzzy
-#| msgid "Shows what you are playing on your Discord profile"
 msgid "Shows what you play on your Discord profile"
 msgstr "Mostra o que você está ouvindo no seu perfil do Discord"
 
 msgid "Shuffle"
-msgstr "Aleatório"
+msgstr "Embaralhar"
 
 msgid "Sidebar Items"
 msgstr "Itens da barra lateral"
@@ -4405,8 +4204,6 @@ msgstr "Itens da barra lateral"
 msgid "Sidebar item {position}"
 msgstr "Item da barra lateral {position}"
 
-#, fuzzy
-#| msgid "Sidebar Items"
 msgid "Sidebar items"
 msgstr "Itens da barra lateral"
 
@@ -4422,10 +4219,8 @@ msgstr "Entrar no navegador"
 msgid "Sign In with Password"
 msgstr "Entrar com senha"
 
-#, fuzzy
-#| msgid "Sign in"
 msgid "Sign in again"
-msgstr "Entrar"
+msgstr "Fazer login novamente"
 
 msgid "Sign in to Plex first"
 msgstr "Entrar no Plex primeiro"
@@ -4439,15 +4234,11 @@ msgstr "Entrar com um código"
 msgid "Sign in"
 msgstr "Entrar"
 
-#, fuzzy
-#| msgid "Sign in"
 msgid "Signing in..."
-msgstr "Entrar"
+msgstr "Fazendo login..."
 
-#, fuzzy
-#| msgid "Similar artists"
 msgid "Similar artists from ListenBrainz"
-msgstr "Artistas similares"
+msgstr "Artistas semelhantes do ListenBrainz"
 
 msgid "Similar artists"
 msgstr "Artistas similares"
@@ -4461,16 +4252,22 @@ msgstr "Single"
 msgid "Singles"
 msgstr "Singles"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr "Tamanho"
 
 msgid "Skip count"
 msgstr "Contagem de saltos"
 
-#, fuzzy
-#| msgid "Skip unplayable tracks"
 msgid "Skip low-rated tracks"
-msgstr "Pular faixas irreproduzíveis"
+msgstr "Pular faixas com avaliações baixas"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Rede local"
 
 msgid "Skip same-album crossfade"
 msgstr "Pular crossfade do mesmo álbum"
@@ -4484,10 +4281,8 @@ msgstr "Pular"
 msgid "Slate"
 msgstr "Ardósia"
 
-#, fuzzy
-#| msgid "Seek to {time}"
 msgid "Sleep timer"
-msgstr "Ir para {time}"
+msgstr "Temporizador de desligamento"
 
 msgid "Small"
 msgstr "Pequeno"
@@ -4514,10 +4309,10 @@ msgid "Some playlist entries could not be imported"
 msgstr "Algumas entradas da playlist não puderam ser importadas"
 
 msgid "Some"
-msgstr ""
+msgstr "Algumas"
 
 msgid "Song and artist links"
-msgstr ""
+msgstr "Links de músicas e artistas"
 
 msgid "Song title"
 msgstr "Título da música"
@@ -4537,16 +4332,11 @@ msgstr "Nome de ordenação"
 msgid "Sort title"
 msgstr "Título de ordenação"
 
-#, fuzzy
-#| msgid "{count} track"
-#| msgid_plural "{count} tracks"
 msgid "Soundtrack"
-msgstr "{count} faixa"
+msgstr "Trilha sonora"
 
-#, fuzzy
-#| msgid "Mood tracks"
 msgid "Soundtracks"
-msgstr "Faixas por humor"
+msgstr "Trilhas sonoras"
 
 msgid "Source by position"
 msgstr "Fonte por posição"
@@ -4566,10 +4356,8 @@ msgstr "Fonte"
 msgid "Sources"
 msgstr "Fontes"
 
-#, fuzzy
-#| msgid "Grid spacing"
 msgid "Spacing"
-msgstr "Espaçamento de grade"
+msgstr "Espaçamento"
 
 msgid "Spectrum · dBFS"
 msgstr "Espectro 302267 dBFS"
@@ -4580,20 +4368,17 @@ msgstr "Linha de espectro"
 msgid "Spectrum"
 msgstr "Espectro"
 
-#, fuzzy
-#| msgid "Similar artists"
+msgid "Speed"
+msgstr ""
+
 msgid "Split featured artists"
-msgstr "Artistas similares"
+msgstr "Separar artistas convidados"
 
-#, fuzzy
-#| msgid "Listening"
 msgid "Start Listening"
-msgstr "Ouvindo"
+msgstr "Começar a ouvir"
 
-#, fuzzy
-#| msgid "Start"
 msgid "Start from"
-msgstr "Iniciando"
+msgstr "Começar em"
 
 msgid "Start minimized"
 msgstr "Iniciar minimizado"
@@ -4610,26 +4395,20 @@ msgstr "Página inicial"
 msgid "Starting..."
 msgstr "Iniciando..."
 
-#, fuzzy
-#| msgid "Automatic"
 msgid "Static"
-msgstr "Automático"
+msgstr "Estático"
 
 msgid "Stations are saved on {saved_on}."
-msgstr ""
+msgstr "As estações são salvas em {saved_on}."
 
-#, fuzzy
-#| msgid "Automatic"
 msgid "Stations"
-msgstr "Automático"
+msgstr "Estações"
 
 msgid "Status display"
 msgstr "Exibição de status"
 
-#, fuzzy
-#| msgid "Automatic"
 msgid "Status"
-msgstr "Automático"
+msgstr "Status"
 
 msgid "Stereo for lossy formats"
 msgstr "Estéreo para formatos com perda"
@@ -4646,15 +4425,16 @@ msgstr "Armazenamento"
 msgid "Store calculated loudness in supported Local music files"
 msgstr "Armazenar loudness calculada em arquivos de música local compatíveis"
 
-#, fuzzy
-#| msgid "Relay address"
 msgid "Stream address"
-msgstr "Endereço de relay"
+msgstr "Endereço do fluxo"
 
 #, fuzzy
-#| msgid "Stream quality"
+#| msgid "Stream address"
+msgid "Stream cache"
+msgstr "Endereço do fluxo"
+
 msgid "Stream quality on mobile data"
-msgstr "Qualidade da transmissão"
+msgstr "Qualidade do fluxo em dados móveis"
 
 msgid "Stream quality"
 msgstr "Qualidade da transmissão"
@@ -4671,6 +4451,9 @@ msgstr "Estúdios"
 msgid "Style"
 msgstr "Estilo"
 
+msgid "Suggested stations"
+msgstr "Estações sugeridas"
+
 msgid "Suggested"
 msgstr "Sugerido"
 
@@ -4681,7 +4464,7 @@ msgid "Swipe left"
 msgstr "Deslizar para a esquerda"
 
 msgid "Swipe on a row"
-msgstr ""
+msgstr "Deslize sobre uma linha"
 
 msgid "Swipe right"
 msgstr "Deslizar para a direita"
@@ -4701,21 +4484,17 @@ msgstr "Alternando biblioteca..."
 msgid "Symbolic"
 msgstr "Simbólico"
 
-#, fuzzy
-#| msgid "Save in folder"
 msgid "Sync folder"
-msgstr "Salvar na pasta"
+msgstr "Sincronizar pasta"
 
-#, fuzzy
-#| msgid "Synced lyrics"
 msgid "Synced and plain lyrics"
-msgstr "Letras sincronizadas"
+msgstr "Letras sincronizadas e simples"
 
 msgid "Synced lyrics"
 msgstr "Letras sincronizadas"
 
 msgid "Synced lyrics, some word by word"
-msgstr ""
+msgstr "Letras sincronizadas, algumas palavra por palavra"
 
 msgid "System default"
 msgstr "Padrão do sistema"
@@ -4755,15 +4534,21 @@ msgstr "A faixa fixada não está mais disponível"
 
 msgid "The closest match wins; on a tie, the higher one."
 msgstr ""
+"A correspondência mais próxima vence; em caso de empate, vence a de maior "
+"valor."
 
 msgid "The connection no longer exists"
 msgstr "A conexão não existe mais"
 
 msgid "The files are deleted where they are stored. This cannot be undone."
 msgstr ""
+"Os arquivos são excluídos do local onde estão armazenados. Esta ação não "
+"pode ser desfeita."
 
 msgid "The sheet a long press opens. Tap an entry to show or hide it."
 msgstr ""
+"A tela aberta ao manter pressionado. Toque em uma opção para exibi-la ou "
+"ocultá-la."
 
 msgid "TheAudioDB album ID"
 msgstr "ID de álbum no TheAudioDB"
@@ -4786,12 +4571,8 @@ msgstr "Este dispositivo foi removido do perfil"
 msgid "This device"
 msgstr "Este dispositivo"
 
-#, fuzzy
-#| msgid ""
-#| "This is owned by {source}. Regular playlists are synced to your remote."
 msgid "This is owned by {source} and synced to it."
-msgstr ""
-"Isto pertence a {source}. Playlists normais são sincronizadas com seu remoto."
+msgstr "Isto pertence a {source} e é sincronizado com ele."
 
 msgid "This isn't available"
 msgstr "Isto não está disponível"
@@ -4805,10 +4586,8 @@ msgstr "Esta playlist aceita apenas faixas de {source}"
 msgid "This source cannot edit this field"
 msgstr "Esta fonte não pode editar este campo"
 
-#, fuzzy
-#| msgid "Finish the last track"
 msgid "This time last year"
-msgstr "Terminar a última faixa"
+msgstr "Nesta mesma época do ano passado"
 
 msgid "This will remove all configured state. Do you want to continue?"
 msgstr "Isso removerá todo o estado configurado. Deseja continuar?"
@@ -4843,10 +4622,8 @@ msgstr "Principais artistas"
 msgid "Top genres"
 msgstr "Principais gêneros"
 
-#, fuzzy
-#| msgid "Top genres"
 msgid "Top rated"
-msgstr "Principais gêneros"
+msgstr "Mais bem avaliadas"
 
 msgid "Top tracks"
 msgstr "Principais faixas"
@@ -4878,19 +4655,22 @@ msgstr "Faixa indisponível"
 msgid "Track"
 msgstr "Faixa"
 
+#, fuzzy
+#| msgid "Stream quality on mobile data"
+msgid "Tracks ahead on mobile data"
+msgstr "Qualidade do fluxo em dados móveis"
+
 msgid "Tracks from every playlist"
 msgstr "Faixas de todas as playlists"
 
 msgid "Tracks from your five latest albums"
 msgstr "Faixas dos seus cinco álbuns mais recentes"
 
-#, fuzzy
-#| msgid "Track details"
 msgid "Tracks per refill"
-msgstr "Detalhes da faixa"
+msgstr "Faixas por reposição"
 
 msgid "Tracks you marked as favorite"
-msgstr ""
+msgstr "Faixas que você marcou como favoritas"
 
 msgid "Tracks"
 msgstr "Faixas"
@@ -4904,10 +4684,8 @@ msgstr "Modo de transição"
 msgid "Translation language"
 msgstr "Idioma de tradução"
 
-#, fuzzy
-#| msgid "Show tray icon"
 msgid "Tray icon"
-msgstr "Mostrar ícone na bandeja"
+msgstr "Ícone na bandeja"
 
 msgid "Treble"
 msgstr "Agudos"
@@ -4950,10 +4728,8 @@ msgstr "Tipografia"
 msgid "UPnP"
 msgstr "UPnP"
 
-#, fuzzy
-#| msgid "Unavailable"
 msgid "Unavailable output"
-msgstr "Indisponível"
+msgstr "Saída indisponível"
 
 msgid "Unavailable"
 msgstr "Indisponível"
@@ -4976,10 +4752,8 @@ msgstr "Desativar mudo"
 msgid "Unmuted"
 msgstr "Com som ativado"
 
-#, fuzzy
-#| msgid "Ever played"
 msgid "Unplayed"
-msgstr "Já reproduzido"
+msgstr "Não reproduzidas"
 
 msgid "Unsaved"
 msgstr "Não salvo"
@@ -5051,10 +4825,8 @@ msgid "Use local files for playback, lyrics, and supported metadata editing"
 msgstr ""
 "Usar arquivos locais para reprodução, letras e edição de metadados compatível"
 
-#, fuzzy
-#| msgid "Use source setting"
 msgid "Use sort tags"
-msgstr "Usar configuração da fonte"
+msgstr "Usar tags de ordenação"
 
 msgid "Use source setting"
 msgstr "Usar configuração da fonte"
@@ -5080,10 +4852,8 @@ msgstr "Nome de usuário"
 msgid "Uses available karaoke lyrics or fetches them from the internet"
 msgstr "Usa letras de karaokê disponíveis ou as busca na internet"
 
-#, fuzzy
-#| msgid "Verification Code (optional)"
 msgid "Verification Code"
-msgstr "Código de verificação (opcional)"
+msgstr "Código de verificação"
 
 msgid "Verify server certificate"
 msgstr "Verificar certificado do servidor"
@@ -5151,14 +4921,11 @@ msgstr "Semanal"
 msgid "Weighting"
 msgstr "Ponderação"
 
-#, fuzzy
-#| msgctxt "Windows installer"
-#| msgid "Welcome to Rufin Setup"
 msgid "Welcome to Rufin"
-msgstr "Bem-vindo à configuração do Rufin"
+msgstr "Boas-vindas ao Rufin"
 
 msgid "What Auto DJ and radio pick"
-msgstr ""
+msgstr "O que o Auto DJ e o rádio selecionam"
 
 msgid "While your library loads"
 msgstr "Carregando biblioteca"
@@ -5175,23 +4942,20 @@ msgstr "Largura"
 msgid "Window"
 msgstr "Janela"
 
+msgid "Without genres and descriptions"
+msgstr "Sem gêneros e descrições"
+
 msgid "Write EBU R128 tags to files"
 msgstr "Escrever tags EBU R128 nos arquivos"
 
-#, fuzzy
-#| msgid "Write EBU R128 tags to files"
 msgid "Write Ratings to Files?"
-msgstr "Escrever tags EBU R128 nos arquivos"
+msgstr "Gravar avaliações nos arquivos?"
 
-#, fuzzy
-#| msgid "Write EBU R128 tags to files"
 msgid "Write ratings to files"
-msgstr "Escrever tags EBU R128 nos arquivos"
+msgstr "Gravar avaliações nos arquivos"
 
-#, fuzzy
-#| msgid "Write EBU R128 tags to files"
 msgid "Write to Files"
-msgstr "Escrever tags EBU R128 nos arquivos"
+msgstr "Gravar nos arquivos"
 
 msgid "Year"
 msgstr "Ano"
@@ -5199,10 +4963,8 @@ msgstr "Ano"
 msgid "Yearly"
 msgstr "Anual"
 
-#, fuzzy
-#| msgid "Year"
 msgid "Years"
-msgstr "Ano"
+msgstr "Anos"
 
 msgid "Yellow"
 msgstr "Amarelo"
@@ -5210,16 +4972,19 @@ msgstr "Amarelo"
 msgid "Yes"
 msgstr "Sim"
 
+#, fuzzy
+#| msgid "Add a source to configure downloads."
+msgid "You need to configure a local address"
+msgstr "Adicione uma fonte para configurar os downloads."
+
 msgid "Your library is ready"
 msgstr "Sua biblioteca está pronta"
 
 msgid "Your music belongs here"
 msgstr "Sua música pertence aqui"
 
-#, fuzzy
-#| msgid "API key"
 msgid "Your own API key"
-msgstr "Chave de API"
+msgstr "Sua própria chave de API"
 
 msgid "Your queue is empty."
 msgstr "Sua fila está vazia."
@@ -5236,15 +5001,11 @@ msgstr "acima"
 msgid "after"
 msgstr "depois"
 
-#, fuzzy
-#| msgid "Small"
 msgid "all"
-msgstr "Pequeno"
+msgstr "todos"
 
-#, fuzzy
-#| msgid "Any"
 msgid "any"
-msgstr "Qualquer"
+msgstr "qualquer"
 
 msgid "before"
 msgstr "antes"
@@ -5256,7 +5017,7 @@ msgid "contains"
 msgstr "contém"
 
 msgid "days"
-msgstr ""
+msgstr "dias"
 
 msgid "does not contain"
 msgstr "não contém"
@@ -5271,12 +5032,10 @@ msgid "excludes"
 msgstr "exclui"
 
 msgid "fanart.tv key"
-msgstr ""
+msgstr "chave do fanart.tv"
 
-#, fuzzy
-#| msgid "Finish the last track"
 msgid "in the last"
-msgstr "Terminar a última faixa"
+msgstr "nos últimos"
 
 msgid "is empty"
 msgstr "está vazio"
@@ -5290,18 +5049,14 @@ msgstr "não é"
 msgid "is"
 msgstr "é"
 
-#, fuzzy
-#| msgid "Finish the last track"
 msgid "not in the last"
-msgstr "Terminar a última faixa"
+msgstr "não nos últimos"
 
 msgid "of these rules"
-msgstr ""
+msgstr "destas regras"
 
-#, fuzzy
-#| msgid "Import theme"
 msgid "of these"
-msgstr "Importar tema"
+msgstr "destes"
 
 msgid "range"
 msgstr "intervalo"
@@ -5333,8 +5088,8 @@ msgstr[1] "{count} dias atrás"
 
 msgid "{count} entry matches no track in the library."
 msgid_plural "{count} entries match no track in the library."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{count} entrada não corresponde a nenhuma faixa da biblioteca."
+msgstr[1] "{count} entradas não correspondem a nenhuma faixa da biblioteca."
 
 msgid "{count} entry"
 msgid_plural "{count} entries"
@@ -5346,25 +5101,20 @@ msgid_plural "{count} folders selected"
 msgstr[0] "{count} pasta selecionada"
 msgstr[1] "{count} pastas selecionadas"
 
-#, fuzzy
-#| msgid "{count} folder selected"
-#| msgid_plural "{count} folders selected"
 msgid "{count} folder"
 msgid_plural "{count} folders"
-msgstr[0] "{count} pasta selecionada"
-msgstr[1] "{count} pastas selecionadas"
+msgstr[0] "{count} pasta"
+msgstr[1] "{count} pastas"
 
-#, fuzzy
-#| msgid "Some playlist entries could not be imported"
 msgid "{count} line could not be read."
 msgid_plural "{count} lines could not be read."
-msgstr[0] "Algumas entradas da playlist não puderam ser importadas"
-msgstr[1] "Algumas entradas da playlist não puderam ser importadas"
+msgstr[0] "Não foi possível ler {count} linha."
+msgstr[1] "Não foi possível ler {count} linhas."
 
 msgid "{count} listen was already in Rufin."
 msgid_plural "{count} listens were already in Rufin."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{count} reprodução já está no Rufin."
+msgstr[1] "{count} reproduções já estavam no Rufin."
 
 msgid "{count} month ago"
 msgid_plural "{count} months ago"
@@ -5378,19 +5128,16 @@ msgstr[1] "{count} reproduções"
 
 msgid "{count} rating is waiting to be written"
 msgid_plural "{count} ratings are waiting to be written"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{count} avaliação aguardando para ser salva"
+msgstr[1] "{count} avaliações aguardando para serem salvas"
 
 msgid "{count} result"
 msgid_plural "{count} results"
 msgstr[0] "{count} resultado"
 msgstr[1] "{count} resultados"
 
-#, fuzzy
-#| msgid "{count} folder selected"
-#| msgid_plural "{count} folders selected"
 msgid "{count} selected"
-msgstr "{count} pasta selecionada"
+msgstr "{count} selecionados"
 
 msgid "{count} track"
 msgid_plural "{count} tracks"

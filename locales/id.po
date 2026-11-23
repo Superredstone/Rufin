@@ -366,6 +366,9 @@ msgstr "6 jam"
 msgid "A new update is available, restart to apply"
 msgstr "Pembaruan tersedia, mulai ulang untuk menerapkan"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 #, fuzzy
 msgid "A"
 msgstr "A"
@@ -809,6 +812,9 @@ msgstr "Bearer token (WebDAV)"
 msgid "Bearer token"
 msgstr "Bearer token"
 
+msgid "Behavior"
+msgstr ""
+
 #, fuzzy
 msgid "Bit depth"
 msgstr "Bit depth"
@@ -845,6 +851,11 @@ msgstr "C"
 
 msgid "CUE file"
 msgstr "File CUE"
+
+#, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Memuat lagu terkait..."
 
 #, fuzzy
 msgid "Cache"
@@ -1023,6 +1034,11 @@ msgstr "Hapus cache lirik"
 msgid "Clear queue"
 msgstr "Kosongkan antrean"
 
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Hapus semua cache"
+
 msgid "Clear this cache?"
 msgstr "Hapus cache ini?"
 
@@ -1088,6 +1104,11 @@ msgstr "Teks komentar"
 
 msgid "Comment"
 msgstr "Komentar"
+
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Ringkas"
 
 msgid "Compact"
 msgstr "Ringkas"
@@ -1895,6 +1916,9 @@ msgstr "Genre pilihan"
 msgid "February {year}"
 msgstr "Februari {year}"
 
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
+
 msgid "Fetching Home"
 msgstr "Memuat Beranda"
 
@@ -1973,6 +1997,9 @@ msgstr "Menyelesaikan lagu yang sedang diputar pada {time}"
 
 msgid "Fit to height"
 msgstr "Sesuaikan dengan tinggi"
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
+msgstr ""
 
 msgid "Fixed position"
 msgstr "Posisi tetap"
@@ -3613,6 +3640,11 @@ msgstr "Pencarian terakhir"
 msgid "Recently added"
 msgstr "Baru ditambahkan"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Baru dirilis"
+
 msgid "Recently played"
 msgstr "Baru diputar"
 
@@ -4350,6 +4382,9 @@ msgstr "Tampilkan visualisasi di panel kanan"
 msgid "Show visualizer"
 msgstr "Tampilkan visualisasi"
 
+msgid "Show whole covers"
+msgstr ""
+
 msgid "Show"
 msgstr ""
 
@@ -4429,6 +4464,9 @@ msgstr ""
 msgid "Singles"
 msgstr ""
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr ""
 
@@ -4439,6 +4477,11 @@ msgstr ""
 #| msgid "Favorite tracks"
 msgid "Skip low-rated tracks"
 msgstr "Lagu favorit"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Jaringan lokal"
 
 msgid "Skip same-album crossfade"
 msgstr ""
@@ -4543,6 +4586,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Clear artist"
 msgid "Split featured artists"
@@ -4606,6 +4652,11 @@ msgstr ""
 msgid "Stream address"
 msgstr "Alamat alternatif"
 
+#, fuzzy
+#| msgid "Alternate addresses"
+msgid "Stream cache"
+msgstr "Alamat alternatif"
+
 msgid "Stream quality on mobile data"
 msgstr ""
 
@@ -4623,6 +4674,11 @@ msgstr ""
 
 msgid "Style"
 msgstr ""
+
+#, fuzzy
+#| msgid "Search stations"
+msgid "Suggested stations"
+msgstr "Cari stasiun"
 
 msgid "Suggested"
 msgstr ""
@@ -4822,6 +4878,11 @@ msgstr ""
 
 msgid "Track"
 msgstr ""
+
+#, fuzzy
+#| msgid "Download on Mobile Data"
+msgid "Tracks ahead on mobile data"
+msgstr "Unduh menggunakan Data Seluler"
 
 msgid "Tracks from every playlist"
 msgstr ""
@@ -5104,6 +5165,9 @@ msgstr ""
 msgid "Window"
 msgstr ""
 
+msgid "Without genres and descriptions"
+msgstr ""
+
 msgid "Write EBU R128 tags to files"
 msgstr ""
 
@@ -5130,6 +5194,11 @@ msgstr ""
 
 msgid "Yes"
 msgstr ""
+
+#, fuzzy
+#| msgid "Add a source to configure downloads."
+msgid "You need to configure a local address"
+msgstr "Tambahkan sumber untuk mengatur unduhan."
 
 msgid "Your library is ready"
 msgstr "Pustaka anda siap"

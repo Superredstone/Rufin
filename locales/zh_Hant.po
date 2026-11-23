@@ -289,6 +289,9 @@ msgstr ""
 msgid "A new update is available, restart to apply"
 msgstr ""
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr ""
 
@@ -809,6 +812,9 @@ msgstr "取得登入授權"
 msgid "Bearer token"
 msgstr "取得登入授權"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr ""
 
@@ -849,6 +855,11 @@ msgstr ""
 #| msgid "Change Secret Storage"
 msgid "CUE file"
 msgstr "變更敏感存儲空間"
+
+#, fuzzy
+#| msgid "Loading folders..."
+msgid "Cache streamed tracks"
+msgstr "資料夾載入中..."
 
 #, fuzzy
 #| msgid "Cached"
@@ -1080,6 +1091,11 @@ msgstr "清除播放佇列"
 
 #, fuzzy
 #| msgid "Search lyrics"
+msgid "Clear stream cache"
+msgstr "搜尋歌詞"
+
+#, fuzzy
+#| msgid "Search lyrics"
 msgid "Clear this cache?"
 msgstr "搜尋歌詞"
 
@@ -1157,6 +1173,11 @@ msgstr ""
 
 msgid "Comment"
 msgstr ""
+
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "緊湊"
 
 msgid "Compact"
 msgstr "緊湊"
@@ -2103,6 +2124,9 @@ msgstr ""
 msgid "February {year}"
 msgstr ""
 
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
+
 msgid "Fetching Home"
 msgstr ""
 
@@ -2200,6 +2224,9 @@ msgid "Finishes the track playing at {time}"
 msgstr ""
 
 msgid "Fit to height"
+msgstr ""
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
 msgstr ""
 
 msgid "Fixed position"
@@ -4030,6 +4057,11 @@ msgstr "最近發行"
 msgid "Recently added"
 msgstr "最近播放"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "最近發行"
+
 msgid "Recently played"
 msgstr "最近播放"
 
@@ -4873,6 +4905,11 @@ msgid "Show visualizer"
 msgstr "顯示視覺效果"
 
 #, fuzzy
+#| msgid "Show sidebar"
+msgid "Show whole covers"
+msgstr "顯示側邊欄"
+
+#, fuzzy
 #| msgid "Showcase"
 msgid "Show"
 msgstr "展示櫃"
@@ -4959,6 +4996,9 @@ msgstr ""
 msgid "Singles"
 msgstr "單曲"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr ""
 
@@ -4969,6 +5009,11 @@ msgstr "跳過次數"
 #| msgid "Only unplayed tracks"
 msgid "Skip low-rated tracks"
 msgstr "僅未播放過的曲目"
+
+#, fuzzy
+#| msgid "Local Folders"
+msgid "Skip on the local network"
+msgstr "本地資料夾"
 
 msgid "Skip same-album crossfade"
 msgstr ""
@@ -5090,6 +5135,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Play artist"
 msgid "Split featured artists"
@@ -5170,6 +5218,11 @@ msgid "Stream address"
 msgstr "定位資料夾"
 
 #, fuzzy
+#| msgid "Locate Folder"
+msgid "Stream cache"
+msgstr "定位資料夾"
+
+#, fuzzy
 #| msgid "Stream quality"
 msgid "Stream quality on mobile data"
 msgstr "串流品質"
@@ -5194,6 +5247,11 @@ msgstr "音訊"
 
 msgid "Style"
 msgstr ""
+
+#, fuzzy
+#| msgid "Search Again"
+msgid "Suggested stations"
+msgstr "重新搜尋"
 
 msgid "Suggested"
 msgstr ""
@@ -5423,6 +5481,11 @@ msgstr "藝人名稱"
 
 msgid "Track"
 msgstr "曲目"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "串流品質"
 
 msgid "Tracks from every playlist"
 msgstr "所有播放清單的曲目"
@@ -5741,6 +5804,9 @@ msgstr ""
 msgid "Window"
 msgstr "視窗"
 
+msgid "Without genres and descriptions"
+msgstr ""
+
 msgid "Write EBU R128 tags to files"
 msgstr ""
 
@@ -5771,6 +5837,11 @@ msgstr "黃色"
 
 msgid "Yes"
 msgstr "是"
+
+#, fuzzy
+#| msgid "No sources configured"
+msgid "You need to configure a local address"
+msgstr "未設置來源"
 
 msgid "Your library is ready"
 msgstr ""

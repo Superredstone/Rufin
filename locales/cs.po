@@ -302,6 +302,9 @@ msgstr ""
 msgid "A new update is available, restart to apply"
 msgstr ""
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr ""
 
@@ -828,6 +831,9 @@ msgstr "Uživatelský token"
 msgid "Bearer token"
 msgstr "Uživatelský token"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr ""
 
@@ -868,6 +874,11 @@ msgstr ""
 #| msgid "Saved Sources"
 msgid "CUE file"
 msgstr "Uložené zdroje"
+
+#, fuzzy
+#| msgid "Loading folders..."
+msgid "Cache streamed tracks"
+msgstr "Načítání složek..."
 
 #, fuzzy
 #| msgid "Cached"
@@ -1105,6 +1116,11 @@ msgstr "Vymazat frontu"
 
 #, fuzzy
 #| msgid "Search lyrics"
+msgid "Clear stream cache"
+msgstr "Hledat texty"
+
+#, fuzzy
+#| msgid "Search lyrics"
 msgid "Clear this cache?"
 msgstr "Hledat texty"
 
@@ -1186,6 +1202,11 @@ msgstr "Text komentáře"
 
 msgid "Comment"
 msgstr "Komentář"
+
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Kompaktní"
 
 msgid "Compact"
 msgstr "Kompaktní"
@@ -2148,6 +2169,9 @@ msgstr "Vybrané žánry"
 msgid "February {year}"
 msgstr ""
 
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
+
 msgid "Fetching Home"
 msgstr ""
 
@@ -2247,6 +2271,9 @@ msgid "Finishes the track playing at {time}"
 msgstr ""
 
 msgid "Fit to height"
+msgstr ""
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
 msgstr ""
 
 msgid "Fixed position"
@@ -4118,6 +4145,11 @@ msgstr "Nedávno vydané"
 msgid "Recently added"
 msgstr "Nedávno přehrané"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Nedávno vydané"
+
 msgid "Recently played"
 msgstr "Nedávno přehrané"
 
@@ -4995,6 +5027,11 @@ msgid "Show visualizer"
 msgstr "Zobrazit vizualizátor"
 
 #, fuzzy
+#| msgid "Show sidebar"
+msgid "Show whole covers"
+msgstr "Zobrazit postranní panel"
+
+#, fuzzy
 #| msgid "Showcase"
 msgid "Show"
 msgstr "Nejlepší"
@@ -5081,6 +5118,9 @@ msgstr "Singl"
 msgid "Singles"
 msgstr "Singly"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr ""
 
@@ -5091,6 +5131,11 @@ msgstr "Počet přeskočení"
 #| msgid "Only unplayed tracks"
 msgid "Skip low-rated tracks"
 msgstr "Pouze nepřehrané skladby"
+
+#, fuzzy
+#| msgid "Searching Local Network"
+msgid "Skip on the local network"
+msgstr "Prohledávání místní sítě"
 
 msgid "Skip same-album crossfade"
 msgstr "Přeskočení prolínání mezi skladbami na stejném albu"
@@ -5212,6 +5257,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Play artist"
 msgid "Split featured artists"
@@ -5294,6 +5342,11 @@ msgid "Stream address"
 msgstr "Vyhledat složku"
 
 #, fuzzy
+#| msgid "Locate Folder"
+msgid "Stream cache"
+msgstr "Vyhledat složku"
+
+#, fuzzy
 #| msgid "Stream quality"
 msgid "Stream quality on mobile data"
 msgstr "Kvalita streamu"
@@ -5318,6 +5371,11 @@ msgstr "Zvuk"
 
 msgid "Style"
 msgstr ""
+
+#, fuzzy
+#| msgid "Search Again"
+msgid "Suggested stations"
+msgstr "Hledat znovu"
 
 msgid "Suggested"
 msgstr ""
@@ -5547,6 +5605,11 @@ msgstr "Toto není dostupné"
 
 msgid "Track"
 msgstr "Skladba"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "Kvalita streamu"
 
 msgid "Tracks from every playlist"
 msgstr "Skladby ze všech playlistů"
@@ -5885,6 +5948,9 @@ msgstr ""
 msgid "Window"
 msgstr "Okno"
 
+msgid "Without genres and descriptions"
+msgstr ""
+
 msgid "Write EBU R128 tags to files"
 msgstr ""
 
@@ -5915,6 +5981,11 @@ msgstr "Žlutá"
 
 msgid "Yes"
 msgstr "Ano"
+
+#, fuzzy
+#| msgid "No sources configured"
+msgid "You need to configure a local address"
+msgstr "Nejsou nakonfigurovány žádné zdroje"
 
 msgid "Your library is ready"
 msgstr ""

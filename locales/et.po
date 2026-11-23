@@ -355,6 +355,9 @@ msgstr "6 tundi"
 msgid "A new update is available, restart to apply"
 msgstr "Saadaval on uuendus, selle kasutamiseks käivita rakendus uuesti"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr "A"
 
@@ -765,6 +768,9 @@ msgstr "Esitaja tunnusluba (Bearer token - WebDAV)"
 msgid "Bearer token"
 msgstr "Esitaja tunnusluba (Bearer token)"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr "Bitisügavus"
 
@@ -797,6 +803,11 @@ msgstr "C"
 
 msgid "CUE file"
 msgstr "CUE-fail"
+
+#, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Laadin seotud lugusid…"
 
 msgid "Cache"
 msgstr "Vahemälu"
@@ -975,6 +986,11 @@ msgstr "Kustuta laulusõnade vahemälu"
 msgid "Clear queue"
 msgstr "Tühjenda esitusjärjekord"
 
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Kustuta kõik vahemälud"
+
 msgid "Clear this cache?"
 msgstr "Kas kustutad selle vahemälu?"
 
@@ -1040,6 +1056,11 @@ msgstr "Kommentaari tekst"
 
 msgid "Comment"
 msgstr "Kommentaar"
+
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Kompaktne"
 
 msgid "Compact"
 msgstr "Kompaktne"
@@ -1808,6 +1829,9 @@ msgstr "Esiletõstetud žanrid"
 msgid "February {year}"
 msgstr "Veebruar {year}"
 
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
+
 msgid "Fetching Home"
 msgstr "Laadin avalehte"
 
@@ -1884,6 +1908,9 @@ msgstr ""
 
 msgid "Fit to height"
 msgstr "Sobita kõrgusele"
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
+msgstr ""
 
 msgid "Fixed position"
 msgstr "Fikseeritud asukoht"
@@ -3512,6 +3539,11 @@ msgstr "Hiljutised otsingus"
 msgid "Recently added"
 msgstr "Hiljuti esitatud"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Hiljuti avaldatud"
+
 msgid "Recently played"
 msgstr "Hiljuti esitatud"
 
@@ -4257,6 +4289,11 @@ msgstr "Näita visualiseerijat paremal külgribal"
 msgid "Show visualizer"
 msgstr "Näita visualiseerijat"
 
+#, fuzzy
+#| msgid "Show header"
+msgid "Show whole covers"
+msgstr "Näita päist"
+
 msgid "Show"
 msgstr "Näita"
 
@@ -4336,6 +4373,9 @@ msgstr "Singel"
 msgid "Singles"
 msgstr "Singlid"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr "Suurus"
 
@@ -4346,6 +4386,11 @@ msgstr "Vahelejätmiste arv"
 #| msgid "Skip unplayable tracks"
 msgid "Skip low-rated tracks"
 msgstr "Jäta esitamatud lood vahele"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Kohtvõrk"
 
 msgid "Skip same-album crossfade"
 msgstr "Ära kasuta risthajutamist sama albumi lugude vahel"
@@ -4455,6 +4500,9 @@ msgstr "Spektrijoon"
 msgid "Spectrum"
 msgstr "Spekter"
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Similar artists"
 msgid "Split featured artists"
@@ -4526,6 +4574,11 @@ msgid "Stream address"
 msgstr "Edastuse aadress"
 
 #, fuzzy
+#| msgid "Relay address"
+msgid "Stream cache"
+msgstr "Edastuse aadress"
+
+#, fuzzy
 #| msgid "Stream quality"
 msgid "Stream quality on mobile data"
 msgstr "Voogedastuse kvaliteet"
@@ -4544,6 +4597,11 @@ msgstr "Stuudiod"
 
 msgid "Style"
 msgstr "Stiil"
+
+#, fuzzy
+#| msgid "Search Again"
+msgid "Suggested stations"
+msgstr "Otsi uuesti"
 
 msgid "Suggested"
 msgstr "Soovitatud"
@@ -4752,6 +4810,11 @@ msgstr "Rada pole saadaval"
 
 msgid "Track"
 msgstr "Lugu"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "Voogedastuse kvaliteet"
 
 msgid "Tracks from every playlist"
 msgstr "Lood igast esitusloendist"
@@ -5051,6 +5114,9 @@ msgstr "Laius"
 msgid "Window"
 msgstr "Aken"
 
+msgid "Without genres and descriptions"
+msgstr ""
+
 msgid "Write EBU R128 tags to files"
 msgstr "Kirjuta EBU R128 sildid failidesse"
 
@@ -5085,6 +5151,11 @@ msgstr "Kollane"
 
 msgid "Yes"
 msgstr "Jah"
+
+#, fuzzy
+#| msgid "Configure local folder access"
+msgid "You need to configure a local address"
+msgstr "Seadista ligipääs kohalikele kaustadele"
 
 #, fuzzy
 #| msgid "Cached library ready"
@@ -6269,9 +6340,6 @@ msgstr "Tere tulemast, see on Rufini paigaldusprogramm"
 #~ msgid "Clears cached data for the server, login stays saved"
 #~ msgstr ""
 #~ "Eemaldab serverist puhverdatud andmed, kasutajakonto andmed jäävad alles"
-
-#~ msgid "Configure local folder access"
-#~ msgstr "Seadista ligipääs kohalikele kaustadele"
 
 #~ msgid "Configure saved music servers and local playback mappings"
 #~ msgstr ""

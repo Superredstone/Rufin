@@ -276,6 +276,9 @@ msgstr ""
 msgid "A new update is available, restart to apply"
 msgstr ""
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr ""
 
@@ -684,6 +687,9 @@ msgstr ""
 msgid "Bearer token"
 msgstr ""
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr ""
 
@@ -715,6 +721,9 @@ msgid "C"
 msgstr ""
 
 msgid "CUE file"
+msgstr ""
+
+msgid "Cache streamed tracks"
 msgstr ""
 
 msgid "Cache"
@@ -890,6 +899,9 @@ msgstr ""
 msgid "Clear queue"
 msgstr ""
 
+msgid "Clear stream cache"
+msgstr ""
+
 msgid "Clear this cache?"
 msgstr ""
 
@@ -954,6 +966,9 @@ msgid "Comment text"
 msgstr ""
 
 msgid "Comment"
+msgstr ""
+
+msgid "Compact cards"
 msgstr ""
 
 msgid "Compact"
@@ -1709,6 +1724,9 @@ msgstr ""
 msgid "February {year}"
 msgstr ""
 
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
+
 msgid "Fetching Home"
 msgstr ""
 
@@ -1782,6 +1800,9 @@ msgid "Finishes the track playing at {time}"
 msgstr ""
 
 msgid "Fit to height"
+msgstr ""
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
 msgstr ""
 
 msgid "Fixed position"
@@ -3320,6 +3341,9 @@ msgstr ""
 msgid "Recently added"
 msgstr ""
 
+msgid "Recently heard songs"
+msgstr ""
+
 msgid "Recently played"
 msgstr ""
 
@@ -4016,6 +4040,9 @@ msgstr ""
 msgid "Show visualizer"
 msgstr ""
 
+msgid "Show whole covers"
+msgstr ""
+
 msgid "Show"
 msgstr ""
 
@@ -4091,6 +4118,9 @@ msgstr ""
 msgid "Singles"
 msgstr ""
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr ""
 
@@ -4098,6 +4128,9 @@ msgid "Skip count"
 msgstr ""
 
 msgid "Skip low-rated tracks"
+msgstr ""
+
+msgid "Skip on the local network"
 msgstr ""
 
 msgid "Skip same-album crossfade"
@@ -4199,6 +4232,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+msgid "Speed"
+msgstr ""
+
 msgid "Split featured artists"
 msgstr ""
 
@@ -4256,6 +4292,9 @@ msgstr ""
 msgid "Stream address"
 msgstr ""
 
+msgid "Stream cache"
+msgstr ""
+
 msgid "Stream quality on mobile data"
 msgstr ""
 
@@ -4272,6 +4311,9 @@ msgid "Studios"
 msgstr ""
 
 msgid "Style"
+msgstr ""
+
+msgid "Suggested stations"
 msgstr ""
 
 msgid "Suggested"
@@ -4467,6 +4509,9 @@ msgid "Track unavailable"
 msgstr ""
 
 msgid "Track"
+msgstr ""
+
+msgid "Tracks ahead on mobile data"
 msgstr ""
 
 msgid "Tracks from every playlist"
@@ -4748,6 +4793,9 @@ msgstr ""
 msgid "Window"
 msgstr ""
 
+msgid "Without genres and descriptions"
+msgstr ""
+
 msgid "Write EBU R128 tags to files"
 msgstr ""
 
@@ -4773,6 +4821,9 @@ msgid "Yellow"
 msgstr ""
 
 msgid "Yes"
+msgstr ""
+
+msgid "You need to configure a local address"
 msgstr ""
 
 msgid "Your library is ready"

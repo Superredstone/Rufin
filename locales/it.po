@@ -330,6 +330,9 @@ msgstr "6 ore"
 msgid "A new update is available, restart to apply"
 msgstr ""
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr ""
 
@@ -811,6 +814,9 @@ msgstr "Token Bearer (WebDAV)"
 msgid "Bearer token"
 msgstr "Token Bearer"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr ""
 
@@ -845,6 +851,11 @@ msgstr ""
 #| msgid "Change Profile"
 msgid "CUE file"
 msgstr "Cambia Profilo"
+
+#, fuzzy
+#| msgid "Could not load related tracks"
+msgid "Cache streamed tracks"
+msgstr "Non è stato possibile caricare le relative tracce"
 
 #, fuzzy
 #| msgid "Cached"
@@ -1063,6 +1074,11 @@ msgstr "Rimuovi coda"
 
 #, fuzzy
 #| msgid "Clear artist"
+msgid "Clear stream cache"
+msgstr "Rimuovi artista"
+
+#, fuzzy
+#| msgid "Clear artist"
 msgid "Clear this cache?"
 msgstr "Rimuovi artista"
 
@@ -1136,6 +1152,11 @@ msgstr "Commento"
 
 msgid "Comment"
 msgstr "Commento"
+
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Compatto"
 
 msgid "Compact"
 msgstr "Compatto"
@@ -2014,6 +2035,9 @@ msgstr ""
 msgid "February {year}"
 msgstr ""
 
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
+
 msgid "Fetching Home"
 msgstr ""
 
@@ -2097,6 +2121,9 @@ msgid "Finishes the track playing at {time}"
 msgstr ""
 
 msgid "Fit to height"
+msgstr ""
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
 msgstr ""
 
 msgid "Fixed position"
@@ -3730,6 +3757,11 @@ msgstr ""
 msgid "Recently added"
 msgstr "Seleziona un indirizzo"
 
+#, fuzzy
+#| msgid "Choose an address"
+msgid "Recently heard songs"
+msgstr "Seleziona un indirizzo"
+
 msgid "Recently played"
 msgstr ""
 
@@ -4475,6 +4507,9 @@ msgstr ""
 msgid "Show visualizer"
 msgstr ""
 
+msgid "Show whole covers"
+msgstr ""
+
 msgid "Show"
 msgstr ""
 
@@ -4554,6 +4589,9 @@ msgstr ""
 msgid "Singles"
 msgstr ""
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr ""
 
@@ -4564,6 +4602,11 @@ msgstr ""
 #| msgid "Album unavailable"
 msgid "Skip low-rated tracks"
 msgstr "Album non disponibile"
+
+#, fuzzy
+#| msgid "Casting network"
+msgid "Skip on the local network"
+msgstr "Rete di casting"
 
 msgid "Skip same-album crossfade"
 msgstr ""
@@ -4676,6 +4719,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Clear artist"
 msgid "Split featured artists"
@@ -4745,6 +4791,11 @@ msgstr ""
 msgid "Stream address"
 msgstr "Seleziona un indirizzo"
 
+#, fuzzy
+#| msgid "Choose an address"
+msgid "Stream cache"
+msgstr "Seleziona un indirizzo"
+
 msgid "Stream quality on mobile data"
 msgstr ""
 
@@ -4766,6 +4817,11 @@ msgstr "Audio"
 
 msgid "Style"
 msgstr ""
+
+#, fuzzy
+#| msgid "Delete Playlist"
+msgid "Suggested stations"
+msgstr "Cancella Playlist"
 
 msgid "Suggested"
 msgstr ""
@@ -4981,6 +5037,11 @@ msgstr "Artista non disponibile"
 
 msgid "Track"
 msgstr ""
+
+#, fuzzy
+#| msgid "Download Folder"
+msgid "Tracks ahead on mobile data"
+msgstr "Cartella di Download"
 
 msgid "Tracks from every playlist"
 msgstr ""
@@ -5279,6 +5340,9 @@ msgstr ""
 msgid "Window"
 msgstr ""
 
+msgid "Without genres and descriptions"
+msgstr ""
+
 msgid "Write EBU R128 tags to files"
 msgstr ""
 
@@ -5304,6 +5368,9 @@ msgid "Yellow"
 msgstr ""
 
 msgid "Yes"
+msgstr ""
+
+msgid "You need to configure a local address"
 msgstr ""
 
 msgid "Your library is ready"

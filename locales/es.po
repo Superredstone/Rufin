@@ -365,6 +365,9 @@ msgstr "6 horas"
 msgid "A new update is available, restart to apply"
 msgstr "Hay una actualización disponible, reinicie para aplicarla"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr "A"
 
@@ -776,6 +779,9 @@ msgstr "Token de un solo uso (WebDAV)"
 msgid "Bearer token"
 msgstr "Token de un solo uso"
 
+msgid "Behavior"
+msgstr ""
+
 msgid "Bit depth"
 msgstr "Profundidad de bits"
 
@@ -808,6 +814,11 @@ msgstr "C"
 
 msgid "CUE file"
 msgstr "Archivo CUE"
+
+#, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Cargando pistas relacionadas..."
 
 msgid "Cache"
 msgstr "Caché"
@@ -987,6 +998,11 @@ msgstr "Borrar las letras en caché"
 msgid "Clear queue"
 msgstr "Vaciar cola de reproducción"
 
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Borrar toda la caché"
+
 msgid "Clear this cache?"
 msgstr "Borrar esta caché?"
 
@@ -1052,6 +1068,11 @@ msgstr "Texto de comentario"
 
 msgid "Comment"
 msgstr "Comentar"
+
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Compacto"
 
 msgid "Compact"
 msgstr "Compacto"
@@ -1826,6 +1847,9 @@ msgstr "Géneros destacados"
 msgid "February {year}"
 msgstr "Febrero del {year}"
 
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
+
 msgid "Fetching Home"
 msgstr "Cargando Inicio"
 
@@ -1902,6 +1926,9 @@ msgstr "Termina de reproducir la pista en {time}"
 
 msgid "Fit to height"
 msgstr "Ajustar a la altura"
+
+msgid "Fit wide and tall covers inside their frames instead of cropping them"
+msgstr ""
 
 msgid "Fixed position"
 msgstr "Posición fija"
@@ -3512,6 +3539,11 @@ msgstr "Búsquedas recientes"
 msgid "Recently added"
 msgstr "Añadido recientemente"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Lanzado recientemente"
+
 msgid "Recently played"
 msgstr "Reproducido recientemente"
 
@@ -4232,6 +4264,11 @@ msgstr "Mostrar el visualizador en el panel derecho"
 msgid "Show visualizer"
 msgstr "Mostrar visualizador"
 
+#, fuzzy
+#| msgid "Show header"
+msgid "Show whole covers"
+msgstr "Mostrar encabezado"
+
 msgid "Show"
 msgstr "Mostrar"
 
@@ -4313,6 +4350,9 @@ msgstr "Single"
 msgid "Singles"
 msgstr "Singles"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr "Tamaño"
 
@@ -4323,6 +4363,11 @@ msgstr "Número de salto"
 #| msgid "Only unplayed tracks"
 msgid "Skip low-rated tracks"
 msgstr "Solo pistas no reproducidas"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Red local"
 
 msgid "Skip same-album crossfade"
 msgstr "Saltar transición suave en el mismo álbum"
@@ -4429,6 +4474,9 @@ msgstr "Linea de espectro"
 msgid "Spectrum"
 msgstr "Espectro"
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Similar artists"
 msgid "Split featured artists"
@@ -4494,6 +4542,11 @@ msgid "Stream address"
 msgstr "Dirección del relay"
 
 #, fuzzy
+#| msgid "Relay address"
+msgid "Stream cache"
+msgstr "Dirección del relay"
+
+#, fuzzy
 #| msgid "Stream quality"
 msgid "Stream quality on mobile data"
 msgstr "Calidad de transmisión"
@@ -4512,6 +4565,11 @@ msgstr "Estudios"
 
 msgid "Style"
 msgstr "Estilo"
+
+#, fuzzy
+#| msgid "Search stations"
+msgid "Suggested stations"
+msgstr "Buscar estaciones"
 
 msgid "Suggested"
 msgstr "Sugerido"
@@ -4716,6 +4774,11 @@ msgstr "Pista no disponible"
 
 msgid "Track"
 msgstr "Pista"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "Calidad de transmisión"
 
 msgid "Tracks from every playlist"
 msgstr "Pistas desde cada lista de reproducción"
@@ -5008,6 +5071,9 @@ msgstr "Ancho"
 msgid "Window"
 msgstr "Ventana"
 
+msgid "Without genres and descriptions"
+msgstr ""
+
 msgid "Write EBU R128 tags to files"
 msgstr "Escribe etiquetas EBU R128 en los archivos"
 
@@ -5040,6 +5106,11 @@ msgstr "Amarillo"
 
 msgid "Yes"
 msgstr "Sí"
+
+#, fuzzy
+#| msgid "Add a source to configure downloads."
+msgid "You need to configure a local address"
+msgstr "Agrega una fuente para configurar descargas."
 
 msgid "Your library is ready"
 msgstr "Tu biblioteca está lista"
