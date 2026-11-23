@@ -1127,6 +1127,11 @@ msgstr "Kommenttiteksti"
 msgid "Comment"
 msgstr "Kommentti"
 
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Kompakti"
+
 msgid "Compact"
 msgstr "Kompakti"
 
@@ -3907,6 +3912,11 @@ msgstr "Äskettäin julkaistu"
 msgid "Recently added"
 msgstr "Äskettäin toistettu"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Äskettäin julkaistu"
+
 msgid "Recently played"
 msgstr "Äskettäin toistettu"
 
@@ -5058,6 +5068,11 @@ msgstr "Ääni"
 msgid "Style"
 msgstr "Tyyli"
 
+#, fuzzy
+#| msgid "Search Again"
+msgid "Suggested stations"
+msgstr "Hae uudelleen"
+
 msgid "Suggested"
 msgstr ""
 
@@ -5606,6 +5621,9 @@ msgstr ""
 
 msgid "Window"
 msgstr "Ikkuna"
+
+msgid "Without genres and descriptions"
+msgstr ""
 
 msgid "Write EBU R128 tags to files"
 msgstr ""

@@ -1053,6 +1053,11 @@ msgstr "Texto de comentario"
 msgid "Comment"
 msgstr "Comentar"
 
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Compacto"
+
 msgid "Compact"
 msgstr "Compacto"
 
@@ -3512,6 +3517,11 @@ msgstr "Búsquedas recientes"
 msgid "Recently added"
 msgstr "Añadido recientemente"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Lanzado recientemente"
+
 msgid "Recently played"
 msgstr "Reproducido recientemente"
 
@@ -4513,6 +4523,11 @@ msgstr "Estudios"
 msgid "Style"
 msgstr "Estilo"
 
+#, fuzzy
+#| msgid "Search stations"
+msgid "Suggested stations"
+msgstr "Buscar estaciones"
+
 msgid "Suggested"
 msgstr "Sugerido"
 
@@ -5007,6 +5022,9 @@ msgstr "Ancho"
 
 msgid "Window"
 msgstr "Ventana"
+
+msgid "Without genres and descriptions"
+msgstr ""
 
 msgid "Write EBU R128 tags to files"
 msgstr "Escribe etiquetas EBU R128 en los archivos"

@@ -1089,6 +1089,11 @@ msgstr "Teks komentar"
 msgid "Comment"
 msgstr "Komentar"
 
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Ringkas"
+
 msgid "Compact"
 msgstr "Ringkas"
 
@@ -3613,6 +3618,11 @@ msgstr "Pencarian terakhir"
 msgid "Recently added"
 msgstr "Baru ditambahkan"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Baru dirilis"
+
 msgid "Recently played"
 msgstr "Baru diputar"
 
@@ -4624,6 +4634,11 @@ msgstr ""
 msgid "Style"
 msgstr ""
 
+#, fuzzy
+#| msgid "Search stations"
+msgid "Suggested stations"
+msgstr "Cari stasiun"
+
 msgid "Suggested"
 msgstr ""
 
@@ -5102,6 +5117,9 @@ msgid "Width"
 msgstr ""
 
 msgid "Window"
+msgstr ""
+
+msgid "Without genres and descriptions"
 msgstr ""
 
 msgid "Write EBU R128 tags to files"

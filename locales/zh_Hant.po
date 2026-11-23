@@ -1158,6 +1158,11 @@ msgstr ""
 msgid "Comment"
 msgstr ""
 
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "緊湊"
+
 msgid "Compact"
 msgstr "緊湊"
 
@@ -4030,6 +4035,11 @@ msgstr "最近發行"
 msgid "Recently added"
 msgstr "最近播放"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "最近發行"
+
 msgid "Recently played"
 msgstr "最近播放"
 
@@ -5195,6 +5205,11 @@ msgstr "音訊"
 msgid "Style"
 msgstr ""
 
+#, fuzzy
+#| msgid "Search Again"
+msgid "Suggested stations"
+msgstr "重新搜尋"
+
 msgid "Suggested"
 msgstr ""
 
@@ -5740,6 +5755,9 @@ msgstr ""
 
 msgid "Window"
 msgstr "視窗"
+
+msgid "Without genres and descriptions"
+msgstr ""
 
 msgid "Write EBU R128 tags to files"
 msgstr ""

@@ -1137,6 +1137,11 @@ msgstr "Commento"
 msgid "Comment"
 msgstr "Commento"
 
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Compatto"
+
 msgid "Compact"
 msgstr "Compatto"
 
@@ -3730,6 +3735,11 @@ msgstr ""
 msgid "Recently added"
 msgstr "Seleziona un indirizzo"
 
+#, fuzzy
+#| msgid "Choose an address"
+msgid "Recently heard songs"
+msgstr "Seleziona un indirizzo"
+
 msgid "Recently played"
 msgstr ""
 
@@ -4767,6 +4777,11 @@ msgstr "Audio"
 msgid "Style"
 msgstr ""
 
+#, fuzzy
+#| msgid "Delete Playlist"
+msgid "Suggested stations"
+msgstr "Cancella Playlist"
+
 msgid "Suggested"
 msgstr ""
 
@@ -5277,6 +5292,9 @@ msgid "Width"
 msgstr ""
 
 msgid "Window"
+msgstr ""
+
+msgid "Without genres and descriptions"
 msgstr ""
 
 msgid "Write EBU R128 tags to files"

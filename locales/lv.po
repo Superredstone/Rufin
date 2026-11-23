@@ -1176,6 +1176,11 @@ msgstr "Komentāra teksts"
 msgid "Comment"
 msgstr "Komentārs"
 
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Kompakts"
+
 msgid "Compact"
 msgstr "Kompakts"
 
@@ -3980,6 +3985,11 @@ msgstr "Nesen izdotie"
 msgid "Recently added"
 msgstr "Nesen atskaņotie"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Nesen izdotie"
+
 msgid "Recently played"
 msgstr "Nesen atskaņotie"
 
@@ -5133,6 +5143,11 @@ msgstr "Skaņa"
 msgid "Style"
 msgstr "Stils"
 
+#, fuzzy
+#| msgid "Search Again"
+msgid "Suggested stations"
+msgstr "Meklēt vēlreiz"
+
 msgid "Suggested"
 msgstr ""
 
@@ -5690,6 +5705,9 @@ msgstr ""
 
 msgid "Window"
 msgstr "Logs"
+
+msgid "Without genres and descriptions"
+msgstr ""
 
 msgid "Write EBU R128 tags to files"
 msgstr "Ierakstīt EBU R128 tagus failos"

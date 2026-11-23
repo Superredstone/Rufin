@@ -1041,6 +1041,11 @@ msgstr "Kommentaari tekst"
 msgid "Comment"
 msgstr "Kommentaar"
 
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Kompaktne"
+
 msgid "Compact"
 msgstr "Kompaktne"
 
@@ -3512,6 +3517,11 @@ msgstr "Hiljutised otsingus"
 msgid "Recently added"
 msgstr "Hiljuti esitatud"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Hiljuti avaldatud"
+
 msgid "Recently played"
 msgstr "Hiljuti esitatud"
 
@@ -4545,6 +4555,11 @@ msgstr "Stuudiod"
 msgid "Style"
 msgstr "Stiil"
 
+#, fuzzy
+#| msgid "Search Again"
+msgid "Suggested stations"
+msgstr "Otsi uuesti"
+
 msgid "Suggested"
 msgstr "Soovitatud"
 
@@ -5050,6 +5065,9 @@ msgstr "Laius"
 
 msgid "Window"
 msgstr "Aken"
+
+msgid "Without genres and descriptions"
+msgstr ""
 
 msgid "Write EBU R128 tags to files"
 msgstr "Kirjuta EBU R128 sildid failidesse"

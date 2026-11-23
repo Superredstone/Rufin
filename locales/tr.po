@@ -1050,6 +1050,11 @@ msgstr "Yorum metni"
 msgid "Comment"
 msgstr "Yorum"
 
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Kompakt"
+
 msgid "Compact"
 msgstr "Kompakt"
 
@@ -3475,6 +3480,11 @@ msgstr "Son aramalar"
 msgid "Recently added"
 msgstr "Son eklenenler"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Son çıkanlar"
+
 msgid "Recently played"
 msgstr "Son çalınanlar"
 
@@ -4447,6 +4457,11 @@ msgstr "Stüdyolar"
 msgid "Style"
 msgstr "Stil"
 
+#, fuzzy
+#| msgid "Search stations"
+msgid "Suggested stations"
+msgstr "İstasyonlarda ara"
+
 msgid "Suggested"
 msgstr "Önerilen"
 
@@ -4931,6 +4946,9 @@ msgstr "Genişlik"
 
 msgid "Window"
 msgstr "Pencere"
+
+msgid "Without genres and descriptions"
+msgstr ""
 
 msgid "Write EBU R128 tags to files"
 msgstr "EBU R128 etiketlerini dosyalara yaz"

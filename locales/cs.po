@@ -1187,6 +1187,11 @@ msgstr "Text komentáře"
 msgid "Comment"
 msgstr "Komentář"
 
+#, fuzzy
+#| msgid "Compact"
+msgid "Compact cards"
+msgstr "Kompaktní"
+
 msgid "Compact"
 msgstr "Kompaktní"
 
@@ -4118,6 +4123,11 @@ msgstr "Nedávno vydané"
 msgid "Recently added"
 msgstr "Nedávno přehrané"
 
+#, fuzzy
+#| msgid "Recently released"
+msgid "Recently heard songs"
+msgstr "Nedávno vydané"
+
 msgid "Recently played"
 msgstr "Nedávno přehrané"
 
@@ -5319,6 +5329,11 @@ msgstr "Zvuk"
 msgid "Style"
 msgstr ""
 
+#, fuzzy
+#| msgid "Search Again"
+msgid "Suggested stations"
+msgstr "Hledat znovu"
+
 msgid "Suggested"
 msgstr ""
 
@@ -5884,6 +5899,9 @@ msgstr ""
 
 msgid "Window"
 msgstr "Okno"
+
+msgid "Without genres and descriptions"
+msgstr ""
 
 msgid "Write EBU R128 tags to files"
 msgstr ""
