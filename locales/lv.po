@@ -341,6 +341,9 @@ msgstr "6 stundas"
 msgid "A new update is available, restart to apply"
 msgstr ""
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr ""
 
@@ -878,6 +881,11 @@ msgid "CUE file"
 msgstr "Mainīt profilu"
 
 #, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Ielādē saistītās dziesmas..."
+
+#, fuzzy
 #| msgid "Cached"
 msgid "Cache"
 msgstr "Kešots"
@@ -1098,6 +1106,11 @@ msgstr "Notīrīt kešatmiņu"
 
 msgid "Clear queue"
 msgstr "Notīrīt rindu"
+
+#, fuzzy
+#| msgid "Clear Cache"
+msgid "Clear stream cache"
+msgstr "Notīrīt kešatmiņu"
 
 #, fuzzy
 #| msgid "Clear Cache"
@@ -2097,6 +2110,9 @@ msgid "Featured genres"
 msgstr "Ieteicamie žanri"
 
 msgid "February {year}"
+msgstr ""
+
+msgid "Fetches the next tracks before they play and keeps played ones"
 msgstr ""
 
 msgid "Fetching Home"
@@ -4916,6 +4932,9 @@ msgstr "Singls"
 msgid "Singles"
 msgstr "Singli"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr ""
 
@@ -4926,6 +4945,11 @@ msgstr "Izlaišanas skaits"
 #| msgid "Only unplayed tracks"
 msgid "Skip low-rated tracks"
 msgstr "Tikai neatskaņotās dziesmas"
+
+#, fuzzy
+#| msgid "Searching Local Network"
+msgid "Skip on the local network"
+msgstr "Meklē lokālajā tīklā"
 
 msgid "Skip same-album crossfade"
 msgstr "Izlaist pāreju starp dziesmām no viena un tā paša albuma"
@@ -5049,6 +5073,9 @@ msgstr "Spektra līnija"
 msgid "Spectrum"
 msgstr "Spektra līnija"
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Clear artist"
 msgid "Split featured artists"
@@ -5126,6 +5153,11 @@ msgstr "Saglabāt aprēķināto skaļumu atbalstītajos lokālajos mūzikas fail
 #, fuzzy
 #| msgid "Choose an address"
 msgid "Stream address"
+msgstr "Izvēlēties adresi"
+
+#, fuzzy
+#| msgid "Choose an address"
+msgid "Stream cache"
 msgstr "Izvēlēties adresi"
 
 #, fuzzy
@@ -5394,6 +5426,11 @@ msgstr "Meklēšana nav pieejama"
 
 msgid "Track"
 msgstr "Dziesma"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "Straumes kvalitāte"
 
 msgid "Tracks from every playlist"
 msgstr "Dziesmas no visiem atskaņošanas sarakstiem"
@@ -5756,6 +5793,11 @@ msgstr "Dzeltens"
 
 msgid "Yes"
 msgstr "Jā"
+
+#, fuzzy
+#| msgid "Configure local folder access"
+msgid "You need to configure a local address"
+msgstr "Konfigurēt piekļuvi lokālajām mapēm"
 
 #, fuzzy
 #| msgid "Cached library ready"
@@ -6980,9 +7022,6 @@ msgstr "Laipni lūdzam Rufin instalācijas programmā"
 
 #~ msgid "Clears cached data for the server, login stays saved"
 #~ msgstr "Notīra kešotos datus serverim, pieteikšanās paliek saglabāta"
-
-#~ msgid "Configure local folder access"
-#~ msgstr "Konfigurēt piekļuvi lokālajām mapēm"
 
 #~ msgid "Configure saved music servers and local playback mappings"
 #~ msgstr ""

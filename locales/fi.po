@@ -299,6 +299,9 @@ msgstr "6 tuntia"
 msgid "A new update is available, restart to apply"
 msgstr ""
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr ""
 
@@ -838,6 +841,11 @@ msgid "CUE file"
 msgstr "Vaihda profiilia"
 
 #, fuzzy
+#| msgid "Only played tracks"
+msgid "Cache streamed tracks"
+msgstr "Vain toistetut kappaleet"
+
+#, fuzzy
 #| msgid "Cached"
 msgid "Cache"
 msgstr "Välimuistissa"
@@ -1051,6 +1059,11 @@ msgstr "Hae sanoituksia"
 
 msgid "Clear queue"
 msgstr "Tyhjennä jono"
+
+#, fuzzy
+#| msgid "Search lyrics"
+msgid "Clear stream cache"
+msgstr "Hae sanoituksia"
 
 #, fuzzy
 #| msgid "Search lyrics"
@@ -2036,6 +2049,9 @@ msgid "Featured genres"
 msgstr ""
 
 msgid "February {year}"
+msgstr ""
+
+msgid "Fetches the next tracks before they play and keeps played ones"
 msgstr ""
 
 msgid "Fetching Home"
@@ -4849,6 +4865,9 @@ msgstr "Single"
 msgid "Singles"
 msgstr "Singlet"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr ""
 
@@ -4859,6 +4878,11 @@ msgstr "Ohituskerrat"
 #| msgid "Only played tracks"
 msgid "Skip low-rated tracks"
 msgstr "Vain toistetut kappaleet"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Paikallisverkko"
 
 msgid "Skip same-album crossfade"
 msgstr "Ohita saman albumin ristihäivytys"
@@ -4976,6 +5000,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Play artist"
 msgid "Split featured artists"
@@ -5051,6 +5078,11 @@ msgstr ""
 #, fuzzy
 #| msgid "Choose Folder"
 msgid "Stream address"
+msgstr "Valitse kansio"
+
+#, fuzzy
+#| msgid "Choose Folder"
+msgid "Stream cache"
 msgstr "Valitse kansio"
 
 #, fuzzy
@@ -5302,6 +5334,11 @@ msgstr "Haku ei ole saatavilla"
 
 msgid "Track"
 msgstr "Kappale"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "Suoratoiston laatu"
 
 msgid "Tracks from every playlist"
 msgstr "Kappaleet kaikilta soittolistoilta"
@@ -5666,6 +5703,11 @@ msgstr "Keltainen"
 
 msgid "Yes"
 msgstr "Kyllä"
+
+#, fuzzy
+#| msgid "No sources configured"
+msgid "You need to configure a local address"
+msgstr "Lähteitä ei ole määritetty"
 
 msgid "Your library is ready"
 msgstr ""

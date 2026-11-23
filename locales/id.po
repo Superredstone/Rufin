@@ -366,6 +366,9 @@ msgstr "6 jam"
 msgid "A new update is available, restart to apply"
 msgstr "Pembaruan tersedia, mulai ulang untuk menerapkan"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 #, fuzzy
 msgid "A"
 msgstr "A"
@@ -850,6 +853,11 @@ msgid "CUE file"
 msgstr "File CUE"
 
 #, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Memuat lagu terkait..."
+
+#, fuzzy
 msgid "Cache"
 msgstr "Cache"
 
@@ -1025,6 +1033,11 @@ msgstr "Hapus cache lirik"
 
 msgid "Clear queue"
 msgstr "Kosongkan antrean"
+
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Hapus semua cache"
 
 msgid "Clear this cache?"
 msgstr "Hapus cache ini?"
@@ -1902,6 +1915,9 @@ msgstr "Genre pilihan"
 
 msgid "February {year}"
 msgstr "Februari {year}"
+
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
 
 msgid "Fetching Home"
 msgstr "Memuat Beranda"
@@ -4448,6 +4464,9 @@ msgstr ""
 msgid "Singles"
 msgstr ""
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr ""
 
@@ -4458,6 +4477,11 @@ msgstr ""
 #| msgid "Favorite tracks"
 msgid "Skip low-rated tracks"
 msgstr "Lagu favorit"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Jaringan lokal"
 
 msgid "Skip same-album crossfade"
 msgstr ""
@@ -4562,6 +4586,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Clear artist"
 msgid "Split featured artists"
@@ -4623,6 +4650,11 @@ msgstr ""
 #, fuzzy
 #| msgid "Alternate addresses"
 msgid "Stream address"
+msgstr "Alamat alternatif"
+
+#, fuzzy
+#| msgid "Alternate addresses"
+msgid "Stream cache"
 msgstr "Alamat alternatif"
 
 msgid "Stream quality on mobile data"
@@ -4846,6 +4878,11 @@ msgstr ""
 
 msgid "Track"
 msgstr ""
+
+#, fuzzy
+#| msgid "Download on Mobile Data"
+msgid "Tracks ahead on mobile data"
+msgstr "Unduh menggunakan Data Seluler"
 
 msgid "Tracks from every playlist"
 msgstr ""
@@ -5157,6 +5194,11 @@ msgstr ""
 
 msgid "Yes"
 msgstr ""
+
+#, fuzzy
+#| msgid "Add a source to configure downloads."
+msgid "You need to configure a local address"
+msgstr "Tambahkan sumber untuk mengatur unduhan."
 
 msgid "Your library is ready"
 msgstr "Pustaka anda siap"

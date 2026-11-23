@@ -361,6 +361,9 @@ msgstr "6 saat"
 msgid "A new update is available, restart to apply"
 msgstr "Yeni bir güncelleme mevcut, uygulamak için yeniden başlatın"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr "A"
 
@@ -808,6 +811,11 @@ msgstr "C"
 msgid "CUE file"
 msgstr "CUE dosyası"
 
+#, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "İlgili parçalar yükleniyor..."
+
 msgid "Cache"
 msgstr "Önbellek"
 
@@ -986,6 +994,11 @@ msgstr "Şarkı sözü önbelleğini temizle"
 
 msgid "Clear queue"
 msgstr "Kuyruğu temizle"
+
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Tüm önbelleği temizle"
 
 msgid "Clear this cache?"
 msgstr "Bu önbellek temizlensin mi?"
@@ -1829,6 +1842,9 @@ msgstr "Öne çıkan türler"
 
 msgid "February {year}"
 msgstr "Şubat {year}"
+
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
 
 msgid "Fetching Home"
 msgstr "Ana Sayfa getiriliyor"
@@ -4278,6 +4294,9 @@ msgstr "Tekli"
 msgid "Singles"
 msgstr "Single'lar"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr "Boyut"
 
@@ -4286,6 +4305,11 @@ msgstr "Atlama sayısı"
 
 msgid "Skip low-rated tracks"
 msgstr "Oynatılamayan düşük puanlı parçaları atla"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Yerel ağ"
 
 msgid "Skip same-album crossfade"
 msgstr "Aynı albümdeki çapraz geçişi atla"
@@ -4389,6 +4413,9 @@ msgstr "Spektrum çizgisi"
 msgid "Spectrum"
 msgstr "Spektrum"
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Similar artists"
 msgid "Split featured artists"
@@ -4446,6 +4473,11 @@ msgid "Store calculated loudness in supported Local music files"
 msgstr "Hesaplanan ses yüksekliğini desteklenen Yerel müzik dosyalarında sakla"
 
 msgid "Stream address"
+msgstr "Akış adresi"
+
+#, fuzzy
+#| msgid "Stream address"
+msgid "Stream cache"
 msgstr "Akış adresi"
 
 #, fuzzy
@@ -4672,6 +4704,11 @@ msgstr "Parça kullanılamıyor"
 
 msgid "Track"
 msgstr "Parça"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "Akış kalitesi"
 
 msgid "Tracks from every playlist"
 msgstr "Her çalma listesinden parçalar"
@@ -4993,6 +5030,11 @@ msgstr "Sarı"
 
 msgid "Yes"
 msgstr "Evet"
+
+#, fuzzy
+#| msgid "Add a source to configure downloads."
+msgid "You need to configure a local address"
+msgstr "İndirmeleri yapılandırmak için bir kaynak ekleyin."
 
 msgid "Your library is ready"
 msgstr "Kitaplığınız hazır"

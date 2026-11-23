@@ -370,6 +370,9 @@ msgstr "6 heures"
 msgid "A new update is available, restart to apply"
 msgstr "Une nouvelle mise à jour est disponible, redémarrer pour l'appliquer"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr "A"
 
@@ -816,6 +819,11 @@ msgstr "C"
 msgid "CUE file"
 msgstr "Fichier CUE"
 
+#, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Chargement des morceaux correspondants…"
+
 msgid "Cache"
 msgstr "Cache"
 
@@ -994,6 +1002,11 @@ msgstr "Effacer le cache des paroles"
 
 msgid "Clear queue"
 msgstr "Effacer la file d'attente"
+
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Effacer tous les caches"
 
 msgid "Clear this cache?"
 msgstr "Effacer ce cache ?"
@@ -1826,6 +1839,9 @@ msgstr "Genres mis en avant"
 
 msgid "February {year}"
 msgstr "Février {year}"
+
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
 
 msgid "Fetching Home"
 msgstr "Chargement de l’accueil"
@@ -4265,6 +4281,9 @@ msgstr "Single"
 msgid "Singles"
 msgstr "Singles"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr "Taille"
 
@@ -4273,6 +4292,11 @@ msgstr "Nombre de fois ignoré"
 
 msgid "Skip low-rated tracks"
 msgstr "Ignorer les morceaux mal notés"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Réseau local"
 
 msgid "Skip same-album crossfade"
 msgstr "Ignorer le fondu enchaîné au sein du même album"
@@ -4375,6 +4399,9 @@ msgstr "Ligne du spectre"
 msgid "Spectrum"
 msgstr "Spectre"
 
+msgid "Speed"
+msgstr ""
+
 msgid "Split featured artists"
 msgstr "Séparer les artistes invités"
 
@@ -4432,6 +4459,11 @@ msgstr ""
 "charge"
 
 msgid "Stream address"
+msgstr "Adresse du flux"
+
+#, fuzzy
+#| msgid "Stream address"
+msgid "Stream cache"
 msgstr "Adresse du flux"
 
 msgid "Stream quality on mobile data"
@@ -4657,6 +4689,11 @@ msgstr "Morceau indisponible"
 
 msgid "Track"
 msgstr "Morceau"
+
+#, fuzzy
+#| msgid "Stream quality on mobile data"
+msgid "Tracks ahead on mobile data"
+msgstr "Qualité du flux sur données mobiles"
 
 msgid "Tracks from every playlist"
 msgstr "Morceaux de chaque playlist"
@@ -4980,6 +5017,11 @@ msgstr "Jaune"
 
 msgid "Yes"
 msgstr "Oui"
+
+#, fuzzy
+#| msgid "Add a source to configure downloads."
+msgid "You need to configure a local address"
+msgstr "Ajouter une source pour configurer les téléchargements."
 
 msgid "Your library is ready"
 msgstr "Votre bibliothèque est prête"

@@ -289,6 +289,9 @@ msgstr ""
 msgid "A new update is available, restart to apply"
 msgstr ""
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr ""
 
@@ -854,6 +857,11 @@ msgid "CUE file"
 msgstr "變更敏感存儲空間"
 
 #, fuzzy
+#| msgid "Loading folders..."
+msgid "Cache streamed tracks"
+msgstr "資料夾載入中..."
+
+#, fuzzy
 #| msgid "Cached"
 msgid "Cache"
 msgstr "已快取"
@@ -1080,6 +1088,11 @@ msgstr "搜尋歌詞"
 
 msgid "Clear queue"
 msgstr "清除播放佇列"
+
+#, fuzzy
+#| msgid "Search lyrics"
+msgid "Clear stream cache"
+msgstr "搜尋歌詞"
 
 #, fuzzy
 #| msgid "Search lyrics"
@@ -2109,6 +2122,9 @@ msgid "Featured genres"
 msgstr ""
 
 msgid "February {year}"
+msgstr ""
+
+msgid "Fetches the next tracks before they play and keeps played ones"
 msgstr ""
 
 msgid "Fetching Home"
@@ -4980,6 +4996,9 @@ msgstr ""
 msgid "Singles"
 msgstr "單曲"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr ""
 
@@ -4990,6 +5009,11 @@ msgstr "跳過次數"
 #| msgid "Only unplayed tracks"
 msgid "Skip low-rated tracks"
 msgstr "僅未播放過的曲目"
+
+#, fuzzy
+#| msgid "Local Folders"
+msgid "Skip on the local network"
+msgstr "本地資料夾"
 
 msgid "Skip same-album crossfade"
 msgstr ""
@@ -5111,6 +5135,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Play artist"
 msgid "Split featured artists"
@@ -5188,6 +5215,11 @@ msgstr ""
 #, fuzzy
 #| msgid "Locate Folder"
 msgid "Stream address"
+msgstr "定位資料夾"
+
+#, fuzzy
+#| msgid "Locate Folder"
+msgid "Stream cache"
 msgstr "定位資料夾"
 
 #, fuzzy
@@ -5449,6 +5481,11 @@ msgstr "藝人名稱"
 
 msgid "Track"
 msgstr "曲目"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "串流品質"
 
 msgid "Tracks from every playlist"
 msgstr "所有播放清單的曲目"
@@ -5800,6 +5837,11 @@ msgstr "黃色"
 
 msgid "Yes"
 msgstr "是"
+
+#, fuzzy
+#| msgid "No sources configured"
+msgid "You need to configure a local address"
+msgstr "未設置來源"
 
 msgid "Your library is ready"
 msgstr ""

@@ -362,6 +362,9 @@ msgstr "6 часов"
 msgid "A new update is available, restart to apply"
 msgstr "Доступно новое обновление, перезагрузите, чтобы применить"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr "А"
 
@@ -834,6 +837,11 @@ msgstr "C"
 msgid "CUE file"
 msgstr "CUE-файл"
 
+#, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Загрузка похожих треков..."
+
 msgid "Cache"
 msgstr "Кэш"
 
@@ -1013,6 +1021,11 @@ msgstr "Очистить кэш текстов"
 
 msgid "Clear queue"
 msgstr "Очистить очередь"
+
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Очистить весь кэш"
 
 msgid "Clear this cache?"
 msgstr "Очистить этот кэш?"
@@ -1878,6 +1891,9 @@ msgstr "Рекомендованные жанры"
 
 msgid "February {year}"
 msgstr "Февраль {year}"
+
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
 
 msgid "Fetching Home"
 msgstr "Получение данных для Главной"
@@ -4447,6 +4463,9 @@ msgstr "Сингл"
 msgid "Singles"
 msgstr "Синглы"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr "Размер"
 
@@ -4457,6 +4476,11 @@ msgstr "Количество пропусков"
 #| msgid "Skip unplayable tracks"
 msgid "Skip low-rated tracks"
 msgstr "Пропускать неиграемые треки"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Локальная сеть"
 
 msgid "Skip same-album crossfade"
 msgstr "Пропускать плавный переход между треками одного альбома"
@@ -4564,6 +4588,9 @@ msgstr "Линия спектра"
 msgid "Spectrum"
 msgstr "Спектр"
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Similar artists"
 msgid "Split featured artists"
@@ -4631,6 +4658,11 @@ msgstr ""
 #, fuzzy
 #| msgid "Relay address"
 msgid "Stream address"
+msgstr "Адрес ретранслятора"
+
+#, fuzzy
+#| msgid "Relay address"
+msgid "Stream cache"
 msgstr "Адрес ретранслятора"
 
 #, fuzzy
@@ -4858,6 +4890,11 @@ msgstr "Трек недоступен"
 
 msgid "Track"
 msgstr "Трек"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "Качество потока"
 
 msgid "Tracks from every playlist"
 msgstr "Треки из каждого плейлиста"
@@ -5187,6 +5224,11 @@ msgstr "Жёлтый"
 
 msgid "Yes"
 msgstr "Да"
+
+#, fuzzy
+#| msgid "Configure local folder access"
+msgid "You need to configure a local address"
+msgstr "Настроить доступ к локальным папкам"
 
 msgid "Your library is ready"
 msgstr "Ваша библиотека готова"
@@ -6272,9 +6314,6 @@ msgstr "Добро пожаловать в программу установки
 
 #~ msgid "Comfortable"
 #~ msgstr "Удобный"
-
-#~ msgid "Configure local folder access"
-#~ msgstr "Настроить доступ к локальным папкам"
 
 #~ msgid "Configure saved music servers and local playback mappings"
 #~ msgstr ""

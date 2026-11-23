@@ -297,6 +297,9 @@ msgstr "6 小时"
 msgid "A new update is available, restart to apply"
 msgstr "有新的更新可用，重启以应用"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr ""
 
@@ -743,6 +746,11 @@ msgstr ""
 msgid "CUE file"
 msgstr ""
 
+#, fuzzy
+#| msgid "Genre tracks"
+msgid "Cache streamed tracks"
+msgstr "曲风曲目"
+
 msgid "Cache"
 msgstr "缓存"
 
@@ -914,6 +922,11 @@ msgstr "清除歌词缓存"
 
 msgid "Clear queue"
 msgstr "清空播放队列"
+
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "清除全部缓存"
 
 msgid "Clear this cache?"
 msgstr ""
@@ -1746,6 +1759,9 @@ msgstr "精选曲风"
 
 msgid "February {year}"
 msgstr "{year} 年 2 月"
+
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
 
 msgid "Fetching Home"
 msgstr ""
@@ -4144,6 +4160,9 @@ msgstr ""
 msgid "Singles"
 msgstr ""
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr "尺寸"
 
@@ -4152,6 +4171,11 @@ msgstr ""
 
 msgid "Skip low-rated tracks"
 msgstr "排除低分曲目"
+
+#, fuzzy
+#| msgid "Searching Local Network"
+msgid "Skip on the local network"
+msgstr "正在搜索本地网络"
 
 msgid "Skip same-album crossfade"
 msgstr "同专辑不淡入淡出"
@@ -4252,6 +4276,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr "频谱"
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Similar artists"
 msgid "Split featured artists"
@@ -4310,6 +4337,11 @@ msgstr ""
 
 msgid "Stream address"
 msgstr ""
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Stream cache"
+msgstr "串流质量"
 
 msgid "Stream quality on mobile data"
 msgstr ""
@@ -4528,6 +4560,9 @@ msgstr ""
 
 msgid "Track"
 msgstr "曲目"
+
+msgid "Tracks ahead on mobile data"
+msgstr ""
 
 msgid "Tracks from every playlist"
 msgstr "所有播放列表中的曲目"
@@ -4837,6 +4872,9 @@ msgstr "黄色"
 
 msgid "Yes"
 msgstr "是"
+
+msgid "You need to configure a local address"
+msgstr ""
 
 msgid "Your library is ready"
 msgstr "你的媒体库已就绪"

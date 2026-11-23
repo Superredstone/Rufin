@@ -330,6 +330,9 @@ msgstr "6 ore"
 msgid "A new update is available, restart to apply"
 msgstr ""
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr ""
 
@@ -850,6 +853,11 @@ msgid "CUE file"
 msgstr "Cambia Profilo"
 
 #, fuzzy
+#| msgid "Could not load related tracks"
+msgid "Cache streamed tracks"
+msgstr "Non è stato possibile caricare le relative tracce"
+
+#, fuzzy
 #| msgid "Cached"
 msgid "Cache"
 msgstr "In cache"
@@ -1063,6 +1071,11 @@ msgstr "Rimuovi artista"
 
 msgid "Clear queue"
 msgstr "Rimuovi coda"
+
+#, fuzzy
+#| msgid "Clear artist"
+msgid "Clear stream cache"
+msgstr "Rimuovi artista"
 
 #, fuzzy
 #| msgid "Clear artist"
@@ -2020,6 +2033,9 @@ msgid "Featured genres"
 msgstr ""
 
 msgid "February {year}"
+msgstr ""
+
+msgid "Fetches the next tracks before they play and keeps played ones"
 msgstr ""
 
 msgid "Fetching Home"
@@ -4573,6 +4589,9 @@ msgstr ""
 msgid "Singles"
 msgstr ""
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr ""
 
@@ -4583,6 +4602,11 @@ msgstr ""
 #| msgid "Album unavailable"
 msgid "Skip low-rated tracks"
 msgstr "Album non disponibile"
+
+#, fuzzy
+#| msgid "Casting network"
+msgid "Skip on the local network"
+msgstr "Rete di casting"
 
 msgid "Skip same-album crossfade"
 msgstr ""
@@ -4695,6 +4719,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Clear artist"
 msgid "Split featured artists"
@@ -4762,6 +4789,11 @@ msgstr ""
 #, fuzzy
 #| msgid "Choose an address"
 msgid "Stream address"
+msgstr "Seleziona un indirizzo"
+
+#, fuzzy
+#| msgid "Choose an address"
+msgid "Stream cache"
 msgstr "Seleziona un indirizzo"
 
 msgid "Stream quality on mobile data"
@@ -5005,6 +5037,11 @@ msgstr "Artista non disponibile"
 
 msgid "Track"
 msgstr ""
+
+#, fuzzy
+#| msgid "Download Folder"
+msgid "Tracks ahead on mobile data"
+msgstr "Cartella di Download"
 
 msgid "Tracks from every playlist"
 msgstr ""
@@ -5331,6 +5368,9 @@ msgid "Yellow"
 msgstr ""
 
 msgid "Yes"
+msgstr ""
+
+msgid "You need to configure a local address"
 msgstr ""
 
 msgid "Your library is ready"

@@ -355,6 +355,9 @@ msgstr "6 tundi"
 msgid "A new update is available, restart to apply"
 msgstr "Saadaval on uuendus, selle kasutamiseks käivita rakendus uuesti"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr "A"
 
@@ -801,6 +804,11 @@ msgstr "C"
 msgid "CUE file"
 msgstr "CUE-fail"
 
+#, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Laadin seotud lugusid…"
+
 msgid "Cache"
 msgstr "Vahemälu"
 
@@ -977,6 +985,11 @@ msgstr "Kustuta laulusõnade vahemälu"
 
 msgid "Clear queue"
 msgstr "Tühjenda esitusjärjekord"
+
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Kustuta kõik vahemälud"
 
 msgid "Clear this cache?"
 msgstr "Kas kustutad selle vahemälu?"
@@ -1815,6 +1828,9 @@ msgstr "Esiletõstetud žanrid"
 
 msgid "February {year}"
 msgstr "Veebruar {year}"
+
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
 
 msgid "Fetching Home"
 msgstr "Laadin avalehte"
@@ -4357,6 +4373,9 @@ msgstr "Singel"
 msgid "Singles"
 msgstr "Singlid"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr "Suurus"
 
@@ -4367,6 +4386,11 @@ msgstr "Vahelejätmiste arv"
 #| msgid "Skip unplayable tracks"
 msgid "Skip low-rated tracks"
 msgstr "Jäta esitamatud lood vahele"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Kohtvõrk"
 
 msgid "Skip same-album crossfade"
 msgstr "Ära kasuta risthajutamist sama albumi lugude vahel"
@@ -4476,6 +4500,9 @@ msgstr "Spektrijoon"
 msgid "Spectrum"
 msgstr "Spekter"
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Similar artists"
 msgid "Split featured artists"
@@ -4544,6 +4571,11 @@ msgstr ""
 #, fuzzy
 #| msgid "Relay address"
 msgid "Stream address"
+msgstr "Edastuse aadress"
+
+#, fuzzy
+#| msgid "Relay address"
+msgid "Stream cache"
 msgstr "Edastuse aadress"
 
 #, fuzzy
@@ -4778,6 +4810,11 @@ msgstr "Rada pole saadaval"
 
 msgid "Track"
 msgstr "Lugu"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "Voogedastuse kvaliteet"
 
 msgid "Tracks from every playlist"
 msgstr "Lood igast esitusloendist"
@@ -5114,6 +5151,11 @@ msgstr "Kollane"
 
 msgid "Yes"
 msgstr "Jah"
+
+#, fuzzy
+#| msgid "Configure local folder access"
+msgid "You need to configure a local address"
+msgstr "Seadista ligipääs kohalikele kaustadele"
 
 #, fuzzy
 #| msgid "Cached library ready"
@@ -6298,9 +6340,6 @@ msgstr "Tere tulemast, see on Rufini paigaldusprogramm"
 #~ msgid "Clears cached data for the server, login stays saved"
 #~ msgstr ""
 #~ "Eemaldab serverist puhverdatud andmed, kasutajakonto andmed jäävad alles"
-
-#~ msgid "Configure local folder access"
-#~ msgstr "Seadista ligipääs kohalikele kaustadele"
 
 #~ msgid "Configure saved music servers and local playback mappings"
 #~ msgstr ""

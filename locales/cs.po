@@ -302,6 +302,9 @@ msgstr ""
 msgid "A new update is available, restart to apply"
 msgstr ""
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr ""
 
@@ -873,6 +876,11 @@ msgid "CUE file"
 msgstr "Uložené zdroje"
 
 #, fuzzy
+#| msgid "Loading folders..."
+msgid "Cache streamed tracks"
+msgstr "Načítání složek..."
+
+#, fuzzy
 #| msgid "Cached"
 msgid "Cache"
 msgstr "V mezipaměti"
@@ -1105,6 +1113,11 @@ msgstr "Hledat texty"
 
 msgid "Clear queue"
 msgstr "Vymazat frontu"
+
+#, fuzzy
+#| msgid "Search lyrics"
+msgid "Clear stream cache"
+msgstr "Hledat texty"
 
 #, fuzzy
 #| msgid "Search lyrics"
@@ -2154,6 +2167,9 @@ msgid "Featured genres"
 msgstr "Vybrané žánry"
 
 msgid "February {year}"
+msgstr ""
+
+msgid "Fetches the next tracks before they play and keeps played ones"
 msgstr ""
 
 msgid "Fetching Home"
@@ -5102,6 +5118,9 @@ msgstr "Singl"
 msgid "Singles"
 msgstr "Singly"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr ""
 
@@ -5112,6 +5131,11 @@ msgstr "Počet přeskočení"
 #| msgid "Only unplayed tracks"
 msgid "Skip low-rated tracks"
 msgstr "Pouze nepřehrané skladby"
+
+#, fuzzy
+#| msgid "Searching Local Network"
+msgid "Skip on the local network"
+msgstr "Prohledávání místní sítě"
 
 msgid "Skip same-album crossfade"
 msgstr "Přeskočení prolínání mezi skladbami na stejném albu"
@@ -5233,6 +5257,9 @@ msgstr ""
 msgid "Spectrum"
 msgstr ""
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Play artist"
 msgid "Split featured artists"
@@ -5312,6 +5339,11 @@ msgstr ""
 #, fuzzy
 #| msgid "Locate Folder"
 msgid "Stream address"
+msgstr "Vyhledat složku"
+
+#, fuzzy
+#| msgid "Locate Folder"
+msgid "Stream cache"
 msgstr "Vyhledat složku"
 
 #, fuzzy
@@ -5573,6 +5605,11 @@ msgstr "Toto není dostupné"
 
 msgid "Track"
 msgstr "Skladba"
+
+#, fuzzy
+#| msgid "Stream quality"
+msgid "Tracks ahead on mobile data"
+msgstr "Kvalita streamu"
 
 msgid "Tracks from every playlist"
 msgstr "Skladby ze všech playlistů"
@@ -5944,6 +5981,11 @@ msgstr "Žlutá"
 
 msgid "Yes"
 msgstr "Ano"
+
+#, fuzzy
+#| msgid "No sources configured"
+msgid "You need to configure a local address"
+msgstr "Nejsou nakonfigurovány žádné zdroje"
 
 msgid "Your library is ready"
 msgstr ""

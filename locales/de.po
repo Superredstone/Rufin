@@ -370,6 +370,9 @@ msgstr "sechs Stunden"
 msgid "A new update is available, restart to apply"
 msgstr "Ein neues Update ist verfügbar. Neu starten, um es anzuwenden."
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr "A"
 
@@ -814,6 +817,11 @@ msgstr "C"
 msgid "CUE file"
 msgstr "CUE-Datei"
 
+#, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Verwandte Titel werden geladen …"
+
 msgid "Cache"
 msgstr "Cache"
 
@@ -992,6 +1000,11 @@ msgstr "Liedtext-Cache leeren"
 
 msgid "Clear queue"
 msgstr "Warteschlange leeren"
+
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Gesamten Cache leeren"
 
 msgid "Clear this cache?"
 msgstr "Diesen Cache leeren?"
@@ -1838,6 +1851,9 @@ msgstr "Beliebte Genres"
 
 msgid "February {year}"
 msgstr "Februar {year}"
+
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
 
 msgid "Fetching Home"
 msgstr "Startseite wird abgerufen"
@@ -4295,6 +4311,9 @@ msgstr "Single"
 msgid "Singles"
 msgstr "Singles"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr "Größe"
 
@@ -4303,6 +4322,11 @@ msgstr "Überspringungszähler"
 
 msgid "Skip low-rated tracks"
 msgstr "Schlecht bewertete Titel überspringen"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Lokales Netzwerk"
 
 msgid "Skip same-album crossfade"
 msgstr "Überblendung bei gleichem Album überspringen"
@@ -4404,6 +4428,9 @@ msgstr "Spektrumlinie"
 msgid "Spectrum"
 msgstr "Spektrum"
 
+msgid "Speed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Similar artists"
 msgid "Split featured artists"
@@ -4461,6 +4488,11 @@ msgid "Store calculated loudness in supported Local music files"
 msgstr "Berechnete Lautheit in unterstützten lokalen Musikdateien speichern"
 
 msgid "Stream address"
+msgstr "Stream-Adresse"
+
+#, fuzzy
+#| msgid "Stream address"
+msgid "Stream cache"
 msgstr "Stream-Adresse"
 
 msgid "Stream quality on mobile data"
@@ -4690,6 +4722,11 @@ msgstr "Titel nicht verfügbar"
 
 msgid "Track"
 msgstr "Titel"
+
+#, fuzzy
+#| msgid "Stream quality on mobile data"
+msgid "Tracks ahead on mobile data"
+msgstr "Streaming-Qualität über mobile Daten"
 
 msgid "Tracks from every playlist"
 msgstr "Titel aus allen Playlists"
@@ -5011,6 +5048,11 @@ msgstr "Gelb"
 
 msgid "Yes"
 msgstr "Ja"
+
+#, fuzzy
+#| msgid "Add a source to configure downloads."
+msgid "You need to configure a local address"
+msgstr "Füge eine Quelle hinzu, um Downloads zu konfigurieren."
 
 msgid "Your library is ready"
 msgstr "Deine Bibliothek ist bereit"

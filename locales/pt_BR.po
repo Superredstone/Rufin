@@ -368,6 +368,9 @@ msgstr "6 horas"
 msgid "A new update is available, restart to apply"
 msgstr "Uma nova atualização está disponível, reinicie para aplicar"
 
+msgid "A server reached at its local address is not cached"
+msgstr ""
+
 msgid "A"
 msgstr "A"
 
@@ -812,6 +815,11 @@ msgstr "C"
 msgid "CUE file"
 msgstr "Arquivo CUE"
 
+#, fuzzy
+#| msgid "Loading related tracks..."
+msgid "Cache streamed tracks"
+msgstr "Carregando faixas relacionadas..."
+
 msgid "Cache"
 msgstr "Cache"
 
@@ -990,6 +998,11 @@ msgstr "Limpar cache de letras"
 
 msgid "Clear queue"
 msgstr "Limpar fila"
+
+#, fuzzy
+#| msgid "Clear all cache"
+msgid "Clear stream cache"
+msgstr "Limpar todo o cache"
 
 msgid "Clear this cache?"
 msgstr "Limpar este cache?"
@@ -1276,8 +1289,8 @@ msgstr "Criar"
 msgid ""
 "Credit the artists a tag names after feat. or ft. as artists of their own"
 msgstr ""
-"Considerar como artistas independentes os artistas indicados nas tags após “"
-"feat.” ou “ft.”"
+"Considerar como artistas independentes os artistas indicados nas tags após "
+"“feat.” ou “ft.”"
 
 msgid "Crossfade duration"
 msgstr "Duração do crossfade"
@@ -1816,6 +1829,9 @@ msgstr "Gêneros em destaque"
 
 msgid "February {year}"
 msgstr "Fevereiro de {year}"
+
+msgid "Fetches the next tracks before they play and keeps played ones"
+msgstr ""
 
 msgid "Fetching Home"
 msgstr "Buscando Início"
@@ -2449,7 +2465,8 @@ msgid "Logs are copied"
 msgstr "Os registros foram copiados"
 
 msgid "Look up the artists that listeners play alongside the current one"
-msgstr "Pesquisar os artistas que os ouvintes escutam junto com o artista atual"
+msgstr ""
+"Pesquisar os artistas que os ouvintes escutam junto com o artista atual"
 
 msgid "Lookup"
 msgstr "Busca"
@@ -4235,6 +4252,9 @@ msgstr "Single"
 msgid "Singles"
 msgstr "Singles"
 
+msgid "Size in gigabytes"
+msgstr ""
+
 msgid "Size"
 msgstr "Tamanho"
 
@@ -4243,6 +4263,11 @@ msgstr "Contagem de saltos"
 
 msgid "Skip low-rated tracks"
 msgstr "Pular faixas com avaliações baixas"
+
+#, fuzzy
+#| msgid "Local network"
+msgid "Skip on the local network"
+msgstr "Rede local"
 
 msgid "Skip same-album crossfade"
 msgstr "Pular crossfade do mesmo álbum"
@@ -4343,6 +4368,9 @@ msgstr "Linha de espectro"
 msgid "Spectrum"
 msgstr "Espectro"
 
+msgid "Speed"
+msgstr ""
+
 msgid "Split featured artists"
 msgstr "Separar artistas convidados"
 
@@ -4398,6 +4426,11 @@ msgid "Store calculated loudness in supported Local music files"
 msgstr "Armazenar loudness calculada em arquivos de música local compatíveis"
 
 msgid "Stream address"
+msgstr "Endereço do fluxo"
+
+#, fuzzy
+#| msgid "Stream address"
+msgid "Stream cache"
 msgstr "Endereço do fluxo"
 
 msgid "Stream quality on mobile data"
@@ -4621,6 +4654,11 @@ msgstr "Faixa indisponível"
 
 msgid "Track"
 msgstr "Faixa"
+
+#, fuzzy
+#| msgid "Stream quality on mobile data"
+msgid "Tracks ahead on mobile data"
+msgstr "Qualidade do fluxo em dados móveis"
 
 msgid "Tracks from every playlist"
 msgstr "Faixas de todas as playlists"
@@ -4933,6 +4971,11 @@ msgstr "Amarelo"
 
 msgid "Yes"
 msgstr "Sim"
+
+#, fuzzy
+#| msgid "Add a source to configure downloads."
+msgid "You need to configure a local address"
+msgstr "Adicione uma fonte para configurar os downloads."
 
 msgid "Your library is ready"
 msgstr "Sua biblioteca está pronta"
