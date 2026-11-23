@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-12 09:02+0000\n"
+"PO-Revision-Date: 2026-11-23 12:02+0000\n"
 "Last-Translator: Daniel Arafat <arafat90@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "rufin/app/pt_BR/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2026.11.2.dev0\n"
+"X-Generator: Weblate 2026.12.dev0\n"
 
 msgid ""
 "A Japanese dictionary is downloaded for furigana and romaji readings. This "
@@ -75,11 +75,15 @@ msgid ""
 "Files without an album artist tag form one album per folder instead of one "
 "per artist"
 msgstr ""
+"Arquivos sem a tag de artista do álbum são agrupados em um único álbum por "
+"pasta, em vez de um por artista"
 
 msgid ""
 "GNU FM, Maloja and other Last.fm-style servers. On Maloja, the password is "
 "an API key."
 msgstr ""
+"GNU FM, Maloja e outros servidores no estilo Last.fm. No Maloja, a senha é "
+"uma chave de API."
 
 msgid ""
 "If Discord is not installed as a flatpak, you need to give socket access to "
@@ -100,6 +104,8 @@ msgid ""
 "Listens from Rufin, ListenBrainz or Last.fm, or play counts from other "
 "players"
 msgstr ""
+"Reproduções do Rufin, ListenBrainz ou Last.fm, ou contagens de reprodução de "
+"outros reprodutores"
 
 msgid ""
 "Logs have secrets and absolute folder paths redacted, but you may still want "
@@ -291,6 +297,8 @@ msgid ""
 "This will write the stored ratings to your files, and also modify them every "
 "time you change a rating."
 msgstr ""
+"Isso salvará as avaliações armazenadas nos seus arquivos e também os "
+"modificará sempre que você alterar uma avaliação."
 
 msgid ""
 "Track evens out every song, while Album preserves the intended differences "
@@ -569,13 +577,13 @@ msgid "Allow downloading"
 msgstr "Permitir downloads"
 
 msgid "Allow permanently deleting tracks"
-msgstr ""
+msgstr "Permitir excluir músicas permanentemente"
 
 msgid "Allow remote connections"
 msgstr "Permitir conexões remotas"
 
 msgid "Also album types and tag suggestions"
-msgstr ""
+msgstr "Também tipos de álbum e sugestões de tags"
 
 msgid "Alternate addresses"
 msgstr "Endereços alternativos"
@@ -701,7 +709,7 @@ msgid "Audio"
 msgstr "Áudio"
 
 msgid "Audioscrobbler API"
-msgstr ""
+msgstr "API do Audioscrobbler"
 
 msgid "August {year}"
 msgstr "Agosto de {year}"
@@ -797,7 +805,7 @@ msgid "Bearer token"
 msgstr "Token Bearer"
 
 msgid "Behavior"
-msgstr ""
+msgstr "Comportamento"
 
 msgid "Bit depth"
 msgstr "Profundidade de bits"
@@ -809,13 +817,13 @@ msgid "Bitstream"
 msgstr "Bitstream"
 
 msgid "Blocks"
-msgstr ""
+msgstr "Blocos"
 
 msgid "Blue"
 msgstr "Azul"
 
 msgid "Bottom bar"
-msgstr ""
+msgstr "Barra inferior"
 
 msgid "Brightness (%)"
 msgstr "Brilho (%)"
@@ -1284,10 +1292,10 @@ msgid "Country"
 msgstr "País"
 
 msgid "Covers and artist images your library doesn't have"
-msgstr ""
+msgstr "Capas e imagens de artistas que sua biblioteca não tem"
 
 msgid "Covers, artist images, tags"
-msgstr ""
+msgstr "Capas, imagens de artistas, tags"
 
 #, fuzzy
 #| msgid "API keys"
@@ -1399,10 +1407,8 @@ msgstr "Padrão"
 msgid "Default"
 msgstr "Padrão"
 
-#, fuzzy
-#| msgid "Delete preset"
 msgid "Delete Permanently?"
-msgstr "Excluir predefinição"
+msgstr "Excluir permanentemente?"
 
 msgid "Delete Playlist"
 msgstr "Excluir playlist"
@@ -1419,10 +1425,8 @@ msgstr "Excluir \"{name}\"?"
 msgid "Delete folder"
 msgstr "Excluir pasta"
 
-#, fuzzy
-#| msgid "Delete preset"
 msgid "Delete permanently"
-msgstr "Excluir predefinição"
+msgstr "Excluir permanentemente"
 
 msgid "Delete playlist file"
 msgstr "Excluir arquivo de playlist"
@@ -1431,7 +1435,7 @@ msgid "Delete preset"
 msgstr "Excluir predefinição"
 
 msgid "Delete this station?"
-msgstr ""
+msgstr "Excluir esta estação?"
 
 msgid "Delete {count} playlist?"
 msgid_plural "Delete {count} playlists?"
@@ -1445,10 +1449,10 @@ msgid "Delivery"
 msgstr "Entrega"
 
 msgid "Demo"
-msgstr ""
+msgstr "Demo"
 
 msgid "Demos"
-msgstr ""
+msgstr "Demos"
 
 msgid "Descending"
 msgstr "Decrescente"
@@ -1640,10 +1644,10 @@ msgid "ERB"
 msgstr "ERB"
 
 msgid "Each plays whole"
-msgstr ""
+msgstr "Cada reprodução inteira"
 
 msgid "Each rating you change is also written to its file's tags"
-msgstr ""
+msgstr "Cada avaliação alterada também é gravada nas tags do arquivo"
 
 msgid "Edit Lyrics"
 msgstr "Editar letras"
@@ -1731,10 +1735,10 @@ msgid "Ends around {time}"
 msgstr "Ativar imagem de fundo"
 
 msgid "Enter a name and URL."
-msgstr ""
+msgstr "Digite um nome e uma URL."
 
 msgid "Enter a name and the server's URL."
-msgstr ""
+msgstr "Digite um nome e a URL do servidor."
 
 msgid "Enter a server address and API key"
 msgstr "Insira um endereço de servidor e chave de API"
@@ -1746,7 +1750,7 @@ msgid "Enter your Nextcloud server address to sign in through your browser"
 msgstr "Insira o endereço do seu servidor Nextcloud para entrar pelo navegador"
 
 msgid "Enter your user token first"
-msgstr ""
+msgstr "Digite seu token de usuário primeiro"
 
 #, fuzzy
 #| msgid "Username and password"
@@ -1907,7 +1911,7 @@ msgid "Fetching playlists"
 msgstr "Buscando playlists"
 
 msgid "Few"
-msgstr ""
+msgstr "Poucos"
 
 msgid "Field"
 msgstr "Campo"
@@ -1963,6 +1967,7 @@ msgstr "Ajustar à altura"
 
 msgid "Fit wide and tall covers inside their frames instead of cropping them"
 msgstr ""
+"Ajustar as capas largas e altas dentro de suas molduras em vez de cortá-las"
 
 msgid "Fixed position"
 msgstr "Posição fixa"
@@ -2089,7 +2094,7 @@ msgid "Genres"
 msgstr "Gêneros"
 
 msgid "Get a personal key"
-msgstr ""
+msgstr "Pegar uma chave pessoal"
 
 msgid "Go to Album"
 msgstr "Ir para o álbum"
