@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-24 17:01+0000\n"
-"Last-Translator: HPCesia <hpcesia@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-11-24 21:23+0000\n"
+"Last-Translator: Jiahao Li <thejiahao@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/rufin/app/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -202,7 +202,7 @@ msgstr "感谢尝试 Rufin！如有问题或建议，请在 GitHub 上提出 iss
 msgid ""
 "This is a fallback artwork Rufin uses, do you want to set this as the item "
 "artwork?"
-msgstr "这是 Rufin 使用的备用封面，要将它设为该项目的封面吗？"
+msgstr "这是 Rufin 使用的备用封面，是否设为条目封面？"
 
 msgid ""
 "This is not supported natively by this source, but Rufin can show partial "
@@ -248,7 +248,7 @@ msgid ""
 msgstr "需要使用新 API 密钥在各客户端重新连接。"
 
 msgid "(hold to shuffle)"
-msgstr "（长按随机播放）"
+msgstr "(长按随机播放)"
 
 msgid "+1 track"
 msgstr "添加 1 首曲目"
@@ -299,7 +299,7 @@ msgid "A server reached at its local address is not cached"
 msgstr "不缓存本地服务器"
 
 msgid "A"
-msgstr ""
+msgstr "A"
 
 msgid "API key (Subsonic)"
 msgstr "API 密钥 (Subsonic)"
@@ -314,7 +314,7 @@ msgid "Absolute"
 msgstr "绝对"
 
 msgid "Accent color"
-msgstr "主题颜色"
+msgstr "强调色"
 
 msgid "Access denied"
 msgstr "拒绝访问"
@@ -329,7 +329,7 @@ msgid "Account"
 msgstr "账户"
 
 msgid "Actions"
-msgstr "动作"
+msgstr "操作"
 
 msgid "Active"
 msgstr "已启用"
@@ -365,22 +365,22 @@ msgid "Add a new source"
 msgstr "添加新数据源"
 
 msgid "Add a source to configure downloads."
-msgstr ""
+msgstr "请添加数据源以配置下载。"
 
 msgid "Add a title"
-msgstr ""
+msgstr "请添加标题"
 
 msgid "Add band"
 msgstr "添加频段"
 
 msgid "Add current"
-msgstr ""
+msgstr "添加当前"
 
 msgid "Add folder"
 msgstr "添加文件夹"
 
 msgid "Add group"
-msgstr ""
+msgstr "添加分组"
 
 msgid "Add image"
 msgstr "添加图片"
@@ -401,7 +401,7 @@ msgid "Add to Playlist"
 msgstr "添加到播放列表"
 
 msgid "Add to Saved"
-msgstr ""
+msgstr "添加到已保存"
 
 msgid "Add to folder"
 msgstr "添加到文件夹"
@@ -419,7 +419,7 @@ msgid "Add"
 msgstr "添加"
 
 msgid "Added to"
-msgstr ""
+msgstr "已添加到"
 
 msgid "Added"
 msgstr "已添加"
@@ -476,7 +476,7 @@ msgid "All Playlists"
 msgstr "全部播放列表"
 
 msgid "All time"
-msgstr ""
+msgstr "不限"
 
 msgid "All"
 msgstr "全部"
@@ -506,7 +506,7 @@ msgid "Anonymous"
 msgstr "匿名"
 
 msgid "Any"
-msgstr ""
+msgstr "任何"
 
 msgid "App icon"
 msgstr "应用图标"
@@ -692,10 +692,10 @@ msgid "Bandwidth"
 msgstr ""
 
 msgid "Bar count"
-msgstr ""
+msgstr "柱数"
 
 msgid "Bar spacing (px)"
-msgstr ""
+msgstr "柱形间距 (px)"
 
 msgid "Bass"
 msgstr "低音"
@@ -728,7 +728,7 @@ msgid "Bottom bar"
 msgstr "底栏"
 
 msgid "Brightness (%)"
-msgstr ""
+msgstr "亮度 (%)"
 
 msgid "By Lyrics"
 msgstr ""
@@ -785,7 +785,7 @@ msgid "Casting"
 msgstr "投放"
 
 msgid "Centered bars"
-msgstr ""
+msgstr "居中条形"
 
 msgid "Certificate authority (PEM)"
 msgstr "证书颁发机构 (PEM)"
@@ -867,7 +867,7 @@ msgid "Choose..."
 msgstr "选择…"
 
 msgid "Circular spectrum"
-msgstr ""
+msgstr "环形频谱"
 
 msgid "Classical"
 msgstr "古典"
@@ -897,7 +897,7 @@ msgid "Clear all data?"
 msgstr "清除全部数据？"
 
 msgid "Clear artist"
-msgstr ""
+msgstr "清空艺人"
 
 msgid "Clear artwork cache"
 msgstr "清除封面缓存"
@@ -924,7 +924,7 @@ msgid "Clear this cache?"
 msgstr ""
 
 msgid "Clear title"
-msgstr ""
+msgstr "清空标题"
 
 msgid "Clear waveform cache"
 msgstr "清除波形图缓存"
@@ -942,7 +942,7 @@ msgid "Close Window"
 msgstr ""
 
 msgid "Close app window"
-msgstr ""
+msgstr "关闭应用窗口"
 
 msgid "Close fullscreen player"
 msgstr "关闭全屏播放器"
@@ -1224,10 +1224,8 @@ msgstr ""
 msgid "Custom HTTP headers"
 msgstr "自定义 HTTP 标头"
 
-#, fuzzy
-#| msgid "Custom"
 msgid "Custom URL"
-msgstr "自定义"
+msgstr "自定义 URL"
 
 msgid "Custom bands"
 msgstr "自定义频段"
@@ -1451,7 +1449,7 @@ msgid "Download on Mobile Data"
 msgstr ""
 
 msgid "Download queued"
-msgstr ""
+msgstr "已添加到下载队列"
 
 msgid "Download started"
 msgstr "已开始下载"
@@ -1520,7 +1518,7 @@ msgid "EPs"
 msgstr ""
 
 msgid "ERB"
-msgstr ""
+msgstr "ERB"
 
 msgid "Each plays whole"
 msgstr ""
@@ -1604,7 +1602,7 @@ msgid "Encrypt backups"
 msgstr "加密备份"
 
 msgid "End of this track"
-msgstr ""
+msgstr "播完当前曲目"
 
 msgid "Ends around {time}"
 msgstr ""
@@ -1703,7 +1701,7 @@ msgid "External metadata lookup"
 msgstr "外部元数据查询"
 
 msgid "FFT size"
-msgstr ""
+msgstr "FFT 大小"
 
 msgid "FLAC"
 msgstr "FLAC"
@@ -1712,7 +1710,7 @@ msgid "Fade audio when playback is paused or resumed"
 msgstr "暂停或恢复时淡入淡出"
 
 msgid "Fall speed (%)"
-msgstr ""
+msgstr "下降速度 (%)"
 
 msgid "Favorite Albums"
 msgstr "已收藏专辑"
@@ -1799,7 +1797,7 @@ msgid "Files need Mood/BPM tags written on them. Not supported for Jellyfin"
 msgstr "文件需包含情绪或 BPM 标签。Jellyfin 不支持"
 
 msgid "Filled spectrum"
-msgstr ""
+msgstr "填充频谱"
 
 msgid "Filter type"
 msgstr ""
@@ -1817,13 +1815,13 @@ msgid "Finding lyrics..."
 msgstr "正在查找歌词…"
 
 msgid "Finish the last track"
-msgstr ""
+msgstr "播完当前曲目"
 
 msgid "Finishes the track playing at {time}"
 msgstr ""
 
 msgid "Fit to height"
-msgstr ""
+msgstr "适应高度"
 
 msgid "Fit wide and tall covers inside their frames instead of cropping them"
 msgstr "等比缩放以完整显示封面，不裁剪"
@@ -1847,7 +1845,7 @@ msgid "Folders"
 msgstr "文件夹"
 
 msgid "Follow the app accent with lighter and darker tones"
-msgstr ""
+msgstr "使用应用强调色的深浅色调"
 
 msgid "Font family"
 msgstr "字体"
@@ -1883,13 +1881,13 @@ msgid "Frame rate limit"
 msgstr "帧率限制"
 
 msgid "Frames per second"
-msgstr ""
+msgstr "每秒帧数"
 
 msgid "Frequency · Hz"
 msgstr ""
 
 msgid "Frequency scale"
-msgstr ""
+msgstr "频率刻度"
 
 msgid "Frequency"
 msgstr "频率"
@@ -1964,10 +1962,10 @@ msgid "Google Cast"
 msgstr ""
 
 msgid "Gradient end"
-msgstr ""
+msgstr "渐变终点"
 
 msgid "Gradient start"
-msgstr ""
+msgstr "渐变起点"
 
 msgid "Graphic"
 msgstr "图形"
@@ -1997,13 +1995,13 @@ msgid "Guest / public access"
 msgstr "访客 / 公开访问"
 
 msgid "Halo"
-msgstr ""
+msgstr "光环"
 
 msgid "Heard"
 msgstr ""
 
 msgid "Height (%)"
-msgstr ""
+msgstr "高度 (%)"
 
 msgid "Help"
 msgstr ""
@@ -2036,13 +2034,13 @@ msgid "Home"
 msgstr "首页"
 
 msgid "Homepage"
-msgstr ""
+msgstr "首页"
 
 msgid "Hour"
 msgstr "时间"
 
 msgid "Hours"
-msgstr ""
+msgstr "小时"
 
 msgid "Hz"
 msgstr "Hz"
@@ -2051,7 +2049,7 @@ msgid "If the page doesn't load, then Libre.fm blocks your IP range/VPN"
 msgstr "若页面无法加载，可能是 Libre.fm 封锁了你的 IP 段或 VPN"
 
 msgid "Ignore playback volume"
-msgstr ""
+msgstr "忽略播放音量"
 
 msgid "Image files"
 msgstr ""
@@ -2103,7 +2101,7 @@ msgid "Installed"
 msgstr "已安装"
 
 msgid "Instrumental"
-msgstr ""
+msgstr "纯音乐"
 
 msgid "Integrations"
 msgstr "集成"
@@ -2172,7 +2170,7 @@ msgid "Koito, Maloja and other ListenBrainz servers."
 msgstr "Koito、Maloja 和其他 ListenBrainz 服务器。"
 
 msgid "LED spectrum"
-msgstr ""
+msgstr "LED 频谱"
 
 msgid "LIVE"
 msgstr ""
@@ -2196,13 +2194,13 @@ msgid "Large"
 msgstr "较大"
 
 msgid "Last 30 days"
-msgstr ""
+msgstr "最近 30 天"
 
 msgid "Last 365 days"
-msgstr ""
+msgstr "最近 365 天"
 
 msgid "Last 7 days"
-msgstr ""
+msgstr "最近 7 天"
 
 msgid "Last played"
 msgstr "上次播放"
@@ -2363,7 +2361,7 @@ msgid "Lock metadata"
 msgstr "锁定元数据"
 
 msgid "Logarithmic"
-msgstr ""
+msgstr "对数"
 
 msgid "Logs are copied"
 msgstr ""
@@ -2384,7 +2382,7 @@ msgid "Low shelf"
 msgstr "低频搁架"
 
 msgid "Lyrics background opacity"
-msgstr ""
+msgstr "歌词背景不透明度"
 
 msgid "Lyrics from LRCLIB, NetEase, Genius and SimpMusic when a track has none"
 msgstr ""
@@ -2423,7 +2421,7 @@ msgid "March {year}"
 msgstr "{year} 年 3 月"
 
 msgid "Match"
-msgstr ""
+msgstr "匹配"
 
 msgid "Matched"
 msgstr ""
@@ -2432,10 +2430,10 @@ msgid "Matching tracks..."
 msgstr ""
 
 msgid "Maximum frequency (Hz)"
-msgstr ""
+msgstr "最高频率 (Hz)"
 
 msgid "Maximum level (dB)"
-msgstr ""
+msgstr "最高电平 (dB)"
 
 msgid "Maximum year"
 msgstr ""
@@ -2477,10 +2475,10 @@ msgid "Minimize overview"
 msgstr ""
 
 msgid "Minimum frequency (Hz)"
-msgstr ""
+msgstr "最低频率 (Hz)"
 
 msgid "Minimum level (dB)"
-msgstr ""
+msgstr "最低电平 (dB)"
 
 msgid "Minimum year"
 msgstr ""
@@ -2489,22 +2487,22 @@ msgid "Minimum"
 msgstr ""
 
 msgid "Minutes"
-msgstr ""
+msgstr "分钟"
 
 msgid "Mirrored bars"
-msgstr ""
+msgstr "镜像柱形"
 
 msgid "Mirrored"
-msgstr ""
+msgstr "镜像"
 
 msgid "Mix (play later)"
-msgstr ""
+msgstr "混合播放 (最后播放)"
 
 msgid "Mix (play next)"
-msgstr ""
+msgstr "混合播放 (下一首播放)"
 
 msgid "Mix"
-msgstr ""
+msgstr "混合播放"
 
 msgid "Mixes"
 msgstr "动态合集"
@@ -2519,7 +2517,7 @@ msgid "Mono"
 msgstr "单声道"
 
 msgid "Month"
-msgstr ""
+msgstr "月份"
 
 msgid "Monthly"
 msgstr "月度"
@@ -2534,7 +2532,7 @@ msgid "Moods"
 msgstr "情绪"
 
 msgid "More actions"
-msgstr ""
+msgstr "更多操作"
 
 msgid "More"
 msgstr "更多"
@@ -2552,7 +2550,7 @@ msgid "Most skipped"
 msgstr "最常跳过"
 
 msgid "Motion"
-msgstr ""
+msgstr "动效"
 
 msgid "Move down"
 msgstr "下移"
@@ -2612,7 +2610,7 @@ msgid "Musical key"
 msgstr ""
 
 msgid "Mute"
-msgstr ""
+msgstr "静音"
 
 msgid "Muted"
 msgstr ""
@@ -2636,13 +2634,13 @@ msgid "Navidrome"
 msgstr "Navidrome"
 
 msgid "Navigate page items"
-msgstr ""
+msgstr "页面内导航"
 
 msgid "Navigate to Search"
-msgstr ""
+msgstr "跳转到搜索"
 
 msgid "Navigation"
-msgstr ""
+msgstr "导航"
 
 msgid "Nearby devices"
 msgstr "附近设备"
@@ -2684,10 +2682,10 @@ msgid "New file"
 msgstr ""
 
 msgid "New folder"
-msgstr ""
+msgstr "新建文件夹"
 
 msgid "New playlist"
-msgstr ""
+msgstr "新建播放列表"
 
 msgid "New release is available"
 msgstr ""
@@ -2702,7 +2700,7 @@ msgid "Next album"
 msgstr "下一专辑"
 
 msgid "Next audio device"
-msgstr ""
+msgstr "下一音频设备"
 
 msgid "Next page"
 msgstr ""
@@ -2711,10 +2709,10 @@ msgid "Next period"
 msgstr ""
 
 msgid "Next source"
-msgstr ""
+msgstr "下一数据源"
 
 msgid "Next"
-msgstr ""
+msgstr "下一曲"
 
 msgid "No Servers Found"
 msgstr "未发现服务器"
@@ -2918,7 +2916,7 @@ msgid "Only fill missing information"
 msgstr ""
 
 msgid "Opacity (%)"
-msgstr ""
+msgstr "不透明度 (%)"
 
 msgid "Open Controller"
 msgstr "打开控制台"
@@ -2996,7 +2994,7 @@ msgid "Orange"
 msgstr "橙色"
 
 msgid "Order"
-msgstr ""
+msgstr "排序"
 
 msgid "Original audio"
 msgstr ""
@@ -3017,7 +3015,7 @@ msgid "Otherwise automatic downloads wait for Wi-Fi"
 msgstr ""
 
 msgid "Outline bars"
-msgstr ""
+msgstr "空心柱形"
 
 msgid "Output gain"
 msgstr "输出增益"
@@ -3059,16 +3057,16 @@ msgid "Pauses at {time}"
 msgstr ""
 
 msgid "Pauses when that track ends"
-msgstr ""
+msgstr "曲目结束后暂停"
 
 msgid "Pauses when this track ends"
 msgstr ""
 
 msgid "Peak fall speed (% per second)"
-msgstr ""
+msgstr "峰值下降速度 (%/秒)"
 
 msgid "Peak hold (seconds)"
-msgstr ""
+msgstr "峰值保持 (秒)"
 
 msgid "Peak"
 msgstr "峰值"
@@ -3092,19 +3090,19 @@ msgid "Plain lyrics"
 msgstr "纯文本歌词"
 
 msgid "Play (shuffled)"
-msgstr "播放（随机）"
+msgstr "播放 (随机)"
 
 msgid "Play Later (shuffled)"
 msgstr ""
 
 msgid "Play Later"
-msgstr ""
+msgstr "最后播放"
 
 msgid "Play Next (shuffled)"
 msgstr ""
 
 msgid "Play Next"
-msgstr ""
+msgstr "下一首播放"
 
 msgid "Play Rufin's picks instead of the server's own"
 msgstr ""
@@ -3185,7 +3183,7 @@ msgid "Playlist name"
 msgstr ""
 
 msgid "Playlist order"
-msgstr ""
+msgstr "播放列表内顺序"
 
 msgid "Playlist radio"
 msgstr "播放列表电台"
@@ -3200,7 +3198,7 @@ msgid "Playlists"
 msgstr "播放列表"
 
 msgid "Plays from"
-msgstr ""
+msgstr "统计周期"
 
 msgid "Plays"
 msgstr "播放次数"
@@ -3266,7 +3264,7 @@ msgid "Previous album"
 msgstr "上一专辑"
 
 msgid "Previous audio device"
-msgstr ""
+msgstr "上一音频设备"
 
 msgid "Previous page"
 msgstr ""
@@ -3275,7 +3273,7 @@ msgid "Previous period"
 msgstr ""
 
 msgid "Previous"
-msgstr ""
+msgstr "上一曲"
 
 msgid "Privacy & Security"
 msgstr "隐私与安全"
@@ -3335,10 +3333,10 @@ msgid "Quick Mix"
 msgstr ""
 
 msgid "Quit Rufin"
-msgstr ""
+msgstr "退出 Rufin"
 
 msgid "Quit"
-msgstr ""
+msgstr "退出"
 
 msgid "Radio"
 msgstr "电台"
@@ -3347,7 +3345,7 @@ msgid "Random"
 msgstr "随机"
 
 msgid "Range selection"
-msgstr ""
+msgstr "范围选择"
 
 msgid "Rating"
 msgstr "评分"
@@ -3548,7 +3546,7 @@ msgid "Remove"
 msgstr "移除"
 
 msgid "Removed from"
-msgstr ""
+msgstr "已移除出"
 
 msgid "Rename file"
 msgstr "重命名文件"
@@ -3572,7 +3570,7 @@ msgid "Repeat one"
 msgstr ""
 
 msgid "Repeat"
-msgstr ""
+msgstr "循环播放"
 
 msgid "Replace file contents"
 msgstr ""
@@ -3593,7 +3591,7 @@ msgid "Require SMB encryption"
 msgstr "强制 SMB 加密"
 
 msgid "Reset appearance"
-msgstr ""
+msgstr "重置外观"
 
 msgid "Reset to defaults"
 msgstr ""
@@ -3611,7 +3609,7 @@ msgid "Restore User State"
 msgstr ""
 
 msgid "Restore defaults without deleting saved presets"
-msgstr ""
+msgstr "恢复默认，并保留已保存的预设"
 
 msgid "Restore player layout"
 msgstr ""
@@ -3638,7 +3636,7 @@ msgid "Reverse order"
 msgstr ""
 
 msgid "Ribbon"
-msgstr ""
+msgstr "丝带频谱"
 
 msgid "Rich Presence on"
 msgstr "已开启 Rich Presence"
@@ -3647,7 +3645,7 @@ msgid "Right sidebar"
 msgstr "右侧栏"
 
 msgid "Rise speed (%)"
-msgstr ""
+msgstr "上升速度 (%)"
 
 msgid "Rock"
 msgstr "摇滚"
@@ -3656,10 +3654,10 @@ msgid "Romaji"
 msgstr "罗马音"
 
 msgid "Rounded bars"
-msgstr ""
+msgstr "圆角柱形"
 
 msgid "Rounded spectrum"
-msgstr ""
+msgstr "圆角频谱"
 
 msgid "Row borders"
 msgstr "行边框"
@@ -3668,7 +3666,7 @@ msgid "Rows"
 msgstr "列表"
 
 msgid "Rufin Connect"
-msgstr ""
+msgstr "Rufin Connect"
 
 msgid "Rufin JSON"
 msgstr "Rufin JSON"
@@ -3719,7 +3717,7 @@ msgid "Save changes automatically"
 msgstr ""
 
 msgid "Save in folder"
-msgstr ""
+msgstr "保存到文件夹"
 
 msgid "Save lyrics automatically"
 msgstr "自动保存歌词"
@@ -3865,10 +3863,10 @@ msgid "Secret storage"
 msgstr "凭据存储"
 
 msgid "Seek Backward"
-msgstr ""
+msgstr "快退"
 
 msgid "Seek Forward"
-msgstr ""
+msgstr "快进"
 
 msgid "Seek playback"
 msgstr ""
@@ -3886,7 +3884,7 @@ msgid "Segment start"
 msgstr ""
 
 msgid "Segmented bars"
-msgstr ""
+msgstr "分段柱形"
 
 msgid "Select All"
 msgstr ""
@@ -3922,7 +3920,7 @@ msgid "Selected"
 msgstr ""
 
 msgid "Selection"
-msgstr ""
+msgstr "选择"
 
 msgid "Self-host an Iroh Relay"
 msgstr "自建 Iroh 中继"
@@ -3934,7 +3932,7 @@ msgid "September {year}"
 msgstr "{year} 年 9 月"
 
 msgid "Server Actions"
-msgstr ""
+msgstr "服务器操作"
 
 msgid "Server Address Override"
 msgstr ""
@@ -3989,10 +3987,10 @@ msgid "Settings and sources"
 msgstr "设置与数据源"
 
 msgid "Settings"
-msgstr ""
+msgstr "设置"
 
 msgid "Shadow"
-msgstr ""
+msgstr "阴影"
 
 msgid "Share"
 msgstr "分享"
@@ -4040,10 +4038,10 @@ msgid "Show paused status"
 msgstr "显示暂停状态"
 
 msgid "Show peak markers"
-msgstr ""
+msgstr "显示峰值标记"
 
 msgid "Show playback queue"
-msgstr ""
+msgstr "显示播放队列"
 
 msgid "Show ratings in the bottom bar"
 msgstr "显示评分"
@@ -4088,22 +4086,22 @@ msgid "Shows what you play on your Discord profile"
 msgstr "在 Discord 个人资料中显示当前曲目"
 
 msgid "Shuffle"
-msgstr ""
+msgstr "随机播放"
 
 msgid "Sidebar Items"
-msgstr "侧栏条目"
+msgstr "侧栏项"
 
 msgid "Sidebar item {position}"
 msgstr ""
 
 msgid "Sidebar items"
-msgstr "侧栏条目"
+msgstr "侧栏项"
 
 msgid "Sidebar route by position"
-msgstr ""
+msgstr "按序号跳转侧栏项"
 
 msgid "Sidebar"
-msgstr ""
+msgstr "侧栏"
 
 msgid "Sign In in Browser"
 msgstr "用浏览器登录"
@@ -4136,7 +4134,7 @@ msgid "Similar artists"
 msgstr "相似艺人"
 
 msgid "SimpMusic"
-msgstr ""
+msgstr "SimpMusic"
 
 msgid "Single"
 msgstr ""
@@ -4151,7 +4149,7 @@ msgid "Size"
 msgstr "尺寸"
 
 msgid "Skip count"
-msgstr ""
+msgstr "跳过次数"
 
 msgid "Skip low-rated tracks"
 msgstr "排除低分曲目"
@@ -4172,7 +4170,7 @@ msgid "Slate"
 msgstr "蓝灰"
 
 msgid "Sleep timer"
-msgstr ""
+msgstr "睡眠定时"
 
 msgid "Small"
 msgstr "较小"
@@ -4190,10 +4188,10 @@ msgid "Smart playlists"
 msgstr "智能播放列表"
 
 msgid "Soft spectrum"
-msgstr ""
+msgstr "平滑频谱"
 
 msgid "Solid bars"
-msgstr ""
+msgstr "实心柱形"
 
 msgid "Some playlist entries could not be imported"
 msgstr ""
@@ -4214,7 +4212,7 @@ msgid "Sort artists and albums by their sort tags instead of their names"
 msgstr "按排序标签而非名称排序艺人和专辑"
 
 msgid "Sort by"
-msgstr ""
+msgstr "排序依据"
 
 msgid "Sort name"
 msgstr ""
@@ -4229,7 +4227,7 @@ msgid "Soundtracks"
 msgstr "原声音乐"
 
 msgid "Source by position"
-msgstr ""
+msgstr "按序号切换数据源"
 
 msgid "Source is no longer available"
 msgstr ""
@@ -4253,7 +4251,7 @@ msgid "Spectrum · dBFS"
 msgstr ""
 
 msgid "Spectrum line"
-msgstr ""
+msgstr "频谱线"
 
 msgid "Spectrum"
 msgstr "频谱"
@@ -4268,7 +4266,7 @@ msgid "Start Listening"
 msgstr ""
 
 msgid "Start from"
-msgstr ""
+msgstr "基于"
 
 msgid "Start minimized"
 msgstr "启动时最小化"
@@ -4277,7 +4275,7 @@ msgid "Start playing automatically"
 msgstr ""
 
 msgid "Start"
-msgstr ""
+msgstr "开始"
 
 msgid "Starting page"
 msgstr "启动页面"
@@ -4292,7 +4290,7 @@ msgid "Stations are saved on {saved_on}."
 msgstr ""
 
 msgid "Stations"
-msgstr ""
+msgstr "电台"
 
 msgid "Status display"
 msgstr "显示格式"
@@ -4337,13 +4335,13 @@ msgid "Studios"
 msgstr ""
 
 msgid "Style"
-msgstr ""
+msgstr "样式"
 
 msgid "Suggested stations"
 msgstr "推荐电台"
 
 msgid "Suggested"
-msgstr ""
+msgstr "推荐"
 
 msgid "Sunday"
 msgstr ""
@@ -4358,10 +4356,10 @@ msgid "Swipe right"
 msgstr ""
 
 msgid "Switch Search/Favorites tabs"
-msgstr ""
+msgstr "切换 “搜索”/“收藏” 标签页"
 
 msgid "Switch between layouts"
-msgstr ""
+msgstr "切换布局"
 
 msgid "Switch pane"
 msgstr ""
@@ -4412,7 +4410,7 @@ msgid "Test connection"
 msgstr ""
 
 msgid "Text"
-msgstr ""
+msgstr "文本"
 
 msgid "The API token was not accepted. Please connect again."
 msgstr ""
@@ -4478,7 +4476,7 @@ msgid "Thursday"
 msgstr "星期四"
 
 msgid "Time"
-msgstr ""
+msgstr "时间"
 
 msgid "Title (merged)"
 msgstr "标题 (合并)"
@@ -4496,19 +4494,19 @@ msgid "Tools"
 msgstr "工具"
 
 msgid "Top albums"
-msgstr ""
+msgstr "最爱专辑"
 
 msgid "Top artists"
-msgstr ""
+msgstr "最爱艺人"
 
 msgid "Top genres"
-msgstr ""
+msgstr "最爱流派"
 
 msgid "Top rated"
 msgstr "高分曲目"
 
 msgid "Top tracks"
-msgstr ""
+msgstr "最爱曲目"
 
 msgid "Total discs"
 msgstr ""
@@ -4652,7 +4650,7 @@ msgid "Updating Rufin to {version}..."
 msgstr ""
 
 msgid "Upload artwork"
-msgstr ""
+msgstr "上传封面"
 
 msgid "Use API key"
 msgstr "使用 API 密钥"
@@ -4673,7 +4671,7 @@ msgid "Use a public relay"
 msgstr "使用公共中继"
 
 msgid "Use accent color"
-msgstr ""
+msgstr "使用强调色"
 
 msgid "Use an existing connection?"
 msgstr ""
@@ -4754,10 +4752,10 @@ msgid "Visualizer"
 msgstr ""
 
 msgid "Volume Down"
-msgstr ""
+msgstr "调低音量"
 
 msgid "Volume Up"
-msgstr ""
+msgstr "调高音量"
 
 msgid "Volume scale"
 msgstr "音量曲线"
@@ -4796,7 +4794,7 @@ msgid "Weekly"
 msgstr "每周"
 
 msgid "Weighting"
-msgstr ""
+msgstr "加权"
 
 msgid "Welcome to Rufin"
 msgstr ""
@@ -4820,7 +4818,7 @@ msgid "Window"
 msgstr "窗口"
 
 msgid "Without genres and descriptions"
-msgstr ""
+msgstr "隐藏流派和描述"
 
 msgid "Write EBU R128 tags to files"
 msgstr ""
@@ -4862,10 +4860,10 @@ msgid "Your own API key"
 msgstr "你的 API 密钥"
 
 msgid "Your queue is empty."
-msgstr ""
+msgstr "队列为空。"
 
 msgid "Your {period} in Rufin"
-msgstr ""
+msgstr "你在 Rufin 的 {period}"
 
 msgid "Your {period}"
 msgstr ""
@@ -4877,10 +4875,10 @@ msgid "after"
 msgstr ""
 
 msgid "all"
-msgstr ""
+msgstr "全部"
 
 msgid "any"
-msgstr ""
+msgstr "任何"
 
 msgid "before"
 msgstr ""
@@ -4889,19 +4887,19 @@ msgid "below"
 msgstr ""
 
 msgid "contains"
-msgstr ""
+msgstr "包含"
 
 msgid "days"
 msgstr ""
 
 msgid "does not contain"
-msgstr ""
+msgstr "不包含"
 
 msgid "does not equal"
 msgstr "不等于"
 
 msgid "equals"
-msgstr ""
+msgstr "等于"
 
 msgid "excludes"
 msgstr ""
@@ -4913,10 +4911,10 @@ msgid "in the last"
 msgstr ""
 
 msgid "is empty"
-msgstr ""
+msgstr "为空"
 
 msgid "is not empty"
-msgstr ""
+msgstr "不为空"
 
 msgid "is not"
 msgstr ""
@@ -4928,7 +4926,7 @@ msgid "not in the last"
 msgstr ""
 
 msgid "of these rules"
-msgstr ""
+msgstr "以下规则"
 
 msgid "of these"
 msgstr ""
@@ -4990,8 +4988,7 @@ msgstr[0] "{count} 月前"
 
 msgid "{count} play"
 msgid_plural "{count} plays"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{count} 次播放"
 
 msgid "{count} rating is waiting to be written"
 msgid_plural "{count} ratings are waiting to be written"
