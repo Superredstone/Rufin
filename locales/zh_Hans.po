@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: 2026-11-24 17:01+0000\n"
-"Last-Translator: Jiahao Li <thejiahao@users.noreply.hosted.weblate.org>\n"
+"Last-Translator: HPCesia <hpcesia@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/rufin/app/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -359,10 +359,10 @@ msgid "Add a music folder"
 msgstr "添加音乐文件夹"
 
 msgid "Add a music source to start listening."
-msgstr ""
+msgstr "添加音乐数据源以开始收听。"
 
 msgid "Add a new source"
-msgstr ""
+msgstr "添加新数据源"
 
 msgid "Add a source to configure downloads."
 msgstr ""
@@ -377,7 +377,7 @@ msgid "Add current"
 msgstr ""
 
 msgid "Add folder"
-msgstr ""
+msgstr "添加文件夹"
 
 msgid "Add group"
 msgstr ""
@@ -386,7 +386,7 @@ msgid "Add image"
 msgstr "添加图片"
 
 msgid "Add music"
-msgstr ""
+msgstr "添加音乐"
 
 msgid "Add rule"
 msgstr "添加规则"
@@ -422,7 +422,7 @@ msgid "Added to"
 msgstr ""
 
 msgid "Added"
-msgstr ""
+msgstr "已添加"
 
 msgid "Album Artists"
 msgstr "专辑艺人"
@@ -470,7 +470,7 @@ msgid "Albums"
 msgstr "专辑"
 
 msgid "All Music"
-msgstr ""
+msgstr "全部音乐"
 
 msgid "All Playlists"
 msgstr "全部播放列表"
@@ -482,7 +482,7 @@ msgid "All"
 msgstr "全部"
 
 msgid "Allow downloading"
-msgstr ""
+msgstr "允许下载"
 
 msgid "Allow permanently deleting tracks"
 msgstr "允许永久删除曲目"
@@ -503,7 +503,7 @@ msgid "Anonymous (WebDAV / SMB)"
 msgstr ""
 
 msgid "Anonymous"
-msgstr ""
+msgstr "匿名"
 
 msgid "Any"
 msgstr ""
@@ -551,10 +551,10 @@ msgid "Artist name"
 msgstr "艺人名称"
 
 msgid "Artist pictures, covers and tags from MusicBrainz, Last.fm and Wikidata"
-msgstr ""
+msgstr "艺人图片、封面和标签来自 MusicBrainz、Last.fm 和维基数据"
 
 msgid "Artist radio"
-msgstr ""
+msgstr "艺人电台"
 
 msgid "Artist sort"
 msgstr ""
@@ -4890,7 +4890,7 @@ msgid "does not contain"
 msgstr ""
 
 msgid "does not equal"
-msgstr ""
+msgstr "不等于"
 
 msgid "equals"
 msgstr ""
