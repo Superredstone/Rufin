@@ -206,9 +206,10 @@ impl PodcastSource {
             completed: self.feeds.len(),
             total,
         });
-        // shortcut: episodes and feeds are never purged by absence, because feeds drop old
-        // items that users may still have queued or downloaded; removing a feed leaves its
-        // episodes cached until a remove-feed UI purges them.
+        // A feed no longer followed goes with its episodes. A followed feed keeps episodes its
+        // RSS dropped, which users may still have queued or downloaded.
+        let followed = self.feeds.iter().cloned().collect();
+        observation.remove_unlisted_albums(&followed).await?;
         Ok(complete)
     }
 

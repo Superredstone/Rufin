@@ -394,6 +394,19 @@ impl Shell {
         self.render_current_route();
     }
 
+    /// Leaves a sidebar page the selected source does not list, for Home.
+    pub(crate) fn leave_unlisted_route(self: &Rc<Self>) {
+        let podcasts = super::navigation::podcasts_selected(self);
+        let current = self.navigation.routes.borrow().current().clone();
+        let unlisted = rufin_core::settings::SidebarRouteItem::all()
+            .into_iter()
+            .filter(|item| podcasts && !item.for_podcasts())
+            .any(|item| rufin_core::route::sidebar_route_descriptor(item).root_route == current);
+        if unlisted {
+            self.navigate(Route::Home);
+        }
+    }
+
     /// Navigation from a page or a menu, which also closes the search popup it may be shown in.
     pub(crate) fn open_route(self: &Rc<Self>, route: Route) {
         self.chrome.topbar.close_search_popup();

@@ -216,6 +216,16 @@ impl SidebarRouteDescriptor {
     }
 }
 
+/// The sidebar title of `item`, which names shows and episodes while a podcasts source is
+/// selected.
+pub fn sidebar_route_title(item: SidebarRouteItem, podcasts: bool) -> &'static str {
+    match item {
+        SidebarRouteItem::Albums if podcasts => msgid("Podcasts"),
+        SidebarRouteItem::Tracks if podcasts => msgid("Episodes"),
+        item => sidebar_route_descriptor(item).title,
+    }
+}
+
 #[rustfmt::skip]
     pub fn sidebar_route_descriptor(item: SidebarRouteItem) -> SidebarRouteDescriptor {
         match item {

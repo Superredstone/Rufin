@@ -171,6 +171,7 @@ pub(crate) fn install_product_event_receivers(shell: &Rc<Shell>, receivers: Prod
 /// picker read a new source or music folder, or none, from the change that follows it
 /// (`Changed::scope`), the startup selection's included.
 fn apply_source_configuration(shell: &Rc<Shell>) {
+    let podcasts = super::navigation::podcasts_selected(shell);
     let configured = shell.products.source.list_sources();
     let unreachable = configured.sources.iter().any(|source| {
         Some(&source.id) == configured.selected_source_id.as_ref() && source.unreachable
@@ -208,6 +209,11 @@ fn apply_source_configuration(shell: &Rc<Shell>) {
     }
     for folder in newly_lost {
         show_local_folder_recovery(shell, folder);
+    }
+    // A podcasts source lists fewer pages; one it does not list falls back to Home.
+    if podcasts != super::navigation::podcasts_selected(shell) {
+        shell.rebuild_sidebar_navigation();
+        shell.leave_unlisted_route();
     }
     // The first run's dialog moves to its last page once a source exists.
     shell.update_add_server_dialog();

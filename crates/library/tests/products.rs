@@ -3873,3 +3873,51 @@ async fn smart_playlists_of_every_source_leave_out_podcast_episodes() {
         .unwrap();
     assert_eq!(members().await, [episode]);
 }
+
+#[tokio::test]
+async fn unlisted_albums_go_with_their_tracks() {
+    let fixture = fixture().await;
+    let catalog = &fixture.catalog;
+    catalog
+        .reconcile_source(&library::SourceId::new("pods"), "podcasts", "Podcasts")
+        .await
+        .unwrap();
+    let mut observation = catalog.observe("pods").await.unwrap();
+    observation.start_observation().await.unwrap();
+    let mut batch = library::CatalogBatch::default();
+    for feed in ["kept", "gone"] {
+        batch.albums.push(library::AlbumObservation {
+            object_id: feed.into(),
+            metadata: library::AlbumMetadata {
+                title: feed.into(),
+                sort_text: feed.into(),
+                ..Default::default()
+            },
+            ..Default::default()
+        });
+        batch.tracks.push(library::TrackObservation {
+            object_id: format!("{feed}#1"),
+            album_object_id: Some(feed.into()),
+            metadata: library::TrackMetadata {
+                title: feed.into(),
+                sort_text: feed.into(),
+                ..Default::default()
+            },
+            ..Default::default()
+        });
+    }
+    observation.apply_catalog(&batch, true).await.unwrap();
+    observation
+        .remove_unlisted_albums(&["kept".to_owned()].into_iter().collect())
+        .await
+        .unwrap();
+    let indexed: Vec<String> = sqlx::query_scalar(
+        "SELECT object_id FROM tracks WHERE indexed=1 AND source_key=(SELECT source_key FROM sources WHERE object_id='pods')
+         UNION ALL SELECT object_id FROM albums WHERE indexed=1 AND source_key=(SELECT source_key FROM sources WHERE object_id='pods')
+         ORDER BY 1",
+    )
+    .fetch_all(&mut connection(&fixture.path).await)
+    .await
+    .unwrap();
+    assert_eq!(indexed, ["kept", "kept#1"]);
+}

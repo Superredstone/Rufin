@@ -82,6 +82,7 @@ pub(crate) struct NavigationWidgets {
 
 pub(super) fn build_normal_navigation(shell: &Rc<Shell>) {
     let section = adw::SidebarSection::new();
+    let podcasts = podcasts_selected(shell);
     for entry in shell
         .settings
         .current
@@ -89,10 +90,11 @@ pub(super) fn build_normal_navigation(shell: &Rc<Shell>) {
         .sidebar
         .route_items
         .iter()
-        .filter(|entry| entry.visible)
+        .filter(|entry| listed(entry, podcasts))
     {
         let descriptor = rufin_core::route::sidebar_route_descriptor(entry.item);
-        let sidebar_item = adw::SidebarItem::new(&tr(descriptor.title));
+        let title = rufin_core::route::sidebar_route_title(entry.item, podcasts);
+        let sidebar_item = adw::SidebarItem::new(&tr(title));
         sidebar_item.set_icon_name(Some(descriptor.icon_name));
         section.append(sidebar_item);
     }
@@ -101,6 +103,7 @@ pub(super) fn build_normal_navigation(shell: &Rc<Shell>) {
 }
 
 pub(super) fn build_compact_navigation(shell: &Rc<Shell>) {
+    let podcasts = podcasts_selected(shell);
     for entry in shell
         .settings
         .current
@@ -108,7 +111,7 @@ pub(super) fn build_compact_navigation(shell: &Rc<Shell>) {
         .sidebar
         .route_items
         .iter()
-        .filter(|entry| entry.visible)
+        .filter(|entry| listed(entry, podcasts))
     {
         shell
             .navigation_view
@@ -323,11 +326,12 @@ fn update_pin_selection(container: &gtk::Box, active_route: &Route) -> bool {
 
 fn update_native_route_selection(shell: &Shell, active_route: &Route, pin_is_selected: bool) {
     let settings = shell.settings.current.borrow();
+    let podcasts = podcasts_selected(shell);
     let items = settings
         .sidebar
         .route_items
         .iter()
-        .filter(|entry| entry.visible);
+        .filter(|entry| listed(entry, podcasts));
     let selected_index = if pin_is_selected {
         None
     } else {
@@ -1795,30 +1799,43 @@ fn sidebar_pin_route_key(route: &Route) -> Option<String> {
 pub(crate) fn sidebar_route_at_position(shell: &Shell, position: usize) -> Option<Route> {
     sidebar_route_at_position_in(
         &shell.settings.current.borrow().sidebar.route_items,
+        podcasts_selected(shell),
         position,
     )
 }
 
+/// Whether the selected source is a podcasts source, whose sidebar lists fewer pages.
+pub(crate) fn podcasts_selected(shell: &Shell) -> bool {
+    shell.source.configured.borrow().podcasts_selected()
+}
+
+/// Whether the sidebar lists `entry`: it is shown, and has something for a podcasts source.
+fn listed(entry: &rufin_core::settings::SidebarRouteItemSettings, podcasts: bool) -> bool {
+    entry.visible && (!podcasts || entry.item.for_podcasts())
+}
+
 fn sidebar_route_at_position_in(
     route_items: &[rufin_core::settings::SidebarRouteItemSettings],
+    podcasts: bool,
     position: usize,
 ) -> Option<Route> {
     let item = route_items
         .iter()
-        .filter(|entry| entry.visible)
+        .filter(|entry| listed(entry, podcasts))
         .nth(position.checked_sub(1)?)?;
     Some(rufin_core::route::sidebar_route_descriptor(item.item).root_route)
 }
 
 fn rail_button(shell: &Rc<Shell>, item: SidebarRouteItem) -> gtk::Button {
     let descriptor = rufin_core::route::sidebar_route_descriptor(item);
+    let title = rufin_core::route::sidebar_route_title(item, podcasts_selected(shell));
     let button = gtk::Button::new();
     button.add_css_class("nav-button");
     button.add_css_class("flat");
     button.add_css_class(sidebar_route_css_class(item));
     button.add_css_class("rail-button");
     button.set_widget_name(descriptor.stable_id);
-    let accessible_label = tr(descriptor.title);
+    let accessible_label = tr(title);
     button.update_property(&[gtk::accessible::Property::Label(&accessible_label)]);
 
     let content = gtk::Box::new(gtk::Orientation::Vertical, 8);
@@ -1830,7 +1847,7 @@ fn rail_button(shell: &Rc<Shell>, item: SidebarRouteItem) -> gtk::Button {
     icon.set_halign(gtk::Align::Center);
     icon.set_valign(gtk::Align::Center);
     content.append(&icon);
-    let text = gtk::Label::new(Some(&compact_sidebar_label_text(descriptor.title)));
+    let text = gtk::Label::new(Some(&compact_sidebar_label_text(title)));
     configure_rail_label(&text);
     content.append(&text);
     button.set_child(Some(&content));
@@ -1913,10 +1930,22 @@ mod tests {
             })
             .collect::<Vec<_>>();
         items[1].visible = false;
-        assert_eq!(sidebar_route_at_position_in(&items, 1), Some(Route::Home));
         assert_eq!(
-            sidebar_route_at_position_in(&items, 2),
+            sidebar_route_at_position_in(&items, false, 1),
+            Some(Route::Home)
+        );
+        assert_eq!(
+            sidebar_route_at_position_in(&items, false, 2),
             Some(Route::Favorites)
+        );
+        // Home, Favorites, Albums, Tracks, then Artists; a podcasts source skips to Radio.
+        assert_eq!(
+            sidebar_route_at_position_in(&items, false, 5),
+            Some(Route::Artists)
+        );
+        assert_eq!(
+            sidebar_route_at_position_in(&items, true, 5),
+            Some(Route::Radio)
         );
     }
 

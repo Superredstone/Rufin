@@ -355,6 +355,9 @@ msgstr ""
 msgid "Add a title"
 msgstr ""
 
+msgid "Add at least one podcast feed address"
+msgstr ""
+
 msgid "Add band"
 msgstr ""
 
@@ -1662,6 +1665,9 @@ msgid "Enter your username and password."
 msgstr ""
 
 msgid "Entire Library"
+msgstr ""
+
+msgid "Episodes"
 msgstr ""
 
 msgid "Equalizer is controlled by the receiver"
@@ -2973,6 +2979,9 @@ msgstr ""
 msgid "One Name: Value header per line"
 msgstr ""
 
+msgid "One RSS feed address per line"
+msgstr ""
+
 msgid "One address per line, pointing to the same collection"
 msgstr ""
 
@@ -3292,6 +3301,9 @@ msgstr ""
 msgid "Plex"
 msgstr ""
 
+msgid "Podcast feeds"
+msgstr ""
+
 msgid "Podcasts"
 msgstr ""
 
@@ -3434,6 +3446,9 @@ msgid "Range selection"
 msgstr ""
 
 msgid "Rating"
+msgstr ""
+
+msgid "Reading podcast feeds..."
 msgstr ""
 
 msgid "Reading tags..."

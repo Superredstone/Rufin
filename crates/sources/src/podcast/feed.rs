@@ -98,7 +98,9 @@ fn episode(item: roxmltree::Node) -> Option<Episode> {
         enclosure_url,
         description: child_text(item, CONTENT, "encoded")
             .or_else(|| child_text(item, "", "description"))
-            .or_else(|| child_text(item, ITUNES, "summary")),
+            .or_else(|| child_text(item, ITUNES, "summary"))
+            .map(|notes| plain_text(&notes))
+            .filter(|notes| !notes.is_empty()),
         image: itunes_image(item),
     })
 }
@@ -129,6 +131,85 @@ fn itunes_image(node: roxmltree::Node) -> Option<String> {
         .map(str::trim)
         .filter(|href| !href.is_empty())
         .map(str::to_owned)
+}
+
+/// Show notes as plain text: tags dropped, line breaks kept, common entities decoded.
+fn plain_text(html: &str) -> String {
+    let mut text = String::with_capacity(html.len());
+    let mut rest = html;
+    while let Some((before, after)) = rest.split_once('<') {
+        text.push_str(before);
+        let Some((tag, after)) = after.split_once('>') else {
+            // An unclosed `<` is text.
+            text.push('<');
+            rest = after;
+            break;
+        };
+        let name = tag
+            .trim_start_matches('/')
+            .split(|c: char| c.is_whitespace() || c == '/')
+            .next()
+            .unwrap_or_default()
+            .to_ascii_lowercase();
+        if matches!(
+            name.as_str(),
+            "br" | "p" | "div" | "li" | "h1" | "h2" | "h3" | "h4"
+        ) {
+            text.push('\n');
+        }
+        rest = after;
+    }
+    text.push_str(rest);
+    let text = decode_entities(&text);
+    // At most one blank line between paragraphs.
+    let mut lines: Vec<&str> = Vec::new();
+    for line in text.lines().map(str::trim) {
+        if !(line.is_empty() && lines.last().is_none_or(|last| last.is_empty())) {
+            lines.push(line);
+        }
+    }
+    lines.join("\n").trim().to_owned()
+}
+
+fn decode_entities(text: &str) -> String {
+    let mut decoded = String::with_capacity(text.len());
+    let mut rest = text;
+    while let Some((before, after)) = rest.split_once('&') {
+        decoded.push_str(before);
+        let entity = after
+            .split_once(';')
+            .filter(|(entity, _)| entity.len() <= 10)
+            .and_then(|(entity, tail)| entity_char(entity).map(|value| (value, tail)));
+        match entity {
+            Some((value, tail)) => {
+                decoded.push(value);
+                rest = tail;
+            }
+            None => {
+                decoded.push('&');
+                rest = after;
+            }
+        }
+    }
+    decoded.push_str(rest);
+    decoded
+}
+
+fn entity_char(entity: &str) -> Option<char> {
+    match entity {
+        "amp" => Some('&'),
+        "lt" => Some('<'),
+        "gt" => Some('>'),
+        "quot" => Some('"'),
+        "apos" => Some('\''),
+        "nbsp" => Some(' '),
+        numeric => numeric
+            .strip_prefix("#x")
+            .or_else(|| numeric.strip_prefix("#X"))
+            .and_then(|hex| u32::from_str_radix(hex, 16).ok())
+            .or_else(|| numeric.strip_prefix('#').and_then(|dec| dec.parse().ok()))
+            .and_then(char::from_u32),
+    }
 }
 
 fn parse_date(value: &str) -> Option<time::OffsetDateTime> {
@@ -204,10 +285,7 @@ mod tests {
         assert_eq!(latest.release_date.as_deref(), Some("2026-11-10"));
         assert_eq!(latest.duration_seconds, Some(3723));
         assert_eq!(latest.enclosure_type.as_deref(), Some("audio/mpeg"));
-        assert_eq!(
-            latest.description.as_deref(),
-            Some(r#"<p>Show <a href="https://example.com">notes</a></p>"#)
-        );
+        assert_eq!(latest.description.as_deref(), Some("Show notes"));
         assert_eq!(latest.image.as_deref(), Some("https://example.com/ep2.jpg"));
 
         let first = &feed.episodes[1];
@@ -239,6 +317,24 @@ mod tests {
     fn rejects_non_rss() {
         assert!(parse_feed("<html><body/></html>").is_err());
         assert!(parse_feed("not xml").is_err());
+    }
+
+    #[test]
+    fn show_notes_become_plain_text() {
+        assert_eq!(
+            plain_text(
+                "<p>Hello&nbsp;<b>world</b> &amp; friends</p><p>Line<br/>two &#8212; &#x41;</p>"
+            ),
+            "Hello world & friends\n\nLine\ntwo \u{2014} A"
+        );
+        assert_eq!(
+            plain_text("Tom & Jerry &unknown; <3"),
+            "Tom & Jerry &unknown; <3"
+        );
+        assert_eq!(
+            plain_text("<ul><li>One</li><li>Two</li></ul>"),
+            "One\n\nTwo"
+        );
     }
 
     #[test]

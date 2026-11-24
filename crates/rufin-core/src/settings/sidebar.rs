@@ -52,6 +52,20 @@ impl SidebarRouteItem {
     fn default_visible(self) -> bool {
         !matches!(self, Self::Search | Self::Moods)
     }
+
+    /// Whether the page shows anything for a podcasts source: its shows are albums and its
+    /// episodes tracks, with no artists, tags, folders or smart playlists of their own.
+    pub fn for_podcasts(self) -> bool {
+        !matches!(
+            self,
+            Self::Artists
+                | Self::AlbumArtists
+                | Self::Genres
+                | Self::Moods
+                | Self::Folders
+                | Self::SmartPlaylists
+        )
+    }
 }
 #[derive(Clone, Debug, Deserialize, Eq, PartialEq, Serialize)]
 #[cfg_attr(feature = "bindings", derive(uniffi::Record))]

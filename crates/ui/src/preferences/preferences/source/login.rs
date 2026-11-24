@@ -2,6 +2,7 @@ mod files;
 pub use files::{choose_integration, present_integration};
 mod jellyfin_emby;
 mod plex;
+mod podcasts;
 
 use rufin_core::source::authorization::{
     SourceAuthorization, SourceAuthorizationEvent, SourceAuthorizationInput,
@@ -87,8 +88,13 @@ static PLEX: SourcePresentation = SourcePresentation {
     setup_flow: plex::setup_flow,
     settings_group: Some(plex::settings_group),
 };
-static SOURCE_PRESENTATIONS: [&SourcePresentation; 8] = [
-    &LOCAL, &JELLYFIN, &EMBY, &PLEX, &NAVIDROME, &SUBSONIC, &WEBDAV, &SMB,
+static PODCASTS: SourcePresentation = SourcePresentation {
+    kind: "podcasts",
+    setup_flow: podcasts::setup_flow,
+    settings_group: Some(podcasts::settings_group),
+};
+static SOURCE_PRESENTATIONS: [&SourcePresentation; 9] = [
+    &LOCAL, &JELLYFIN, &EMBY, &PLEX, &NAVIDROME, &SUBSONIC, &WEBDAV, &SMB, &PODCASTS,
 ];
 
 fn source_presentations() -> &'static [&'static SourcePresentation] {

@@ -115,6 +115,37 @@ impl super::Observation<'_> {
         self.remove_source_items(kind, &gone).await
     }
 
+    /// Removes the source's albums a whole listing of album ids does not hold, and their
+    /// tracks; tracks of a listed album stay even when the listing left them out.
+    pub async fn remove_unlisted_albums(
+        &mut self,
+        listed: &std::collections::HashSet<String>,
+    ) -> LibraryResult<()> {
+        let mut connection = self.catalog.acquire_reader().await?;
+        let held: Vec<String> = sqlx::query_scalar(
+            "SELECT object_id FROM albums WHERE source_key=?1 AND indexed=1 AND object_id IS NOT NULL",
+        )
+        .bind(self.source)
+        .fetch_all(&mut *connection)
+        .await?;
+        let gone = held
+            .into_iter()
+            .filter(|object| !listed.contains(object))
+            .collect::<Vec<_>>();
+        let tracks: Vec<String> = sqlx::query_scalar(
+            "SELECT track.object_id FROM tracks track JOIN albums album USING(album_key)
+             WHERE track.source_key=?1 AND track.object_id IS NOT NULL
+               AND album.object_id IN(SELECT value FROM json_each(?2))",
+        )
+        .bind(self.source)
+        .bind(serde_json::to_string(&gone)?)
+        .fetch_all(&mut *connection)
+        .await?;
+        drop(connection);
+        self.remove_source_items("track", &tracks).await?;
+        self.remove_source_items("album", &gone).await
+    }
+
     pub async fn write_source_playlist_page(
         &mut self,
         id: &str,

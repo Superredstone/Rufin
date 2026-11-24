@@ -139,6 +139,12 @@ pub async fn media_details(
                     );
                     push_field(&mut general, fact);
                 }
+                // A podcast episode's show notes are its comment.
+                add(
+                    &mut general,
+                    msgid("Comment"),
+                    track.metadata.comment.clone(),
+                );
                 details.sections.push(general);
                 let mut audio = section(msgid("Original audio"));
                 for field in [

@@ -3570,6 +3570,7 @@ fn editable_source(configured: &ConfiguredSource) -> Result<EditableSource, Stri
         plex_settings: None,
         file_settings: None,
         emby_connect: false,
+        podcast_feeds: Vec::new(),
     };
     match configuration.editable().map_err(string_error)? {
         sources::EditableSource::Plex { settings, .. } => {
@@ -3591,10 +3592,8 @@ fn editable_source(configured: &ConfiguredSource) -> Result<EditableSource, Stri
             editable.credentials.trust_invalid_cert = settings.trust_invalid_certificate;
             editable.file_settings = Some(settings);
         }
-        // Feed lists are not editable from the UI yet.
-        sources::EditableSource::Local { .. }
-        | sources::EditableSource::Peer { .. }
-        | sources::EditableSource::Podcasts { .. } => {}
+        sources::EditableSource::Podcasts { feeds, .. } => editable.podcast_feeds = feeds,
+        sources::EditableSource::Local { .. } | sources::EditableSource::Peer { .. } => {}
     }
     Ok(editable)
 }
@@ -4688,6 +4687,24 @@ impl SourceOwner {
             .await
             .map_err(|error| SourceError::Other(error.to_string()))?
             .map_err(SourceError::Other)
+    }
+
+    /// Saves a podcasts source's name and its feed addresses, one per entry.
+    pub async fn save_podcasts(
+        &self,
+        source_id: SourceId,
+        name: String,
+        feeds: Vec<String>,
+    ) -> sources::SourceResult<()> {
+        self.update_source(SourceSettingsChange::Podcasts {
+            source_id,
+            name,
+            feeds,
+        })
+        .recv()
+        .await
+        .map_err(|error| SourceError::Other(error.to_string()))?
+        .map_err(SourceError::Other)
     }
 }
 

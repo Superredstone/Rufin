@@ -164,6 +164,14 @@ pub fn shows_server_recommendations(sources: Vec<SourceSummary>) -> bool {
 }
 
 impl ConfiguredSources {
+    /// Whether the selected source is a podcasts source.
+    pub fn podcasts_selected(&self) -> bool {
+        self.sources.iter().any(|source| {
+            Some(&source.id) == self.selected_source_id.as_ref()
+                && library::SourceKind::parse(&source.kind) == Some(library::SourceKind::Podcasts)
+        })
+    }
+
     pub fn half_stars_enabled(&self, media_uri: &str, source_id: Option<&str>) -> bool {
         let uri_source = library::source_entity_parts(media_uri).map(|(source, _, _)| source);
         let source_id = source_id
@@ -185,6 +193,8 @@ pub struct EditableSource {
     pub source: SourceSummary,
     pub credentials: CredentialPreset,
     pub emby_connect: bool,
+    /// The feed addresses of a podcasts source, in their order.
+    pub podcast_feeds: Vec<String>,
 }
 
 #[derive(Clone, Debug, Eq, PartialEq, serde::Serialize)]
