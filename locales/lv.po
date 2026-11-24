@@ -1494,6 +1494,11 @@ msgstr "Pielāgoti HTTP virsraksti"
 
 #, fuzzy
 #| msgid "Custom"
+msgid "Custom URL"
+msgstr "Pielāgots"
+
+#, fuzzy
+#| msgid "Custom"
 msgid "Custom bands"
 msgstr "Pielāgots"
 
@@ -2543,6 +2548,9 @@ msgid "Integrations"
 msgstr "Integrācijas"
 
 msgid "Invite"
+msgstr ""
+
+msgid "Iroh relay"
 msgstr ""
 
 msgid "Item ID"

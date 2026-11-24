@@ -1297,6 +1297,11 @@ msgstr "Praegune kaanepilt"
 msgid "Custom HTTP headers"
 msgstr "Sinu seadistatud HTTP-päised"
 
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom URL"
+msgstr "Kohandatud"
+
 msgid "Custom bands"
 msgstr "Sinu lisatud sagedusribad"
 
@@ -2202,6 +2207,11 @@ msgstr "Lõimingud"
 
 msgid "Invite"
 msgstr "Kutsu"
+
+#, fuzzy
+#| msgid "Via relay"
+msgid "Iroh relay"
+msgstr "Edastusserveri vahendusel"
 
 msgid "Item ID"
 msgstr "Objekti tunnus"

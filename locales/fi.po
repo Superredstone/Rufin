@@ -1441,6 +1441,11 @@ msgstr "Mukautetut HTTP-otsakkeet"
 
 #, fuzzy
 #| msgid "Custom"
+msgid "Custom URL"
+msgstr "Mukautettu"
+
+#, fuzzy
+#| msgid "Custom"
 msgid "Custom bands"
 msgstr "Mukautettu"
 
@@ -2475,6 +2480,9 @@ msgstr "Integraatiot"
 
 msgid "Invite"
 msgstr "Kutsu"
+
+msgid "Iroh relay"
+msgstr ""
 
 msgid "Item ID"
 msgstr ""

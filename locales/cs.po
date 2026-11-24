@@ -1525,6 +1525,11 @@ msgstr ""
 
 #, fuzzy
 #| msgid "Custom"
+msgid "Custom URL"
+msgstr "Přizpůsobené"
+
+#, fuzzy
+#| msgid "Custom"
 msgid "Custom bands"
 msgstr "Přizpůsobené"
 
@@ -2607,6 +2612,9 @@ msgid "Integrations"
 msgstr "Integrace"
 
 msgid "Invite"
+msgstr ""
+
+msgid "Iroh relay"
 msgstr ""
 
 msgid "Item ID"

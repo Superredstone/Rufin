@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-23 13:16+0000\n"
+"PO-Revision-Date: 2026-11-24 17:01+0000\n"
 "Last-Translator: Daniel Arafat <arafat90@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "rufin/app/pt_BR/>\n"
@@ -369,7 +369,7 @@ msgid "A new update is available, restart to apply"
 msgstr "Uma nova atualização está disponível, reinicie para aplicar"
 
 msgid "A server reached at its local address is not cached"
-msgstr ""
+msgstr "Um servidor acessado pelo seu endereço local não é armazenado em cache"
 
 msgid "A"
 msgstr "A"
@@ -815,10 +815,8 @@ msgstr "C"
 msgid "CUE file"
 msgstr "Arquivo CUE"
 
-#, fuzzy
-#| msgid "Loading related tracks..."
 msgid "Cache streamed tracks"
-msgstr "Carregando faixas relacionadas..."
+msgstr "Armazenar faixas transmitidas em cache"
 
 msgid "Cache"
 msgstr "Cache"
@@ -999,10 +997,8 @@ msgstr "Limpar cache de letras"
 msgid "Clear queue"
 msgstr "Limpar fila"
 
-#, fuzzy
-#| msgid "Clear all cache"
 msgid "Clear stream cache"
-msgstr "Limpar todo o cache"
+msgstr "Limpar cache de streaming"
 
 msgid "Clear this cache?"
 msgstr "Limpar este cache?"
@@ -1309,6 +1305,11 @@ msgstr "Capa atual"
 
 msgid "Custom HTTP headers"
 msgstr "Cabeçalhos HTTP personalizados"
+
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom URL"
+msgstr "Personalizado"
 
 msgid "Custom bands"
 msgstr "Bandas personalizadas"
@@ -1832,6 +1833,8 @@ msgstr "Fevereiro de {year}"
 
 msgid "Fetches the next tracks before they play and keeps played ones"
 msgstr ""
+"Busca as próximas faixas antes de serem reproduzidas e mantém as já "
+"reproduzidas"
 
 msgid "Fetching Home"
 msgstr "Buscando Início"
@@ -2201,6 +2204,11 @@ msgstr "Integrações"
 
 msgid "Invite"
 msgstr "Convidar"
+
+#, fuzzy
+#| msgid "Via relay"
+msgid "Iroh relay"
+msgstr "Via retransmissão"
 
 msgid "Item ID"
 msgstr "ID do item"
@@ -4253,7 +4261,7 @@ msgid "Singles"
 msgstr "Singles"
 
 msgid "Size in gigabytes"
-msgstr ""
+msgstr "Tamanho em gigabytes"
 
 msgid "Size"
 msgstr "Tamanho"
@@ -4264,10 +4272,8 @@ msgstr "Contagem de saltos"
 msgid "Skip low-rated tracks"
 msgstr "Pular faixas com avaliações baixas"
 
-#, fuzzy
-#| msgid "Local network"
 msgid "Skip on the local network"
-msgstr "Rede local"
+msgstr "Ignorar na rede local"
 
 msgid "Skip same-album crossfade"
 msgstr "Pular crossfade do mesmo álbum"
@@ -4369,7 +4375,7 @@ msgid "Spectrum"
 msgstr "Espectro"
 
 msgid "Speed"
-msgstr ""
+msgstr "Velocidade"
 
 msgid "Split featured artists"
 msgstr "Separar artistas convidados"
@@ -4428,10 +4434,8 @@ msgstr "Armazenar loudness calculada em arquivos de música local compatíveis"
 msgid "Stream address"
 msgstr "Endereço do fluxo"
 
-#, fuzzy
-#| msgid "Stream address"
 msgid "Stream cache"
-msgstr "Endereço do fluxo"
+msgstr "Cache de streaming"
 
 msgid "Stream quality on mobile data"
 msgstr "Qualidade do fluxo em dados móveis"
@@ -4655,10 +4659,8 @@ msgstr "Faixa indisponível"
 msgid "Track"
 msgstr "Faixa"
 
-#, fuzzy
-#| msgid "Stream quality on mobile data"
 msgid "Tracks ahead on mobile data"
-msgstr "Qualidade do fluxo em dados móveis"
+msgstr "Faixas adiantadas em dados móveis"
 
 msgid "Tracks from every playlist"
 msgstr "Faixas de todas as playlists"
@@ -4972,10 +4974,8 @@ msgstr "Amarelo"
 msgid "Yes"
 msgstr "Sim"
 
-#, fuzzy
-#| msgid "Add a source to configure downloads."
 msgid "You need to configure a local address"
-msgstr "Adicione uma fonte para configurar os downloads."
+msgstr "Você precisa configurar um endereço local"
 
 msgid "Your library is ready"
 msgstr "Sua biblioteca está pronta"
