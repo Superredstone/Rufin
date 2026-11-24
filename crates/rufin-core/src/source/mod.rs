@@ -4689,22 +4689,31 @@ impl SourceOwner {
             .map_err(SourceError::Other)
     }
 
-    /// Saves a podcasts source's name and its feed addresses, one per entry.
+    /// Adds a podcasts source, or saves the name and feed addresses of `source_id`.
     pub async fn save_podcasts(
         &self,
-        source_id: SourceId,
+        source_id: Option<SourceId>,
         name: String,
         feeds: Vec<String>,
     ) -> sources::SourceResult<()> {
-        self.update_source(SourceSettingsChange::Podcasts {
-            source_id,
-            name,
-            feeds,
-        })
-        .recv()
-        .await
-        .map_err(|error| SourceError::Other(error.to_string()))?
-        .map_err(SourceError::Other)
+        if let Some(source_id) = source_id {
+            self.update_source(SourceSettingsChange::Podcasts {
+                source_id,
+                name,
+                feeds,
+            })
+            .recv()
+            .await
+            .map_err(|error| SourceError::Other(error.to_string()))?
+            .map_err(SourceError::Other)
+        } else {
+            self.configure_source(SourceSetup::Podcasts { name, feeds })
+                .recv()
+                .await
+                .map_err(|error| SourceError::Other(error.to_string()))?
+                .map(|_| ())
+                .map_err(SourceError::Other)
+        }
     }
 }
 

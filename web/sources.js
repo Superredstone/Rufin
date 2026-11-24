@@ -41,8 +41,8 @@ function sourceIcon(kind) {
     node.classList.add("source-icon");
     return node;
   }
-  if (kind === "peer") {
-    const node = icon("rufin-phonelink-symbolic");
+  if (kind === "peer" || kind === "podcasts") {
+    const node = icon(kind === "peer" ? "rufin-phonelink-symbolic" : "rufin-radio-station-symbolic");
     node.classList.add("source-icon");
     return node;
   }
@@ -128,6 +128,7 @@ let integrationSaved = null;
 const sourceKinds = [
   ["local", "Local"], ["jellyfin", "Jellyfin"], ["emby", "Emby"], ["navidrome", "Navidrome"],
   ["open_subsonic", "OpenSubsonic"], ["web_dav", "WebDAV"], ["smb", "SMB / Samba"],
+  ["podcasts", "Podcasts"],
 ];
 const kindIcon = (kind) => sourceIcon({ web_dav: "webdav", open_subsonic: "subsonic" }[kind] || kind);
 
@@ -246,6 +247,8 @@ async function openSource(item = null, integration = null, first = null) {
   if (fileSource) $("source-playlist-save").checked = (await api(`/playlists/source-settings?source=${encodeURIComponent(item.id)}`)).auto_save;
   if (editingSource?.kind === "local")
     $("source-paths").value = editingSource.roots.join("\n");
+  if (editingSource?.kind === "podcasts")
+    $("source-feeds").value = editingSource.preset.podcast_feeds.join("\n");
   $("excluded-folders").value = (editingSource?.excluded_folders || editingSource?.preset?.file_settings?.excluded_folders || []).join("\n");
   if (editingSource?.preset) {
     const preset = editingSource.preset;
@@ -281,10 +284,13 @@ function sourceFields() {
   const kind = $("source-kind").value;
   const local = kind === "local";
   const peer = kind === "peer";
+  const podcasts = kind === "podcasts";
   $("local-fields").hidden = !local;
-  $("remote-fields").hidden = local || peer;
+  $("podcast-fields").hidden = !podcasts;
+  $("remote-fields").hidden = local || peer || podcasts;
   $("source-paths").required = local;
-  $("server-url").required = !local && !peer && kind !== "plex";
+  $("source-feeds").required = podcasts;
+  $("server-url").required = !local && !peer && !podcasts && kind !== "plex";
   for (const id of ["username", "password"]) {
     $(id).hidden = kind === "plex";
     document.querySelector(`label[for="${id}"]`).hidden = kind === "plex";
@@ -310,7 +316,7 @@ function sourceFields() {
   $("authentication").replaceChildren(
     ...choices.map(([value, label]) => new Option(label, value)),
   );
-  const hidden = ["jellyfin", "emby", "local", "plex"].includes(kind);
+  const hidden = ["jellyfin", "emby", "local", "plex", "podcasts"].includes(kind);
   $("authentication").hidden = hidden;
   document.querySelector('label[for="authentication"]').hidden = hidden;
 }
@@ -480,6 +486,17 @@ function sourceInput() {
         roots: $("source-paths")
           .value.split("\n")
           .map((path) => path.trim())
+          .filter(Boolean),
+      },
+    };
+  else if (kind === "podcasts")
+    input = {
+      type: "podcasts",
+      data: {
+        name: name || tr("Podcasts"),
+        feeds: $("source-feeds")
+          .value.split("\n")
+          .map((feed) => feed.trim())
           .filter(Boolean),
       },
     };

@@ -70,6 +70,7 @@ internal fun SourceSetupScreen(model: RufinConnection, onClose: () -> Unit, sour
         "emby" -> form.manualEmby && form.url.isNotBlank() && form.username.isNotBlank()
             || setup.authorized && setup.choices.isNotEmpty() || sourceId != null
         "peer" -> form.name.isNotBlank()
+        "podcasts" -> form.feeds.isNotBlank()
         // A server needs its address and a username, or an API key in the username's place.
         "jellyfin", "navidrome", "subsonic" -> setup.authorized || form.url.isNotBlank() &&
             if (form.kind == "subsonic" && form.subsonicAuth == "api_key") form.secret.isNotBlank() else form.username.isNotBlank()
@@ -165,6 +166,8 @@ internal fun SourceSetupScreen(model: RufinConnection, onClose: () -> Unit, sour
                     } }
                     "plex" -> item { PlexSourceForm(setup, sourceId != null, browser) }
                     "webdav", "smb" -> item { FileSourceForm(setup, sourceId != null, browser) }
+                    "podcasts" -> item { SourceTextField("Podcast feeds", form.feeds, { form.feeds = it }, !setup.working,
+                        multiline = true, hint = "One RSS feed address per line", required = true) }
                 }
                 if (ratingSettings) item { SourceRatingSettings(setup) }
                 item { Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {

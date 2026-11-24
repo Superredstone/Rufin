@@ -184,6 +184,11 @@ internal class BrowseConnection(private val connection: RufinConnection, private
             snapshotFlow { connection.preferences?.routeItems }.filterNotNull().distinctUntilChanged().drop(1)
                 .collect { library?.let { loadDescriptors(it) } }
         }
+        scope.launch {
+            // A podcasts source lists fewer tabs, under other names.
+            snapshotFlow { connection.sources?.selectedSourceId }.distinctUntilChanged().drop(1)
+                .collect { library?.let { loadDescriptors(it) } }
+        }
         scope.launch(Dispatchers.Main) {
             snapshotFlow { connection.preferences }.filterNotNull().collect { if (searchView?.settingsReread() == true) searchRereads++ }
         }

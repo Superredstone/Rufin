@@ -120,7 +120,7 @@ pub(super) fn settings_group(
         if let Some(shell) = weak_shell.upgrade() {
             complete_source_save(&shell, button, async move {
                 source
-                    .save_podcasts(source_id, name, feeds)
+                    .save_podcasts(Some(source_id), name, feeds)
                     .await
                     .map_err(|error| error.to_string())
             });

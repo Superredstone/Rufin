@@ -31,6 +31,8 @@ internal class SourceForm {
     var certificate by mutableStateOf("")
     var encryptSmb by mutableStateOf(false)
     var replaceHeaders by mutableStateOf(true)
+    /** A podcasts source's feed addresses, one per line. */
+    var feeds by mutableStateOf("")
 
     fun load(editable: EditableSource) {
         val saved = editable
@@ -49,6 +51,7 @@ internal class SourceForm {
             trustInvalidCertificate = settings.trustInvalidCert
         }
         saved.fileSettings?.let(::loadFileSettings)
+        feeds = saved.podcastFeeds.joinToString("\n")
     }
 
     fun loadFileSettings(settings: FileSourceSettings) {
@@ -93,6 +96,8 @@ internal class SourceForm {
             "plex" -> setup.savePlex(sourceId ?: error(translate("Sign in to Plex first")),
                 PlexSettingsInput(name.trim(), optional(url), trustInvalidCertificate))
             "peer" -> setup.savePeer(sourceId ?: error(translate("Select Source")), name.trim())
+            "podcasts" -> setup.savePodcasts(sourceId, name.trim().ifEmpty { translate("Podcasts") },
+                feeds.lines().map(String::trim).filter(String::isNotEmpty))
             else -> error(translate("Select Source"))
         }
     }

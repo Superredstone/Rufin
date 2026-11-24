@@ -1589,6 +1589,8 @@ struct Page {
     pub private_mode: bool,
     /// The sidebar entries GTK lists, in its order, and whether they show.
     pub routes: Vec<(rufin_core::settings::SidebarRouteItem, bool)>,
+    /// The page's source is a podcasts source: the sidebar names shows and episodes.
+    pub podcasts: bool,
 }
 
 fn link(parameters: &HashMap<String, String>) -> String {
@@ -1688,7 +1690,7 @@ impl Page {
                 let entry = rufin_core::route::sidebar_route_descriptor(*item);
                 (
                     entry.stable_id,
-                    localization::tr(entry.title),
+                    localization::tr(rufin_core::route::sidebar_route_title(*item, self.podcasts)),
                     entry.icon_name,
                     self.nav(entry.stable_id),
                     self.section == entry.stable_id,
@@ -1788,6 +1790,7 @@ async fn index(
         layout: String::new(),
         private_mode: false,
         routes: Vec::new(),
+        podcasts: false,
     };
     if page.connected {
         let settings = products.settings.load();
@@ -1872,6 +1875,13 @@ async fn index(
             .map(ToString::to_string)
             .unwrap_or_default();
         page.folder = token.folder.clone().unwrap_or_default();
+        page.podcasts = configured.sources.iter().any(|source| {
+            source.id.as_str() == page.source
+                && library::SourceKind::parse(&source.kind) == Some(library::SourceKind::Podcasts)
+        });
+        if page.podcasts {
+            page.routes.retain(|(item, _)| item.for_podcasts());
+        }
         if let Some(selected) = selected.filter(|s| s.source_id.as_str() == page.source) {
             page.folders = selected
                 .music_folders

@@ -571,6 +571,7 @@
           <option value="open_subsonic">OpenSubsonic</option>
           <option value="web_dav">{{ localization::tr("WebDAV") }}</option>
           <option value="smb">{{ localization::tr("SMB / Samba") }}</option>
+          <option value="podcasts">{{ localization::tr("Podcasts") }}</option>
         </select>
         <label for="source-label">{{ localization::tr("Name") }}</label
         ><input id="source-label" placeholder="{{ localization::tr("My music") }}" />
@@ -581,6 +582,14 @@
             id="source-paths"
             rows="3"
             placeholder="{{ localization::tr("One path per line") }}"
+          ></textarea>
+        </div>
+        <div id="podcast-fields" hidden>
+          <label for="source-feeds">{{ localization::tr("Podcast feeds") }}</label
+          ><textarea
+            id="source-feeds"
+            rows="4"
+            placeholder="{{ localization::tr("One RSS feed address per line") }}"
           ></textarea>
         </div>
         <div id="source-exclusions" hidden>

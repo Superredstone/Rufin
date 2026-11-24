@@ -2,11 +2,16 @@ use super::*;
 use rufin_core::source::{Pinned, feed::Changed};
 
 fn route_descriptor(item: SidebarRouteItem) -> AndroidRouteDescriptor {
+    podcast_route_descriptor(item, false)
+}
+
+/// The descriptor as the sidebar names it, with shows and episodes for a podcasts source.
+fn podcast_route_descriptor(item: SidebarRouteItem, podcasts: bool) -> AndroidRouteDescriptor {
     let descriptor = sidebar_route_descriptor(item);
     AndroidRouteDescriptor {
         item,
         id: descriptor.stable_id.into(),
-        title: localization::tr(descriptor.title),
+        title: localization::tr(rufin_core::route::sidebar_route_title(item, podcasts)),
         icon_name: descriptor.icon_name.into(),
         selected_icon_name: descriptor.selected_icon_name().into(),
         route: descriptor.root_route,
@@ -302,7 +307,13 @@ impl AndroidLibrary {
             .unwrap_or_default())
     }
 
+    /// The sidebar's pages; a podcasts source lists only those it has something for.
     pub fn configured_routes(&self) -> Vec<AndroidRouteDescriptor> {
+        let podcasts = self
+            .source
+            .selected_library()
+            .and_then(|selected| self.source.configuration(&selected.source_id))
+            .is_some_and(|source| source.source_kind() == Some(library::SourceKind::Podcasts));
         self.settings
             .changes()
             .borrow()
@@ -310,8 +321,8 @@ impl AndroidLibrary {
             .sidebar
             .route_items
             .iter()
-            .filter(|item| item.visible)
-            .map(|item| route_descriptor(item.item))
+            .filter(|item| item.visible && (!podcasts || item.item.for_podcasts()))
+            .map(|item| podcast_route_descriptor(item.item, podcasts))
             .collect()
     }
 

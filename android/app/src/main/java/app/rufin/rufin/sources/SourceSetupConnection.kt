@@ -62,7 +62,7 @@ internal class SourceSetupConnection(private val model: RufinConnection, val sou
                 val runtime = service.runtime.value?.getOrThrow() ?: return@launch
                 val setup = runtime.source()
                 bridge = setup
-                providers = listOf("local" to "Local", "jellyfin" to "Jellyfin", "emby" to "Emby", "plex" to "Plex", "navidrome" to "Navidrome", "subsonic" to "OpenSubsonic", "webdav" to "WebDAV", "smb" to "SMB / Samba").map { (kind, title) -> kind to translate(title) }
+                providers = listOf("local" to "Local", "jellyfin" to "Jellyfin", "emby" to "Emby", "plex" to "Plex", "navidrome" to "Navidrome", "subsonic" to "OpenSubsonic", "webdav" to "WebDAV", "smb" to "SMB / Samba", "podcasts" to "Podcasts").map { (kind, title) -> kind to translate(title) }
                 sourceId?.let { form.load(withContext(Dispatchers.IO) { setup.editable(it) } ?: error(translate("Source is no longer available"))) }
                 ready = true
                 // Where the network needs no prompt, the list opens with what is on it.
