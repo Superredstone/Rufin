@@ -1643,6 +1643,9 @@ msgstr ""
 msgid "Ends around {time}"
 msgstr ""
 
+msgid "Enter a feed address starting with http:// or https://"
+msgstr ""
+
 msgid "Enter a name and URL."
 msgstr ""
 
@@ -1786,6 +1789,9 @@ msgstr ""
 
 #, rust-format
 msgid "February {year}"
+msgstr ""
+
+msgid "Feed address"
 msgstr ""
 
 msgid "Fetches the next tracks before they play and keeps played ones"
@@ -3606,6 +3612,9 @@ msgid "Remove band"
 msgstr ""
 
 msgid "Remove device"
+msgstr ""
+
+msgid "Remove feed"
 msgstr ""
 
 msgid "Remove folder"

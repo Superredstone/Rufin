@@ -5,63 +5,25 @@
 
   <object class="GtkBox" id="section">
     <property name="orientation">vertical</property>
-    <property name="spacing">8</property>
+    <property name="spacing">18</property>
     <child>
-      <object class="AdwPreferencesGroup" id="group">
+      <object class="AdwPreferencesGroup">
         <child>
           <object class="AdwEntryRow" id="name"><property name="title" translatable="yes">Name</property></object>
         </child>
         <child>
-          <object class="AdwPreferencesRow">
-            <property name="activatable">false</property>
-            <property name="selectable">false</property>
-            <property name="child">
-              <object class="GtkBox">
-                <property name="orientation">vertical</property>
-                <property name="spacing">6</property>
-                <property name="margin-top">12</property>
-                <property name="margin-bottom">12</property>
-                <property name="margin-start">12</property>
-                <property name="margin-end">12</property>
-                <child>
-                  <object class="GtkLabel">
-                    <property name="label" translatable="yes">Podcast feeds</property>
-                    <property name="xalign">0</property>
-                    <property name="wrap">true</property>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkLabel">
-                    <property name="label" translatable="yes">One RSS feed address per line</property>
-                    <property name="xalign">0</property>
-                    <property name="wrap">true</property>
-                    <style>
-                      <class name="dim-label" />
-                    </style>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkScrolledWindow">
-                    <property name="hscrollbar-policy">never</property>
-                    <property name="min-content-height">64</property>
-                    <property name="max-content-height">240</property>
-                    <property name="propagate-natural-height">true</property>
-                    <property name="child">
-                      <object class="GtkTextView" id="feeds">
-                        <property name="wrap-mode">word-char</property>
-                        <property name="accepts-tab">false</property>
-                        <property name="monospace">true</property>
-                        <accessibility>
-                          <property name="label" translatable="yes">Podcast feeds</property>
-                        </accessibility>
-                      </object>
-                    </property>
-                  </object>
-                </child>
-              </object>
-            </property>
+          <object class="AdwEntryRow" id="address">
+            <property name="title" translatable="yes">Feed address</property>
+            <property name="show-apply-button">true</property>
+            <property name="input-purpose">url</property>
           </object>
         </child>
+      </object>
+    </child>
+    <child>
+      <object class="AdwPreferencesGroup" id="feeds">
+        <property name="title" translatable="yes">Podcast feeds</property>
+        <property name="visible">false</property>
       </object>
     </child>
     <child><object class="GtkButton" id="save">
