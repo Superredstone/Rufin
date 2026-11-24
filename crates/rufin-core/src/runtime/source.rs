@@ -166,8 +166,14 @@ pub fn shows_server_recommendations(sources: Vec<SourceSummary>) -> bool {
 impl ConfiguredSources {
     /// Whether the selected source is a podcasts source.
     pub fn podcasts_selected(&self) -> bool {
+        self.selected_source_id
+            .as_ref()
+            .is_some_and(|source_id| self.is_podcast_source(source_id))
+    }
+
+    pub fn is_podcast_source(&self, source_id: &SourceId) -> bool {
         self.sources.iter().any(|source| {
-            Some(&source.id) == self.selected_source_id.as_ref()
+            source.id == *source_id
                 && library::SourceKind::parse(&source.kind) == Some(library::SourceKind::Podcasts)
         })
     }

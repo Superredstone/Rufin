@@ -341,6 +341,23 @@ pub struct LibraryListSettingsEntry {
     pub settings: LibraryListSettings,
 }
 impl LibraryListSettings {
+    /// A podcast's episode list from the album track list's settings: the release date leads
+    /// where an album shows track numbers, and the album order becomes newest release first.
+    /// Another order chosen for albums stays.
+    pub fn podcast_episodes(mut self) -> Self {
+        let release = LibraryField::ReleaseDate;
+        self.row_fields.retain(|field| {
+            !matches!(field, LibraryField::RowIndex | LibraryField::TrackNumber)
+                && *field != release
+        });
+        self.row_fields.insert(0, release);
+        if self.sort_key == LibraryField::TrackNumber {
+            self.sort_key = release;
+            self.descending = true;
+        }
+        self
+    }
+
     pub fn for_key(key: LibraryListKey) -> Self {
         Self {
             display: DisplaySettings::default(),
@@ -1188,6 +1205,41 @@ fn row_column(field: LibraryField) -> bool {
 #[cfg(test)]
 mod disc_tests {
     use super::*;
+    #[test]
+    fn podcast_episodes_lead_with_release_date_newest_first() {
+        let album = LibraryListSettings::for_key(LibraryListKey::AlbumDetailTracks);
+        assert_eq!(album.sort_key, LibraryField::TrackNumber);
+        let episodes = album.clone().podcast_episodes();
+        let mut expected = vec![LibraryField::ReleaseDate];
+        expected.extend(
+            album.row_fields.iter().copied().filter(|field| {
+                !matches!(field, LibraryField::RowIndex | LibraryField::TrackNumber)
+            }),
+        );
+        assert_eq!(episodes.row_fields, expected);
+        assert!(!episodes.row_fields.contains(&LibraryField::RowIndex));
+        assert_eq!(
+            (episodes.sort_key, episodes.descending),
+            (LibraryField::ReleaseDate, true)
+        );
+        // An order chosen for albums stays, and the date is not listed twice.
+        let mut titled = album;
+        titled.sort_key = LibraryField::Title;
+        titled.row_fields.push(LibraryField::ReleaseDate);
+        let titled = titled.podcast_episodes();
+        assert_eq!(
+            (titled.sort_key, titled.descending),
+            (LibraryField::Title, false)
+        );
+        assert_eq!(
+            titled
+                .row_fields
+                .iter()
+                .filter(|field| **field == LibraryField::ReleaseDate)
+                .count(),
+            1
+        );
+    }
     #[test]
     fn album_detail_uses_rows_when_grid_was_saved() {
         let mut settings = LibraryListSettings::for_key(LibraryListKey::AlbumDetailTracks);

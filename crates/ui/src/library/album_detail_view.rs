@@ -47,14 +47,33 @@ impl CatalogUi {
                 self.route_width(),
                 PRIMARY_ROUTE_MARGIN_START,
             );
+        // A podcast lists its episodes newest first, by release date.
+        let podcast =
+            ::library::source_entity_parts(&album.row.media_uri).is_some_and(|(source, _, _)| {
+                self.source.configured.borrow().is_podcast_source(&source)
+            });
+        let list_settings = move |settings: crate::library::LibraryListSettings| {
+            if podcast {
+                settings.podcast_episodes()
+            } else {
+                settings
+            }
+        };
         let rows = Rows::over_view(self.products.runtime.clone(), &mut read);
         rows.list_model()
             .set_disc_titles(album.metadata.disc_titles.clone());
-        let (tracks_widget, track_projection, track_toolbar) = self.scrolling_track_projection(
-            rows.clone(),
-            LibraryListKey::AlbumDetailTracks,
-            "album-detail",
-        );
+        let (tracks_widget, track_projection, track_toolbar) = self
+            .scrolling_track_projection_with(
+                rows.clone(),
+                LibraryListKey::AlbumDetailTracks,
+                list_settings(
+                    self.settings
+                        .current
+                        .borrow()
+                        .library_list(LibraryListKey::AlbumDetailTracks),
+                ),
+                "album-detail",
+            );
         track_toolbar.set_layout_control_visible(false);
         let cover = media_cover_projection(
             self,
@@ -186,11 +205,13 @@ impl CatalogUi {
                 let Some(shell) = shell.upgrade() else {
                     return;
                 };
-                let settings = shell
-                    .settings
-                    .current
-                    .borrow()
-                    .library_list(LibraryListKey::AlbumDetailTracks);
+                let settings = list_settings(
+                    shell
+                        .settings
+                        .current
+                        .borrow()
+                        .library_list(LibraryListKey::AlbumDetailTracks),
+                );
                 track_projection
                     .apply_library_list_settings(LibraryListKey::AlbumDetailTracks, &settings);
                 reads.resume(&shell.settings.current.borrow());

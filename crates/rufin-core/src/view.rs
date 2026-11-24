@@ -637,10 +637,20 @@ impl SourceOwner {
         };
         let (header, plan) = match &shown {
             Route::AlbumDetail(uri) => match catalog.item(uri) {
-                Some(Item::Album(key)) => (
-                    Some(HeaderKey::Album { key, activity }),
-                    Plan::Rows(Read::Members(member(Collection::Album(key)))),
-                ),
+                Some(Item::Album(key)) => {
+                    let mut read = member(Collection::Album(key));
+                    if options.sort.is_none() && podcast_album(catalog, uri) {
+                        let episodes = settings
+                            .library_list(LibraryListKey::AlbumDetailTracks)
+                            .podcast_episodes();
+                        read.sort = Some(episodes.sort_key);
+                        read.descending = options.descending.unwrap_or(episodes.descending);
+                    }
+                    (
+                        Some(HeaderKey::Album { key, activity }),
+                        Plan::Rows(Read::Members(read)),
+                    )
+                }
                 _ => (None, Plan::Missing),
             },
             Route::ArtistDetail(uri)
@@ -2685,6 +2695,13 @@ fn uses_activity(route: &Route, options: &OpenOptions, settings: &LibraryListSet
             &[]
         })
         .any(|field| field.activity_sensitive())
+}
+
+/// Whether the album at `uri` is a podcast: a show of a podcasts source.
+pub fn podcast_album(catalog: &library::Catalog, uri: &str) -> bool {
+    library::source_entity_parts(uri).is_some_and(|(source, _, _)| {
+        catalog.source_kind(&source) == Some(library::SourceKind::Podcasts)
+    })
 }
 
 /// The order a route reads in, and whether it reads activity.

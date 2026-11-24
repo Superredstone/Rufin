@@ -192,6 +192,16 @@ impl Catalog {
     }
 
     /// The key of a source the Catalog holds.
+    /// The kind of a source the Catalog holds, when it is one Rufin knows.
+    pub fn source_kind(&self, source_id: &crate::SourceId) -> Option<crate::SourceKind> {
+        self.snapshot()
+            .sources
+            .values()
+            .find(|source| source.object == source_id.as_str())
+            .and_then(|source| source.kind.as_deref())
+            .and_then(crate::SourceKind::parse)
+    }
+
     pub fn source_key(&self, source_id: &crate::SourceId) -> Option<SourceKey> {
         self.snapshot()
             .sources

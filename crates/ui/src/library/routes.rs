@@ -282,6 +282,17 @@ impl CatalogUi {
         context: &str,
     ) -> (gtk::Widget, TrackListProjection, LibraryToolbarProjection) {
         let settings = self.settings.current.borrow().library_list(key);
+        self.scrolling_track_projection_with(rows, key, settings, context)
+    }
+
+    /// A scrolling track list shown with `settings` rather than its list's own.
+    pub fn scrolling_track_projection_with(
+        self: &Rc<Self>,
+        rows: Rows<Row>,
+        key: LibraryListKey,
+        settings: crate::library::LibraryListSettings,
+        context: &str,
+    ) -> (gtk::Widget, TrackListProjection, LibraryToolbarProjection) {
         let projection = self.build_track_collection(
             rows,
             key,
