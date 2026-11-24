@@ -2241,6 +2241,14 @@ impl Context<'_> {
                 .map(Some),
             None => Some(None),
         };
+        // A smart playlist of every source lists music: episodes join only one of a podcasts
+        // source.
+        let podcasts: HashSet<u16> = snapshot
+            .sources
+            .values()
+            .filter(|source| source.kind.as_deref() == Some(crate::SourceKind::Podcasts.name()))
+            .filter_map(|source| snapshot.source_slot(source.key))
+            .collect();
         let period = definition
             .activity_period
             .seconds()
@@ -2267,7 +2275,9 @@ impl Context<'_> {
             .filter(move |(_, record)| {
                 source.is_some_and(|source| {
                     record.indexed()
-                        && source.is_none_or(|source| record.source == source)
+                        && source.map_or(!podcasts.contains(&record.source), |source| {
+                            record.source == source
+                        })
                         && self.in_source_folder(record, folder)
                 })
             })

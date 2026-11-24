@@ -779,7 +779,10 @@ impl LyricsService {
         request: &LyricsRequest,
         fallback: &mut LyricsFallback,
     ) -> bool {
-        if !request.plan.allows_external_fallback() {
+        // Lyrics services know songs, not episodes; an episode's title stays here.
+        if !request.plan.allows_external_fallback()
+            || (self.settings().sources).is_podcast(&request.context.media.row.track.media_uri)
+        {
             return false;
         }
         let Ok(permit) = self.search_lane.acquire().await else {

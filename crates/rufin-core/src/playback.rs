@@ -639,18 +639,7 @@ impl PlaybackOwner {
         duration_millis: u64,
         completed: bool,
     ) {
-        let podcast = track.source_id.as_deref().is_some_and(|source_id| {
-            self.settings
-                .load()
-                .sources
-                .configured
-                .iter()
-                .any(|configured| {
-                    configured.configuration.source_id.as_str() == source_id
-                        && configured.configuration.source_kind()
-                            == Some(library::SourceKind::Podcasts)
-                })
-        });
+        let podcast = self.settings.load().sources.is_podcast(&track.media_uri);
         if podcast {
             let _ = self
                 .store_sender
@@ -704,7 +693,12 @@ impl PlaybackOwner {
     }
 
     async fn store_activity(&self, current_track: Option<library::TrackKey>, listen: ListenWrite) {
-        let deliveries = self.scrobbler.listen_delivery_targets(&listen);
+        // Podcast episodes are no music listens for Last.fm, Libre.fm or ListenBrainz.
+        let deliveries = if self.settings.load().sources.is_podcast(&listen.media_uri) {
+            Vec::new()
+        } else {
+            self.scrobbler.listen_delivery_targets(&listen)
+        };
         if let Err(error) = self
             .catalog
             .record_listen(&listen, current_track, &deliveries)

@@ -27,6 +27,23 @@ pub(crate) async fn radio_candidates(
         .radio_source(&seed, cancellation)
         .await
         .map_err(|error| error.to_string())?;
+    // A radio of an episode, or one that fills from podcasts, would queue episodes as music.
+    let (seed_podcast, selected_podcast) = {
+        let sources = &source_owner.shared.settings.load().sources;
+        let podcast = |source_id: &library::SourceId| sources.is_podcast_source(source_id);
+        (
+            seed_source
+                .as_ref()
+                .is_some_and(|(_, source_id, _)| podcast(source_id)),
+            selected
+                .as_ref()
+                .is_some_and(|selected| podcast(&selected.source_id)),
+        )
+    };
+    if seed_podcast {
+        return Ok(Vec::new());
+    }
+    let selected = selected.filter(|_| !selected_podcast);
     let mut candidates = Vec::new();
     let seed_source_key = seed_source.as_ref().map(|(key, _, _)| *key);
     let mut fallback_sources = Vec::new();

@@ -3749,7 +3749,16 @@ impl Player {
                 });
                 // A radio station's row names the station: the song it announces is what plays.
                 let announced = playing.and_then(RunContext::announced);
-                self.owner().scrobbler.now_playing(match playing {
+                let owner = self.owner();
+                let podcast = |run: &&RunContext| {
+                    owner
+                        .settings
+                        .load()
+                        .sources
+                        .is_podcast(&run.row.track.media_uri)
+                };
+                owner.scrobbler.now_playing(match playing {
+                    Some(run) if podcast(&run) => None,
                     Some(run) if run.live => announced.as_ref(),
                     Some(run) => Some(&run.row.track.metadata),
                     None => None,

@@ -147,6 +147,11 @@ impl LoudnessAnalysisOwner {
             self.cancel();
             return;
         };
+        // Measuring an episode means downloading it whole; podcasts are not normalized ahead.
+        if configuration.source_kind() == Some(library::SourceKind::Podcasts) {
+            self.cancel();
+            return;
+        }
         let stored = self.settings.load();
         let playback = &stored.ui.playback;
         let (scope, write_tags) = (

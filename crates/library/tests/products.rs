@@ -3804,3 +3804,72 @@ async fn home_search_and_radio_results_stay_bounded() {
     assert!(!playlist_radio.contains(&fixture.tracks[0]));
     assert_ne!(playlist_radio, [fixture.tracks[0]]);
 }
+
+#[tokio::test]
+async fn smart_playlists_of_every_source_leave_out_podcast_episodes() {
+    let fixture = fixture().await;
+    let catalog = &fixture.catalog;
+    catalog
+        .reconcile_source(&library::SourceId::new("pods"), "podcasts", "Podcasts")
+        .await
+        .unwrap();
+    let mut observation = catalog.observe("pods").await.unwrap();
+    observation.start_observation().await.unwrap();
+    let mut batch = library::CatalogBatch::default();
+    batch.tracks.push(library::TrackObservation {
+        object_id: "episode".into(),
+        metadata: library::TrackMetadata {
+            title: "Alpha Episode".into(),
+            sort_text: "alpha episode".into(),
+            ..Default::default()
+        },
+        ..Default::default()
+    });
+    observation.apply_catalog(&batch, true).await.unwrap();
+    observation
+        .complete_source_observation(&["track"], None, None)
+        .await
+        .unwrap();
+
+    let mut definition = SmartPlaylistDefinition {
+        source_id: None,
+        conditions: vec![SmartPlaylistCondition::Rule(SmartPlaylistRule {
+            field: SmartPlaylistRuleField::Title,
+            operator: SmartPlaylistRuleOperator::Contains,
+            value: Some(SmartPlaylistRuleValue::Text("alpha".to_string())),
+        })],
+        matching: SmartPlaylistMatch::All,
+        sort_field: SmartPlaylistSort::Title,
+        descending: false,
+        activity_period: SmartPlaylistActivityPeriod::Lifetime,
+        limit: None,
+    };
+    let smart = catalog
+        .create_smart_playlist("Alpha", &definition, None)
+        .await
+        .unwrap();
+    let cancel = ReadCancellation::new();
+    let members = async || {
+        catalog
+            .selected_track_uris(
+                &library::MemberRead::new(library::Collection::Smart { key: smart, now: 0 })
+                    .selection(),
+                None,
+                &cancel,
+            )
+            .await
+            .unwrap()
+    };
+    let episode = library::source_entity_uri(&library::SourceId::new("pods"), "track", "episode");
+
+    let every_source = members().await;
+    assert_eq!(every_source.len(), 1, "only the music track Alpha");
+    assert!(!every_source.contains(&episode));
+
+    definition.source_id = Some(library::SourceId::new("pods"));
+    catalog
+        .update_smart_playlist(smart, "Alpha", &definition, None)
+        .await
+        .unwrap();
+    assert_eq!(members().await, [episode]);
+}

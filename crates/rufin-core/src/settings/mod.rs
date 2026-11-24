@@ -142,6 +142,20 @@ pub(crate) struct SourceSettings {
 }
 
 impl SourceSettings {
+    /// Whether `media_uri` is a track of a podcasts source: podcast episodes stay out of
+    /// what Rufin does for music.
+    pub(crate) fn is_podcast(&self, media_uri: &str) -> bool {
+        library::source_entity_parts(media_uri)
+            .is_some_and(|(source_id, _, _)| self.is_podcast_source(&source_id))
+    }
+
+    pub(crate) fn is_podcast_source(&self, source_id: &SourceId) -> bool {
+        self.configured.iter().any(|configured| {
+            configured.configuration.source_id == *source_id
+                && configured.configuration.source_kind() == Some(library::SourceKind::Podcasts)
+        })
+    }
+
     pub(crate) fn connections(&self) -> impl Iterator<Item = &ConfiguredSource> {
         self.configured.iter().chain(&self.integrations)
     }
@@ -1481,6 +1495,31 @@ mod tests {
     use super::*;
     use secrets::{SecretError, SecretResult};
     use std::sync::atomic::{AtomicUsize, Ordering};
+
+    #[test]
+    fn podcast_tracks_are_known_by_their_source_kind() {
+        let configured = |id: &str, kind: &str| ConfiguredSource {
+            configuration: sources::SourceConfiguration {
+                source_id: SourceId::new(id),
+                kind: kind.into(),
+                name: id.into(),
+                provider_payload: "{}".into(),
+            },
+            credential: None,
+            music_folder_id: None,
+            local_access: None,
+            enable_half_stars: false,
+        };
+        let sources = SourceSettings {
+            configured: vec![configured("pods", "podcasts"), configured("music", "local")],
+            ..SourceSettings::default()
+        };
+        let track = |source: &str| library::source_entity_uri(&SourceId::new(source), "track", "x");
+        assert!(sources.is_podcast(&track("pods")));
+        assert!(!sources.is_podcast(&track("music")));
+        assert!(!sources.is_podcast(&track("removed")));
+        assert!(!sources.is_podcast("file:///music/song.flac"));
+    }
 
     #[test]
     fn pending_settings_update_leaves_committed_values_readable_and_serializes_writers() {

@@ -157,11 +157,13 @@ fn offered(
         // A child folder plays the folder it opens, as a collection row plays its page.
         Row::Folder(_) => (true, false),
     };
-    menu.radio = radio_seed(row).filter(|_| shown(ContextMenuItem::PlayRadio));
+    // An episode seeds no radio: radio picks music.
+    menu.radio = radio_seed(row).filter(|_| !menu.episode && shown(ContextMenuItem::PlayRadio));
     menu.add_to_playlist = add_to_playlist && shown(ContextMenuItem::AddToPlaylist);
     menu.favorite = rated && shown(ContextMenuItem::Favorites);
     menu.rating = rated && settings.application.context_menu.rating_visible;
-    menu.edit_metadata &= shown(ContextMenuItem::EditMetadata);
+    // A feed refresh would overwrite an edited episode.
+    menu.edit_metadata &= !menu.episode && shown(ContextMenuItem::EditMetadata);
     menu.go_to = shown(ContextMenuItem::GoTo) && targets(source, row).next().is_some();
     let downloaded = match row {
         Row::Folder(folder) => folder.summary.downloaded(),
