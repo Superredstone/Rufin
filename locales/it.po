@@ -1451,6 +1451,11 @@ msgstr "Header HTTP personalizzati"
 
 #, fuzzy
 #| msgid "Custom"
+msgid "Custom URL"
+msgstr "Personalizzato"
+
+#, fuzzy
+#| msgid "Custom"
 msgid "Custom bands"
 msgstr "Personalizzato"
 
@@ -2432,6 +2437,9 @@ msgid "Integrations"
 msgstr ""
 
 msgid "Invite"
+msgstr ""
+
+msgid "Iroh relay"
 msgstr ""
 
 msgid "Item ID"

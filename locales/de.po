@@ -1316,6 +1316,11 @@ msgstr "Aktuelles Cover"
 msgid "Custom HTTP headers"
 msgstr "Benutzerdefinierte HTTP-Header"
 
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom URL"
+msgstr "Benutzerdefiniert"
+
 msgid "Custom bands"
 msgstr "Benutzerdefinierte Bänder"
 
@@ -2216,6 +2221,11 @@ msgstr "Integrationen"
 
 msgid "Invite"
 msgstr "Einladen"
+
+#, fuzzy
+#| msgid "Via relay"
+msgid "Iroh relay"
+msgstr "Über Relay"
 
 msgid "Item ID"
 msgstr "Element-ID"

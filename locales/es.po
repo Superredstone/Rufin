@@ -1313,6 +1313,11 @@ msgstr "Portada actual"
 msgid "Custom HTTP headers"
 msgstr "Cabeceras HTTP personalizadas"
 
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom URL"
+msgstr "Personalizado"
+
 msgid "Custom bands"
 msgstr "Bandas personalizadas"
 
@@ -2218,6 +2223,11 @@ msgstr "Integraciones"
 
 msgid "Invite"
 msgstr "Invitar"
+
+#, fuzzy
+#| msgid "Via relay"
+msgid "Iroh relay"
+msgstr "Por medio de un relay"
 
 msgid "Item ID"
 msgstr "ID del elemento"

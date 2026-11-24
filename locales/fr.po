@@ -1316,6 +1316,11 @@ msgstr "Illustration actuelle"
 msgid "Custom HTTP headers"
 msgstr "En-têtes HTTP personnalisés"
 
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom URL"
+msgstr "Personnalisé"
+
 msgid "Custom bands"
 msgstr "Bandes personnalisées"
 
@@ -2212,6 +2217,11 @@ msgstr "Intégrations"
 
 msgid "Invite"
 msgstr "Inviter"
+
+#, fuzzy
+#| msgid "Via relay"
+msgid "Iroh relay"
+msgstr "Via le relais"
 
 msgid "Item ID"
 msgstr "ID de l’élément"

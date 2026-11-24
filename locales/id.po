@@ -1357,6 +1357,11 @@ msgstr "Sampul saat ini"
 msgid "Custom HTTP headers"
 msgstr "Header HTTP kustom"
 
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom URL"
+msgstr "Kustom"
+
 msgid "Custom bands"
 msgstr "Pita kustom"
 
@@ -2313,6 +2318,9 @@ msgstr "Integrasi"
 
 msgid "Invite"
 msgstr "Undang"
+
+msgid "Iroh relay"
+msgstr ""
 
 msgid "Item ID"
 msgstr "ID Item"

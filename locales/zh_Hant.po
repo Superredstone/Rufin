@@ -1494,6 +1494,11 @@ msgstr ""
 
 #, fuzzy
 #| msgid "Collection"
+msgid "Custom URL"
+msgstr "收藏"
+
+#, fuzzy
+#| msgid "Collection"
 msgid "Custom bands"
 msgstr "收藏"
 
@@ -2552,6 +2557,9 @@ msgid "Integrations"
 msgstr ""
 
 msgid "Invite"
+msgstr ""
+
+msgid "Iroh relay"
 msgstr ""
 
 msgid "Item ID"

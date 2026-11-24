@@ -1343,6 +1343,11 @@ msgstr "Текущая обложка"
 msgid "Custom HTTP headers"
 msgstr "Настраиваемые HTTP-заголовки"
 
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom URL"
+msgstr "Настраиваемый"
+
 msgid "Custom bands"
 msgstr "Настраиваемые диапазоны"
 
@@ -2281,6 +2286,11 @@ msgstr "Интеграции"
 
 msgid "Invite"
 msgstr "Пригласить"
+
+#, fuzzy
+#| msgid "Via relay"
+msgid "Iroh relay"
+msgstr "Через ретранслятор"
 
 msgid "Item ID"
 msgstr "ID элемента"

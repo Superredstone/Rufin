@@ -1306,6 +1306,11 @@ msgstr "Capa atual"
 msgid "Custom HTTP headers"
 msgstr "Cabeçalhos HTTP personalizados"
 
+#, fuzzy
+#| msgid "Custom"
+msgid "Custom URL"
+msgstr "Personalizado"
+
 msgid "Custom bands"
 msgstr "Bandas personalizadas"
 
@@ -2199,6 +2204,11 @@ msgstr "Integrações"
 
 msgid "Invite"
 msgstr "Convidar"
+
+#, fuzzy
+#| msgid "Via relay"
+msgid "Iroh relay"
+msgstr "Via retransmissão"
 
 msgid "Item ID"
 msgstr "ID do item"
