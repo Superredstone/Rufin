@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-25 18:19+0000\n"
+"PO-Revision-Date: 2026-11-25 22:18+0000\n"
 "Last-Translator: Jiahao Li <thejiahao@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/rufin/app/zh_Hans/>\n"
@@ -25,7 +25,7 @@ msgstr "将下载日语词典以提供假名注音和罗马音。此设置会增
 
 msgid ""
 "Approving gives this device access to your profile and saved source logins."
-msgstr ""
+msgstr "授权后此设备可访问你的配置文件及登录凭据。"
 
 msgid ""
 "Backup file may contain sensitive information. Do you want to set a password?"
@@ -40,7 +40,7 @@ msgstr ""
 msgid ""
 "Connecting an existing profile will remove all data in this device, do you "
 "really want to continue?"
-msgstr "连接已有档案将清除本设备上的全部数据，是否继续？"
+msgstr "连接现有配置文件后将清除本设备上的全部数据，是否继续？"
 
 msgid ""
 "Devices using Rufin Connect are no longer compatible. Please update Rufin."
@@ -599,7 +599,7 @@ msgid "Audio fingerprints"
 msgstr "音频指纹"
 
 msgid "Audio output failed"
-msgstr ""
+msgstr "音频输出失败"
 
 msgid "Audio output"
 msgstr "音频输出"
@@ -791,7 +791,7 @@ msgid "Certificate authority (PEM)"
 msgstr "证书颁发机构 (PEM)"
 
 msgid "Change Profile"
-msgstr ""
+msgstr "更改配置文件"
 
 msgid "Change Secret Storage"
 msgstr ""
@@ -993,7 +993,7 @@ msgid "Compact"
 msgstr "紧凑"
 
 msgid "Compare these emoji on both devices"
-msgstr ""
+msgstr "请核对两台设备上的表情符号"
 
 msgid "Compilation"
 msgstr "合辑"
@@ -1137,7 +1137,7 @@ msgid "Could not open folder: {error}"
 msgstr ""
 
 msgid "Could not play this track"
-msgstr ""
+msgstr "无法播放此曲目"
 
 msgid "Could not read artwork"
 msgstr "无法读取封面"
@@ -1164,7 +1164,7 @@ msgid "Couldn't connect"
 msgstr ""
 
 msgid "Couldn't decode this track"
-msgstr ""
+msgstr "无法解码此曲目"
 
 msgid "Couldn't load this folder"
 msgstr ""
@@ -1863,7 +1863,7 @@ msgid "Forgotten favorites"
 msgstr "尘封收藏"
 
 msgid "Format not supported"
-msgstr ""
+msgstr "不支持的格式"
 
 msgid "Format"
 msgstr "格式"
@@ -2028,7 +2028,7 @@ msgid "Hold to reorder"
 msgstr ""
 
 msgid "Home Profile"
-msgstr ""
+msgstr "主配置文件"
 
 msgid "Home"
 msgstr "首页"
@@ -2134,7 +2134,7 @@ msgid "Jellyfin"
 msgstr "Jellyfin"
 
 msgid "Join profile"
-msgstr ""
+msgstr "加入配置文件"
 
 msgid "Join to copy its sources and sign-ins"
 msgstr ""
@@ -3288,10 +3288,10 @@ msgid "Private mode"
 msgstr "无痕模式"
 
 msgid "Profile PIN"
-msgstr ""
+msgstr "配置文件 PIN 码"
 
 msgid "Profile up to date"
-msgstr ""
+msgstr "配置文件已是最新"
 
 msgid "Pronunciation"
 msgstr ""
@@ -3357,7 +3357,7 @@ msgid "Ready"
 msgstr ""
 
 msgid "Receiving profile"
-msgstr ""
+msgstr "正在接收配置文件"
 
 msgid "Recent searches"
 msgstr "最近搜索"
@@ -4080,7 +4080,7 @@ msgid "Showcase"
 msgstr "推荐单曲"
 
 msgid "Shows what you are playing on your Discord profile"
-msgstr ""
+msgstr "在 Discord 个人资料中显示当前曲目"
 
 msgid "Shows what you play on your Discord profile"
 msgstr "在 Discord 个人资料中显示当前曲目"
@@ -4440,13 +4440,13 @@ msgid "Theme"
 msgstr "主题"
 
 msgid "These emoji match"
-msgstr ""
+msgstr "表情符号一致"
 
 msgid "This can be turned off after pairing if you want"
 msgstr "配对后可禁用"
 
 msgid "This device was removed from the profile"
-msgstr ""
+msgstr "此设备已从配置文件中移除"
 
 msgid "This device"
 msgstr "本设备"
@@ -4530,7 +4530,7 @@ msgid "Track radio"
 msgstr ""
 
 msgid "Track unavailable"
-msgstr ""
+msgstr "曲目不可用"
 
 msgid "Track"
 msgstr "曲目"
@@ -4770,7 +4770,7 @@ msgid "Waiting for device"
 msgstr ""
 
 msgid "Waiting for the other device to approve"
-msgstr ""
+msgstr "等待另一台设备授权"
 
 msgid "Waveform seekbar"
 msgstr "波形进度条"
