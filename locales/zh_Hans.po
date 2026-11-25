@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-24 21:23+0000\n"
+"PO-Revision-Date: 2026-11-25 18:19+0000\n"
 "Last-Translator: Jiahao Li <thejiahao@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/rufin/app/zh_Hans/>\n"
@@ -374,7 +374,7 @@ msgid "Add band"
 msgstr "添加频段"
 
 msgid "Add current"
-msgstr "添加当前"
+msgstr "添加当前曲目"
 
 msgid "Add folder"
 msgstr "添加文件夹"
@@ -410,7 +410,7 @@ msgid "Add to library"
 msgstr "添加到媒体库"
 
 msgid "Add to {saved_on}"
-msgstr ""
+msgstr "添加到 {saved_on}"
 
 msgid "Add tracks when fewer than this many remain"
 msgstr "低于此数时补充曲目"
@@ -428,7 +428,7 @@ msgid "Album Artists"
 msgstr "专辑艺人"
 
 msgid "Album artist sort"
-msgstr ""
+msgstr "专辑艺人 (排序)"
 
 msgid "Album artist"
 msgstr "专辑艺人"
@@ -452,7 +452,7 @@ msgid "Album radio"
 msgstr ""
 
 msgid "Album sort"
-msgstr ""
+msgstr "专辑 (排序)"
 
 msgid "Album title"
 msgstr ""
@@ -518,7 +518,7 @@ msgid "Appearance"
 msgstr "外观"
 
 msgid "Appears On"
-msgstr "出现于"
+msgstr "参与作品"
 
 msgid "Application name"
 msgstr "应用名称"
@@ -557,7 +557,7 @@ msgid "Artist radio"
 msgstr "艺人电台"
 
 msgid "Artist sort"
-msgstr ""
+msgstr "艺人 (排序)"
 
 msgid "Artist tracks"
 msgstr ""
@@ -963,7 +963,7 @@ msgid "Collection"
 msgstr ""
 
 msgid "Collections"
-msgstr ""
+msgstr "合集"
 
 msgid "Color for the active word during playback"
 msgstr ""
@@ -984,7 +984,7 @@ msgid "Comment text"
 msgstr ""
 
 msgid "Comment"
-msgstr ""
+msgstr "注释"
 
 msgid "Compact cards"
 msgstr "紧凑卡片"
@@ -996,7 +996,7 @@ msgid "Compare these emoji on both devices"
 msgstr ""
 
 msgid "Compilation"
-msgstr ""
+msgstr "合辑"
 
 msgid "Complete sign-in in your browser"
 msgstr "请用浏览器完成登录"
@@ -1005,10 +1005,10 @@ msgid "Completed downloads will stay on this device."
 msgstr ""
 
 msgid "Composer sort"
-msgstr ""
+msgstr "作曲家 (排序)"
 
 msgid "Composer"
-msgstr ""
+msgstr "作曲家"
 
 msgid "Condition"
 msgstr ""
@@ -1113,7 +1113,7 @@ msgid "Copy"
 msgstr "复制"
 
 msgid "Copyright"
-msgstr ""
+msgstr "版权"
 
 msgid "Could not load listening overview"
 msgstr "无法加载收听概览"
@@ -1330,10 +1330,10 @@ msgid "Delivery"
 msgstr ""
 
 msgid "Demo"
-msgstr ""
+msgstr "小样"
 
 msgid "Demos"
-msgstr ""
+msgstr "小样"
 
 msgid "Descending"
 msgstr ""
@@ -1375,10 +1375,10 @@ msgid "Disabled"
 msgstr ""
 
 msgid "Disc number"
-msgstr "碟号"
+msgstr "碟片编号"
 
 msgid "Disc subtitle"
-msgstr ""
+msgstr "碟片副标题"
 
 msgid "Disc {number}"
 msgstr ""
@@ -1512,10 +1512,10 @@ msgid "EBU R128"
 msgstr "EBU R128"
 
 msgid "EP"
-msgstr ""
+msgstr "EP"
 
 msgid "EPs"
-msgstr ""
+msgstr "EP"
 
 msgid "ERB"
 msgstr "ERB"
@@ -2586,28 +2586,28 @@ msgid "MusicBrainz album artist ID"
 msgstr "MusicBrainz 专辑艺人 ID"
 
 msgid "MusicBrainz artist ID"
-msgstr ""
+msgstr "MusicBrainz 艺人 ID"
 
 msgid "MusicBrainz or Last.fm"
 msgstr "MusicBrainz 或 Last.fm"
 
 msgid "MusicBrainz recording ID"
-msgstr ""
+msgstr "MusicBrainz 曲目 ID"
 
 msgid "MusicBrainz release ID"
-msgstr ""
+msgstr "MusicBrainz 专辑版本 ID"
 
 msgid "MusicBrainz release group ID"
-msgstr ""
+msgstr "MusicBrainz 专辑 ID"
 
 msgid "MusicBrainz release track ID"
-msgstr ""
+msgstr "MusicBrainz 专辑版本曲目 ID"
 
 msgid "MusicBrainz"
 msgstr "MusicBrainz"
 
 msgid "Musical key"
-msgstr ""
+msgstr "调性"
 
 msgid "Mute"
 msgstr "静音"
@@ -3009,7 +3009,7 @@ msgid "Original: {value}"
 msgstr ""
 
 msgid "Other releases"
-msgstr ""
+msgstr "其他版本"
 
 msgid "Otherwise automatic downloads wait for Wi-Fi"
 msgstr ""
@@ -3435,7 +3435,7 @@ msgid "Release notifications"
 msgstr "版本更新"
 
 msgid "Release type"
-msgstr ""
+msgstr "发行类型"
 
 msgid "Release"
 msgstr ""
@@ -3459,10 +3459,10 @@ msgid "Reload"
 msgstr ""
 
 msgid "Remix"
-msgstr ""
+msgstr "混音"
 
 msgid "Remixes"
-msgstr ""
+msgstr "混音"
 
 msgid "Remote folders on a Windows share or NAS"
 msgstr "Windows 共享或 NAS 远程文件夹"
@@ -3836,13 +3836,13 @@ msgid "Search..."
 msgstr "搜索…"
 
 msgid "Searching AcoustID..."
-msgstr ""
+msgstr "正在搜索 AcoustID…"
 
 msgid "Searching Local Network"
 msgstr "正在搜索本地网络"
 
 msgid "Searching MusicBrainz..."
-msgstr ""
+msgstr "正在搜索 MusicBrainz…"
 
 msgid "Searching for devices..."
 msgstr ""
@@ -3857,7 +3857,7 @@ msgid "Searching..."
 msgstr "正在搜索…"
 
 msgid "Secondary release types"
-msgstr ""
+msgstr "次要发行类型"
 
 msgid "Secret storage"
 msgstr "凭据存储"
@@ -4137,10 +4137,10 @@ msgid "SimpMusic"
 msgstr "SimpMusic"
 
 msgid "Single"
-msgstr ""
+msgstr "单曲"
 
 msgid "Singles"
-msgstr ""
+msgstr "单曲"
 
 msgid "Size in gigabytes"
 msgstr "缓存大小 (GB)"
@@ -4218,7 +4218,7 @@ msgid "Sort name"
 msgstr ""
 
 msgid "Sort title"
-msgstr ""
+msgstr "标题 (排序)"
 
 msgid "Soundtrack"
 msgstr "原声音乐"
@@ -4287,7 +4287,7 @@ msgid "Static"
 msgstr ""
 
 msgid "Stations are saved on {saved_on}."
-msgstr ""
+msgstr "电台已保存到 {saved_on}。"
 
 msgid "Stations"
 msgstr "电台"
@@ -4509,10 +4509,10 @@ msgid "Top tracks"
 msgstr "最爱曲目"
 
 msgid "Total discs"
-msgstr ""
+msgstr "碟片总数"
 
 msgid "Total tracks"
-msgstr ""
+msgstr "曲目总数"
 
 msgid "Track details"
 msgstr "曲目详情"
@@ -4521,7 +4521,7 @@ msgid "Track gain"
 msgstr ""
 
 msgid "Track number"
-msgstr ""
+msgstr "曲目编号"
 
 msgid "Track peak"
 msgstr ""
