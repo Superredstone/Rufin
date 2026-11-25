@@ -1356,6 +1356,11 @@ msgstr ""
 msgid "Date added"
 msgstr "Hinzugefügt am"
 
+#, fuzzy
+#| msgid "Date added"
+msgid "Date modified"
+msgstr "Hinzugefügt am"
+
 msgid "Date"
 msgstr "Datum"
 

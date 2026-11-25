@@ -1493,6 +1493,11 @@ msgstr ""
 msgid "Date added"
 msgstr "Data aggiunta"
 
+#, fuzzy
+#| msgid "Date added"
+msgid "Date modified"
+msgstr "Data aggiunta"
+
 msgid "Date"
 msgstr ""
 

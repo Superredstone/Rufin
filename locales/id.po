@@ -1398,6 +1398,11 @@ msgstr ""
 msgid "Date added"
 msgstr "Tanggal ditambahkan"
 
+#, fuzzy
+#| msgid "Date added"
+msgid "Date modified"
+msgstr "Tanggal ditambahkan"
+
 msgid "Date"
 msgstr "Tanggal"
 
