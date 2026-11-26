@@ -3213,6 +3213,9 @@ msgstr "Pico mantenido (segundos)"
 msgid "Peak"
 msgstr "Mirar"
 
+msgid "Percent the volume changes per scroll or volume shortcut"
+msgstr ""
+
 msgid "Perceptual for a finer control at low volume; Linear for a direct scale"
 msgstr ""
 "Percibido para un control más fino en volumen bajo; Linear para tener una "
@@ -4931,6 +4934,11 @@ msgstr "Subir volumen"
 
 msgid "Volume scale"
 msgstr "Escala del volumen"
+
+#, fuzzy
+#| msgid "Volume Up"
+msgid "Volume step"
+msgstr "Subir volumen"
 
 msgid "Volume"
 msgstr "Volumen"

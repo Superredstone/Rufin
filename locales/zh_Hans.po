@@ -3103,6 +3103,9 @@ msgstr "峰值保持 (秒)"
 msgid "Peak"
 msgstr "峰值"
 
+msgid "Percent the volume changes per scroll or volume shortcut"
+msgstr ""
+
 msgid "Perceptual for a finer control at low volume; Linear for a direct scale"
 msgstr "感知在低音量下调节更精细，线性为等比例变化"
 
@@ -4804,6 +4807,11 @@ msgstr "调高音量"
 msgid "Volume scale"
 msgstr "音量曲线"
 
+#, fuzzy
+#| msgid "Volume Up"
+msgid "Volume step"
+msgstr "调高音量"
+
 msgid "Volume"
 msgstr ""
 
@@ -5099,8 +5107,8 @@ msgid ""
 "Click Next to continue."
 msgstr ""
 "Rufin 是一款原生音乐播放器，适用于 Jellyfin、Navidrome/OpenSubsonic、Plex 和 "
-"Emby 服务器；支持本地文件夹、WebDAV（包括直接通过 Nextcloud 浏览器登录的路径"
-"）、Samba 和 NAS 共享。\n"
+"Emby 服务器；支持本地文件夹、WebDAV（包括直接通过 Nextcloud 浏览器登录的路"
+"径）、Samba 和 NAS 共享。\n"
 "\n"
 "此安装程序将在您的计算机上安装 Rufin。\n"
 "\n"

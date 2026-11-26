@@ -3079,6 +3079,9 @@ msgstr ""
 msgid "Peak"
 msgstr ""
 
+msgid "Percent the volume changes per scroll or volume shortcut"
+msgstr ""
+
 msgid "Perceptual for a finer control at low volume; Linear for a direct scale"
 msgstr ""
 
@@ -4777,6 +4780,9 @@ msgid "Volume Up"
 msgstr ""
 
 msgid "Volume scale"
+msgstr ""
+
+msgid "Volume step"
 msgstr ""
 
 msgid "Volume"
