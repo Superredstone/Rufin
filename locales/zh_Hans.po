@@ -1494,6 +1494,9 @@ msgstr "正在下载"
 msgid "Downloads"
 msgstr "下载内容"
 
+msgid "Drag the ruler, or pick a line as it starts"
+msgstr ""
+
 msgid "Drag to a folder"
 msgstr ""
 
@@ -1538,6 +1541,9 @@ msgstr ""
 
 msgid "Each rating you change is also written to its file's tags"
 msgstr "每次更改评分都会写入文件标签"
+
+msgid "Earlier"
+msgstr ""
 
 msgid "Edit Lyrics"
 msgstr "编辑歌词"
@@ -2225,6 +2231,11 @@ msgstr "上次播放"
 
 msgid "Last.fm"
 msgstr "Last.fm"
+
+#, fuzzy
+#| msgid "Play Later"
+msgid "Later"
+msgstr "最后播放"
 
 msgid "Layout"
 msgstr "布局"
@@ -4005,6 +4016,9 @@ msgstr "专辑和艺人页面上的服务图标"
 
 msgid "Services"
 msgstr "服务"
+
+msgid "Set from the line you picked"
+msgstr ""
 
 msgid "Set the Discord activity type to Listening"
 msgstr "将 Discord 活动类型设置为 “正在收听”"
