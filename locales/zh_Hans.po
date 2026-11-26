@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-26 08:40+0000\n"
-"Last-Translator: Jiahao Li <thejiahao@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-11-26 13:27+0000\n"
+"Last-Translator: HPCesia <hpcesia@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/rufin/app/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -449,19 +449,19 @@ msgid "Album peak"
 msgstr ""
 
 msgid "Album radio"
-msgstr ""
+msgstr "专辑电台"
 
 msgid "Album sort"
 msgstr "专辑 (排序)"
 
 msgid "Album title"
-msgstr ""
+msgstr "专辑标题"
 
 msgid "Album tracks"
 msgstr "专辑曲目"
 
 msgid "Album unavailable"
-msgstr ""
+msgstr "专辑不可用"
 
 msgid "Album"
 msgstr "专辑"
@@ -560,10 +560,10 @@ msgid "Artist sort"
 msgstr "艺人 (排序)"
 
 msgid "Artist tracks"
-msgstr ""
+msgstr "艺人曲目"
 
 msgid "Artist unavailable"
-msgstr ""
+msgstr "艺人不可用"
 
 msgid "Artist"
 msgstr "艺人"
@@ -584,7 +584,7 @@ msgid "Artwork"
 msgstr "封面"
 
 msgid "Ascending"
-msgstr ""
+msgstr "升序"
 
 msgid "Asked in this order."
 msgstr "按此顺序查询。"
@@ -5076,7 +5076,7 @@ msgid "{stage}: {completed} / {total}"
 msgstr ""
 
 msgid "{stage}: {completed}"
-msgstr ""
+msgstr "{stage}: {completed}"
 
 #. Windows installer: FinishText.
 msgctxt "Windows installer"
@@ -5100,27 +5100,34 @@ msgid ""
 "\n"
 "Click Next to continue."
 msgstr ""
+"Rufin 是一款原生音乐播放器，适用于 Jellyfin、Navidrome/OpenSubsonic、Plex 和 "
+"Emby 服务器；支持本地文件夹、WebDAV（包括直接通过 Nextcloud 浏览器登录的路径"
+"）、Samba 和 NAS 共享。\n"
+"\n"
+"此安装程序将在您的计算机上安装 Rufin。\n"
+"\n"
+"点击“下一步”继续。"
 
 #. Windows installer: CleanupFailed.
 msgctxt "Windows installer"
 msgid ""
 "Setup could not remove the existing Rufin files. Close Rufin and try again."
-msgstr ""
+msgstr "安装程序无法删除现有的 Rufin 文件。请关闭 Rufin 并重试。"
 
 #. Windows installer: DirectoryConflict.
 msgctxt "Windows installer"
 msgid "Choose a separate installation folder."
-msgstr ""
+msgstr "请选择一个单独的安装文件夹。"
 
 #. Windows installer: CloseToInstall. {app_name} is the application display name.
 msgctxt "Windows installer"
 msgid "Close {app_name} and try the installation again."
-msgstr ""
+msgstr "关闭 {app_name}，然后重新尝试安装。"
 
 #. Windows installer: CloseToUninstall. {app_name} is the application display name.
 msgctxt "Windows installer"
 msgid "Close {app_name} and try the uninstall again."
-msgstr ""
+msgstr "关闭 {app_name}，然后重新尝试卸载。"
 
 #. Windows installer: FinishTitle.
 msgctxt "Windows installer"
@@ -5150,4 +5157,4 @@ msgstr ""
 #. Windows installer: WelcomeTitle.
 msgctxt "Windows installer"
 msgid "Welcome to Rufin Setup"
-msgstr ""
+msgstr "欢迎使用 Rufin 安装程序"
