@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-25 22:18+0000\n"
+"PO-Revision-Date: 2026-11-26 08:40+0000\n"
 "Last-Translator: Jiahao Li <thejiahao@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/rufin/app/zh_Hans/>\n"
@@ -1651,7 +1651,7 @@ msgid "Equalizer"
 msgstr "均衡器"
 
 msgid "Ever played"
-msgstr ""
+msgstr "曾经播放"
 
 msgid "Every track of your favorite albums"
 msgstr ""
@@ -2096,7 +2096,7 @@ msgid "Imports files into the library, and watches added folders for changes."
 msgstr ""
 
 msgid "In playlist"
-msgstr ""
+msgstr "播放列表"
 
 msgid "Inactive at this sample rate"
 msgstr ""
@@ -4035,7 +4035,7 @@ msgid "Show Rufin in headline"
 msgstr ""
 
 msgid "Show Rufin"
-msgstr ""
+msgstr "显示 Rufin"
 
 msgid "Show a badge for favorited items"
 msgstr "显示收藏条目角标"
@@ -4899,7 +4899,7 @@ msgid "Your {period}"
 msgstr ""
 
 msgid "above"
-msgstr ""
+msgstr "大于"
 
 msgid "after"
 msgstr ""
@@ -4914,7 +4914,7 @@ msgid "before"
 msgstr ""
 
 msgid "below"
-msgstr ""
+msgstr "小于"
 
 msgid "contains"
 msgstr "包含"
@@ -4947,10 +4947,10 @@ msgid "is not empty"
 msgstr "不为空"
 
 msgid "is not"
-msgstr ""
+msgstr "非"
 
 msgid "is"
-msgstr ""
+msgstr "为"
 
 msgid "not in the last"
 msgstr ""
@@ -4962,10 +4962,10 @@ msgid "of these"
 msgstr ""
 
 msgid "range"
-msgstr ""
+msgstr "范围"
 
 msgid "to"
-msgstr ""
+msgstr "到"
 
 msgid "today"
 msgstr "今天"
