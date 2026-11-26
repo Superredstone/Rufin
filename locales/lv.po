@@ -776,6 +776,11 @@ msgstr "BPM"
 msgid "Back"
 msgstr "Atpakaļ"
 
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Background"
+msgstr "Dinamisks fons"
+
 msgid "Backup Folder"
 msgstr "Rezerves kopijas mape"
 
@@ -1673,6 +1678,9 @@ msgstr "Diagnostikas žurnāls"
 #| msgid "Direction"
 msgid "Direct"
 msgstr "Virziens"
+
+msgid "Disable battery optimization"
+msgstr ""
 
 msgid "Disable private mode"
 msgstr "Atslēgt privāto režīmu"
@@ -2621,6 +2629,11 @@ msgstr ""
 "Saglabāt mūziku, lai tā būtu pieejama bezsaistē. Mapes izmaiņas ietekmēs "
 "tikai jaunus lejupielādes failus"
 
+#, fuzzy
+#| msgid "Keep Rufin running after closing the window"
+msgid "Keep running in the background"
+msgstr "Turpināt Rufin darbību pēc loga aizvēršanas"
+
 msgid "Keyboard Shortcuts"
 msgstr "Tastatūras saīsnes"
 
@@ -3193,6 +3206,9 @@ msgid "Nearby devices"
 msgstr "Nākamā skaņas ierīce"
 
 msgid "Nearby discovery"
+msgstr ""
+
+msgid "Needed to keep running in the background"
 msgstr ""
 
 msgid "Needs attention"
@@ -4382,6 +4398,10 @@ msgstr ""
 msgid "Rows"
 msgstr "Rindas"
 
+msgid ""
+"Rufin Connect stays reachable while the screen is off or Rufin is closed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Quick Connect"
 msgid "Rufin Connect"
@@ -4403,6 +4423,11 @@ msgstr ""
 
 msgid "Rule actions"
 msgstr "Noteikumu darbības"
+
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Running in the background"
+msgstr "Dinamisks fons"
 
 msgid "SMB / Samba"
 msgstr "SMB / Samba"

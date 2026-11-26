@@ -652,6 +652,11 @@ msgstr "BPM"
 msgid "Back"
 msgstr "返回"
 
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Background"
+msgstr "动态背景"
+
 msgid "Backup Folder"
 msgstr "备份文件夹"
 
@@ -1371,6 +1376,9 @@ msgid "Diagnostic log"
 msgstr ""
 
 msgid "Direct"
+msgstr ""
+
+msgid "Disable battery optimization"
 msgstr ""
 
 msgid "Disable private mode"
@@ -2168,6 +2176,11 @@ msgstr "关闭窗口后使应用在后台运行"
 msgid "Keep music available offline. Folder changes only affect new downloads"
 msgstr "供离线收听。更改文件夹仅对后续下载生效"
 
+#, fuzzy
+#| msgid "Keep Rufin running after closing the window"
+msgid "Keep running in the background"
+msgstr "关闭窗口后使应用在后台运行"
+
 msgid "Keyboard Shortcuts"
 msgstr "键盘快捷键"
 
@@ -2652,6 +2665,9 @@ msgstr "附近设备"
 
 msgid "Nearby discovery"
 msgstr "自动发现"
+
+msgid "Needed to keep running in the background"
+msgstr ""
 
 msgid "Needs attention"
 msgstr "需要处理"
@@ -3670,6 +3686,10 @@ msgstr "行边框"
 msgid "Rows"
 msgstr "列表"
 
+msgid ""
+"Rufin Connect stays reachable while the screen is off or Rufin is closed"
+msgstr ""
+
 msgid "Rufin Connect"
 msgstr "Rufin Connect"
 
@@ -3687,6 +3707,11 @@ msgstr ""
 
 msgid "Rule actions"
 msgstr "规则操作"
+
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Running in the background"
+msgstr "动态背景"
 
 msgid "SMB / Samba"
 msgstr "SMB / Samba"

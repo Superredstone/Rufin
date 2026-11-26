@@ -740,6 +740,9 @@ msgstr "BPM"
 msgid "Back"
 msgstr "返回"
 
+msgid "Background"
+msgstr ""
+
 #, fuzzy
 #| msgid "Music Folder"
 msgid "Backup Folder"
@@ -1671,6 +1674,9 @@ msgstr "診斷記錄"
 #| msgid "Duration"
 msgid "Direct"
 msgstr "時長"
+
+msgid "Disable battery optimization"
+msgstr ""
 
 msgid "Disable private mode"
 msgstr "禁用無痕模式"
@@ -2624,6 +2630,11 @@ msgstr "讓 Rufin 在視窗關閉後仍然保持運行"
 msgid "Keep music available offline. Folder changes only affect new downloads"
 msgstr "使音樂在離線時仍然可用。資料夾的變更只會影響新的下載"
 
+#, fuzzy
+#| msgid "Keep Rufin running after closing the window"
+msgid "Keep running in the background"
+msgstr "讓 Rufin 在視窗關閉後仍然保持運行"
+
 msgid "Keyboard Shortcuts"
 msgstr "快捷鍵"
 
@@ -3192,6 +3203,9 @@ msgid "Nearby devices"
 msgstr "下一個音訊裝置"
 
 msgid "Nearby discovery"
+msgstr ""
+
+msgid "Needed to keep running in the background"
 msgstr ""
 
 msgid "Needs attention"
@@ -4430,6 +4444,10 @@ msgstr ""
 msgid "Rows"
 msgstr "列表"
 
+msgid ""
+"Rufin Connect stays reachable while the screen is off or Rufin is closed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Connect"
 msgid "Rufin Connect"
@@ -4448,6 +4466,9 @@ msgid "Rufin needs local access to {path}"
 msgstr ""
 
 msgid "Rule actions"
+msgstr ""
+
+msgid "Running in the background"
 msgstr ""
 
 msgid "SMB / Samba"

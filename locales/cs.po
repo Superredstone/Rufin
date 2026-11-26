@@ -755,6 +755,9 @@ msgstr "BPM"
 msgid "Back"
 msgstr "Zpět"
 
+msgid "Background"
+msgstr ""
+
 #, fuzzy
 #| msgid "Music Folder"
 msgid "Backup Folder"
@@ -1708,6 +1711,9 @@ msgstr "Diagnostický protokol"
 #| msgid "DirectSound"
 msgid "Direct"
 msgstr "DirectSound"
+
+msgid "Disable battery optimization"
+msgstr ""
 
 msgid "Disable private mode"
 msgstr "Vypnout soukromý režim"
@@ -2685,6 +2691,11 @@ msgstr ""
 "Uchovávejte hudbu k dispozici i v režimu offline. Změny ve složkách se "
 "týkají pouze nově stažených souborů"
 
+#, fuzzy
+#| msgid "Keep Rufin running after closing the window"
+msgid "Keep running in the background"
+msgstr "Po zavření okna ponechat Rufin spuštěný"
+
 msgid "Keyboard Shortcuts"
 msgstr "Klávesové zkratky"
 
@@ -3267,6 +3278,9 @@ msgid "Nearby devices"
 msgstr "Další zvukové zařízení"
 
 msgid "Nearby discovery"
+msgstr ""
+
+msgid "Needed to keep running in the background"
 msgstr ""
 
 msgid "Needs attention"
@@ -4530,6 +4544,10 @@ msgstr ""
 msgid "Rows"
 msgstr "Řádky"
 
+msgid ""
+"Rufin Connect stays reachable while the screen is off or Rufin is closed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Connect"
 msgid "Rufin Connect"
@@ -4549,6 +4567,11 @@ msgstr ""
 
 msgid "Rule actions"
 msgstr "Akce založené na pravidlech"
+
+#, fuzzy
+#| msgid "Rufin is running in the tray"
+msgid "Running in the background"
+msgstr "Rufin běží v systémové liště"
 
 msgid "SMB / Samba"
 msgstr ""
@@ -6911,9 +6934,6 @@ msgstr ""
 
 #~ msgid "PulseAudio"
 #~ msgstr "PulseAudio"
-
-#~ msgid "Rufin is running in the tray"
-#~ msgstr "Rufin běží v systémové liště"
 
 #~ msgid "WASAPI"
 #~ msgstr "WASAPI"

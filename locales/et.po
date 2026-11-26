@@ -714,6 +714,11 @@ msgstr "BPM (lööki minutis)"
 msgid "Back"
 msgstr "Tagasi"
 
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Background"
+msgstr "Dünaamiline taust"
+
 msgid "Backup Folder"
 msgstr "Varunduse kaust"
 
@@ -1449,6 +1454,9 @@ msgstr "Diagnostikalogi"
 
 msgid "Direct"
 msgstr "Otsene"
+
+msgid "Disable battery optimization"
+msgstr ""
 
 msgid "Disable private mode"
 msgstr "Lülita privaatne režiim välja"
@@ -2275,6 +2283,11 @@ msgstr ""
 "Jäta muusika saadavaks ka ilma võrguühenduseta. Kasutade muudatused "
 "mõjutavad vaid uusi allalaadimisi"
 
+#, fuzzy
+#| msgid "Keep Rufin running after closing the window"
+msgid "Keep running in the background"
+msgstr "Jäta Rufin peale akna sulgemist tööle"
+
 msgid "Keyboard Shortcuts"
 msgstr "Klaviatuuri kiirklahvid"
 
@@ -2794,6 +2807,9 @@ msgstr "Seadmed läheduses"
 
 msgid "Nearby discovery"
 msgstr "Tuvastamine lähedusest"
+
+msgid "Needed to keep running in the background"
+msgstr ""
 
 msgid "Needs attention"
 msgstr "Vajab tähelepanu"
@@ -3878,6 +3894,10 @@ msgstr "Ridade piirjooned"
 msgid "Rows"
 msgstr "Read"
 
+msgid ""
+"Rufin Connect stays reachable while the screen is off or Rufin is closed"
+msgstr ""
+
 msgid "Rufin Connect"
 msgstr "Rufin Connect"
 
@@ -3895,6 +3915,11 @@ msgstr ""
 
 msgid "Rule actions"
 msgstr "Toiminguid reeglite alusel"
+
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Running in the background"
+msgstr "Dünaamiline taust"
 
 msgid "SMB / Samba"
 msgstr "SMB / Samba"

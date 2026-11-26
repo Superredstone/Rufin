@@ -721,6 +721,11 @@ msgstr "BPM"
 msgid "Back"
 msgstr "Geri"
 
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Background"
+msgstr "Dinamik arka plan"
+
 msgid "Backup Folder"
 msgstr "Yedek Klasörü"
 
@@ -1462,6 +1467,9 @@ msgstr "Tanılama günlüğü"
 
 msgid "Direct"
 msgstr "Doğrudan"
+
+msgid "Disable battery optimization"
+msgstr ""
 
 msgid "Disable private mode"
 msgstr "Gizli modu devre dışı bırak"
@@ -2289,6 +2297,11 @@ msgstr ""
 "Müziği çevrimdışı kullanılabilir tut. Klasör değişiklikleri yalnızca yeni "
 "indirmeleri etkiler"
 
+#, fuzzy
+#| msgid "Keep Rufin running after closing the window"
+msgid "Keep running in the background"
+msgstr "Pencereyi kapattıktan sonra Rufin'i çalışır durumda tut"
+
 msgid "Keyboard Shortcuts"
 msgstr "Klavye Kısayolları"
 
@@ -2785,6 +2798,9 @@ msgstr "Yakındaki cihazlar"
 
 msgid "Nearby discovery"
 msgstr "Yakındaki keşif"
+
+msgid "Needed to keep running in the background"
+msgstr ""
 
 msgid "Needs attention"
 msgstr "Dikkat gerekiyor"
@@ -3823,6 +3839,10 @@ msgstr "Satır kenarlıkları"
 msgid "Rows"
 msgstr "Satırlar"
 
+msgid ""
+"Rufin Connect stays reachable while the screen is off or Rufin is closed"
+msgstr ""
+
 msgid "Rufin Connect"
 msgstr "Rufin Bağlan"
 
@@ -3840,6 +3860,11 @@ msgstr "Rufin'in {path} için yerel erişime ihtiyacı var"
 
 msgid "Rule actions"
 msgstr "Kural eylemleri"
+
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Running in the background"
+msgstr "Dinamik arka plan"
 
 msgid "SMB / Samba"
 msgstr "SMB / Samba"

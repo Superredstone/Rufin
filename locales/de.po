@@ -735,6 +735,11 @@ msgstr "BPM"
 msgid "Back"
 msgstr "Zurück"
 
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Background"
+msgstr "Dynamischer Hintergrund"
+
 msgid "Backup Folder"
 msgstr "Sicherungsordner"
 
@@ -1468,6 +1473,9 @@ msgstr "Diagnoseprotokoll"
 
 msgid "Direct"
 msgstr "Direkt"
+
+msgid "Disable battery optimization"
+msgstr ""
 
 msgid "Disable private mode"
 msgstr "Privaten Modus deaktivieren"
@@ -2285,6 +2293,11 @@ msgstr ""
 "Musik offline verfügbar halten. Änderungen am Ordner betreffen nur neue "
 "Downloads"
 
+#, fuzzy
+#| msgid "Keep Rufin running after closing the window"
+msgid "Keep running in the background"
+msgstr "Rufin nach dem Schließen des Fensters weiter ausführen"
+
 msgid "Keyboard Shortcuts"
 msgstr "Tastenkürzel"
 
@@ -2782,6 +2795,9 @@ msgstr "Geräte in der Nähe"
 
 msgid "Nearby discovery"
 msgstr "Suche in der Nähe"
+
+msgid "Needed to keep running in the background"
+msgstr ""
 
 msgid "Needs attention"
 msgstr "Erfordert Aufmerksamkeit"
@@ -3810,6 +3826,10 @@ msgstr "Zeilenrahmen"
 msgid "Rows"
 msgstr "Reihen"
 
+msgid ""
+"Rufin Connect stays reachable while the screen is off or Rufin is closed"
+msgstr ""
+
 msgid "Rufin Connect"
 msgstr "Rufin Connect"
 
@@ -3827,6 +3847,11 @@ msgstr "Rufin benötigt lokalen Zugriff auf {path}"
 
 msgid "Rule actions"
 msgstr "Regelaktionen"
+
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Running in the background"
+msgstr "Dynamischer Hintergrund"
 
 msgid "SMB / Samba"
 msgstr "SMB / Samba"
