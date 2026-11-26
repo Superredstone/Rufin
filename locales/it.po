@@ -758,6 +758,11 @@ msgstr "BPM"
 msgid "Back"
 msgstr "Indietro"
 
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Background"
+msgstr "Sfondo dinamico"
+
 msgid "Backup Folder"
 msgstr "Cartella di Backup"
 
@@ -1493,6 +1498,11 @@ msgstr ""
 msgid "Date added"
 msgstr "Data aggiunta"
 
+#, fuzzy
+#| msgid "Date added"
+msgid "Date modified"
+msgstr "Data aggiunta"
+
 msgid "Date"
 msgstr ""
 
@@ -1622,6 +1632,9 @@ msgstr "Log di diagnostica"
 #| msgid "Direction"
 msgid "Direct"
 msgstr "Direzione"
+
+msgid "Disable battery optimization"
+msgstr ""
 
 msgid "Disable private mode"
 msgstr "Disabilita modalità privata"
@@ -2503,6 +2516,9 @@ msgstr ""
 msgid "Keep music available offline. Folder changes only affect new downloads"
 msgstr ""
 
+msgid "Keep running in the background"
+msgstr ""
+
 msgid "Keyboard Shortcuts"
 msgstr ""
 
@@ -3018,6 +3034,9 @@ msgid "Nearby devices"
 msgstr ""
 
 msgid "Nearby discovery"
+msgstr ""
+
+msgid "Needed to keep running in the background"
 msgstr ""
 
 msgid "Needs attention"
@@ -4097,6 +4116,10 @@ msgstr ""
 msgid "Rows"
 msgstr ""
 
+msgid ""
+"Rufin Connect stays reachable while the screen is off or Rufin is closed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Connect"
 msgid "Rufin Connect"
@@ -4116,6 +4139,11 @@ msgstr ""
 
 msgid "Rule actions"
 msgstr ""
+
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Running in the background"
+msgstr "Sfondo dinamico"
 
 msgid "SMB / Samba"
 msgstr ""

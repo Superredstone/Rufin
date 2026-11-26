@@ -740,6 +740,11 @@ msgstr ""
 msgid "Back"
 msgstr "Taaksepäin"
 
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Background"
+msgstr "Dynaaminen tausta"
+
 msgid "Backup Folder"
 msgstr ""
 
@@ -1481,6 +1486,11 @@ msgstr ""
 msgid "Date added"
 msgstr "Lisäyspäivä"
 
+#, fuzzy
+#| msgid "Date added"
+msgid "Date modified"
+msgstr "Lisäyspäivä"
+
 msgid "Date"
 msgstr ""
 
@@ -1610,6 +1620,9 @@ msgstr "Diagnostiikkaloki"
 #| msgid "Direction"
 msgid "Direct"
 msgstr "Suunta"
+
+msgid "Disable battery optimization"
+msgstr ""
 
 msgid "Disable private mode"
 msgstr "Poista yksityinen tila käytöstä"
@@ -2545,6 +2558,11 @@ msgstr "Pidä Rufin käynnissä ikkunan sulkemisen jälkeen"
 msgid "Keep music available offline. Folder changes only affect new downloads"
 msgstr ""
 
+#, fuzzy
+#| msgid "Keep Rufin running after closing the window"
+msgid "Keep running in the background"
+msgstr "Pidä Rufin käynnissä ikkunan sulkemisen jälkeen"
+
 msgid "Keyboard Shortcuts"
 msgstr "Pikanäppäimet"
 
@@ -3100,6 +3118,9 @@ msgid "Nearby devices"
 msgstr "Lähellä olevat laitteet"
 
 msgid "Nearby discovery"
+msgstr ""
+
+msgid "Needed to keep running in the background"
 msgstr ""
 
 msgid "Needs attention"
@@ -4304,6 +4325,10 @@ msgstr ""
 msgid "Rows"
 msgstr "Rivit"
 
+msgid ""
+"Rufin Connect stays reachable while the screen is off or Rufin is closed"
+msgstr ""
+
 #, fuzzy
 #| msgid "Connect"
 msgid "Rufin Connect"
@@ -4323,6 +4348,11 @@ msgstr ""
 
 msgid "Rule actions"
 msgstr "Säännön toiminnot"
+
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Running in the background"
+msgstr "Dynaaminen tausta"
 
 msgid "SMB / Samba"
 msgstr "SMB / Samba"

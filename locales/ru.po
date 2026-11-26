@@ -747,6 +747,11 @@ msgstr "BPM"
 msgid "Back"
 msgstr "Назад"
 
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Background"
+msgstr "Динамический фон"
+
 msgid "Backup Folder"
 msgstr "Папка для резервных копий"
 
@@ -1383,6 +1388,11 @@ msgstr ""
 msgid "Date added"
 msgstr "Дата добавления"
 
+#, fuzzy
+#| msgid "Date added"
+msgid "Date modified"
+msgstr "Дата добавления"
+
 msgid "Date"
 msgstr "Дата"
 
@@ -1495,6 +1505,9 @@ msgstr "Журнал диагностики"
 
 msgid "Direct"
 msgstr "Прямой"
+
+msgid "Disable battery optimization"
+msgstr ""
 
 msgid "Disable private mode"
 msgstr "Отключить приватный режим"
@@ -2349,6 +2362,11 @@ msgstr ""
 "Сделать музыку доступной в автономном режиме. Изменения в папке будут влиять "
 "только на новые загрузки"
 
+#, fuzzy
+#| msgid "Keep Rufin running after closing the window"
+msgid "Keep running in the background"
+msgstr "Не останавливать работу Rufin после закрытия окна"
+
 msgid "Keyboard Shortcuts"
 msgstr "Сочетания клавиш"
 
@@ -2877,6 +2895,9 @@ msgstr "Ближайшие устройства"
 
 msgid "Nearby discovery"
 msgstr "Обнаружение поблизости"
+
+msgid "Needed to keep running in the background"
+msgstr ""
 
 msgid "Needs attention"
 msgstr "Требуется внимание"
@@ -3955,6 +3976,10 @@ msgstr "Границы строк"
 msgid "Rows"
 msgstr "Строки"
 
+msgid ""
+"Rufin Connect stays reachable while the screen is off or Rufin is closed"
+msgstr ""
+
 msgid "Rufin Connect"
 msgstr "Rufin Connect"
 
@@ -3972,6 +3997,11 @@ msgstr "Rufin нужен локальный доступ к {path}"
 
 msgid "Rule actions"
 msgstr "Действия с правилами"
+
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Running in the background"
+msgstr "Динамический фон"
 
 msgid "SMB / Samba"
 msgstr "SMB / Samba"

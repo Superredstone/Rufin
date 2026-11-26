@@ -756,6 +756,11 @@ msgstr "BPM"
 msgid "Back"
 msgstr "Kembali"
 
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Background"
+msgstr "Latar belakang dinamis"
+
 msgid "Backup Folder"
 msgstr "Folder Cadangan"
 
@@ -1398,6 +1403,11 @@ msgstr ""
 msgid "Date added"
 msgstr "Tanggal ditambahkan"
 
+#, fuzzy
+#| msgid "Date added"
+msgid "Date modified"
+msgstr "Tanggal ditambahkan"
+
 msgid "Date"
 msgstr "Tanggal"
 
@@ -1512,6 +1522,9 @@ msgstr "Log diagnostik"
 
 msgid "Direct"
 msgstr "Langsung"
+
+msgid "Disable battery optimization"
+msgstr ""
 
 msgid "Disable private mode"
 msgstr "Matikan mode privat"
@@ -2380,6 +2393,11 @@ msgstr ""
 "Simpan musik agar tersedia saat offline. Perubahan folder hanya berlaku "
 "untuk unduhan baru"
 
+#, fuzzy
+#| msgid "Keep Rufin running after closing the window"
+msgid "Keep running in the background"
+msgstr "Biarkan Rufin berjalan setelah jendela ditutup"
+
 msgid "Keyboard Shortcuts"
 msgstr "Pintasan Keyboard"
 
@@ -2899,6 +2917,9 @@ msgstr "Perangkat di sekitar"
 
 msgid "Nearby discovery"
 msgstr "Deteksi perangkat sekitar"
+
+msgid "Needed to keep running in the background"
+msgstr ""
 
 msgid "Needs attention"
 msgstr "Perlu perhatian"
@@ -3972,6 +3993,10 @@ msgstr "Garis tepi baris"
 msgid "Rows"
 msgstr "Baris"
 
+msgid ""
+"Rufin Connect stays reachable while the screen is off or Rufin is closed"
+msgstr ""
+
 #, fuzzy
 msgid "Rufin Connect"
 msgstr "Rufin Connect"
@@ -3991,6 +4016,11 @@ msgstr "Rufin butuh akses lokal ke {path}"
 
 msgid "Rule actions"
 msgstr "Tindakan aturan"
+
+#, fuzzy
+#| msgid "Dynamic background"
+msgid "Running in the background"
+msgstr "Latar belakang dinamis"
 
 #, fuzzy
 msgid "SMB / Samba"
