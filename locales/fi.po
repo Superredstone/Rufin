@@ -3628,6 +3628,9 @@ msgstr ""
 msgid "Peak"
 msgstr ""
 
+msgid "Percent the volume changes per scroll or volume shortcut"
+msgstr ""
+
 msgid "Perceptual for a finer control at low volume; Linear for a direct scale"
 msgstr ""
 
@@ -5655,6 +5658,11 @@ msgstr "Äänenvoimakkuus ylös"
 
 msgid "Volume scale"
 msgstr "Äänenvoimakkuuden asteikko"
+
+#, fuzzy
+#| msgid "Volume Up"
+msgid "Volume step"
+msgstr "Äänenvoimakkuus ylös"
 
 #, fuzzy
 #| msgid "Columns"

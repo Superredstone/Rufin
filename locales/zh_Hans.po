@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: Rufin\n"
 "Report-Msgid-Bugs-To: https://github.com/rufin-app/rufin/issues\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2026-11-26 13:39+0000\n"
-"Last-Translator: HPCesia <me@hpcesia.com>\n"
+"PO-Revision-Date: 2026-11-26 16:28+0000\n"
+"Last-Translator: Jiahao Li <thejiahao@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/rufin/app/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -188,7 +188,7 @@ msgstr ""
 msgid ""
 "Some changes were saved. Close this editor and reopen it to review the "
 "result."
-msgstr "部分更改已保存。关闭此编辑器后重新打开，以查看结果。"
+msgstr "部分更改已保存。请重新打开编辑器以查看结果。"
 
 msgid ""
 "Temporary library storage is in use. Changes may be lost when Rufin closes."
@@ -443,10 +443,10 @@ msgid "Album details"
 msgstr "专辑详情"
 
 msgid "Album gain"
-msgstr ""
+msgstr "专辑增益"
 
 msgid "Album peak"
-msgstr ""
+msgstr "专辑峰值"
 
 msgid "Album radio"
 msgstr "专辑电台"
@@ -500,7 +500,7 @@ msgid "Alternate row colors"
 msgstr "隔行变色"
 
 msgid "Anonymous (WebDAV / SMB)"
-msgstr ""
+msgstr "匿名 (WebDAV / SMB)"
 
 msgid "Anonymous"
 msgstr "匿名"
@@ -524,7 +524,7 @@ msgid "Application name"
 msgstr "应用名称"
 
 msgid "Applies to sidebar and fullscreen separately"
-msgstr ""
+msgstr "侧栏与全屏为独立设置"
 
 msgid "Apply"
 msgstr "应用"
@@ -572,7 +572,7 @@ msgid "Artists"
 msgstr "艺人"
 
 msgid "Artwork editing is no longer available"
-msgstr ""
+msgstr "封面编辑不可用"
 
 msgid "Artwork selected"
 msgstr ""
@@ -626,7 +626,7 @@ msgid "Auto DJ"
 msgstr "自动 DJ"
 
 msgid "Auto"
-msgstr ""
+msgstr "自动"
 
 msgid "AutoEQ / APO"
 msgstr "AutoEQ / APO"
@@ -652,10 +652,8 @@ msgstr "BPM"
 msgid "Back"
 msgstr "返回"
 
-#, fuzzy
-#| msgid "Dynamic background"
 msgid "Background"
-msgstr "动态背景"
+msgstr "背景"
 
 msgid "Backup Folder"
 msgstr "备份文件夹"
@@ -685,16 +683,16 @@ msgid "Balance"
 msgstr "平衡"
 
 msgid "Band layout"
-msgstr ""
+msgstr "频段布局"
 
 msgid "Band"
-msgstr ""
+msgstr "频段"
 
 msgid "Bands"
-msgstr ""
+msgstr "频段"
 
 msgid "Bandwidth"
-msgstr ""
+msgstr "带宽"
 
 msgid "Bar count"
 msgstr "柱数"
@@ -721,7 +719,7 @@ msgid "Bitrate"
 msgstr "码率"
 
 msgid "Bitstream"
-msgstr ""
+msgstr "比特流"
 
 msgid "Blocks"
 msgstr "模块"
@@ -745,7 +743,7 @@ msgid "C"
 msgstr "C"
 
 msgid "CUE file"
-msgstr ""
+msgstr "CUE 文件"
 
 msgid "Cache streamed tracks"
 msgstr "缓存串流曲目"
@@ -908,7 +906,7 @@ msgid "Clear artwork cache"
 msgstr "清除封面缓存"
 
 msgid "Clear fetched lyrics for this track"
-msgstr "清空此曲目已抓取的歌词"
+msgstr "清除为当前曲目抓取的歌词"
 
 msgid "Clear fingerprint cache"
 msgstr "清除指纹缓存"
@@ -971,7 +969,7 @@ msgid "Collections"
 msgstr "合集"
 
 msgid "Color for the active word during playback"
-msgstr ""
+msgstr "当前播放字词的颜色"
 
 msgid "Colored"
 msgstr "彩色"
@@ -1260,7 +1258,7 @@ msgid "Dark"
 msgstr "深色"
 
 msgid "Database sizes show stored data, excluding database overhead."
-msgstr ""
+msgstr "数据库大小仅包含已存储数据，不含数据库开销。"
 
 msgid "Date added"
 msgstr "添加日期"
@@ -1292,7 +1290,7 @@ msgid "December {year}"
 msgstr "{year} 年 12 月"
 
 msgid "Decrease"
-msgstr ""
+msgstr "调低"
 
 msgid "Default channel"
 msgstr ""
@@ -1367,7 +1365,7 @@ msgid "Device name"
 msgstr "设备名称"
 
 msgid "Device"
-msgstr ""
+msgstr "设备"
 
 msgid "Diagnostic log saved"
 msgstr ""
@@ -1555,13 +1553,13 @@ msgid "Edit Smart Playlist"
 msgstr "编辑智能播放列表"
 
 msgid "Edit Source"
-msgstr ""
+msgstr "编辑数据源"
 
 msgid "Edit Station"
-msgstr ""
+msgstr "编辑电台"
 
 msgid "Edit lyrics"
-msgstr ""
+msgstr "编辑歌词"
 
 msgid "Edit metadata"
 msgstr "编辑元数据"
@@ -1870,7 +1868,7 @@ msgid "Font family"
 msgstr "字体"
 
 msgid "Font size (px)"
-msgstr "字体大小（px）"
+msgstr "字体大小 (px)"
 
 msgid "For this import or export only. Leave empty for an unencrypted archive."
 msgstr "仅用于本次导入或导出。留空则不加密。"
@@ -2111,7 +2109,7 @@ msgid "Include detailed Rufin diagnostics in this session"
 msgstr "记录本次会话的详细诊断信息"
 
 msgid "Increase"
-msgstr ""
+msgstr "调高"
 
 msgid "Install available updates when Rufin starts"
 msgstr "Rufin 启动时安装可用更新"
@@ -2168,13 +2166,13 @@ msgid "June {year}"
 msgstr "{year} 年 6 月"
 
 msgid "Karaoke Playback"
-msgstr ""
+msgstr "卡拉 OK 播放"
 
 msgid "Karaoke highlight color"
-msgstr ""
+msgstr "卡拉 OK 高亮色"
 
 msgid "Karaoke mode"
-msgstr ""
+msgstr "卡拉 OK 模式"
 
 msgid "Keep Rufin running after closing the window"
 msgstr "关闭窗口后使应用在后台运行"
@@ -2206,7 +2204,7 @@ msgid "Labels"
 msgstr ""
 
 msgid "Language and readings"
-msgstr ""
+msgstr "语言与读音"
 
 msgid "Language"
 msgstr "语言"
@@ -2289,13 +2287,13 @@ msgid "Link exported file"
 msgstr ""
 
 msgid "Link to file..."
-msgstr ""
+msgstr "关联文件…"
 
 msgid "Link"
 msgstr ""
 
 msgid "Linked file"
-msgstr ""
+msgstr "关联文件"
 
 msgid "Links"
 msgstr ""
@@ -2420,7 +2418,7 @@ msgid "Lyrics loaded"
 msgstr ""
 
 msgid "Lyrics offset (ms)"
-msgstr ""
+msgstr "歌词偏移 (ms)"
 
 msgid "Lyrics storage"
 msgstr "歌词存储"
@@ -2483,7 +2481,7 @@ msgid "Metadata changed before it was saved. Reload it before trying again."
 msgstr ""
 
 msgid "Metadata editing is no longer available"
-msgstr ""
+msgstr "元数据编辑不可用"
 
 msgid "Metadata editing requires Local access"
 msgstr ""
@@ -2603,7 +2601,7 @@ msgid "Music folder"
 msgstr "音乐文件夹"
 
 msgid "Music folders on the Rufin machine"
-msgstr ""
+msgstr "Rufin 设备上的音乐文件夹"
 
 msgid "Music on this phone"
 msgstr ""
@@ -2645,7 +2643,7 @@ msgid "Muted"
 msgstr ""
 
 msgid "My music"
-msgstr ""
+msgstr "我的音乐"
 
 msgid "Name or stream address"
 msgstr ""
@@ -2711,7 +2709,7 @@ msgid "New download rule"
 msgstr "新建下载规则"
 
 msgid "New file"
-msgstr ""
+msgstr "更换文件"
 
 msgid "New folder"
 msgstr "新建文件夹"
@@ -2771,7 +2769,7 @@ msgid "No favorites yet"
 msgstr "暂无收藏"
 
 msgid "No file linked"
-msgstr ""
+msgstr "未关联文件"
 
 msgid "No folders selected"
 msgstr ""
@@ -2795,7 +2793,7 @@ msgid "No lyrics available."
 msgstr ""
 
 msgid "No lyrics"
-msgstr ""
+msgstr "无歌词"
 
 msgid "No matching track in this release"
 msgstr ""
@@ -2915,7 +2913,7 @@ msgid "Off only for a server you control"
 msgstr ""
 
 msgid "Off"
-msgstr "已关闭"
+msgstr "禁用"
 
 msgid "Offline"
 msgstr "离线"
@@ -2924,7 +2922,7 @@ msgid "On repeat"
 msgstr "循环播放"
 
 msgid "On"
-msgstr ""
+msgstr "启用"
 
 msgid "One Name: Value header per line"
 msgstr "每行一个 “名称: 值” 标头"
@@ -3074,7 +3072,7 @@ msgid "Paste"
 msgstr "粘贴"
 
 msgid "Path format"
-msgstr ""
+msgstr "路径格式"
 
 msgid "Path in Source"
 msgstr ""
@@ -3102,6 +3100,9 @@ msgstr "峰值保持 (秒)"
 
 msgid "Peak"
 msgstr "峰值"
+
+msgid "Percent the volume changes per scroll or volume shortcut"
+msgstr ""
 
 msgid "Perceptual for a finer control at low volume; Linear for a direct scale"
 msgstr "感知在低音量下调节更精细，线性为等比例变化"
@@ -3206,13 +3207,13 @@ msgid "Playlist File"
 msgstr "播放列表文件"
 
 msgid "Playlist file changed"
-msgstr ""
+msgstr "播放列表文件已更改"
 
 msgid "Playlist files"
 msgstr ""
 
 msgid "Playlist name"
-msgstr ""
+msgstr "播放列表名称"
 
 msgid "Playlist order"
 msgstr "播放列表内顺序"
@@ -3257,7 +3258,7 @@ msgid "Prefer server lyrics"
 msgstr "优先使用服务器歌词"
 
 msgid "Prefer translations"
-msgstr ""
+msgstr "优先使用翻译"
 
 msgid "Preferences"
 msgstr "首选项"
@@ -3338,7 +3339,7 @@ msgid "Proxy casting through Rufin"
 msgstr "投放由 Rufin 代理"
 
 msgid "Public"
-msgstr ""
+msgstr "公开"
 
 msgid "Purple"
 msgstr "紫色"
@@ -3386,7 +3387,7 @@ msgid "Reading tags..."
 msgstr ""
 
 msgid "Ready"
-msgstr ""
+msgstr "就绪"
 
 msgid "Receiving profile"
 msgstr "正在接收配置文件"
@@ -3431,7 +3432,7 @@ msgid "Reduce motion"
 msgstr "减少动画"
 
 msgid "Refresh automatically"
-msgstr ""
+msgstr "自动刷新"
 
 msgid "Refresh"
 msgstr "刷新"
@@ -3443,13 +3444,13 @@ msgid "Regenerate access token?"
 msgstr "重新生成访问令牌？"
 
 msgid "Regenerate"
-msgstr ""
+msgstr "重新生成"
 
 msgid "Related"
 msgstr "相关"
 
 msgid "Relative"
-msgstr ""
+msgstr "相对"
 
 msgid "Relay address"
 msgstr "中继地址"
@@ -3476,7 +3477,7 @@ msgid "Released {year}"
 msgstr "{year} 年发行"
 
 msgid "Reload from file"
-msgstr ""
+msgstr "重新加载文件"
 
 msgid "Reload metadata to review the current values."
 msgstr ""
@@ -3488,7 +3489,7 @@ msgid "Reload to apply changes"
 msgstr ""
 
 msgid "Reload"
-msgstr ""
+msgstr "重新加载"
 
 msgid "Remix"
 msgstr "混音"
@@ -3605,13 +3606,13 @@ msgid "Repeat"
 msgstr "循环播放"
 
 msgid "Replace file contents"
-msgstr ""
+msgstr "覆盖文件内容"
 
 msgid "Replace saved custom headers"
 msgstr ""
 
 msgid "ReplayGain tags"
-msgstr ""
+msgstr "回放增益标签"
 
 msgid "ReplayGain"
 msgstr "回放增益"
@@ -3662,7 +3663,7 @@ msgid "Resync Library"
 msgstr "重新同步媒体库"
 
 msgid "Retry"
-msgstr ""
+msgstr "重试"
 
 msgid "Reverse order"
 msgstr ""
@@ -3752,10 +3753,10 @@ msgid "Save Server Settings"
 msgstr "保存服务器设置"
 
 msgid "Save action saves the lyrics directly to your source"
-msgstr ""
+msgstr "保存时会将歌词存入数据源"
 
 msgid "Save changes automatically"
-msgstr ""
+msgstr "自动保存变更"
 
 msgid "Save in folder"
 msgstr "保存到文件夹"
@@ -3796,7 +3797,7 @@ msgid "Saved..."
 msgstr ""
 
 msgid "Saves lyrics to your source"
-msgstr ""
+msgstr "保存歌词到数据源"
 
 msgid "Saving..."
 msgstr ""
@@ -3991,7 +3992,7 @@ msgid "Server Sample"
 msgstr ""
 
 msgid "Server Settings"
-msgstr ""
+msgstr "服务器设置"
 
 msgid "Server URL"
 msgstr "服务器地址"
@@ -4259,7 +4260,7 @@ msgid "Sort by"
 msgstr "排序依据"
 
 msgid "Sort name"
-msgstr ""
+msgstr "名称 (排序)"
 
 msgid "Sort title"
 msgstr "标题 (排序)"
@@ -4280,7 +4281,7 @@ msgid "Source setup is unavailable"
 msgstr ""
 
 msgid "Source type"
-msgstr ""
+msgstr "数据源类型"
 
 msgid "Source"
 msgstr "数据源"
@@ -4562,13 +4563,13 @@ msgid "Track details"
 msgstr "曲目详情"
 
 msgid "Track gain"
-msgstr ""
+msgstr "曲目增益"
 
 msgid "Track number"
 msgstr "曲目编号"
 
 msgid "Track peak"
-msgstr ""
+msgstr "曲目峰值"
 
 msgid "Track radio"
 msgstr ""
@@ -4604,7 +4605,7 @@ msgid "Transition mode"
 msgstr "过渡模式"
 
 msgid "Translation language"
-msgstr ""
+msgstr "翻译语言"
 
 msgid "Tray icon"
 msgstr "托盘图标"
@@ -4616,7 +4617,7 @@ msgid "Troubleshooting"
 msgstr "故障排除"
 
 msgid "Trust self-signed certificate"
-msgstr ""
+msgstr "信任自签名证书"
 
 msgid "Tuesday"
 msgstr "星期二"
@@ -4643,7 +4644,7 @@ msgid "Type to search"
 msgstr "输入以搜索"
 
 msgid "Typography"
-msgstr ""
+msgstr "排版"
 
 msgid "UPnP"
 msgstr ""
@@ -4664,7 +4665,7 @@ msgid "Unknown disc"
 msgstr ""
 
 msgid "Unlink"
-msgstr ""
+msgstr "解除关联"
 
 msgid "Unmute"
 msgstr ""
@@ -4706,7 +4707,7 @@ msgid "Use Saved Login"
 msgstr ""
 
 msgid "Use This Source"
-msgstr ""
+msgstr "使用此数据源"
 
 msgid "Use a number above zero"
 msgstr ""
@@ -4748,7 +4749,7 @@ msgid "Use sort tags"
 msgstr "使用排序标签"
 
 msgid "Use source setting"
-msgstr ""
+msgstr "跟随数据源设置"
 
 msgid "User flatpak:"
 msgstr ""
@@ -4769,7 +4770,7 @@ msgid "Username"
 msgstr "用户名"
 
 msgid "Uses available karaoke lyrics or fetches them from the internet"
-msgstr ""
+msgstr "使用现有卡拉 OK 歌词，或从网络抓取"
 
 msgid "Verification Code"
 msgstr "验证码"
@@ -4803,6 +4804,11 @@ msgstr "调高音量"
 
 msgid "Volume scale"
 msgstr "音量曲线"
+
+#, fuzzy
+#| msgid "Volume Up"
+msgid "Volume step"
+msgstr "调高音量"
 
 msgid "Volume"
 msgstr ""
@@ -4988,7 +4994,7 @@ msgid "yesterday"
 msgstr "昨天"
 
 msgid "{action} (Shuffle)"
-msgstr "{action}（随机播放）"
+msgstr "{action} (随机播放)"
 
 msgid "{completed} of {total} ({cached} cached)"
 msgstr ""
@@ -5098,13 +5104,13 @@ msgid ""
 "\n"
 "Click Next to continue."
 msgstr ""
-"Rufin 是一款原生音乐播放器，适用于 Jellyfin、Navidrome/OpenSubsonic、Plex 和 "
-"Emby 服务器；支持本地文件夹、WebDAV（包括直接通过 Nextcloud 浏览器登录的路径"
-"）、Samba 和 NAS 共享。\n"
+"Rufin 是一款原生音乐播放器，支持 Jellyfin、Navidrome/OpenSubsonic、Plex 和 "
+"Emby 服务器，以及本地文件夹、WebDAV (支持 Nextcloud 网页端快捷登录)、Samba "
+"和 NAS 共享。\n"
 "\n"
-"此安装程序将在您的计算机上安装 Rufin。\n"
+"本程序将在你的电脑上安装 Rufin。\n"
 "\n"
-"点击“下一步”继续。"
+"点击 “下一步” 继续。"
 
 #. Windows installer: CleanupFailed.
 msgctxt "Windows installer"

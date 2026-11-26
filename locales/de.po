@@ -3239,6 +3239,9 @@ msgstr "Spitzenwert halten (Sekunden)"
 msgid "Peak"
 msgstr "Peak"
 
+msgid "Percent the volume changes per scroll or volume shortcut"
+msgstr ""
+
 msgid "Perceptual for a finer control at low volume; Linear for a direct scale"
 msgstr ""
 "Wahrnehmungsbezogen für eine feinere Regelung bei niedriger Lautstärke; "
@@ -4956,6 +4959,11 @@ msgstr "Lautstärke erhöhen"
 
 msgid "Volume scale"
 msgstr "Lautstärkeskala"
+
+#, fuzzy
+#| msgid "Volume Up"
+msgid "Volume step"
+msgstr "Lautstärke erhöhen"
 
 msgid "Volume"
 msgstr "Lautstärke"
