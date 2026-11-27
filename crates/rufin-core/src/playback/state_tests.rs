@@ -2181,6 +2181,7 @@ async fn next_and_previous_skip_ten_seconds_within_a_podcast_episode() {
                     music_folder_id: None,
                     local_access: None,
                     enable_half_stars: false,
+                    write_ratings: false,
                 }];
                 Ok(())
             })

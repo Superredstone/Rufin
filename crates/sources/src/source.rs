@@ -1549,9 +1549,9 @@ impl Source {
 
     async fn freshness(&self) -> SourceResult<Option<Freshness>> {
         match &self.implementation {
-            Implementation::Plex(_) | Implementation::JellyfinEmby(_) | Implementation::Podcasts(_) => {
-                Ok(None)
-            }
+            Implementation::Plex(_)
+            | Implementation::JellyfinEmby(_)
+            | Implementation::Podcasts(_) => Ok(None),
             Implementation::Local(source) => source.freshness().await,
             Implementation::Files(source) => source.freshness().await,
             Implementation::OpenSubsonic(source) => source.freshness().await,
@@ -1566,7 +1566,10 @@ impl Source {
             Implementation::Plex(source) => source.on_local_address(),
             Implementation::JellyfinEmby(source) => source.on_local_address(),
             Implementation::OpenSubsonic(source) => source.on_local_address(),
-            Implementation::Files(_) | Implementation::Local(_) | Implementation::Peer(_) => false,
+            Implementation::Files(_)
+            | Implementation::Local(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => false,
         }
     }
 
@@ -2355,7 +2358,10 @@ impl Source {
                 first.len(),
                 false,
             ),
-            Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => {
+            Implementation::Local(_)
+            | Implementation::Files(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => {
                 return Err(NO_SERVER_PLAYLISTS);
             }
         };
@@ -2393,9 +2399,10 @@ impl Source {
             Implementation::OpenSubsonic(provider) => {
                 provider.update_playlist(playlist, name, public).await
             }
-            Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => {
-                Err(NO_SERVER_PLAYLISTS)
-            }
+            Implementation::Local(_)
+            | Implementation::Files(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => Err(NO_SERVER_PLAYLISTS),
         }
     }
 
@@ -2412,9 +2419,10 @@ impl Source {
             Implementation::OpenSubsonic(provider) => {
                 provider.change_playlist_artwork(playlist, change).await
             }
-            Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => {
-                Err(NO_SERVER_PLAYLISTS)
-            }
+            Implementation::Local(_)
+            | Implementation::Files(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => Err(NO_SERVER_PLAYLISTS),
         }
     }
 
@@ -2423,9 +2431,10 @@ impl Source {
             Implementation::Plex(provider) => provider.delete_playlist(playlist).await,
             Implementation::JellyfinEmby(provider) => provider.delete_item(playlist).await,
             Implementation::OpenSubsonic(provider) => provider.delete_playlist(playlist).await,
-            Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => {
-                Err(NO_SERVER_PLAYLISTS)
-            }
+            Implementation::Local(_)
+            | Implementation::Files(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => Err(NO_SERVER_PLAYLISTS),
         }
     }
 
@@ -2474,9 +2483,10 @@ impl Source {
                 Implementation::OpenSubsonic(provider) => {
                     provider.edit_playlist_entries(playlist, &[], chunk).await
                 }
-                Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => {
-                    Err(NO_SERVER_PLAYLISTS)
-                }
+                Implementation::Local(_)
+                | Implementation::Files(_)
+                | Implementation::Peer(_)
+                | Implementation::Podcasts(_) => Err(NO_SERVER_PLAYLISTS),
             }
             .map_err(|error| (index * 256, error))?;
         }
@@ -2513,9 +2523,10 @@ impl Source {
             Implementation::JellyfinEmby(provider) => {
                 provider.remove_playlist_entries(object, &ids()).await
             }
-            Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => {
-                Err(NO_SERVER_PLAYLISTS)
-            }
+            Implementation::Local(_)
+            | Implementation::Files(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => Err(NO_SERVER_PLAYLISTS),
         }
     }
 
@@ -2549,9 +2560,10 @@ impl Source {
                 let remove = (low..low + tail.len()).rev().collect::<Vec<_>>();
                 provider.edit_playlist_entries(object, &remove, &tail).await
             }
-            Implementation::Local(_) | Implementation::Files(_) | Implementation::Peer(_) => {
-                Err(NO_SERVER_PLAYLISTS)
-            }
+            Implementation::Local(_)
+            | Implementation::Files(_)
+            | Implementation::Peer(_)
+            | Implementation::Podcasts(_) => Err(NO_SERVER_PLAYLISTS),
         }
     }
 
@@ -3099,7 +3111,9 @@ impl Source {
             }
             // No feed: the first check runs now unless a listing does, the next ones on the
             // owner's interval.
-            Implementation::OpenSubsonic(_) | Implementation::Files(_) | Implementation::Podcasts(_) => {
+            Implementation::OpenSubsonic(_)
+            | Implementation::Files(_)
+            | Implementation::Podcasts(_) => {
                 if !initial_scan_pending {
                     feed.submit(SelectedFeedChange::Remote(RemoteItemChange::BoundaryLost));
                 }

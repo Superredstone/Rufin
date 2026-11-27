@@ -1509,6 +1509,7 @@ mod tests {
             music_folder_id: None,
             local_access: None,
             enable_half_stars: false,
+            write_ratings: false,
         };
         let sources = SourceSettings {
             configured: vec![configured("pods", "podcasts"), configured("music", "local")],

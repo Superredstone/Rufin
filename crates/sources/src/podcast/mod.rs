@@ -307,7 +307,9 @@ impl PodcastSource {
             .ok()
             .filter(|url| matches!(url.scheme(), "http" | "https"))
             .ok_or(SourceError::NotFound)?;
-        crate::remote_http::bytes(self.client.get(url), POLICY, IMAGE_LIMIT).await
+        crate::remote_http::bytes_or_body(self.client.get(url), POLICY, IMAGE_LIMIT)
+            .await?
+            .map_err(|_| SourceError::NotFound)
     }
 }
 

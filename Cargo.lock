@@ -8254,7 +8254,6 @@ dependencies = [
  "quick-xml",
  "reqwest 0.13.5",
  "roxmltree 0.21.2",
- "rustix",
  "serde",
  "serde_json",
  "serde_path_to_error",
