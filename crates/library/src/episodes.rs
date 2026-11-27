@@ -49,19 +49,21 @@ impl Catalog {
         let finished = episode_finished(position_millis, duration_millis, completed);
         let position = if finished { 0 } else { position_millis };
         let mut write = self.write().await?;
-        sqlx::query(
+        let saved: Vec<String> = sqlx::query_scalar(
             "INSERT INTO episode_progress(media_uri,position_millis,played,changed_at)
              SELECT track.media_uri,?2,?3,unixepoch() FROM tracks track JOIN sources USING(source_key)
              WHERE track.track_key=?1 AND sources.kind=?4
              ON CONFLICT(media_uri) DO UPDATE SET position_millis=excluded.position_millis,
-                played=max(played,excluded.played),changed_at=excluded.changed_at",
+                played=max(played,excluded.played),changed_at=excluded.changed_at
+             RETURNING media_uri",
         )
         .bind(track)
         .bind(position.min(i64::MAX as u64) as i64)
         .bind(finished)
         .bind(crate::SourceKind::Podcasts.name())
-        .execute(write.connection().await?)
+        .fetch_all(write.connection().await?)
         .await?;
+        write.read_played(&uris(&saved)).await?;
         write.commit().await?;
         Ok(())
     }
@@ -74,21 +76,27 @@ impl Catalog {
         played: bool,
     ) -> LibraryResult<()> {
         let mut write = self.write().await?;
-        sqlx::query(
+        let saved: Vec<String> = sqlx::query_scalar(
             "INSERT INTO episode_progress(media_uri,position_millis,played,changed_at)
              SELECT track.media_uri,0,?2,unixepoch() FROM tracks track JOIN sources USING(source_key)
              WHERE track.media_uri IN(SELECT value FROM json_each(?1)) AND sources.kind=?3
              ON CONFLICT(media_uri) DO UPDATE SET position_millis=0,played=excluded.played,
-                changed_at=excluded.changed_at",
+                changed_at=excluded.changed_at
+             RETURNING media_uri",
         )
         .bind(serde_json::to_string(media_uris)?)
         .bind(played)
         .bind(crate::SourceKind::Podcasts.name())
-        .execute(write.connection().await?)
+        .fetch_all(write.connection().await?)
         .await?;
+        write.read_played(&uris(&saved)).await?;
         write.commit().await?;
         Ok(())
     }
+}
+
+fn uris(saved: &[String]) -> Vec<&str> {
+    saved.iter().map(String::as_str).collect()
 }
 
 #[cfg(test)]

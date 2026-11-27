@@ -3921,3 +3921,84 @@ async fn unlisted_albums_go_with_their_tracks() {
     .unwrap();
     assert_eq!(indexed, ["kept", "kept#1"]);
 }
+
+#[tokio::test]
+async fn episode_rows_show_whether_they_were_played() {
+    let fixture = fixture().await;
+    let catalog = &fixture.catalog;
+    let source = catalog
+        .reconcile_source(&library::SourceId::new("pods"), "podcasts", "Podcasts")
+        .await
+        .unwrap()
+        .source;
+    let mut observation = catalog.observe("pods").await.unwrap();
+    observation.start_observation().await.unwrap();
+    let mut batch = library::CatalogBatch::default();
+    batch.tracks.push(library::TrackObservation {
+        object_id: "episode".into(),
+        metadata: library::TrackMetadata {
+            title: "Episode".into(),
+            sort_text: "episode".into(),
+            duration_millis: 1000,
+            ..Default::default()
+        },
+        ..Default::default()
+    });
+    observation.apply_catalog(&batch, true).await.unwrap();
+    drop(observation);
+    let played = async || {
+        let rows = tracks(
+            catalog,
+            library::MemberRead::new(library::Collection::Source(source)),
+        )
+        .await;
+        assert_eq!(rows.len(), 1);
+        rows[0].state.played
+    };
+    let episode = library::source_entity_uri(&library::SourceId::new("pods"), "track", "episode");
+    assert!(!played().await);
+
+    catalog
+        .set_episodes_played(std::slice::from_ref(&episode), true)
+        .await
+        .unwrap();
+    assert!(played().await, "marking shows at once");
+
+    catalog
+        .set_episodes_played(std::slice::from_ref(&episode), false)
+        .await
+        .unwrap();
+    assert!(!played().await);
+
+    // Heard to its end, the episode is played; a music track's row never is.
+    let key = rows_key(catalog, source).await;
+    catalog
+        .save_episode_progress(key, 1000, 1000, false)
+        .await
+        .unwrap();
+    assert!(played().await);
+    // A reopened Catalog loads it from the Store.
+    let reopened = super::support::reopen(fixture.catalog, &fixture.path).await;
+    let source_rows = |source| {
+        tracks(
+            &reopened,
+            library::MemberRead::new(library::Collection::Source(source)),
+        )
+    };
+    assert!(source_rows(source).await[0].state.played);
+    assert!(
+        source_rows(fixture.source)
+            .await
+            .iter()
+            .all(|row| !row.state.played)
+    );
+}
+
+async fn rows_key(catalog: &library::Catalog, source: library::SourceKey) -> library::TrackKey {
+    tracks(
+        catalog,
+        library::MemberRead::new(library::Collection::Source(source)),
+    )
+    .await[0]
+        .track_key
+}

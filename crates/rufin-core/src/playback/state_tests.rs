@@ -2151,3 +2151,77 @@ fn first_sample() -> ClockSample {
         local_period: "2026-01".into(),
     }
 }
+
+#[tokio::test(flavor = "multi_thread", worker_threads = 2)]
+async fn next_and_previous_skip_ten_seconds_within_a_podcast_episode() {
+    let source_id = sources::SourceId::new("pods");
+    let items = (1..=2)
+        .map(|number| {
+            let mut item = batch_item(number, QueueProvenance::Manual);
+            item.0.media_uri =
+                library::source_entity_uri(&source_id, "track", &format!("episode-{number}"));
+            item
+        })
+        .collect();
+    let (_directory, _catalog, sequence, owner, commands, playback, _inbox) = seeded(items).await;
+    let podcasts = |kind: &str| {
+        let kind = kind.to_owned();
+        let source_id = source_id.clone();
+        owner
+            .settings
+            .update(move |stored| {
+                stored.sources.configured = vec![crate::settings::ConfiguredSource {
+                    configuration: sources::SourceConfiguration {
+                        source_id: source_id.clone(),
+                        kind: kind.clone(),
+                        name: "Shows".into(),
+                        provider_payload: "{}".into(),
+                    },
+                    credential: None,
+                    music_folder_id: None,
+                    local_access: None,
+                    enable_half_stars: false,
+                }];
+                Ok(())
+            })
+            .unwrap();
+    };
+    podcasts("podcasts");
+    let mut session = Player::new(
+        sequence,
+        "episode-skip",
+        PlaybackSettings::default(),
+        PlaybackOutput::Local,
+        false,
+        3,
+        Some(Box::new(IdleBackend(commands.clone()))),
+        Arc::downgrade(&owner),
+        playback.downgrade(),
+    );
+    session.set_playing(true, &first_sample());
+    let episode = session.sequence.selected_index();
+    session.seek(30_000);
+    session
+        .handle_command(Command::Next, &first_sample())
+        .unwrap();
+    assert_eq!(session.sequence.progress_millis(), 40_000);
+    session
+        .handle_command(Command::Previous, &first_sample())
+        .unwrap();
+    session
+        .handle_command(Command::Previous, &first_sample())
+        .unwrap();
+    assert_eq!(session.sequence.progress_millis(), 20_000);
+    assert_eq!(
+        session.sequence.selected_index(),
+        episode,
+        "the episode stays"
+    );
+
+    // Any other source's track changes as before.
+    podcasts("local");
+    session
+        .handle_command(Command::Next, &first_sample())
+        .unwrap();
+    assert_ne!(session.sequence.selected_index(), episode);
+}

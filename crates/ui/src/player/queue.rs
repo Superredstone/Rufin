@@ -34,8 +34,95 @@ pub struct QueueState {
     pub filter: RefCell<String>,
     pub current: RefCell<Option<usize>>,
     pub playing: TrackRowPlayingIndicator,
+    pub finished: FinishedEpisodes,
     pub render_queued: Cell<bool>,
     reveal_current: [Cell<bool>; 2],
+}
+
+/// The queue's podcast episode titles, grayed out once heard: before the current row, or
+/// marked played. A heard episode stays in the queue to come back to.
+#[derive(Clone, Default)]
+pub struct FinishedEpisodes {
+    inner: Rc<FinishedEpisodesInner>,
+}
+
+#[derive(Default)]
+struct FinishedEpisodesInner {
+    current: Cell<Option<usize>>,
+    titles: RefCell<HashMap<usize, (glib::WeakRef<gtk::Widget>, usize, bool)>>,
+}
+
+impl FinishedEpisodes {
+    /// Binds the title of the row at `position`; `episode` is whether it is a podcast
+    /// episode, and `played` whether it was marked played.
+    fn bind(&self, title: &gtk::Widget, position: usize, episode: bool, played: bool) {
+        let key = title.as_ptr() as usize;
+        if episode {
+            self.inner
+                .titles
+                .borrow_mut()
+                .insert(key, (title.downgrade(), position, played));
+        } else {
+            self.inner.titles.borrow_mut().remove(&key);
+        }
+        style_finished(title, episode && self.finished(position, played));
+    }
+
+    fn unbind(&self, title: &gtk::Widget) {
+        self.inner
+            .titles
+            .borrow_mut()
+            .remove(&(title.as_ptr() as usize));
+        style_finished(title, false);
+    }
+
+    fn set_current(&self, current: Option<usize>) {
+        if self.inner.current.replace(current) == current {
+            return;
+        }
+        self.inner
+            .titles
+            .borrow_mut()
+            .retain(|_, (title, position, played)| {
+                let Some(title) = title.upgrade() else {
+                    return false;
+                };
+                style_finished(&title, self.finished(*position, *played));
+                true
+            });
+    }
+
+    fn finished(&self, position: usize, played: bool) -> bool {
+        played
+            || self
+                .inner
+                .current
+                .get()
+                .is_some_and(|current| position < current)
+    }
+}
+
+fn style_finished(title: &gtk::Widget, finished: bool) {
+    if finished {
+        title.add_css_class("dim-label");
+    } else {
+        title.remove_css_class("dim-label");
+    }
+    let description = if finished {
+        tr("Played")
+    } else {
+        String::new()
+    };
+    title.update_property(&[gtk::accessible::Property::Description(&description)]);
+}
+
+/// Whether the queue row is a podcast episode.
+fn queue_episode(shell: &crate::player::PlayerUi, row: &QueueRow) -> bool {
+    let (Some(window), Some(source)) = (shell.shell(), row.track.source_id.as_deref()) else {
+        return false;
+    };
+    let source = sources::SourceId::new(source);
+    window.source.configured.borrow().is_podcast_source(&source)
 }
 
 impl QueueState {
@@ -49,6 +136,7 @@ impl QueueState {
             filter: RefCell::new(String::new()),
             current: RefCell::new(None),
             playing: TrackRowPlayingIndicator::new(),
+            finished: FinishedEpisodes::default(),
             render_queued: Cell::new(false),
             reveal_current: Default::default(),
         }
@@ -197,6 +285,7 @@ impl QueueState {
             media_uri.as_deref(),
             current.map_or(gtk::INVALID_LIST_POSITION, |current| current as u32),
         );
+        self.finished.set_current(current);
         changed
     }
 
@@ -517,6 +606,8 @@ fn queue_title_column(shell: &Rc<crate::player::PlayerUi>) -> gtk::ColumnViewCol
     });
     let playing = shell.queue.borrow().playing.clone();
     let bind_playing = playing.clone();
+    let finished = shell.queue.borrow().finished.clone();
+    let bind_finished = finished.clone();
     let bind_shell = Rc::downgrade(shell);
     connect_row_bind(&factory, move |item| {
         let Some(item) = item.downcast_ref::<gtk::ListItem>() else {
@@ -538,6 +629,12 @@ fn queue_title_column(shell: &Rc<crate::player::PlayerUi>) -> gtk::ColumnViewCol
             title.upcast_ref(),
             row.position as u32,
             &row.track.media_uri,
+        );
+        bind_finished.bind(
+            title.upcast_ref(),
+            row.position,
+            queue_episode(&shell, &row),
+            row.track.state.played,
         );
         let subtitle = cell.subtitle();
         subtitle.set_visible(!row.track.metadata.artist.is_empty());
@@ -563,6 +660,7 @@ fn queue_title_column(shell: &Rc<crate::player::PlayerUi>) -> gtk::ColumnViewCol
         {
             cell.title().set_text("");
             playing.unbind(cell.title().upcast_ref());
+            finished.unbind(cell.title().upcast_ref());
             cell.clear_subtitle();
             if let Some(window) = unbind_shell.upgrade().and_then(|shell| shell.shell()) {
                 window.artwork.clear_artwork_tile(&cell.cover());
@@ -1247,16 +1345,18 @@ impl crate::player::PlayerUi {
             self.set_queue_loading(fullscreen, false);
             return false;
         };
-        let Some(position) = queue
-            .rows
-            .borrow()
-            .iter()
-            .position(|row| row.position == position)
-        else {
+        let rows = queue.rows.borrow();
+        let Some(mut position) = rows.iter().position(|row| row.position == position) else {
+            drop(rows);
             pending.set(false);
             self.set_queue_loading(fullscreen, loading);
             return false;
         };
+        // An episode keeps the one heard before it in view, grayed out above it.
+        if top && position > 0 && queue_episode(self, &rows[position]) {
+            position -= 1;
+        }
+        drop(rows);
         if !reveal_queue_current_row(scroller, position, top) {
             return false;
         }
@@ -1508,6 +1608,17 @@ pub fn connect_queue_panel_controls(shell: &Rc<crate::player::PlayerUi>) {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn heard_episodes_are_before_the_current_row_or_marked_played() {
+        let finished = FinishedEpisodes::default();
+        assert!(!finished.finished(0, false), "nothing plays yet");
+        finished.inner.current.set(Some(2));
+        assert!(finished.finished(1, false));
+        assert!(!finished.finished(2, false), "the playing episode");
+        assert!(!finished.finished(3, false));
+        assert!(finished.finished(3, true), "marked played ahead");
+    }
 
     fn row(position: usize, title: &str) -> Arc<QueueRow> {
         Arc::new(QueueRow {

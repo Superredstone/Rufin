@@ -34,6 +34,8 @@ pub(crate) const DOWNLOADED: u16 = 1 << 9;
 // Most track sort texts are the title or its lowercase, so they store no string.
 pub(crate) const SORT_TITLE: u16 = 1 << 10;
 pub(crate) const SORT_LOWER: u16 = 1 << 11;
+/// Tracks: a podcast episode that was heard.
+pub(crate) const PLAYED: u16 = 1 << 12;
 /// Albums: the header comes from a local cache of a removed source.
 pub(crate) const CACHED_LOCAL: u16 = 1 << 8;
 /// Albums: a source observed a header.
@@ -1115,6 +1117,19 @@ impl Snapshot {
             .map(|record| record.flags & DOWNLOADED != 0)
     }
 
+    pub(crate) fn played(&self, key: TrackKey) -> Option<bool> {
+        self.tracks
+            .get(key.raw())
+            .map(|record| record.flags & PLAYED != 0)
+    }
+
+    pub(crate) fn set_played(&mut self, key: TrackKey, played: bool) {
+        if let Some(slot) = self.tracks.slot(key.raw()) {
+            let record = &mut self.tracks.records[slot as usize];
+            record.flags = record.flags & !PLAYED | u16::from(played) * PLAYED;
+        }
+    }
+
     pub(crate) fn set_downloaded(&mut self, key: TrackKey, downloaded: bool) {
         if let Some(slot) = self.tracks.slot(key.raw()) {
             let record = &mut self.tracks.records[slot as usize];
@@ -1614,7 +1629,7 @@ impl Packing<'_> {
         };
         let old = |field: fn(&TrackRec) -> StrId| previous.as_ref().map_or(StrId::NONE, field);
         let kept = previous.map_or(0, |record| {
-            record.flags & (FAVORITE_KNOWN | FAVORITE | DOWNLOADED)
+            record.flags & (FAVORITE_KNOWN | FAVORITE | DOWNLOADED | PLAYED)
         });
         let strings = &mut *self.strings;
         let record = TrackRec {

@@ -514,6 +514,40 @@ pub fn track_column_for_key<T: crate::widgets::library_fields::TrackPresentation
                     }
                 });
             }
+            if let Some(factory) = column
+                .factory()
+                .and_then(|factory| factory.downcast::<gtk::SignalListItemFactory>().ok())
+            {
+                // A played podcast episode's title is dimmed, and says so to screen readers.
+                factory.connect_bind(|_, item| {
+                    let Some(item) = item.downcast_ref::<gtk::ListItem>() else {
+                        return;
+                    };
+                    let played = item
+                        .item()
+                        .and_then(|object| {
+                            object_item::<T, _>(object, |row| {
+                                row.track_row().is_some_and(|track| track.state.played)
+                            })
+                        })
+                        .unwrap_or(false);
+                    if let Some(child) = item.child() {
+                        if played {
+                            child.add_css_class("dim-label");
+                        } else {
+                            child.remove_css_class("dim-label");
+                        }
+                        let description = if played {
+                            localization::tr("Played")
+                        } else {
+                            String::new()
+                        };
+                        child.update_property(&[gtk::accessible::Property::Description(
+                            &description,
+                        )]);
+                    }
+                });
+            }
             column
         }
         LibraryField::Favorite | LibraryField::Tools => mapped_track_actions_column(

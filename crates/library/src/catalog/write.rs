@@ -599,6 +599,7 @@ struct UserEdits {
     states: BTreeMap<UserItem, (UserState, String)>,
     listened: BTreeMap<TrackKey, Stats>,
     downloads: BTreeMap<TrackKey, (bool, String)>,
+    played: BTreeMap<TrackKey, bool>,
     playlists: BTreeMap<i64, PlaylistEdit>,
     smart: BTreeMap<i64, Option<SmartPlaylist>>,
     folders: BTreeMap<i64, Option<PlaylistFolder>>,
@@ -610,6 +611,7 @@ struct UserChanges {
     states: Vec<(UserItem, UserState, String)>,
     listened: Vec<(TrackKey, Stats)>,
     downloads: Vec<(TrackKey, bool, String)>,
+    played: Vec<(TrackKey, bool)>,
     /// Playlists, and whether more than the link changed, and whether their entries did.
     playlists: Vec<(i64, Option<Playlist>, bool, bool)>,
     smart: Vec<(i64, Option<SmartPlaylist>)>,
@@ -621,6 +623,7 @@ impl UserChanges {
         self.states.is_empty()
             && self.listened.is_empty()
             && self.downloads.is_empty()
+            && self.played.is_empty()
             && self.playlists.is_empty()
             && self.smart.is_empty()
             && self.folders.is_none()
@@ -1211,6 +1214,25 @@ impl<'a> Write<'a> {
         Ok(())
     }
 
+    /// Reads whether the tracks with these URIs are played episodes after plain SQL changed
+    /// their progress rows.
+    pub(crate) async fn read_played(&mut self, uris: &[&str]) -> LibraryResult<()> {
+        for page in uris.chunks(READ_KEYS) {
+            let sql = format!(
+                "SELECT track.track_key,EXISTS(SELECT 1 FROM episode_progress progress WHERE progress.media_uri=track.media_uri AND progress.played=1) FROM tracks track WHERE track.media_uri IN({})",
+                families::placeholders(1, page.len())
+            );
+            let mut query = sqlx::query_as::<_, (i64, bool)>(sqlx::AssertSqlSafe(sql.as_str()));
+            for uri in page {
+                query = query.bind(*uri);
+            }
+            for (key, played) in query.fetch_all(self.connection().await?).await? {
+                self.edits.played.insert(TrackKey::from_raw(key), played);
+            }
+        }
+        Ok(())
+    }
+
     /// Stages a playlist header a statement returned with PLAYLIST_COLUMNS.
     pub(crate) fn put_playlist(&mut self, row: PlaylistRow) {
         let header = playlist(row, Vec::new());
@@ -1529,6 +1551,11 @@ impl<'a> Write<'a> {
                 })
                 .map(|(key, (downloaded, uri))| (key, downloaded, uri))
                 .collect(),
+            played: edits
+                .played
+                .into_iter()
+                .filter(|(key, played)| snapshot.played(*key).unwrap_or(false) != *played)
+                .collect(),
             ..UserChanges::default()
         };
         for (key, edit) in edits.playlists {
@@ -1653,6 +1680,10 @@ impl<'a> Write<'a> {
                     new.push(TrackKey::from_raw(*key));
                 }
             }
+        }
+        // A played episode reads again on its source's pages.
+        for (key, _) in &user.played {
+            tracks.entry(source_of(key.raw())).or_default().0.push(*key);
         }
         scopes.extend(
             tracks
@@ -1820,6 +1851,9 @@ impl<'a> Write<'a> {
         }
         for (key, downloaded, _) in &user.downloads {
             applier.snapshot().set_downloaded(*key, *downloaded);
+        }
+        for (key, played) in &user.played {
+            applier.snapshot().set_played(*key, *played);
         }
         for (key, playlist, _, _) in user.playlists {
             match playlist {

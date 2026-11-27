@@ -38,7 +38,7 @@ class RufinPlayerTest {
                 artists = emptyList(), albumArtists = emptyList(), genres = emptyList(), moods = emptyList(),
                 albumTags = null, sourceLoudness = null, albumLoudness = null, groupings = emptyList(),
             ),
-            state = TrackState(false, null, null, 0L, 0L),
+            state = TrackState(false, null, null, 0L, 0L, false),
             access = TrackAccess(null, "", null, null, null, false),
             links = TrackLinks(null, null, emptyList(), emptyList(), emptyList()),
         )

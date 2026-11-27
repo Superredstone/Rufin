@@ -338,6 +338,12 @@ fn user_data(handle: &Handle<'_>, snapshot: &mut Snapshot) -> LibraryResult<()> 
     while rows.step()? {
         snapshot.set_downloaded(TrackKey::from_raw(rows.int(0)), true);
     }
+    let mut rows = handle.prepare(
+        "SELECT track.track_key FROM episode_progress progress JOIN tracks track USING(media_uri) WHERE progress.played=1",
+    )?;
+    while rows.step()? {
+        snapshot.set_played(TrackKey::from_raw(rows.int(0)), true);
+    }
     let mut entries = HashMap::<i64, Vec<Entry<TrackKey>>>::new();
     let mut rows = handle.prepare(
         "SELECT playlist_key,playlist_entry_key,rank,track_key FROM playlist_entries ORDER BY playlist_key,rank,playlist_entry_key",

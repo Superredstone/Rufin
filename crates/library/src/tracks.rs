@@ -58,6 +58,10 @@ pub struct TrackState {
     pub last_played: Option<i64>,
     pub play_count: i64,
     pub skip_count: i64,
+    /// A podcast episode that was heard to its end or marked played.
+    #[sqlx(default)]
+    #[serde(default)]
+    pub played: bool,
 }
 
 #[derive(Clone, Debug, Default, PartialEq, serde::Serialize, serde::Deserialize)]

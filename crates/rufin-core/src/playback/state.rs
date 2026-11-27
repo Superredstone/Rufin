@@ -2203,7 +2203,34 @@ impl Player {
         self.sequence.persist_state();
     }
 
+    /// Where next or previous moves a playing podcast episode: ten seconds on or back, as
+    /// podcast players skip within an episode. None for anything else, which changes track.
+    fn episode_skip(&self, forward: bool) -> Option<u64> {
+        const SKIP_MILLIS: u64 = 10_000;
+        let run = self
+            .current_run
+            .as_ref()
+            .filter(|run| run.seekable && !run.live)?;
+        if !(self.owner().settings.load().sources).is_podcast(&run.row.track.media_uri) {
+            return None;
+        }
+        let position = self.position_millis();
+        Some(if forward {
+            let ahead = position.saturating_add(SKIP_MILLIS);
+            if run.duration_millis > 0 {
+                ahead.min(run.duration_millis)
+            } else {
+                ahead
+            }
+        } else {
+            position.saturating_sub(SKIP_MILLIS)
+        })
+    }
+
     fn next(&mut self, sample: &ClockSample) {
+        if let Some(position) = self.episode_skip(true) {
+            return self.seek(position);
+        }
         self.restored_paused = false;
         self.dirty = true;
         let old = self.current_run.as_ref().map(|run| run.id);
@@ -2226,6 +2253,9 @@ impl Player {
     }
 
     fn previous(&mut self, sample: &ClockSample) {
+        if let Some(position) = self.episode_skip(false) {
+            return self.seek(position);
+        }
         if self.position_millis() > 10_000 {
             return self.seek(0);
         }

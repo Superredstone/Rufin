@@ -7,8 +7,8 @@ use std::sync::Arc;
 
 use crate::catalog::fetch::{self, Got, Part, Want};
 use crate::catalog::snapshot::{
-    COMPILATION, CUE, DOWNLOADED, METADATA_WRITABLE, PICTURE, Packed, SOURCE_OWNED, Snapshot,
-    WRITABLE,
+    COMPILATION, CUE, DOWNLOADED, METADATA_WRITABLE, PICTURE, PLAYED, Packed, SOURCE_OWNED,
+    Snapshot, WRITABLE,
 };
 use crate::catalog::strings::StrId;
 use crate::catalog::views::{
@@ -560,6 +560,8 @@ fn state(flags: u16, user: u8, native: u8, played: Played) -> TrackState {
         last_played: played.last.map(i64::from),
         play_count: i64::from(played.plays),
         skip_count: i64::from(played.skips),
+        // Only a track's flags hold it; an album's bit there is its release class.
+        played: false,
     }
 }
 
@@ -810,12 +812,15 @@ impl<'a> Builder<'a> {
             date_added: known(record.added).map(i64::from),
             date_modified: known(record.modified).map(i64::from),
             source_format: optional(snapshot, record.format),
-            state: state(
-                record.flags,
-                record.rating,
-                record.native_rating,
-                self.context.played(slot, record),
-            ),
+            state: TrackState {
+                played: record.flags & PLAYED != 0,
+                ..state(
+                    record.flags,
+                    record.rating,
+                    record.native_rating,
+                    self.context.played(slot, record),
+                )
+            },
             is_downloaded: record.flags & DOWNLOADED != 0,
             cue: record.flags & CUE != 0,
             links: TrackLinks {
